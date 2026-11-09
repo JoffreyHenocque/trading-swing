@@ -182,11 +182,13 @@ class Book(object):
         self.trades = s.get("trades", [])
         self.equity = s.get("equity", [])
         self.last_date = s.get("last_date")
+        self.contributed = s.get("contributed", cfg["capital"])
         self.log = []
 
     def state(self):
         return {"cash": round(self.cash, 2), "positions": self.positions, "pending": self.pending,
-                "trades": self.trades, "equity": self.equity, "last_date": self.last_date}
+                "trades": self.trades, "equity": self.equity, "last_date": self.last_date,
+                "contributed": self.contributed}
 
     def mark(self, bars, day):
         value = 0.0
@@ -195,10 +197,11 @@ class Book(object):
             p["last"] = round(b["c"], 4)
             value += p["qty"] * b["c"]
         eq = round(self.cash + value, 2)
+        row = {"d": day, "equity": eq, "cash": round(self.cash, 2), "contributed": round(self.contributed, 2)}
         if self.equity and self.equity[-1]["d"] == day:
-            self.equity[-1] = {"d": day, "equity": eq, "cash": round(self.cash, 2)}
+            self.equity[-1] = row
         else:
-            self.equity.append({"d": day, "equity": eq, "cash": round(self.cash, 2)})
+            self.equity.append(row)
         return eq
 
     def close(self, p, price, day, reason):
@@ -219,6 +222,10 @@ class Book(object):
     def step(self, bars, day):
         """Process one session `day`: fill pending, manage positions, mark, new signals."""
         cfg = self.cfg
+        # 0. monthly contribution on the first session of a new month (lab variants only)
+        if cfg.get("monthly") and self.last_date and self.last_date[:7] != day[:7]:
+            self.cash += cfg["monthly"]
+            self.contributed += cfg["monthly"]
         # 1. fill pending orders at today's open
         still = []
         for o in self.pending:
@@ -491,6 +498,9 @@ def run_monthly(v, bars, days, cfg):
         trades += 1
 
     for d in days:
+        if v["kind"] != "dca" and v.get("monthly") and d in starts and d != days[0]:
+            cash += v["monthly"]
+            contributed += v["monthly"]
         if v["kind"] == "dca":
             if d in starts:
                 if not first:
@@ -508,6 +518,10 @@ def run_monthly(v, bars, days, cfg):
                 slot = value / max(len(pending), 1)
                 for sym in new:
                     buy(sym, min(slot, cash), d)
+            if v.get("monthly") and pending:      # invest the month's contribution in what is held
+                for sym in list(pending):
+                    if sym in pos:
+                        buy(sym, cash / max(1, sum(1 for x in pending if x in pos)), d)
             pending = None
         if v["kind"] != "dca" and (d in ends or (first and v["kind"] == "buy_hold")):
             pending = targets_for(v, bars, d)
@@ -546,17 +560,48 @@ def equity_last_price(b, d):
     return last
 
 
+def run_swing_variant(v, bars, days, cfg):
+    """The breakout swing book with its own capital and monthly contributions."""
+    c = dict(cfg, capital=v.get("capital", cfg["capital"]), monthly=v.get("monthly", 0), **v.get("costs", {}))
+    book = Book(c)
+    for d in days:
+        book.step(bars, d)
+    for p in list(book.positions):
+        b = bar_on(bars[p["symbol"]], days[-1])
+        book.close(p, b["c"], days[-1], "end of test")
+    book.positions = []
+    book.mark(bars, days[-1])
+    s = stats(book.trades, book.equity, c["capital"])
+    last = book.equity[-1]
+    peak, mdd = 0.0, 0.0
+    for e in book.equity:
+        ratio = e["equity"] / e["contributed"]
+        peak = max(peak, ratio)
+        mdd = min(mdd, ratio / peak - 1)
+    skipped = sum(1 for x in book.log if " skip " in x)
+    return {"name": v["name"], "label": v["label"], "kind": "swing", "mode": v.get("mode", "monthly"),
+            "contributed": last["contributed"], "final": last["equity"],
+            "return_pct": round(100.0 * (last["equity"] / last["contributed"] - 1), 2),
+            "costs": s["costs"], "trades": s["trades"], "skipped_signals": skipped,
+            "max_drawdown_pct": round(100.0 * mdd, 2), "equity": book.equity}
+
+
 def compare(bars, days, cfg, breakout_doc, stocks):
     rows = []
     s = breakout_doc["stats"]
-    rows.append({"name": "breakout", "label": "Swing cassure 20 jours (actions CAC 40)", "kind": "swing",
+    rows.append({"name": "breakout", "label": "Swing cassure 20 jours (actions CAC 40)", "kind": "swing", "mode": "lump",
                  "contributed": cfg["capital"], "final": s["equity"], "return_pct": s["return_pct"],
                  "costs": s["costs"], "trades": s["trades"], "max_drawdown_pct": s["max_drawdown_pct"],
                  "equity": breakout_doc["full_equity"]})
     for v in cfg.get("variants", []):
         try:
+            if v["kind"] == "swing":
+                rows.append(run_swing_variant(v, bars, days, cfg))
+                continue
             v2 = dict(v, symbols=stocks) if v.get("symbols") == "universe" else v
-            rows.append(run_monthly(v2, bars, days, cfg))
+            r = run_monthly(v2, bars, days, cfg)
+            r["mode"] = v.get("mode", "monthly" if v["kind"] == "dca" or v.get("monthly") else "lump")
+            rows.append(r)
         except Exception as e:
             rows.append({"name": v.get("name"), "label": v.get("label"), "error": str(e)})
     for r in rows:
