@@ -31,7 +31,8 @@
       "symbols": [
         "CAC.PA"
       ],
-      "no_ttf": true
+      "no_ttf": true,
+      "mode": "lump"
     },
     {
       "name": "hold_world",
@@ -40,7 +41,8 @@
       "symbols": [
         "EWLD.PA"
       ],
-      "no_ttf": true
+      "no_ttf": true,
+      "mode": "lump"
     },
     {
       "name": "trend_world",
@@ -50,7 +52,8 @@
         "EWLD.PA"
       ],
       "sma": 200,
-      "no_ttf": true
+      "no_ttf": true,
+      "mode": "lump"
     },
     {
       "name": "momentum_cac",
@@ -59,7 +62,8 @@
       "symbols": "universe",
       "top": 3,
       "lookback": 126,
-      "sma": 200
+      "sma": 200,
+      "mode": "lump"
     },
     {
       "name": "dca_world",
@@ -74,7 +78,57 @@
       "costs": {
         "fee_pct": 0,
         "fee_min": 0
+      },
+      "mode": "monthly"
+    },
+    {
+      "name": "breakout_m",
+      "label": "Swing cassure 20 jours, 100 EUR par mois",
+      "kind": "swing",
+      "mode": "monthly",
+      "capital": 100,
+      "monthly": 100
+    },
+    {
+      "name": "hold_cac_m",
+      "label": "100 EUR par mois dans l'ETF CAC 40 (versement programmé, sans frais)",
+      "kind": "buy_hold",
+      "mode": "monthly",
+      "symbols": [
+        "CAC.PA"
+      ],
+      "capital": 100,
+      "monthly": 100,
+      "no_ttf": true,
+      "costs": {
+        "fee_pct": 0,
+        "fee_min": 0
       }
+    },
+    {
+      "name": "trend_world_m",
+      "label": "Monde + filtre de tendance, 100 EUR par mois",
+      "kind": "trend",
+      "mode": "monthly",
+      "symbols": [
+        "EWLD.PA"
+      ],
+      "sma": 200,
+      "capital": 100,
+      "monthly": 100,
+      "no_ttf": true
+    },
+    {
+      "name": "momentum_cac_m",
+      "label": "Momentum CAC 40 (3 actions), 100 EUR par mois",
+      "kind": "momentum",
+      "mode": "monthly",
+      "symbols": "universe",
+      "top": 3,
+      "lookback": 126,
+      "sma": 200,
+      "capital": 100,
+      "monthly": 100
     }
   ]
 }

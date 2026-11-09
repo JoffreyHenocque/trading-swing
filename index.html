@@ -50,8 +50,12 @@ footer{color:var(--muted);font-size:12px;margin-top:32px}
 
 <h2>Labo : quelle stratégie aurait le mieux marché ?</h2>
 <p class="sub" id="cmpsub">Les mêmes 3 années, frais et taxes inclus. Performance = gain ou perte par rapport à l'argent versé.</p>
+<h3 style="font-size:14px;margin:16px 0 8px">Mise unique de 1 000 €</h3>
 <div class="card" id="cmpchart"></div>
 <div class="card tbl" id="cmptable" style="margin-top:12px"></div>
+<h3 style="font-size:14px;margin:24px 0 8px">100 € par mois</h3>
+<div class="card" id="cmpchart2"></div>
+<div class="card tbl" id="cmptable2" style="margin-top:12px"></div>
 
 <h2>Backtest : les mêmes règles sur le passé</h2>
 <p class="sub" id="btsub"></p>
@@ -161,10 +165,14 @@ async function get(p){try{const r=await fetch(p+"?t="+Date.now());return r.ok?aw
   const cmp=await get("data/compare.json");
   if(cmp){
     document.getElementById("cmpsub").textContent=`Du ${cmp.from} au ${cmp.to}, frais et taxes inclus. Performance = gain ou perte par rapport à l'argent versé (le versement mensuel part de 100 € et ajoute 100 € chaque mois).`;
-    multiChart("cmpchart",cmp.rows);
+    const lump=cmp.rows.filter(r=>(r.mode||"lump")==="lump"), monthly=cmp.rows.filter(r=>r.mode==="monthly");
+    multiChart("cmpchart",lump);multiChart("cmpchart2",monthly);
+    const cols=[{h:"Stratégie",f:r=>r.label},{h:"Performance",n:1,f:r=>r.error?"erreur":pct(r.return_pct),sign:r=>r.return_pct},{h:"Versé",n:1,f:r=>eur(r.contributed)},{h:"Valeur finale",n:1,f:r=>eur(r.final)},
+      {h:"Ordres",n:1,f:r=>num(r.trades,0)},{h:"Frais et taxes",n:1,f:r=>eur(r.costs)},{h:"Pire baisse",n:1,f:r=>pct(r.max_drawdown_pct)}];
+    table("cmptable2",cols,monthly.slice().sort((a,b)=>(b.return_pct??-1e9)-(a.return_pct??-1e9)),"Pas encore calculé : relance le backtest.");
     table("cmptable",[{h:"Stratégie",f:r=>r.label},{h:"Performance",n:1,f:r=>r.error?"erreur":pct(r.return_pct),sign:r=>r.return_pct},{h:"Versé",n:1,f:r=>eur(r.contributed)},{h:"Valeur finale",n:1,f:r=>eur(r.final)},
       {h:"Ordres",n:1,f:r=>num(r.trades,0)},{h:"Frais et taxes",n:1,f:r=>eur(r.costs)},{h:"Pire baisse",n:1,f:r=>pct(r.max_drawdown_pct)}],
-      cmp.rows.slice().sort((a,b)=>(b.return_pct??-1e9)-(a.return_pct??-1e9)),"—");
+      lump.slice().sort((a,b)=>(b.return_pct??-1e9)-(a.return_pct??-1e9)),"—");
   } else multiChart("cmpchart",[]);
   if(bt){
     const bm=Object.values(bt.benchmark||{})[0];
