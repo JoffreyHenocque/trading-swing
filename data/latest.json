@@ -1,0 +1,188 @@
+{
+ "as_of": "2026-11-09",
+ "generated_utc": "2026-11-09T21:47:07Z",
+ "config": {
+  "universe": "universe.txt",
+  "benchmark": "^FCHI",
+  "capital": 1000,
+  "risk_pct": 1.0,
+  "max_positions": 3,
+  "max_position_pct": 34,
+  "breakout_days": 20,
+  "trend_sma": 50,
+  "atr_mult": 2.0,
+  "target_r": 2.0,
+  "max_hold": 20,
+  "fee_pct": 0.05,
+  "fee_min": 1.5,
+  "slippage_pct": 0.05,
+  "ttf_pct": 0.4,
+  "ttf_exempt": [
+   "AIR.PA",
+   "STMPA.PA",
+   "STLAP.PA",
+   "ERF.PA",
+   "ENX.PA"
+  ],
+  "blocked": [],
+  "pause_s": 1.0
+ },
+ "stats": {
+  "trades": 0,
+  "wins": 0,
+  "win_rate": null,
+  "avg_r": null,
+  "profit_factor": null,
+  "total_pnl": 0,
+  "costs": 0,
+  "equity": 1000.0,
+  "return_pct": 0.0,
+  "max_drawdown_pct": 0.0
+ },
+ "positions": [],
+ "pending": [
+  {
+   "symbol": "VIE.PA",
+   "qty": 9,
+   "signal": {
+    "date": "2026-11-09",
+    "close": 34.51,
+    "prior_high": 33.79,
+    "sma": 31.922,
+    "atr": 0.54,
+    "strength": 1.333,
+    "symbol": "VIE.PA"
+   },
+   "risk_per_share": 1.08,
+   "created": "2026-11-09",
+   "age": 0
+  },
+  {
+   "symbol": "ENGI.PA",
+   "qty": 9,
+   "signal": {
+    "date": "2026-11-09",
+    "close": 24.73,
+    "prior_high": 24.2,
+    "sma": 23.4894,
+    "atr": 0.555,
+    "strength": 0.955,
+    "symbol": "ENGI.PA"
+   },
+   "risk_per_share": 1.11,
+   "created": "2026-11-09",
+   "age": 0
+  },
+  {
+   "symbol": "AC.PA",
+   "qty": 3,
+   "signal": {
+    "date": "2026-11-09",
+    "close": 51.02,
+    "prior_high": 50.0,
+    "sma": 46.148,
+    "atr": 1.3182,
+    "strength": 0.774,
+    "symbol": "AC.PA"
+   },
+   "risk_per_share": 2.6364,
+   "created": "2026-11-09",
+   "age": 0
+  }
+ ],
+ "signals": [
+  {
+   "date": "2026-11-09",
+   "close": 34.51,
+   "prior_high": 33.79,
+   "sma": 31.922,
+   "atr": 0.54,
+   "strength": 1.333,
+   "symbol": "VIE.PA"
+  },
+  {
+   "date": "2026-11-09",
+   "close": 206.0,
+   "prior_high": 200.1,
+   "sma": 194.0944,
+   "atr": 5.8364,
+   "strength": 1.011,
+   "symbol": "AIR.PA"
+  },
+  {
+   "date": "2026-11-09",
+   "close": 24.73,
+   "prior_high": 24.2,
+   "sma": 23.4894,
+   "atr": 0.555,
+   "strength": 0.955,
+   "symbol": "ENGI.PA"
+  },
+  {
+   "date": "2026-11-09",
+   "close": 51.02,
+   "prior_high": 50.0,
+   "sma": 46.148,
+   "atr": 1.3182,
+   "strength": 0.774,
+   "symbol": "AC.PA"
+  },
+  {
+   "date": "2026-11-09",
+   "close": 85.76,
+   "prior_high": 84.53,
+   "sma": 74.7706,
+   "atr": 1.9021,
+   "strength": 0.647,
+   "symbol": "SAN.PA"
+  },
+  {
+   "date": "2026-11-09",
+   "close": 107.15,
+   "prior_high": 106.0,
+   "sma": 103.432,
+   "atr": 2.0093,
+   "strength": 0.572,
+   "symbol": "FGR.PA"
+  },
+  {
+   "date": "2026-11-09",
+   "close": 113.7,
+   "prior_high": 112.95,
+   "sma": 109.708,
+   "atr": 2.1143,
+   "strength": 0.355,
+   "symbol": "DG.PA"
+  },
+  {
+   "date": "2026-11-09",
+   "close": 74.94,
+   "prior_high": 74.44,
+   "sma": 69.482,
+   "atr": 2.0214,
+   "strength": 0.247,
+   "symbol": "SGO.PA"
+  },
+  {
+   "date": "2026-11-09",
+   "close": 94.38,
+   "prior_high": 94.16,
+   "sma": 91.7284,
+   "atr": 1.5793,
+   "strength": 0.139,
+   "symbol": "URW.PA"
+  }
+ ],
+ "recent_trades": [],
+ "equity": [
+  {
+   "d": "2026-11-09",
+   "equity": 1000.0,
+   "cash": 1000
+  }
+ ],
+ "log": [
+  "2026-11-09 skip AIR.PA: one share (206.00) does not fit the risk or position limits"
+ ],
+ "data_errors": []
+}

@@ -1,0 +1,63 @@
+{
+ "cash": 1000,
+ "positions": [],
+ "pending": [
+  {
+   "symbol": "VIE.PA",
+   "qty": 9,
+   "signal": {
+    "date": "2026-11-09",
+    "close": 34.51,
+    "prior_high": 33.79,
+    "sma": 31.922,
+    "atr": 0.54,
+    "strength": 1.333,
+    "symbol": "VIE.PA"
+   },
+   "risk_per_share": 1.08,
+   "created": "2026-11-09",
+   "age": 0
+  },
+  {
+   "symbol": "ENGI.PA",
+   "qty": 9,
+   "signal": {
+    "date": "2026-11-09",
+    "close": 24.73,
+    "prior_high": 24.2,
+    "sma": 23.4894,
+    "atr": 0.555,
+    "strength": 0.955,
+    "symbol": "ENGI.PA"
+   },
+   "risk_per_share": 1.11,
+   "created": "2026-11-09",
+   "age": 0
+  },
+  {
+   "symbol": "AC.PA",
+   "qty": 3,
+   "signal": {
+    "date": "2026-11-09",
+    "close": 51.02,
+    "prior_high": 50.0,
+    "sma": 46.148,
+    "atr": 1.3182,
+    "strength": 0.774,
+    "symbol": "AC.PA"
+   },
+   "risk_per_share": 2.6364,
+   "created": "2026-11-09",
+   "age": 0
+  }
+ ],
+ "trades": [],
+ "equity": [
+  {
+   "d": "2026-11-09",
+   "equity": 1000.0,
+   "cash": 1000
+  }
+ ],
+ "last_date": "2026-11-09"
+}
