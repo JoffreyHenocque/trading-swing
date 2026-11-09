@@ -1,0 +1,41 @@
+name: swing-paper
+
+on:
+  schedule:
+    - cron: "45 16 * * 1-5"   # weekdays 17:45 Paris in winter (18:45 in summer), after the 17:30 close
+    - cron: "0 7 * * 0"       # Sunday morning: backtest
+  workflow_dispatch:
+    inputs:
+      task:
+        description: "run or backtest"
+        default: "run"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: swing
+  cancel-in-progress: false
+
+jobs:
+  swing:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Daily paper run
+        if: github.event.schedule == '45 16 * * 1-5' || (github.event_name == 'workflow_dispatch' && inputs.task != 'backtest')
+        run: python3 swing/swing.py run
+      - name: Backtest
+        if: github.event.schedule == '0 7 * * 0' || (github.event_name == 'workflow_dispatch' && inputs.task == 'backtest')
+        run: python3 swing/swing.py backtest --years 3
+      - name: Save results
+        run: |
+          git config user.name "swing-bot"
+          git config user.email "swing-bot@users.noreply.github.com"
+          git add data
+          git diff --cached --quiet || git commit -m "swing: $(date -u +%F) ${{ github.event_name }}"
+          git push
