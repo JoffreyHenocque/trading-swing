@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-11-09T21:37:44Z",
+ "generated_utc": "2026-11-09T21:59:37Z",
  "from": "2023-11-10",
  "to": "2026-11-09",
  "years": 3.0,
@@ -27,7 +27,61 @@
    "ENX.PA"
   ],
   "blocked": [],
-  "pause_s": 1.0
+  "pause_s": 1.0,
+  "variants": [
+   {
+    "name": "hold_cac",
+    "label": "CAC 40 acheté et gardé (ETF Amundi CAC 40)",
+    "kind": "buy_hold",
+    "symbols": [
+     "CAC.PA"
+    ],
+    "no_ttf": true
+   },
+   {
+    "name": "hold_world",
+    "label": "Monde acheté et gardé (ETF PEA MSCI World)",
+    "kind": "buy_hold",
+    "symbols": [
+     "EWLD.PA"
+    ],
+    "no_ttf": true
+   },
+   {
+    "name": "trend_world",
+    "label": "Monde + filtre de tendance 200 jours (mensuel)",
+    "kind": "trend",
+    "symbols": [
+     "EWLD.PA"
+    ],
+    "sma": 200,
+    "no_ttf": true
+   },
+   {
+    "name": "momentum_cac",
+    "label": "Momentum CAC 40 : 3 meilleures actions sur 6 mois (mensuel)",
+    "kind": "momentum",
+    "symbols": "universe",
+    "top": 3,
+    "lookback": 126,
+    "sma": 200
+   },
+   {
+    "name": "dca_world",
+    "label": "100 EUR par mois dans l'ETF Monde (versement programmé, sans frais)",
+    "kind": "dca",
+    "symbols": [
+     "EWLD.PA"
+    ],
+    "capital": 100,
+    "monthly": 100,
+    "no_ttf": true,
+    "costs": {
+     "fee_pct": 0,
+     "fee_min": 0
+    }
+   }
+  ]
  },
  "stats": {
   "trades": 178,
