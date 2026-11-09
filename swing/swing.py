@@ -380,6 +380,192 @@ def benchmark(bars, sym, start, end):
     return round(100.0 * (b[i1]["c"] / b[i0]["o"] - 1), 2)
 
 
+
+# ---------------------------------------------------------------- monthly strategies (lab)
+
+def month_ends(days):
+    """Last trading day of each month in `days` (sorted ISO dates)."""
+    out = []
+    for i, d in enumerate(days):
+        if i + 1 == len(days) or days[i + 1][:7] != d[:7]:
+            out.append(d)
+    return out
+
+
+def month_starts(days):
+    return [d for i, d in enumerate(days) if i == 0 or days[i - 1][:7] != d[:7]]
+
+
+def sma_at(b, i, n):
+    if i + 1 < n:
+        return None
+    return sum(x["c"] for x in b[i - n + 1:i + 1]) / n
+
+
+def ret_at(b, i, n):
+    if i < n:
+        return None
+    return b[i]["c"] / b[i - n]["c"] - 1
+
+
+def targets_for(v, bars, day):
+    """Symbols to hold after the month-end `day`, for variant v."""
+    kind = v["kind"]
+    if kind == "buy_hold":
+        return list(v["symbols"])
+    if kind == "trend":
+        keep = []
+        for sym in v["symbols"]:
+            b = bars.get(sym)
+            i = index_on(b, day) if b else None
+            if i is None:
+                continue
+            m = sma_at(b, i, v.get("sma", 200))
+            if m is not None and b[i]["c"] > m:
+                keep.append(sym)
+        return keep
+    if kind == "momentum":
+        ranked = []
+        for sym in v["symbols"]:
+            b = bars.get(sym)
+            i = index_on(b, day) if b else None
+            if i is None:
+                continue
+            r = ret_at(b, i, v.get("lookback", 126))
+            m = sma_at(b, i, v.get("sma", 200))
+            if r is None or m is None or b[i]["c"] <= m or r <= 0:
+                continue
+            ranked.append((r, sym))
+        ranked.sort(reverse=True)
+        return [s for _, s in ranked[:v.get("top", 3)]]
+    raise ValueError("unknown kind %s" % kind)
+
+
+def run_monthly(v, bars, days, cfg):
+    """Monthly rebalancing on the next open after each month end; or monthly
+    contributions (kind dca). Whole shares, costs included, cash carried."""
+    c = dict(cfg, **v.get("costs", {}))
+    cash = float(v.get("capital", cfg["capital"]))
+    contributed = cash
+    pos = {}                     # sym -> qty
+    costs = 0.0
+    trades = 0
+    equity = []
+    ends = set(month_ends(days))
+    starts = set(month_starts(days))
+    pending = None
+    first = True
+
+    def px(sym, d, k="o"):
+        b = bar_on(bars.get(sym), d)
+        return b[k] if b else None
+
+    def buy(sym, budget, d):
+        nonlocal cash, costs, trades
+        p = px(sym, d)
+        if not p:
+            return
+        p *= 1 + c["slippage_pct"] / 100.0
+        tax_rate = 0 if v.get("no_ttf") else (c["ttf_pct"] / 100.0 if sym.endswith(".PA") and sym not in set(c.get("ttf_exempt", [])) else 0)
+        q = int(budget // (p * (1 + tax_rate) * 1.003))
+        while q > 0 and q * p * (1 + tax_rate) + fee(q * p, c) > cash:
+            q -= 1
+        if q < 1:
+            return
+        f, t = fee(q * p, c), q * p * tax_rate
+        cash -= q * p + f + t
+        costs += f + t
+        trades += 1
+        pos[sym] = pos.get(sym, 0) + q
+
+    def sell(sym, d):
+        nonlocal cash, costs, trades
+        p = px(sym, d)
+        if not p:
+            return
+        p *= 1 - c["slippage_pct"] / 100.0
+        q = pos.pop(sym)
+        f = fee(q * p, c)
+        cash += q * p - f
+        costs += f
+        trades += 1
+
+    for d in days:
+        if v["kind"] == "dca":
+            if d in starts:
+                if not first:
+                    cash += v["monthly"]
+                    contributed += v["monthly"]
+                first = False
+                for sym in v["symbols"]:
+                    buy(sym, cash / len(v["symbols"]), d)
+        elif pending is not None:
+            for sym in [s for s in pos if s not in pending]:
+                sell(sym, d)
+            new = [s for s in pending if s not in pos]
+            if new:
+                value = cash + sum(q * (px(s, d) or 0) for s, q in pos.items())
+                slot = value / max(len(pending), 1)
+                for sym in new:
+                    buy(sym, min(slot, cash), d)
+            pending = None
+        if v["kind"] != "dca" and (d in ends or (first and v["kind"] == "buy_hold")):
+            pending = targets_for(v, bars, d)
+            first = False
+        val = cash
+        for s, q in pos.items():
+            b = bar_on(bars.get(s), d)
+            if b:
+                val += q * b["c"]
+            else:
+                val += q * (equity_last_price(bars.get(s), d) or 0)
+        equity.append({"d": d, "equity": round(val, 2), "contributed": round(contributed, 2)})
+    peak, mdd = 0.0, 0.0
+    for e in equity:
+        ratio = e["equity"] / e["contributed"]
+        peak = max(peak, ratio)
+        mdd = min(mdd, ratio / peak - 1) if peak else mdd
+    last = equity[-1]
+    return {"name": v["name"], "label": v["label"], "kind": v["kind"],
+            "contributed": last["contributed"], "final": last["equity"],
+            "return_pct": round(100.0 * (last["equity"] / last["contributed"] - 1), 2),
+            "costs": round(costs, 2), "trades": trades,
+            "max_drawdown_pct": round(100.0 * mdd, 2),
+            "holdings": {s: q for s, q in pos.items()},
+            "equity": equity}
+
+
+def equity_last_price(b, d):
+    if not b:
+        return None
+    last = None
+    for x in b:
+        if x["d"] > d:
+            break
+        last = x["c"]
+    return last
+
+
+def compare(bars, days, cfg, breakout_doc, stocks):
+    rows = []
+    s = breakout_doc["stats"]
+    rows.append({"name": "breakout", "label": "Swing cassure 20 jours (actions CAC 40)", "kind": "swing",
+                 "contributed": cfg["capital"], "final": s["equity"], "return_pct": s["return_pct"],
+                 "costs": s["costs"], "trades": s["trades"], "max_drawdown_pct": s["max_drawdown_pct"],
+                 "equity": breakout_doc["full_equity"]})
+    for v in cfg.get("variants", []):
+        try:
+            v2 = dict(v, symbols=stocks) if v.get("symbols") == "universe" else v
+            rows.append(run_monthly(v2, bars, days, cfg))
+        except Exception as e:
+            rows.append({"name": v.get("name"), "label": v.get("label"), "error": str(e)})
+    for r in rows:
+        eq = r.pop("equity", None) or []
+        step = max(1, len(eq) // 160)
+        r["curve"] = [{"d": e["d"], "pct": round(100.0 * (e["equity"] / e.get("contributed", cfg["capital"]) - 1), 2)}
+                      for e in eq[::step] + eq[-1:]]
+    return rows
+
 # ---------------------------------------------------------------- commands
 
 def cmd_run(a, cfg, universe):
@@ -414,7 +600,10 @@ def cmd_run(a, cfg, universe):
 
 
 def cmd_backtest(a, cfg, universe):
-    bars, errors = load_bars(universe, cfg, a.offline, "5y")
+    extra = sorted({x for v in cfg.get("variants", []) if isinstance(v.get("symbols"), list)
+                    for x in v["symbols"]} - {u[0] for u in universe})
+    bars, errors = load_bars(universe + [(x, x) for x in extra], cfg, a.offline, "5y")
+    lab = {x: bars.pop(x) for x in extra if x in bars}
     if not bars:
         print("No data at all: %s" % "; ".join(errors[:5]))
         return 1
@@ -443,8 +632,21 @@ def cmd_backtest(a, cfg, universe):
                bars, cfg.get("benchmark", "^FCHI"), days[0], days[-1])},
            "equity": book.equity[::max(1, len(book.equity) // 400)] + book.equity[-1:],
            "trades": book.trades, "symbols": len(bars), "data_errors": errors}
+    full_equity = list(book.equity)
     save_json(os.path.join(DATA, "backtest.json"), doc)
-    print("Backtest %s to %s on %d stocks (paper, costs included)." % (days[0], days[-1], len(bars)))
+    bars.update(lab)
+    stocks = [u[0] for u in universe if u[0] != cfg.get("benchmark") and u[0] in bars]
+    rows = compare(bars, days, cfg, dict(doc, full_equity=full_equity), stocks)
+    save_json(os.path.join(DATA, "compare.json"), {
+        "generated_utc": doc["generated_utc"], "from": days[0], "to": days[-1], "rows": rows})
+    print("\nStrategy lab, %s to %s, costs included:" % (days[0], days[-1]))
+    for r in rows:
+        if r.get("error"):
+            print("  %-34s error: %s" % (r["label"], r["error"]))
+            continue
+        print("  %-48s %+7.2f%%  (%d trades, costs %.2f EUR, put in %.0f EUR, worth %.2f EUR, max drawdown %.1f%%)" % (
+            r["label"], r["return_pct"], r["trades"], r["costs"], r["contributed"], r["final"], r["max_drawdown_pct"]))
+    print("Backtest %s to %s on %d stocks (paper, costs included)." % (days[0], days[-1], doc["symbols"]))
     print_stats(s, cfg)
     for y, v in years.items():
         print("  %s: %d trades, win rate %.1f%%, P&L %+.2f EUR" % (y, v["trades"], v["win_rate"], v["pnl"]))
