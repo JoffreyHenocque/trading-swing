@@ -6,9 +6,9 @@
 <title>Swing CAC 40 — suivi</title>
 <style>
 :root{color-scheme:light;--surface:#fcfcfb;--plane:#f9f9f7;--ink:#0b0b0b;--ink2:#52514e;--muted:#898781;
---grid:#e1e0d9;--axis:#c3c2b7;--border:rgba(11,11,11,.10);--s1:#2a78d6;--s2:#eb6834;--good:#006300;--bad:#d03b3b}
+--grid:#e1e0d9;--axis:#c3c2b7;--border:rgba(11,11,11,.10);--s1:#2a78d6;--s2:#eb6834;--s3:#1baf7a;--s4:#eda100;--s5:#e87ba4;--s6:#008300;--good:#006300;--bad:#d03b3b}
 @media (prefers-color-scheme:dark){:root{color-scheme:dark;--surface:#1a1a19;--plane:#0d0d0d;--ink:#f0efec;--ink2:#c3c2b7;
---grid:#2c2c2a;--axis:#383835;--border:rgba(255,255,255,.10);--s1:#3987e5;--s2:#d95926;--good:#0ca30c;--bad:#e66767}}
+--grid:#2c2c2a;--axis:#383835;--border:rgba(255,255,255,.10);--s1:#3987e5;--s2:#d95926;--s3:#199e70;--s4:#c98500;--s5:#d55181;--s6:#008300;--good:#0ca30c;--bad:#e66767}}
 *{box-sizing:border-box}
 body{margin:0;background:var(--plane);color:var(--ink);font:14px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif;padding:24px 16px}
 main{max-width:1080px;margin:0 auto}
@@ -47,6 +47,11 @@ footer{color:var(--muted);font-size:12px;margin-top:32px}
 
 <h2>Derniers trades clôturés</h2>
 <div class="card tbl" id="trades"></div>
+
+<h2>Labo : quelle stratégie aurait le mieux marché ?</h2>
+<p class="sub" id="cmpsub">Les mêmes 3 années, frais et taxes inclus. Performance = gain ou perte par rapport à l'argent versé.</p>
+<div class="card" id="cmpchart"></div>
+<div class="card tbl" id="cmptable" style="margin-top:12px"></div>
 
 <h2>Backtest : les mêmes règles sur le passé</h2>
 <p class="sub" id="btsub"></p>
@@ -113,6 +118,30 @@ function table(id,cols,rows,emptyMsg){
   rows.forEach(r=>{const row=el("tr");cols.forEach(c=>{const v=c.f(r);const td=el("td",{class:(c.n?"n ":"")+(c.sign?(c.sign(r)>0?"up":c.sign(r)<0?"down":""):"")},v);row.append(td);});t.append(row);});
   box.append(t);
 }
+
+function multiChart(id,rows){
+  const card=document.getElementById(id);card.textContent="";
+  rows=rows.filter(r=>r.curve&&r.curve.length>1);
+  if(!rows.length){card.append(el("p",{class:"empty"},"Pas encore de comparaison : elle est calculée avec le backtest du dimanche."));return;}
+  const lg=el("div",{class:"legend"});rows.forEach((r,k)=>{const sp=el("span");const i=el("i");i.style.background=`var(--s${k+1})`;sp.append(i,document.createTextNode(r.label));lg.append(sp);});card.append(lg);
+  const W=1000,H=320,L=56,R=12,T=10,B=28,ns="http://www.w3.org/2000/svg";
+  const svg=document.createElementNS(ns,"svg");svg.setAttribute("viewBox",`0 0 ${W} ${H}`);svg.setAttribute("width","100%");svg.setAttribute("role","img");svg.setAttribute("aria-label","Performance comparée des stratégies");
+  const n=rows[0].curve.length;const all=rows.flatMap(r=>r.curve.map(p=>p.pct)).concat([0]);let lo=Math.min(...all),hi=Math.max(...all);const pad=(hi-lo)*0.08||5;lo-=pad;hi+=pad;
+  const x=i=>L+(W-L-R)*i/(n-1),y=v=>T+(H-T-B)*(1-(v-lo)/(hi-lo));
+  const mk=(t,at)=>{const e=document.createElementNS(ns,t);for(const k in at)e.setAttribute(k,at[k]);svg.append(e);return e;};
+  for(let k=0;k<=4;k++){const v=lo+(hi-lo)*k/4;mk("line",{x1:L,x2:W-R,y1:y(v),y2:y(v),stroke:"var(--grid)","stroke-width":1});const t=mk("text",{x:L-8,y:y(v)+4,"text-anchor":"end"});t.textContent=Math.round(v)+" %";}
+  mk("line",{x1:L,x2:W-R,y1:y(0),y2:y(0),stroke:"var(--axis)","stroke-width":1});
+  const c=rows[0].curve;[0,Math.floor((n-1)/2),n-1].forEach(i=>{const t=mk("text",{x:x(i),y:H-8,"text-anchor":i===0?"start":i===n-1?"end":"middle"});t.textContent=c[i].d;});
+  rows.forEach((r,k)=>mk("path",{d:r.curve.map((p,i)=>(i?"L":"M")+x(i).toFixed(1)+" "+y(p.pct).toFixed(1)).join(" "),fill:"none",stroke:`var(--s${k+1})`,"stroke-width":2,"stroke-linejoin":"round"}));
+  const cross=mk("line",{y1:T,y2:H-B,stroke:"var(--axis)","stroke-width":1,visibility:"hidden"});
+  card.append(svg);const tip=el("div",{class:"tip"});card.append(tip);
+  svg.addEventListener("pointermove",ev=>{const rc=svg.getBoundingClientRect();const px=(ev.clientX-rc.left)*W/rc.width;const i=Math.max(0,Math.min(n-1,Math.round((px-L)/(W-L-R)*(n-1))));
+    cross.setAttribute("x1",x(i));cross.setAttribute("x2",x(i));cross.setAttribute("visibility","visible");tip.textContent="";tip.append(el("div",{style:"color:var(--muted)"},c[i].d));
+    rows.map((r,k)=>[r,k]).sort((a,b)=>(b[0].curve[i]||{}).pct-(a[0].curve[i]||{}).pct).forEach(([r,k])=>{const row=el("div");const key=el("i");key.style.cssText=`display:inline-block;width:12px;height:2px;margin-right:6px;vertical-align:middle;background:var(--s${k+1})`;
+      row.append(key,el("b",{},pct((r.curve[i]||{}).pct)),document.createTextNode(" "+r.label));tip.append(row);});
+    tip.style.display="block";tip.style.maxWidth="420px";const cx=x(i)*rc.width/W;tip.style.left=Math.max(0,Math.min(cx+16,rc.width-430))+"px";tip.style.top="40px";});
+  svg.addEventListener("pointerleave",()=>{tip.style.display="none";cross.setAttribute("visibility","hidden");});
+}
 async function get(p){try{const r=await fetch(p+"?t="+Date.now());return r.ok?await r.json():null;}catch(e){return null;}}
 (async()=>{
   const [s,bt]=await Promise.all([get("data/latest.json"),get("data/backtest.json")]);
@@ -129,6 +158,14 @@ async function get(p){try{const r=await fetch(p+"?t="+Date.now());return r.ok?aw
       {h:"Résultat",n:1,f:r=>eur(r.pnl),sign:r=>r.pnl},{h:"R (net)",n:1,f:r=>(r.r>0?"+":"")+num(r.r),sign:r=>r.r}],
       s.recent_trades.slice().reverse(),"Aucun trade clôturé pour l'instant.");
   } else {document.getElementById("asof").textContent="Pas encore de données : le premier passage automatique a lieu après la clôture d'un jour de bourse.";}
+  const cmp=await get("data/compare.json");
+  if(cmp){
+    document.getElementById("cmpsub").textContent=`Du ${cmp.from} au ${cmp.to}, frais et taxes inclus. Performance = gain ou perte par rapport à l'argent versé (le versement mensuel part de 100 € et ajoute 100 € chaque mois).`;
+    multiChart("cmpchart",cmp.rows);
+    table("cmptable",[{h:"Stratégie",f:r=>r.label},{h:"Performance",n:1,f:r=>r.error?"erreur":pct(r.return_pct),sign:r=>r.return_pct},{h:"Versé",n:1,f:r=>eur(r.contributed)},{h:"Valeur finale",n:1,f:r=>eur(r.final)},
+      {h:"Ordres",n:1,f:r=>num(r.trades,0)},{h:"Frais et taxes",n:1,f:r=>eur(r.costs)},{h:"Pire baisse",n:1,f:r=>pct(r.max_drawdown_pct)}],
+      cmp.rows.slice().sort((a,b)=>(b.return_pct??-1e9)-(a.return_pct??-1e9)),"—");
+  } else multiChart("cmpchart",[]);
   if(bt){
     const bm=Object.values(bt.benchmark||{})[0];
     document.getElementById("btsub").textContent=`Du ${bt.from} au ${bt.to}, ${bt.symbols} actions, frais inclus.`+(bm!=null?` Sur la même période, l'indice CAC 40 (hors dividendes) a fait ${pct(bm)}.`:"");
