@@ -1,0 +1,20 @@
+{
+  "universe": "universe.txt",
+  "benchmark": "^FCHI",
+  "capital": 1000,
+  "risk_pct": 1.0,
+  "max_positions": 3,
+  "max_position_pct": 34,
+  "breakout_days": 20,
+  "trend_sma": 50,
+  "atr_mult": 2.0,
+  "target_r": 2.0,
+  "max_hold": 20,
+  "fee_pct": 0.05,
+  "fee_min": 1.5,
+  "slippage_pct": 0.05,
+  "ttf_pct": 0.4,
+  "ttf_exempt": ["AIR.PA", "STMPA.PA", "STLAP.PA", "ERF.PA", "ENX.PA"],
+  "blocked": [],
+  "pause_s": 1.0
+}

@@ -1,0 +1,524 @@
+#!/usr/bin/env python3
+"""Swing trading engine, paper only. Standard library only.
+
+    python3 swing/swing.py run        # after the close: update paper positions, find new signals
+    python3 swing/swing.py backtest   # replay the same rules on the past (default 3 years)
+    python3 swing/swing.py report     # print the current state in plain words
+
+Strategy (config.json, all values editable):
+  Signal   a close above the highest close of the previous `breakout_days`
+           sessions, with the close above its `trend_sma`-day average.
+  Entry    at the next session's open (a pending order, filled on the next run).
+  Stop     entry - `atr_mult` x ATR(14) of the signal day.
+  Target   entry + `target_r` x the risk (R).
+  Time     out at the close after `max_hold` sessions if neither was hit.
+  Size     risk `risk_pct` of equity per trade, whole shares, capped at
+           `max_position_pct` of equity and the cash available.
+  Costs    broker fee per side (pct with a minimum) + French financial
+           transaction tax on buys of taxed French shares + slippage.
+  Same-day stop and target: the stop is assumed first (pessimistic).
+
+Data: Yahoo Finance daily bars (free, unofficial). Offline: --offline DIR
+reads DIR/<SYMBOL>.json chart files. Outputs go to data/.
+
+Paper trading only: this script never talks to a broker. Not financial advice.
+"""
+
+import argparse
+import datetime as dt
+import json
+import math
+import os
+import sys
+import time
+import urllib.parse
+import urllib.request
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+CONFIG = os.path.join(ROOT, "config.json")
+DATA = os.path.join(ROOT, "data")
+UA = "Mozilla/5.0 (compatible; swing-paper/1.0)"
+
+
+# ---------------------------------------------------------------- io
+
+def load_json(path, default=None):
+    if not os.path.exists(path):
+        return default
+    with open(path, encoding="utf-8") as fh:
+        return json.load(fh)
+
+
+def save_json(path, doc):
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    tmp = path + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as fh:
+        json.dump(doc, fh, indent=1, ensure_ascii=False)
+    os.replace(tmp, path)
+
+
+def read_universe(path):
+    out = []
+    with open(path, encoding="utf-8") as fh:
+        for ln in fh:
+            ln = ln.strip()
+            if ln and not ln.startswith("#"):
+                sym, _, name = ln.partition("|")
+                out.append((sym.strip().upper(), name.strip() or sym.strip()))
+    return out
+
+
+# ---------------------------------------------------------------- data
+
+def fetch_chart(sym, rng, pause):
+    last = "no answer"
+    for attempt in range(4):
+        host = ("query2", "query1")[attempt % 2]
+        url = "https://%s.finance.yahoo.com/v8/finance/chart/%s?range=%s&interval=1d" % (
+            host, urllib.parse.quote(sym), rng)
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/json"})
+            with urllib.request.urlopen(req, timeout=30) as r:
+                return json.loads(r.read().decode("utf-8"))
+        except Exception as e:  # 429s and timeouts: back off and retry
+            last = str(e)
+            time.sleep(pause * (attempt + 2) * 2)
+    raise RuntimeError("%s: %s" % (sym, last))
+
+
+def bars_from_chart(doc):
+    res = (doc.get("chart") or {}).get("result") or []
+    if not res:
+        return []
+    r = res[0]
+    q = (r.get("indicators", {}).get("quote") or [{}])[0]
+    off = (r.get("meta") or {}).get("gmtoffset") or 0
+    bars = []
+    for i, ts in enumerate(r.get("timestamp") or []):
+        o, h, l, c = (q.get(k, [None])[i] if i < len(q.get(k) or []) else None
+                      for k in ("open", "high", "low", "close"))
+        if None in (o, h, l, c) or min(o, h, l, c) <= 0:
+            continue
+        day = (dt.datetime(1970, 1, 1) + dt.timedelta(seconds=ts + off)).date().isoformat()
+        if bars and bars[-1]["d"] == day:
+            bars[-1] = {"d": day, "o": o, "h": h, "l": l, "c": c}
+        else:
+            bars.append({"d": day, "o": o, "h": h, "l": l, "c": c})
+    return bars
+
+
+def load_bars(universe, cfg, offline=None, rng="5y"):
+    bars, errors = {}, []
+    for sym, _ in universe:
+        try:
+            if offline:
+                doc = load_json(os.path.join(offline, sym + ".json"))
+                if doc is None:
+                    raise RuntimeError("no offline file")
+            else:
+                doc = fetch_chart(sym, rng, cfg.get("pause_s", 1.0))
+                time.sleep(cfg.get("pause_s", 1.0))
+            b = bars_from_chart(doc)
+            if len(b) < cfg["trend_sma"] + 20:
+                raise RuntimeError("only %d daily bars" % len(b))
+            bars[sym] = b
+        except Exception as e:
+            errors.append("%s: %s" % (sym, e))
+    return bars, errors
+
+
+# ---------------------------------------------------------------- indicators
+
+def atr(b, i, n=14):
+    if i < n:
+        return None
+    trs = []
+    for k in range(i - n + 1, i + 1):
+        pc = b[k - 1]["c"]
+        trs.append(max(b[k]["h"] - b[k]["l"], abs(b[k]["h"] - pc), abs(b[k]["l"] - pc)))
+    return sum(trs) / n
+
+
+def signal(b, i, cfg):
+    """A breakout signal on bar i (its close), or None."""
+    n, t = cfg["breakout_days"], cfg["trend_sma"]
+    if i < max(n, t, 15):
+        return None
+    prior_high = max(x["c"] for x in b[i - n:i])
+    sma = sum(x["c"] for x in b[i - t + 1:i + 1]) / t
+    c = b[i]["c"]
+    if c <= prior_high or c <= sma:
+        return None
+    a = atr(b, i)
+    if not a:
+        return None
+    return {"date": b[i]["d"], "close": round(c, 4), "prior_high": round(prior_high, 4),
+            "sma": round(sma, 4), "atr": round(a, 4), "strength": round((c - prior_high) / a, 3)}
+
+
+# ---------------------------------------------------------------- costs
+
+def fee(value, cfg):
+    return max(value * cfg["fee_pct"] / 100.0, cfg["fee_min"])
+
+
+def buy_tax(sym, value, cfg):
+    if sym.endswith(".PA") and sym not in set(cfg.get("ttf_exempt", [])):
+        return value * cfg["ttf_pct"] / 100.0
+    return 0.0
+
+
+# ---------------------------------------------------------------- engine
+
+class Book(object):
+    """Paper account: cash, open positions, pending orders, closed trades."""
+
+    def __init__(self, cfg, state=None):
+        s = state or {}
+        self.cfg = cfg
+        self.cash = s.get("cash", cfg["capital"])
+        self.positions = s.get("positions", [])
+        self.pending = s.get("pending", [])
+        self.trades = s.get("trades", [])
+        self.equity = s.get("equity", [])
+        self.last_date = s.get("last_date")
+        self.log = []
+
+    def state(self):
+        return {"cash": round(self.cash, 2), "positions": self.positions, "pending": self.pending,
+                "trades": self.trades, "equity": self.equity, "last_date": self.last_date}
+
+    def mark(self, bars, day):
+        value = 0.0
+        for p in self.positions:
+            b = bar_on(bars.get(p["symbol"]), day) or {"c": p["last"]}
+            p["last"] = round(b["c"], 4)
+            value += p["qty"] * b["c"]
+        eq = round(self.cash + value, 2)
+        if self.equity and self.equity[-1]["d"] == day:
+            self.equity[-1] = {"d": day, "equity": eq, "cash": round(self.cash, 2)}
+        else:
+            self.equity.append({"d": day, "equity": eq, "cash": round(self.cash, 2)})
+        return eq
+
+    def close(self, p, price, day, reason):
+        slip = self.cfg["slippage_pct"] / 100.0
+        px = price * (1 - slip)
+        value = p["qty"] * px
+        f = fee(value, self.cfg)
+        self.cash += value - f
+        pnl = value - f - p["cost"]
+        r = pnl / (p["qty"] * p["risk_per_share"]) if p["risk_per_share"] else 0   # net of all costs
+        t = dict(p, exit=round(px, 4), exit_date=day, reason=reason, exit_fee=round(f, 2),
+                 pnl=round(pnl, 2), r=round(r, 3), pnl_pct=round(100 * pnl / p["cost"], 2))
+        t.pop("last", None)
+        self.trades.append(t)
+        self.log.append("%s close %s %d @ %.2f (%s): %+.2f EUR, %+.2fR" % (
+            day, p["symbol"], p["qty"], px, reason, pnl, r))
+
+    def step(self, bars, day):
+        """Process one session `day`: fill pending, manage positions, mark, new signals."""
+        cfg = self.cfg
+        # 1. fill pending orders at today's open
+        still = []
+        for o in self.pending:
+            b = bar_on(bars.get(o["symbol"]), day)
+            if not b:
+                o["age"] = o.get("age", 0) + 1
+                if o["age"] <= 3:
+                    still.append(o)
+                continue
+            self.open_position(o, b, day)
+        self.pending = still
+        # 2. manage open positions on today's bar
+        keep = []
+        for p in self.positions:
+            b = bar_on(bars.get(p["symbol"]), day)
+            if not b:
+                keep.append(p)
+                continue
+            if p["entry_date"] != day:
+                p["held"] = p.get("held", 0) + 1
+            if b["o"] <= p["stop"]:
+                self.close(p, b["o"], day, "stop (gap)")
+            elif b["l"] <= p["stop"]:
+                self.close(p, p["stop"], day, "stop")
+            elif b["o"] >= p["target"]:
+                self.close(p, b["o"], day, "target (gap)")
+            elif b["h"] >= p["target"]:
+                self.close(p, p["target"], day, "target")
+            elif p["held"] >= cfg["max_hold"]:
+                self.close(p, b["c"], day, "time")
+            else:
+                keep.append(p)
+        self.positions = keep
+        eq = self.mark(bars, day)
+        # 3. new signals on today's close -> pending orders for the next open
+        busy = {p["symbol"] for p in self.positions} | {o["symbol"] for o in self.pending}
+        slots = cfg["max_positions"] - len(self.positions) - len(self.pending)
+        cands = []
+        for sym, b in bars.items():
+            if sym in busy or sym in cfg.get("blocked", []) or sym == cfg.get("benchmark"):
+                continue
+            i = index_on(b, day)
+            if i is None:
+                continue
+            s = signal(b, i, cfg)
+            if s:
+                cands.append(dict(s, symbol=sym))
+        cands.sort(key=lambda s: -s["strength"])
+        new = []
+        for s in cands:
+            if slots <= 0:
+                break
+            order = self.size(s, eq)
+            if order:
+                self.pending.append(order)
+                new.append(order)
+                slots -= 1
+        self.last_date = day
+        return cands, new
+
+    def size(self, s, equity):
+        cfg = self.cfg
+        risk_ps = cfg["atr_mult"] * s["atr"]
+        if risk_ps <= 0:
+            return None
+        risk_eur = equity * cfg["risk_pct"] / 100.0
+        qty = int(risk_eur // risk_ps)
+        cap = min(equity * cfg["max_position_pct"] / 100.0, self.cash * 0.98)
+        qty = min(qty, int(cap // (s["close"] * 1.01)))
+        if qty < 1:
+            self.log.append("%s skip %s: one share (%.2f) does not fit the risk or position limits"
+                            % (s["date"], s["symbol"], s["close"]))
+            return None
+        return {"symbol": s["symbol"], "qty": qty, "signal": s, "risk_per_share": round(risk_ps, 4),
+                "created": s["date"], "age": 0}
+
+    def open_position(self, o, b, day):
+        cfg = self.cfg
+        px = b["o"] * (1 + cfg["slippage_pct"] / 100.0)
+        qty = o["qty"]
+        value = qty * px
+        f = fee(value, cfg)
+        tax = buy_tax(o["symbol"], value, cfg)
+        if value + f + tax > self.cash:
+            qty = int((self.cash - f - tax) // (px * 1.01))
+            if qty < 1:
+                self.log.append("%s skip %s: not enough cash at the open" % (day, o["symbol"]))
+                return
+            value = qty * px
+            f, tax = fee(value, cfg), buy_tax(o["symbol"], value, cfg)
+        rps = o["risk_per_share"]
+        stop = round(px - rps, 2)
+        target = round(px + cfg["target_r"] * rps, 2)
+        self.cash -= value + f + tax
+        p = {"symbol": o["symbol"], "qty": qty, "entry": round(px, 4), "entry_date": day, "stop": stop,
+             "target": target, "risk_per_share": rps, "cost": round(value + f + tax, 2),
+             "entry_fee": round(f, 2), "entry_tax": round(tax, 2), "held": 0, "last": round(b["c"], 4),
+             "signal_date": o["created"]}
+        self.positions.append(p)
+        self.log.append("%s open %s %d @ %.2f, stop %.2f, target %.2f (fee %.2f, tax %.2f)" % (
+            day, o["symbol"], qty, px, stop, target, f, tax))
+        # the entry bar's own low and high are checked by step() right after (stop first)
+
+
+def bar_on(b, day):
+    i = index_on(b, day) if b else None
+    return b[i] if i is not None else None
+
+
+def index_on(b, day):
+    lo, hi = 0, len(b) - 1
+    while lo <= hi:
+        mid = (lo + hi) // 2
+        if b[mid]["d"] == day:
+            return mid
+        if b[mid]["d"] < day:
+            lo = mid + 1
+        else:
+            hi = mid - 1
+    return None
+
+
+def all_days(bars):
+    return sorted({x["d"] for b in bars.values() for x in b})
+
+
+# ---------------------------------------------------------------- stats
+
+def stats(trades, equity, capital):
+    closed = trades
+    wins = [t for t in closed if t["pnl"] > 0]
+    rs = [t["r"] for t in closed]
+    peak, mdd = capital, 0.0
+    for e in equity:
+        peak = max(peak, e["equity"])
+        mdd = min(mdd, (e["equity"] - peak) / peak)
+    fees = sum(t.get("entry_fee", 0) + t.get("exit_fee", 0) + t.get("entry_tax", 0) for t in closed)
+    last = equity[-1]["equity"] if equity else capital
+    gross_win = sum(t["pnl"] for t in wins)
+    gross_loss = -sum(t["pnl"] for t in closed if t["pnl"] <= 0)
+    return {"trades": len(closed), "wins": len(wins),
+            "win_rate": round(100.0 * len(wins) / len(closed), 1) if closed else None,
+            "avg_r": round(sum(rs) / len(rs), 3) if rs else None,
+            "profit_factor": round(gross_win / gross_loss, 2) if gross_loss else None,
+            "total_pnl": round(sum(t["pnl"] for t in closed), 2),
+            "costs": round(fees, 2), "equity": round(last, 2),
+            "return_pct": round(100.0 * (last - capital) / capital, 2),
+            "max_drawdown_pct": round(100.0 * mdd, 2)}
+
+
+def benchmark(bars, sym, start, end):
+    b = bars.get(sym)
+    if not b:
+        return None
+    i0 = next((i for i, x in enumerate(b) if x["d"] >= start), None)
+    i1 = index_on(b, end) if end else len(b) - 1
+    if i0 is None or i1 is None:
+        return None
+    return round(100.0 * (b[i1]["c"] / b[i0]["o"] - 1), 2)
+
+
+# ---------------------------------------------------------------- commands
+
+def cmd_run(a, cfg, universe):
+    bars, errors = load_bars(universe, cfg, a.offline, "1y")
+    if not bars:
+        print("No data at all: %s" % "; ".join(errors[:5]))
+        return 1
+    statep = os.path.join(DATA, "state.json")
+    book = Book(cfg, load_json(statep))
+    days = all_days(bars)
+    if a.until:
+        days = [d for d in days if d <= a.until]
+    todo = [d for d in days if not book.last_date or d > book.last_date]
+    if not book.last_date:
+        todo = todo[-1:]     # first run: start from the latest session, no back-fill
+    cands, new = [], []
+    for d in todo:
+        cands, new = book.step(bars, d)
+    save_json(statep, book.state())
+    day = book.last_date
+    snap = {"as_of": day, "generated_utc": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+            "config": cfg, "stats": stats(book.trades, book.equity, cfg["capital"]),
+            "positions": book.positions, "pending": book.pending, "signals": cands,
+            "recent_trades": book.trades[-20:], "equity": book.equity, "log": book.log,
+            "data_errors": errors}
+    save_json(os.path.join(DATA, "latest.json"), snap)
+    hist = load_json(os.path.join(DATA, "log.json"), [])
+    hist.extend(book.log)
+    save_json(os.path.join(DATA, "log.json"), hist[-500:])
+    print_report(snap)
+    return 0
+
+
+def cmd_backtest(a, cfg, universe):
+    bars, errors = load_bars(universe, cfg, a.offline, "5y")
+    if not bars:
+        print("No data at all: %s" % "; ".join(errors[:5]))
+        return 1
+    days = all_days(bars)
+    start = (dt.date.fromisoformat(days[-1]) - dt.timedelta(days=int(365 * a.years))).isoformat()
+    days = [d for d in days if d >= start]
+    book = Book(cfg)
+    for d in days:
+        book.step(bars, d)
+    for p in list(book.positions):          # close what is left at the last close
+        b = bar_on(bars[p["symbol"]], days[-1])
+        book.close(p, b["c"], days[-1], "end of test")
+    book.positions = []
+    book.mark(bars, days[-1])
+    s = stats(book.trades, book.equity, cfg["capital"])
+    by_year = {}
+    for t in book.trades:
+        y = t["exit_date"][:4]
+        by_year.setdefault(y, []).append(t)
+    years = {y: {"trades": len(ts), "pnl": round(sum(t["pnl"] for t in ts), 2),
+                 "win_rate": round(100.0 * sum(1 for t in ts if t["pnl"] > 0) / len(ts), 1)}
+             for y, ts in sorted(by_year.items())}
+    doc = {"generated_utc": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+           "from": days[0], "to": days[-1], "years": a.years, "config": cfg, "stats": s,
+           "by_year": years, "benchmark": {cfg.get("benchmark", "^FCHI"): benchmark(
+               bars, cfg.get("benchmark", "^FCHI"), days[0], days[-1])},
+           "equity": book.equity[::max(1, len(book.equity) // 400)] + book.equity[-1:],
+           "trades": book.trades, "symbols": len(bars), "data_errors": errors}
+    save_json(os.path.join(DATA, "backtest.json"), doc)
+    print("Backtest %s to %s on %d stocks (paper, costs included)." % (days[0], days[-1], len(bars)))
+    print_stats(s, cfg)
+    for y, v in years.items():
+        print("  %s: %d trades, win rate %.1f%%, P&L %+.2f EUR" % (y, v["trades"], v["win_rate"], v["pnl"]))
+    bm = list(doc["benchmark"].values())[0]
+    if bm is not None:
+        print("Buy and hold of the index over the same period: %+.2f%% (no dividends)." % bm)
+    print(verdict(s))
+    return 0
+
+
+def print_stats(s, cfg):
+    if not s["trades"]:
+        print("No closed trade.")
+        return
+    print("%d trades, win rate %.1f%%, average %+.2fR, profit factor %s." % (
+        s["trades"], s["win_rate"], s["avg_r"], s["profit_factor"]))
+    print("P&L %+.2f EUR on %.0f EUR (%+.2f%%), costs paid %.2f EUR, max drawdown %.2f%%." % (
+        s["total_pnl"], cfg["capital"], s["return_pct"], s["costs"], s["max_drawdown_pct"]))
+
+
+def verdict(s):
+    if s["trades"] < 30:
+        return "Verdict: fewer than 30 trades, too few to judge. Keep it on paper."
+    if (s["avg_r"] or 0) <= 0.1 or (s["profit_factor"] or 0) < 1.2:
+        return "Verdict: no edge after costs (average R %+.2f, profit factor %s). No real money." % (
+            s["avg_r"] or 0, s["profit_factor"])
+    return ("Verdict: positive after costs on %d trades. Past results, not a promise: "
+            "confirm on paper going forward before any real money, and start small." % s["trades"])
+
+
+def print_report(snap):
+    cfg = snap["config"]
+    print("Paper account as of %s." % snap["as_of"])
+    print_stats(snap["stats"], cfg)
+    print("Equity %.2f EUR, cash %.2f EUR." % (snap["stats"]["equity"],
+                                               snap["equity"][-1]["cash"] if snap["equity"] else cfg["capital"]))
+    for p in snap["positions"]:
+        print("  open %s x%d since %s: entry %.2f, last %.2f, stop %.2f, target %.2f" % (
+            p["symbol"], p["qty"], p["entry_date"], p["entry"], p["last"], p["stop"], p["target"]))
+    for o in snap["pending"]:
+        print("  pending buy %s x%d at the next open (signal %s)" % (o["symbol"], o["qty"], o["created"]))
+    for line in snap["log"]:
+        print("  " + line)
+    if snap["data_errors"]:
+        print("Data errors: %s" % "; ".join(snap["data_errors"][:8]))
+    print(verdict(snap["stats"]))
+
+
+def cmd_report(a, cfg, universe):
+    snap = load_json(os.path.join(DATA, "latest.json"))
+    if not snap:
+        print("No run yet.")
+        return 1
+    print_report(snap)
+    return 0
+
+
+def main(argv=None):
+    ap = argparse.ArgumentParser(description="Swing trading engine, paper only.")
+    ap.add_argument("cmd", choices=["run", "backtest", "report"])
+    ap.add_argument("--offline", help="folder of <SYMBOL>.json Yahoo chart files")
+    ap.add_argument("--years", type=float, default=3)
+    ap.add_argument("--until", help="run: stop at this date (tests)")
+    ap.add_argument("--config", default=CONFIG)
+    a = ap.parse_args(argv)
+    cfg = load_json(a.config)
+    universe = read_universe(os.path.join(ROOT, cfg.get("universe", "universe.txt")))
+    bm = cfg.get("benchmark")
+    if bm and bm not in [u[0] for u in universe]:
+        universe.append((bm, "benchmark"))
+    if a.cmd == "run":
+        universe = [u for u in universe if u[0] != bm] + ([(bm, "benchmark")] if bm else [])
+    return {"run": cmd_run, "backtest": cmd_backtest, "report": cmd_report}[a.cmd](a, cfg, universe)
+
+
+if __name__ == "__main__":
+    sys.exit(main())

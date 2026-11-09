@@ -1,0 +1,42 @@
+# CAC 40 - composition au 5 novembre 2026 (prochaine revue Euronext : 10 decembre 2026)
+# Symboles Yahoo Finance. ArcelorMittal est lu sur Amsterdam (MT.AS), meme horaire Euronext.
+AC.PA|Accor
+AI.PA|Air Liquide
+AIR.PA|Airbus
+MT.AS|ArcelorMittal
+CS.PA|AXA
+BNP.PA|BNP Paribas
+EN.PA|Bouygues
+BVI.PA|Bureau Veritas
+CAP.PA|Capgemini
+CA.PA|Carrefour
+ACA.PA|Credit Agricole
+BN.PA|Danone
+DSY.PA|Dassault Systemes
+FGR.PA|Eiffage
+ENGI.PA|Engie
+EL.PA|EssilorLuxottica
+ERF.PA|Eurofins Scientific
+ENX.PA|Euronext
+RMS.PA|Hermes
+KER.PA|Kering
+OR.PA|L'Oreal
+LR.PA|Legrand
+MC.PA|LVMH
+ML.PA|Michelin
+ORA.PA|Orange
+RI.PA|Pernod Ricard
+PUB.PA|Publicis
+RNO.PA|Renault
+SAF.PA|Safran
+SGO.PA|Saint-Gobain
+SAN.PA|Sanofi
+SU.PA|Schneider Electric
+GLE.PA|Societe Generale
+STLAP.PA|Stellantis
+STMPA.PA|STMicroelectronics
+HO.PA|Thales
+TTE.PA|TotalEnergies
+URW.PA|Unibail-Rodamco-Westfield
+VIE.PA|Veolia
+DG.PA|Vinci

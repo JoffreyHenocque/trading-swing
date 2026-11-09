@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Swing CAC 40 — suivi</title>
+<style>
+:root{color-scheme:light;--surface:#fcfcfb;--plane:#f9f9f7;--ink:#0b0b0b;--ink2:#52514e;--muted:#898781;
+--grid:#e1e0d9;--axis:#c3c2b7;--border:rgba(11,11,11,.10);--s1:#2a78d6;--s2:#eb6834;--good:#006300;--bad:#d03b3b}
+@media (prefers-color-scheme:dark){:root{color-scheme:dark;--surface:#1a1a19;--plane:#0d0d0d;--ink:#f0efec;--ink2:#c3c2b7;
+--grid:#2c2c2a;--axis:#383835;--border:rgba(255,255,255,.10);--s1:#3987e5;--s2:#d95926;--good:#0ca30c;--bad:#e66767}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--plane);color:var(--ink);font:14px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif;padding:24px 16px}
+main{max-width:1080px;margin:0 auto}
+h1{font-size:22px;margin:0 0 4px}h2{font-size:16px;margin:32px 0 12px}
+.sub{color:var(--ink2);margin:0 0 20px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.tile{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:12px 14px}
+.tile .k{color:var(--ink2);font-size:12px}.tile .v{font-size:22px;font-weight:600;margin-top:2px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:16px;position:relative}
+.verdict{border-left:4px solid var(--muted);padding:10px 14px;background:var(--surface);border-radius:6px;margin-top:16px}
+.up{color:var(--good)}.down{color:var(--bad)}
+.tbl{overflow-x:auto}table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--grid);white-space:nowrap}th{color:var(--ink2);font-weight:500;font-size:12px}
+td.n,th.n{text-align:right}
+svg text{fill:var(--muted);font-size:11px}
+.tip{position:absolute;pointer-events:none;background:var(--surface);border:1px solid var(--border);border-radius:8px;
+padding:8px 10px;font-size:12px;box-shadow:0 4px 14px rgba(0,0,0,.12);display:none;min-width:150px}
+.tip b{font-size:14px}.legend{display:flex;gap:16px;color:var(--ink2);font-size:12px;margin-bottom:8px;flex-wrap:wrap}
+.legend i{display:inline-block;width:14px;height:2px;vertical-align:middle;margin-right:6px}
+.empty{color:var(--ink2);padding:8px 0}
+footer{color:var(--muted);font-size:12px;margin-top:32px}
+</style>
+</head>
+<body>
+<main>
+<h1>Swing CAC 40 — compte fictif</h1>
+<p class="sub" id="asof">Chargement…</p>
+<div class="tiles" id="tiles"></div>
+<div class="verdict" id="verdict"></div>
+
+<h2>Évolution du capital fictif</h2>
+<div class="card" id="eqcard"></div>
+
+<h2>Positions ouvertes et ordres en attente</h2>
+<div class="card tbl" id="open"></div>
+
+<h2>Derniers trades clôturés</h2>
+<div class="card tbl" id="trades"></div>
+
+<h2>Backtest : les mêmes règles sur le passé</h2>
+<p class="sub" id="btsub"></p>
+<div class="tiles" id="bttiles"></div>
+<div class="verdict" id="btverdict"></div>
+<div class="card" id="btcard" style="margin-top:12px"></div>
+<div class="card tbl" id="btyears" style="margin-top:12px"></div>
+
+<footer>Paper trading uniquement, données Yahoo Finance (gratuites, non officielles). Frais IBKR et taxe sur les transactions financières inclus. Ce n'est pas un conseil financier.</footer>
+</main>
+<script>
+const eur = v => (v==null?"—":v.toLocaleString("fr-FR",{minimumFractionDigits:2,maximumFractionDigits:2})+" €");
+const pct = v => (v==null?"—":(v>0?"+":"")+v.toLocaleString("fr-FR",{maximumFractionDigits:2})+" %");
+const num = (v,d=2) => (v==null?"—":v.toLocaleString("fr-FR",{maximumFractionDigits:d}));
+const el = (t,a={},txt) => {const e=document.createElement(t);for(const k in a)e.setAttribute(k,a[k]);if(txt!=null)e.textContent=txt;return e;};
+const REASONS={"stop":"stop","stop (gap)":"stop (gap)","target":"objectif","target (gap)":"objectif (gap)","time":"durée max","end of test":"fin du test"};
+
+function tiles(id,s,cap){
+  const box=document.getElementById(id);box.textContent="";
+  const items=[["Capital",eur(s.equity),s.return_pct],["Performance",pct(s.return_pct),s.return_pct],
+    ["Trades clôturés",num(s.trades,0)],["Taux de réussite",s.win_rate==null?"—":num(s.win_rate,1)+" %"],
+    ["Gain moyen / trade",s.avg_r==null?"—":(s.avg_r>0?"+":"")+num(s.avg_r)+" R",s.avg_r],
+    ["Frais et taxes payés",eur(s.costs)],["Pire baisse",pct(s.max_drawdown_pct)]];
+  for(const [k,v,sign] of items){const t=el("div",{class:"tile"});t.append(el("div",{class:"k"},k));
+    const vv=el("div",{class:"v"+(sign>0?" up":sign<0?" down":"")},v);t.append(vv);box.append(t);}
+}
+function verdict(id,s){
+  const v=document.getElementById(id);
+  if(!s.trades||s.trades<30){v.textContent="Verdict : moins de 30 trades clôturés, trop peu pour juger. On reste sur papier.";return;}
+  if((s.avg_r||0)<=0.1||(s.profit_factor||0)<1.2){v.textContent=`Verdict : aucun avantage une fois les frais payés (gain moyen ${num(s.avg_r)} R, facteur de profit ${num(s.profit_factor)}). Pas d'argent réel.`;return;}
+  v.textContent=`Verdict : positif après frais sur ${s.trades} trades. Résultats passés, pas une promesse : confirmer sur papier avant tout argent réel, et commencer petit.`;
+}
+function lineChart(id,pts,capital,label){
+  const card=document.getElementById(id);card.textContent="";
+  if(!pts||pts.length<2){card.append(el("p",{class:"empty"},"Pas encore assez de données : la courbe apparaîtra après quelques séances."));return;}
+  const lg=el("div",{class:"legend"});const a=el("span");const ia=el("i");ia.style.background="var(--s1)";a.append(ia,document.createTextNode(label));
+  const b=el("span");const ib=el("i");ib.style.borderTop="2px dashed var(--muted)";ib.style.height="0";b.append(ib,document.createTextNode("Capital de départ"));lg.append(a,b);card.append(lg);
+  const W=1000,H=300,L=64,R=12,T=10,B=28;const ns="http://www.w3.org/2000/svg";
+  const svg=document.createElementNS(ns,"svg");svg.setAttribute("viewBox",`0 0 ${W} ${H}`);svg.setAttribute("width","100%");svg.setAttribute("role","img");
+  svg.setAttribute("aria-label",label+" de "+pts[0].d+" à "+pts[pts.length-1].d);
+  const vals=pts.map(p=>p.equity).concat([capital]);let lo=Math.min(...vals),hi=Math.max(...vals);const pad=(hi-lo)*0.08||10;lo-=pad;hi+=pad;
+  const x=i=>L+(W-L-R)*i/(pts.length-1),y=v=>T+(H-T-B)*(1-(v-lo)/(hi-lo));
+  const mk=(t,at)=>{const e=document.createElementNS(ns,t);for(const k in at)e.setAttribute(k,at[k]);svg.append(e);return e;};
+  for(let k=0;k<=4;k++){const v=lo+(hi-lo)*k/4;mk("line",{x1:L,x2:W-R,y1:y(v),y2:y(v),stroke:"var(--grid)","stroke-width":1});
+    const t=mk("text",{x:L-8,y:y(v)+4,"text-anchor":"end"});t.textContent=Math.round(v).toLocaleString("fr-FR")+" €";}
+  [0,Math.floor((pts.length-1)/2),pts.length-1].forEach(i=>{const t=mk("text",{x:x(i),y:H-8,"text-anchor":i===0?"start":i===pts.length-1?"end":"middle"});t.textContent=pts[i].d;});
+  mk("line",{x1:L,x2:W-R,y1:y(capital),y2:y(capital),stroke:"var(--muted)","stroke-dasharray":"4 4","stroke-width":1});
+  mk("path",{d:pts.map((p,i)=>(i?"L":"M")+x(i).toFixed(1)+" "+y(p.equity).toFixed(1)).join(" "),fill:"none",stroke:"var(--s1)","stroke-width":2,"stroke-linejoin":"round"});
+  const cross=mk("line",{y1:T,y2:H-B,stroke:"var(--axis)","stroke-width":1,visibility:"hidden"});
+  const dot=mk("circle",{r:4,fill:"var(--s1)",stroke:"var(--surface)","stroke-width":2,visibility:"hidden"});
+  card.append(svg);const tip=el("div",{class:"tip"});card.append(tip);
+  svg.addEventListener("pointermove",ev=>{const r=svg.getBoundingClientRect();const px=(ev.clientX-r.left)*W/r.width;
+    const i=Math.max(0,Math.min(pts.length-1,Math.round((px-L)/(W-L-R)*(pts.length-1))));const p=pts[i];
+    cross.setAttribute("x1",x(i));cross.setAttribute("x2",x(i));cross.setAttribute("visibility","visible");
+    dot.setAttribute("cx",x(i));dot.setAttribute("cy",y(p.equity));dot.setAttribute("visibility","visible");
+    tip.textContent="";tip.append(el("b",{},eur(p.equity)),el("div",{},label),el("div",{style:"color:var(--muted)"},p.d));
+    tip.style.display="block";const cx=x(i)*r.width/W;tip.style.left=Math.min(cx+16,r.width-170)+"px";tip.style.top="40px";});
+  svg.addEventListener("pointerleave",()=>{tip.style.display="none";cross.setAttribute("visibility","hidden");dot.setAttribute("visibility","hidden");});
+}
+function table(id,cols,rows,emptyMsg){
+  const box=document.getElementById(id);box.textContent="";
+  if(!rows.length){box.append(el("p",{class:"empty"},emptyMsg));return;}
+  const t=el("table");const tr=el("tr");cols.forEach(c=>tr.append(el("th",{class:c.n?"n":""},c.h)));t.append(tr);
+  rows.forEach(r=>{const row=el("tr");cols.forEach(c=>{const v=c.f(r);const td=el("td",{class:(c.n?"n ":"")+(c.sign?(c.sign(r)>0?"up":c.sign(r)<0?"down":""):"")},v);row.append(td);});t.append(row);});
+  box.append(t);
+}
+async function get(p){try{const r=await fetch(p+"?t="+Date.now());return r.ok?await r.json():null;}catch(e){return null;}}
+(async()=>{
+  const [s,bt]=await Promise.all([get("data/latest.json"),get("data/backtest.json")]);
+  if(s){
+    document.getElementById("asof").textContent=`Dernière séance analysée : ${s.as_of} · capital de départ ${eur(s.config.capital)} · ${s.config.max_positions} positions max · risque ${s.config.risk_pct} % par trade`;
+    tiles("tiles",s.stats,s.config.capital);verdict("verdict",s.stats);
+    lineChart("eqcard",s.equity,s.config.capital,"Compte fictif");
+    const open=s.positions.map(p=>({t:"Ouverte",sym:p.symbol,qty:p.qty,d:p.entry_date,e:p.entry,last:p.last,stop:p.stop,tg:p.target}))
+      .concat(s.pending.map(o=>({t:"En attente (achat à l'ouverture)",sym:o.symbol,qty:o.qty,d:o.created,e:null,last:o.signal.close,stop:null,tg:null})));
+    table("open",[{h:"Statut",f:r=>r.t},{h:"Action",f:r=>r.sym},{h:"Qté",n:1,f:r=>num(r.qty,0)},{h:"Depuis",f:r=>r.d},
+      {h:"Entrée",n:1,f:r=>r.e==null?"—":num(r.e)},{h:"Dernier",n:1,f:r=>num(r.last)},{h:"Stop",n:1,f:r=>r.stop==null?"—":num(r.stop)},{h:"Objectif",n:1,f:r=>r.tg==null?"—":num(r.tg)}],
+      open,"Aucune position ouverte ni ordre en attente.");
+    table("trades",[{h:"Action",f:r=>r.symbol},{h:"Entrée",f:r=>r.entry_date},{h:"Sortie",f:r=>r.exit_date},{h:"Motif",f:r=>REASONS[r.reason]||r.reason},
+      {h:"Résultat",n:1,f:r=>eur(r.pnl),sign:r=>r.pnl},{h:"R (net)",n:1,f:r=>(r.r>0?"+":"")+num(r.r),sign:r=>r.r}],
+      s.recent_trades.slice().reverse(),"Aucun trade clôturé pour l'instant.");
+  } else {document.getElementById("asof").textContent="Pas encore de données : le premier passage automatique a lieu après la clôture d'un jour de bourse.";}
+  if(bt){
+    const bm=Object.values(bt.benchmark||{})[0];
+    document.getElementById("btsub").textContent=`Du ${bt.from} au ${bt.to}, ${bt.symbols} actions, frais inclus.`+(bm!=null?` Sur la même période, l'indice CAC 40 (hors dividendes) a fait ${pct(bm)}.`:"");
+    tiles("bttiles",bt.stats,bt.config.capital);verdict("btverdict",bt.stats);
+    lineChart("btcard",bt.equity,bt.config.capital,"Backtest");
+    table("btyears",[{h:"Année",f:r=>r[0]},{h:"Trades",n:1,f:r=>num(r[1].trades,0)},{h:"Taux de réussite",n:1,f:r=>num(r[1].win_rate,1)+" %"},{h:"Résultat",n:1,f:r=>eur(r[1].pnl),sign:r=>r[1].pnl}],
+      Object.entries(bt.by_year||{}),"—");
+  } else {document.getElementById("btsub").textContent="Pas encore de backtest : il tourne automatiquement chaque dimanche, ou à la demande.";}
+})();
+</script>
+</body>
+</html>
