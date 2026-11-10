@@ -1,3 +1,6 @@
 [
- "2026-11-09 skip AIR.PA: one share (206.00) does not fit the risk or position limits"
+ "2026-11-09 skip AIR.PA: one share (206.00) does not fit the risk or position limits",
+ "2026-11-10 open VIE.PA 9 @ 34.71, stop 33.63, target 36.87 (fee 1.50, tax 1.25)",
+ "2026-11-10 open ENGI.PA 9 @ 24.91, stop 23.80, target 27.13 (fee 1.50, tax 0.90)",
+ "2026-11-10 open AC.PA 3 @ 51.33, stop 48.69, target 56.60 (fee 1.50, tax 0.62)"
 ]
