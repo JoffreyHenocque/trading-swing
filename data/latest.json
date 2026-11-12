@@ -1,6 +1,6 @@
 {
- "as_of": "2026-11-10",
- "generated_utc": "2026-11-11T23:04:50Z",
+ "as_of": "2026-11-12",
+ "generated_utc": "2026-11-12T22:28:06Z",
  "config": {
   "universe": "universe.txt",
   "benchmark": "^FCHI",
@@ -143,8 +143,8 @@
   "profit_factor": null,
   "total_pnl": 0,
   "costs": 0,
-  "equity": 989.87,
-  "return_pct": -1.01,
+  "equity": 996.5,
+  "return_pct": -0.35,
   "max_drawdown_pct": -1.01
  },
  "positions": [
@@ -159,8 +159,8 @@
    "cost": 315.12,
    "entry_fee": 1.5,
    "entry_tax": 1.25,
-   "held": 0,
-   "last": 34.29,
+   "held": 2,
+   "last": 34.66,
    "signal_date": "2026-11-09"
   },
   {
@@ -174,8 +174,8 @@
    "cost": 226.61,
    "entry_fee": 1.5,
    "entry_tax": 0.9,
-   "held": 0,
-   "last": 24.64,
+   "held": 2,
+   "last": 25.14,
    "signal_date": "2026-11-09"
   },
   {
@@ -189,13 +189,95 @@
    "cost": 156.09,
    "entry_fee": 1.5,
    "entry_tax": 0.62,
-   "held": 0,
-   "last": 52.44,
+   "held": 2,
+   "last": 52.04,
    "signal_date": "2026-11-09"
   }
  ],
  "pending": [],
- "signals": [],
+ "signals": [
+  {
+   "date": "2026-11-12",
+   "close": 87.98,
+   "prior_high": 86.61,
+   "sma": 75.3756,
+   "atr": 1.8764,
+   "strength": 0.73,
+   "symbol": "SAN.PA"
+  },
+  {
+   "date": "2026-11-12",
+   "close": 46.58,
+   "prior_high": 46.12,
+   "sma": 43.3876,
+   "atr": 0.8836,
+   "strength": 0.521,
+   "symbol": "CS.PA"
+  },
+  {
+   "date": "2026-11-12",
+   "close": 109.35,
+   "prior_high": 108.8,
+   "sma": 103.458,
+   "atr": 2.0464,
+   "strength": 0.269,
+   "symbol": "FGR.PA"
+  },
+  {
+   "date": "2026-11-12",
+   "close": 15.485,
+   "prior_high": 15.42,
+   "sma": 14.6337,
+   "atr": 0.2579,
+   "strength": 0.252,
+   "symbol": "ORA.PA"
+  },
+  {
+   "date": "2026-11-12",
+   "close": 68.9,
+   "prior_high": 68.56,
+   "sma": 62.1292,
+   "atr": 1.4714,
+   "strength": 0.231,
+   "symbol": "BN.PA"
+  },
+  {
+   "date": "2026-11-12",
+   "close": 192.84,
+   "prior_high": 192.16,
+   "sma": 173.3852,
+   "atr": 3.1157,
+   "strength": 0.218,
+   "symbol": "AI.PA"
+  },
+  {
+   "date": "2026-11-12",
+   "close": 115.2,
+   "prior_high": 114.75,
+   "sma": 109.825,
+   "atr": 2.125,
+   "strength": 0.212,
+   "symbol": "DG.PA"
+  },
+  {
+   "date": "2026-11-12",
+   "close": 43.99,
+   "prior_high": 43.82,
+   "sma": 42.2092,
+   "atr": 0.8371,
+   "strength": 0.203,
+   "symbol": "EN.PA"
+  },
+  {
+   "date": "2026-11-12",
+   "close": 105.2,
+   "prior_high": 104.9,
+   "sma": 99.2334,
+   "atr": 2.0079,
+   "strength": 0.149,
+   "symbol": "PUB.PA"
+  }
+ ],
  "recent_trades": [],
  "equity": [
   {
@@ -206,6 +288,18 @@
   {
    "d": "2026-11-10",
    "equity": 989.87,
+   "cash": 302.18,
+   "contributed": 1000
+  },
+  {
+   "d": "2026-11-11",
+   "equity": 990.92,
+   "cash": 302.18,
+   "contributed": 1000
+  },
+  {
+   "d": "2026-11-12",
+   "equity": 996.5,
    "cash": 302.18,
    "contributed": 1000
   }

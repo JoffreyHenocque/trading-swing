@@ -12,8 +12,8 @@
    "cost": 315.12,
    "entry_fee": 1.5,
    "entry_tax": 1.25,
-   "held": 0,
-   "last": 34.29,
+   "held": 2,
+   "last": 34.66,
    "signal_date": "2026-11-09"
   },
   {
@@ -27,8 +27,8 @@
    "cost": 226.61,
    "entry_fee": 1.5,
    "entry_tax": 0.9,
-   "held": 0,
-   "last": 24.64,
+   "held": 2,
+   "last": 25.14,
    "signal_date": "2026-11-09"
   },
   {
@@ -42,8 +42,8 @@
    "cost": 156.09,
    "entry_fee": 1.5,
    "entry_tax": 0.62,
-   "held": 0,
-   "last": 52.44,
+   "held": 2,
+   "last": 52.04,
    "signal_date": "2026-11-09"
   }
  ],
@@ -60,8 +60,20 @@
    "equity": 989.87,
    "cash": 302.18,
    "contributed": 1000
+  },
+  {
+   "d": "2026-11-11",
+   "equity": 990.92,
+   "cash": 302.18,
+   "contributed": 1000
+  },
+  {
+   "d": "2026-11-12",
+   "equity": 996.5,
+   "cash": 302.18,
+   "contributed": 1000
   }
  ],
- "last_date": "2026-11-10",
+ "last_date": "2026-11-12",
  "contributed": 1000
 }
