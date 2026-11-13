@@ -1,6 +1,6 @@
 {
- "as_of": "2026-11-12",
- "generated_utc": "2026-11-12T22:28:06Z",
+ "as_of": "2026-11-13",
+ "generated_utc": "2026-11-13T22:12:55Z",
  "config": {
   "universe": "universe.txt",
   "benchmark": "^FCHI",
@@ -143,8 +143,8 @@
   "profit_factor": null,
   "total_pnl": 0,
   "costs": 0,
-  "equity": 996.5,
-  "return_pct": -0.35,
+  "equity": 999.32,
+  "return_pct": -0.07,
   "max_drawdown_pct": -1.01
  },
  "positions": [
@@ -159,8 +159,8 @@
    "cost": 315.12,
    "entry_fee": 1.5,
    "entry_tax": 1.25,
-   "held": 2,
-   "last": 34.66,
+   "held": 3,
+   "last": 34.94,
    "signal_date": "2026-11-09"
   },
   {
@@ -174,8 +174,8 @@
    "cost": 226.61,
    "entry_fee": 1.5,
    "entry_tax": 0.9,
-   "held": 2,
-   "last": 25.14,
+   "held": 3,
+   "last": 25.28,
    "signal_date": "2026-11-09"
   },
   {
@@ -189,93 +189,102 @@
    "cost": 156.09,
    "entry_fee": 1.5,
    "entry_tax": 0.62,
-   "held": 2,
-   "last": 52.04,
+   "held": 3,
+   "last": 51.72,
    "signal_date": "2026-11-09"
   }
  ],
  "pending": [],
  "signals": [
   {
-   "date": "2026-11-12",
-   "close": 87.98,
-   "prior_high": 86.61,
-   "sma": 75.3756,
-   "atr": 1.8764,
-   "strength": 0.73,
-   "symbol": "SAN.PA"
+   "date": "2026-11-13",
+   "close": 30.49,
+   "prior_high": 30.22,
+   "sma": 28.0636,
+   "atr": 0.4364,
+   "strength": 0.619,
+   "symbol": "BVI.PA"
   },
   {
-   "date": "2026-11-12",
-   "close": 46.58,
-   "prior_high": 46.12,
-   "sma": 43.3876,
-   "atr": 0.8836,
-   "strength": 0.521,
-   "symbol": "CS.PA"
-  },
-  {
-   "date": "2026-11-12",
-   "close": 109.35,
-   "prior_high": 108.8,
-   "sma": 103.458,
-   "atr": 2.0464,
-   "strength": 0.269,
-   "symbol": "FGR.PA"
-  },
-  {
-   "date": "2026-11-12",
-   "close": 15.485,
-   "prior_high": 15.42,
-   "sma": 14.6337,
-   "atr": 0.2579,
-   "strength": 0.252,
-   "symbol": "ORA.PA"
-  },
-  {
-   "date": "2026-11-12",
-   "close": 68.9,
-   "prior_high": 68.56,
-   "sma": 62.1292,
-   "atr": 1.4714,
-   "strength": 0.231,
+   "date": "2026-11-13",
+   "close": 69.8,
+   "prior_high": 68.9,
+   "sma": 62.2508,
+   "atr": 1.4929,
+   "strength": 0.603,
    "symbol": "BN.PA"
   },
   {
-   "date": "2026-11-12",
-   "close": 192.84,
-   "prior_high": 192.16,
-   "sma": 173.3852,
-   "atr": 3.1157,
-   "strength": 0.218,
-   "symbol": "AI.PA"
+   "date": "2026-11-13",
+   "close": 47.1,
+   "prior_high": 46.58,
+   "sma": 43.4368,
+   "atr": 0.8714,
+   "strength": 0.597,
+   "symbol": "CS.PA"
   },
   {
-   "date": "2026-11-12",
-   "close": 115.2,
-   "prior_high": 114.75,
-   "sma": 109.825,
-   "atr": 2.125,
-   "strength": 0.212,
-   "symbol": "DG.PA"
+   "date": "2026-11-13",
+   "close": 15.62,
+   "prior_high": 15.485,
+   "sma": 14.6393,
+   "atr": 0.2643,
+   "strength": 0.511,
+   "symbol": "ORA.PA"
   },
   {
-   "date": "2026-11-12",
-   "close": 43.99,
-   "prior_high": 43.82,
-   "sma": 42.2092,
-   "atr": 0.8371,
-   "strength": 0.203,
+   "date": "2026-11-13",
+   "close": 44.3,
+   "prior_high": 43.99,
+   "sma": 42.205,
+   "atr": 0.8207,
+   "strength": 0.378,
    "symbol": "EN.PA"
   },
   {
-   "date": "2026-11-12",
-   "close": 105.2,
-   "prior_high": 104.9,
-   "sma": 99.2334,
-   "atr": 2.0079,
-   "strength": 0.149,
+   "date": "2026-11-13",
+   "close": 72.78,
+   "prior_high": 72.16,
+   "sma": 64.1212,
+   "atr": 1.7529,
+   "strength": 0.354,
+   "symbol": "RI.PA"
+  },
+  {
+   "date": "2026-11-13",
+   "close": 105.7,
+   "prior_high": 105.2,
+   "sma": 99.3254,
+   "atr": 1.8729,
+   "strength": 0.267,
    "symbol": "PUB.PA"
+  },
+  {
+   "date": "2026-11-13",
+   "close": 193.32,
+   "prior_high": 192.84,
+   "sma": 173.8428,
+   "atr": 3.0943,
+   "strength": 0.155,
+   "symbol": "AI.PA"
+  },
+  {
+   "date": "2026-11-13",
+   "close": 115.5,
+   "prior_high": 115.2,
+   "sma": 109.856,
+   "atr": 2.0464,
+   "strength": 0.147,
+   "symbol": "DG.PA"
+  },
+  {
+   "date": "2026-11-13",
+   "close": 109.5,
+   "prior_high": 109.35,
+   "sma": 103.47,
+   "atr": 1.9121,
+   "strength": 0.078,
+   "symbol": "FGR.PA"
   }
  ],
  "recent_trades": [],
@@ -300,6 +309,12 @@
   {
    "d": "2026-11-12",
    "equity": 996.5,
+   "cash": 302.18,
+   "contributed": 1000
+  },
+  {
+   "d": "2026-11-13",
+   "equity": 999.32,
    "cash": 302.18,
    "contributed": 1000
   }
