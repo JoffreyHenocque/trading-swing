@@ -1,29 +1,37 @@
 {
- "generated_utc": "2026-11-16T15:57:06Z",
+ "generated_utc": "2026-11-16T16:33:14Z",
  "signals": [
   {
-   "id": "momentum_us_lo12_to3",
-   "family": "momentum_us",
-   "label": "Momentum grandes actions US",
-   "setting": "période (mois) 12, nb actions 3",
+   "id": "dual_momentum_lo6",
+   "family": "dual_momentum",
+   "label": "Dual momentum sur 6 ETF",
+   "setting": "période (mois) 6",
    "as_of": "2026-11-16",
    "holds_now": [
-    "MRK",
-    "LLY",
-    "XOM"
+    "ESE.PA"
    ],
    "target": [
-    "MRK",
-    "JNJ",
-    "LLY"
+    "MEUD.PA"
    ],
    "buy": [
-    "JNJ"
+    "MEUD.PA"
    ],
    "sell": [
-    "XOM"
+    "ESE.PA"
    ],
    "next_check": "monthly"
+  },
+  {
+   "id": "rsi2_us_en10_to2",
+   "family": "rsi2_us",
+   "label": "Retour à la moyenne (RSI 2), actions US",
+   "setting": "RSI sous 10, nb actions 2",
+   "as_of": "2026-11-16",
+   "holds_now": [],
+   "target": [],
+   "buy": [],
+   "sell": [],
+   "next_check": "daily"
   },
   {
    "id": "dca_sp500",
@@ -48,20 +56,20 @@
    "setting": "",
    "as_of": "2026-11-16",
    "holds_now": [
-    "EWLD.PA"
+    "CW8.PA"
    ],
    "target": [
-    "EWLD.PA"
+    "CW8.PA"
    ],
    "buy": [],
    "sell": [],
    "next_check": "monthly"
   },
   {
-   "id": "trend_sp500_sm100",
+   "id": "trend_sp500_sm200",
    "family": "trend_sp500",
    "label": "ETF S&P 500 + filtre de tendance",
-   "setting": "moyenne (jours) 100",
+   "setting": "moyenne (jours) 200",
    "as_of": "2026-11-16",
    "holds_now": [
     "ESE.PA"
@@ -74,92 +82,52 @@
    "next_check": "monthly"
   },
   {
-   "id": "trend_world_sm100",
+   "id": "trend_world_sm200",
    "family": "trend_world",
    "label": "ETF Monde + filtre de tendance",
-   "setting": "moyenne (jours) 100",
+   "setting": "moyenne (jours) 200",
    "as_of": "2026-11-16",
    "holds_now": [
-    "EWLD.PA"
+    "CW8.PA"
    ],
    "target": [
-    "EWLD.PA"
+    "CW8.PA"
    ],
    "buy": [],
    "sell": [],
    "next_check": "monthly"
   },
   {
-   "id": "rsi2_us_en10_to3",
-   "family": "rsi2_us",
-   "label": "Retour à la moyenne (RSI 2), actions US",
-   "setting": "RSI sous 10, nb actions 3",
-   "as_of": "2026-11-16",
-   "holds_now": [
-    "NVDA"
-   ],
-   "target": [
-    "NVDA"
-   ],
-   "buy": [],
-   "sell": [],
-   "next_check": "daily"
-  },
-  {
-   "id": "high52_us_ex100_to3",
+   "id": "high52_us_ex100_to2",
    "family": "high52_us",
    "label": "Plus haut annuel, actions US",
-   "setting": "sortie sous moyenne 100, nb actions 3",
+   "setting": "sortie sous moyenne 100, nb actions 2",
    "as_of": "2026-11-16",
    "holds_now": [
-    "ABBV",
-    "CVX",
-    "AAPL"
+    "KO",
+    "CVX"
    ],
    "target": [
-    "ABBV",
-    "CVX",
-    "AAPL"
+    "KO",
+    "CVX"
    ],
    "buy": [],
    "sell": [],
    "next_check": "weekly"
   },
   {
-   "id": "dual_momentum_lo12",
-   "family": "dual_momentum",
-   "label": "Dual momentum sur 6 ETF",
-   "setting": "période (mois) 12",
-   "as_of": "2026-11-16",
-   "holds_now": [
-    "PAEEM.PA"
-   ],
-   "target": [
-    "MEUD.PA"
-   ],
-   "buy": [
-    "MEUD.PA"
-   ],
-   "sell": [
-    "PAEEM.PA"
-   ],
-   "next_check": "monthly"
-  },
-  {
-   "id": "high52_cac_ex50_to3",
+   "id": "high52_cac_ex50_to2",
    "family": "high52_cac",
    "label": "Plus haut annuel, CAC 40",
-   "setting": "sortie sous moyenne 50, nb actions 3",
+   "setting": "sortie sous moyenne 50, nb actions 2",
    "as_of": "2026-11-16",
    "holds_now": [
     "ENX.PA",
-    "TTE.PA",
-    "DSY.PA"
+    "TTE.PA"
    ],
    "target": [
     "ENX.PA",
-    "TTE.PA",
-    "DSY.PA"
+    "TTE.PA"
    ],
    "buy": [],
    "sell": [],
@@ -182,10 +150,30 @@
    "next_check": "monthly"
   },
   {
-   "id": "rsi2_cac_en5_to3",
+   "id": "momentum_us_lo3_to1",
+   "family": "momentum_us",
+   "label": "Momentum grandes actions US",
+   "setting": "période (mois) 3, nb actions 1",
+   "as_of": "2026-11-16",
+   "holds_now": [
+    "LLY"
+   ],
+   "target": [
+    "PG"
+   ],
+   "buy": [
+    "PG"
+   ],
+   "sell": [
+    "LLY"
+   ],
+   "next_check": "monthly"
+  },
+  {
+   "id": "rsi2_cac_en5_to2",
    "family": "rsi2_cac",
    "label": "Retour à la moyenne (RSI 2), CAC 40",
-   "setting": "RSI sous 5, nb actions 3",
+   "setting": "RSI sous 5, nb actions 2",
    "as_of": "2026-11-16",
    "holds_now": [],
    "target": [],

@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-11-16T15:53:55Z",
+ "generated_utc": "2026-11-16T16:30:10Z",
  "from": "2023-11-17",
  "to": "2026-11-16",
  "rows": [
@@ -9,8 +9,8 @@
    "kind": "swing",
    "mode": "lump",
    "contributed": 1000,
-   "final": 345.93,
-   "return_pct": -65.41,
+   "final": 345.65,
+   "return_pct": -65.44,
    "costs": 607.3,
    "trades": 173,
    "max_drawdown_pct": -67.37,
@@ -781,7 +781,7 @@
     },
     {
      "d": "2026-11-16",
-     "pct": -65.41
+     "pct": -65.44
     }
    ]
   },
@@ -790,8 +790,8 @@
    "label": "CAC 40 acheté et gardé (ETF Amundi CAC 40)",
    "kind": "buy_hold",
    "contributed": 1000.0,
-   "final": 1146.35,
-   "return_pct": 14.63,
+   "final": 1146.09,
+   "return_pct": 14.61,
    "costs": 1.5,
    "trades": 1,
    "max_drawdown_pct": -16.98,
@@ -1566,7 +1566,7 @@
     },
     {
      "d": "2026-11-16",
-     "pct": 14.63
+     "pct": 14.61
     }
    ]
   },
@@ -1575,8 +1575,8 @@
    "label": "Monde acheté et gardé (ETF PEA MSCI World)",
    "kind": "buy_hold",
    "contributed": 1000.0,
-   "final": 1364.19,
-   "return_pct": 36.42,
+   "final": 1365.63,
+   "return_pct": 36.56,
    "costs": 1.5,
    "trades": 1,
    "max_drawdown_pct": -21.18,
@@ -2351,7 +2351,7 @@
     },
     {
      "d": "2026-11-16",
-     "pct": 36.42
+     "pct": 36.56
     }
    ]
   },
@@ -2360,8 +2360,8 @@
    "label": "Monde + filtre de tendance 200 jours (mensuel)",
    "kind": "trend",
    "contributed": 1000.0,
-   "final": 1062.86,
-   "return_pct": 6.29,
+   "final": 1063.99,
+   "return_pct": 6.4,
    "costs": 7.5,
    "trades": 5,
    "max_drawdown_pct": -12.19,
@@ -3136,7 +3136,7 @@
     },
     {
      "d": "2026-11-16",
-     "pct": 6.29
+     "pct": 6.4
     }
    ]
   },
@@ -3145,8 +3145,8 @@
    "label": "Momentum CAC 40 : 3 meilleures actions sur 6 mois (mensuel)",
    "kind": "momentum",
    "contributed": 1000.0,
-   "final": 1154.29,
-   "return_pct": 15.43,
+   "final": 1153.79,
+   "return_pct": 15.38,
    "costs": 162.0,
    "trades": 85,
    "max_drawdown_pct": -22.5,
@@ -3923,7 +3923,7 @@
     },
     {
      "d": "2026-11-16",
-     "pct": 15.43
+     "pct": 15.38
     }
    ]
   },
@@ -3932,8 +3932,8 @@
    "label": "100 EUR par mois dans l'ETF Monde (versement programmé, sans frais)",
    "kind": "dca",
    "contributed": 3700.0,
-   "final": 4540.7,
-   "return_pct": 22.72,
+   "final": 4545.56,
+   "return_pct": 22.85,
    "costs": 0.0,
    "trades": 32,
    "max_drawdown_pct": -22.03,
@@ -4708,7 +4708,7 @@
     },
     {
      "d": "2026-11-16",
-     "pct": 22.72
+     "pct": 22.85
     }
    ]
   },
@@ -4718,8 +4718,8 @@
    "kind": "swing",
    "mode": "monthly",
    "contributed": 3700,
-   "final": 3127.2,
-   "return_pct": -15.48,
+   "final": 3124.08,
+   "return_pct": -15.57,
    "costs": 741.4,
    "trades": 175,
    "skipped_signals": 42,
@@ -5491,7 +5491,7 @@
     },
     {
      "d": "2026-11-16",
-     "pct": -15.48
+     "pct": -15.57
     }
    ]
   },
@@ -5500,8 +5500,8 @@
    "label": "100 EUR par mois dans l'ETF CAC 40 (versement programmé, sans frais)",
    "kind": "buy_hold",
    "contributed": 3700.0,
-   "final": 3993.34,
-   "return_pct": 7.93,
+   "final": 3992.4,
+   "return_pct": 7.9,
    "costs": 0.0,
    "trades": 37,
    "max_drawdown_pct": -17.33,
@@ -6276,7 +6276,7 @@
     },
     {
      "d": "2026-11-16",
-     "pct": 7.93
+     "pct": 7.9
     }
    ]
   },
@@ -6285,8 +6285,8 @@
    "label": "Monde + filtre de tendance, 100 EUR par mois",
    "kind": "trend",
    "contributed": 3700.0,
-   "final": 3953.82,
-   "return_pct": 6.86,
+   "final": 3958.05,
+   "return_pct": 6.97,
    "costs": 31.52,
    "trades": 21,
    "max_drawdown_pct": -11.58,
@@ -7061,7 +7061,7 @@
     },
     {
      "d": "2026-11-16",
-     "pct": 6.86
+     "pct": 6.97
     }
    ]
   },
@@ -7070,8 +7070,8 @@
    "label": "Momentum CAC 40 (3 actions), 100 EUR par mois",
    "kind": "momentum",
    "contributed": 3700.0,
-   "final": 4186.77,
-   "return_pct": 13.16,
+   "final": 4184.75,
+   "return_pct": 13.1,
    "costs": 223.06,
    "trades": 105,
    "max_drawdown_pct": -23.05,
@@ -7848,7 +7848,7 @@
     },
     {
      "d": "2026-11-16",
-     "pct": 13.16
+     "pct": 13.1
     }
    ]
   }
