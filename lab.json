@@ -51,6 +51,10 @@
     ],
     "sp500": [
       "ESE.PA"
+    ],
+    "world_em": [
+      "CW8.PA",
+      "PAEEM.PA"
     ]
   },
   "costs": {
@@ -82,6 +86,19 @@
       "kind": "dca",
       "universe": "world",
       "costs": "free"
+    },
+    {
+      "family": "dca_world_em",
+      "label": "Versement mensuel 85 % Monde + 15 % émergents",
+      "kind": "dca",
+      "universe": "world_em",
+      "costs": "free",
+      "fixed": {
+        "weights": {
+          "CW8.PA": 85,
+          "PAEEM.PA": 15
+        }
+      }
     },
     {
       "family": "dca_sp500",
@@ -263,5 +280,15 @@
         "top": "nb actions"
       }
     }
-  ]
+  ],
+  "live": {
+    "start": "2026-11-17",
+    "ids": [
+      "rsi2_us_en10_to2",
+      "dual_momentum_lo6",
+      "dca_world",
+      "dca_world_em"
+    ],
+    "note": "Réglages gelés au 16/11/2026 : ne pas les changer, sinon le test en direct ne vaut plus rien."
+  }
 }

@@ -53,6 +53,10 @@ footer{color:var(--muted);font-size:12px;margin-top:32px}
 <div class="card tbl" id="newsflag"></div>
 <div class="card tbl" id="newslist" style="margin-top:12px"></div>
 
+<h2>Comptes fictifs en direct</h2>
+<p class="sub" id="livesub">Chargement…</p>
+<div class="card tbl" id="livetable"></div>
+
 <h2>Labo v2 : classement des stratégies (budget réel)</h2>
 <p class="sub" id="labsub"></p>
 <div class="card tbl" id="labtable"></div>
@@ -174,7 +178,12 @@ async function get(p){try{const r=await fetch(p+"?t="+Date.now());return r.ok?aw
       {h:"Résultat",n:1,f:r=>eur(r.pnl),sign:r=>r.pnl},{h:"R (net)",n:1,f:r=>(r.r>0?"+":"")+num(r.r),sign:r=>r.r}],
       s.recent_trades.slice().reverse(),"Aucun trade clôturé pour l'instant.");
   } else {document.getElementById("asof").textContent="Pas encore de données : le premier passage automatique a lieu après la clôture d'un jour de bourse.";}
-  const [lab,sig,news]=await Promise.all([get("data/lab.json"),get("data/lab_signals.json"),get("data/news.json")]);
+  const [lab,sig,news,live]=await Promise.all([get("data/lab.json"),get("data/lab_signals.json"),get("data/news.json"),get("data/live.json")]);
+  if(live){
+    document.getElementById("livesub").textContent=`Démarrés le ${live.start}, ${live.monthly_eur} € par mois chacun, réglages gelés. Ce test en temps réel est la vraie preuve : il faut plusieurs mois avant de conclure.`;
+    table("livetable",[{h:"Compte",f:r=>r.label},{h:"Statut",f:r=>r.status},{h:"Versé",n:1,f:r=>eur(r.contributed)},{h:"Valeur",n:1,f:r=>eur(r.value)},{h:"Gain",n:1,f:r=>pct(r.gain_pct),sign:r=>r.gain_pct},
+      {h:"Ordres",n:1,f:r=>r.orders==null?"—":num(r.orders,0)},{h:"Frais",n:1,f:r=>r.fees==null?"—":eur(r.fees+(r.taxes||0))},{h:"Détient",f:r=>Object.keys(r.holdings||{}).join(", ")||"liquidités"}],live.accounts,"—");
+  } else document.getElementById("livesub").textContent="Les comptes en direct démarrent à la prochaine séance.";
   if(news){
     document.getElementById("newssub").textContent=`${news.counts.headlines} titres sur ${news.hours} h, ${news.counts.tickers_with_news} valeurs concernées, mis à jour le ${news.generated_utc.slice(0,10)}. Le ton est un simple comptage de mots : ce sont des pistes à lire, pas des signaux d'achat.`;
     table("newsflag",[{h:"Valeur",f:r=>r.name},{h:"Ce qui se passe",f:r=>r.flag},{h:"Variation 1 j",n:1,f:r=>pct(r.move_1d_pct),sign:r=>r.move_1d_pct},{h:"Volume / moyenne",n:1,f:r=>r.volume_ratio==null?"—":"×"+num(r.volume_ratio)},
