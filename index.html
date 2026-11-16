@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Swing CAC 40 — suivi</title>
+<title>Labo trading — suivi</title>
 <style>
 :root{color-scheme:light;--surface:#fcfcfb;--plane:#f9f9f7;--ink:#0b0b0b;--ink2:#52514e;--muted:#898781;
 --grid:#e1e0d9;--axis:#c3c2b7;--border:rgba(11,11,11,.10);--s1:#2a78d6;--s2:#eb6834;--s3:#1baf7a;--s4:#eda100;--s5:#e87ba4;--s6:#008300;--good:#006300;--bad:#d03b3b}
@@ -34,24 +34,8 @@ footer{color:var(--muted);font-size:12px;margin-top:32px}
 </head>
 <body>
 <main>
-<h1>Swing CAC 40 — compte fictif</h1>
-<p class="sub" id="asof">Chargement…</p>
-<div class="tiles" id="tiles"></div>
-<div class="verdict" id="verdict"></div>
-
-<h2>Évolution du capital fictif</h2>
-<div class="card" id="eqcard"></div>
-
-<h2>Positions ouvertes et ordres en attente</h2>
-<div class="card tbl" id="open"></div>
-
-<h2>Derniers trades clôturés</h2>
-<div class="card tbl" id="trades"></div>
-
-<h2>Actualités du jour</h2>
-<p class="sub" id="newssub">Chargement…</p>
-<div class="card tbl" id="newsflag"></div>
-<div class="card tbl" id="newslist" style="margin-top:12px"></div>
+<h1>Labo trading — suivi</h1>
+<p class="sub">Stratégie : 100 €/mois en versement automatique sur l'ETF Monde (PEA Trade Republic, géré à part) et 75 €/mois de volet actif chez Interactive Brokers, seulement si un compte en direct ci-dessous bat l'ETF Monde sur plusieurs mois. Tout est fictif ici.</p>
 
 <h2>Comptes fictifs en direct</h2>
 <p class="sub" id="livesub">Chargement…</p>
@@ -64,6 +48,26 @@ footer{color:var(--muted);font-size:12px;margin-top:32px}
 <h3 style="font-size:14px;margin:16px 0 8px">Ce que chaque stratégie détient ou viserait aujourd'hui</h3>
 <div class="card tbl" id="labsignals"></div>
 
+<h2>Actualités du jour</h2>
+<p class="sub" id="newssub">Chargement…</p>
+<div class="card tbl" id="newsflag"></div>
+<div class="card tbl" id="newslist" style="margin-top:12px"></div>
+
+<details class="archive" style="margin-top:32px">
+<summary style="cursor:pointer;font-size:16px;font-weight:600">Archives : premier test swing CAC 40 et labo v1</summary>
+<p class="sub" style="margin-top:8px">La stratégie de la vidéo (cassure de plus haut sur le CAC 40), gardée comme témoin. Elle perd dans tous les tests et ne fait pas partie de la stratégie actuelle.</p>
+
+<h2>Compte fictif swing CAC 40 (1 000 €)</h2>
+<p class="sub" id="asof">Chargement…</p>
+<div class="tiles" id="tiles"></div>
+<div class="verdict" id="verdict"></div>
+<h3 style="font-size:14px;margin:16px 0 8px">Évolution du capital fictif</h3>
+<div class="card" id="eqcard"></div>
+<h3 style="font-size:14px;margin:16px 0 8px">Positions ouvertes et ordres en attente</h3>
+<div class="card tbl" id="open"></div>
+<h3 style="font-size:14px;margin:16px 0 8px">Derniers trades clôturés</h3>
+<div class="card tbl" id="trades"></div>
+
 <h2>Labo v1 : quelle stratégie aurait le mieux marché ?</h2>
 <p class="sub" id="cmpsub">Les mêmes 3 années, frais et taxes inclus. Performance = gain ou perte par rapport à l'argent versé.</p>
 <h3 style="font-size:14px;margin:16px 0 8px">Mise unique de 1 000 €</h3>
@@ -73,12 +77,13 @@ footer{color:var(--muted);font-size:12px;margin-top:32px}
 <div class="card" id="cmpchart2"></div>
 <div class="card tbl" id="cmptable2" style="margin-top:12px"></div>
 
-<h2>Backtest : les mêmes règles sur le passé</h2>
+<h2>Backtest du swing : les mêmes règles sur le passé</h2>
 <p class="sub" id="btsub"></p>
 <div class="tiles" id="bttiles"></div>
 <div class="verdict" id="btverdict"></div>
 <div class="card" id="btcard" style="margin-top:12px"></div>
 <div class="card tbl" id="btyears" style="margin-top:12px"></div>
+</details>
 
 <footer>Paper trading uniquement, données Yahoo Finance (gratuites, non officielles). Frais IBKR et taxe sur les transactions financières inclus. Ce n'est pas un conseil financier.</footer>
 </main>
