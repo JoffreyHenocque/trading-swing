@@ -1,0 +1,267 @@
+{
+  "monthly": 75,
+  "years": 6,
+  "is_fraction": 0.6,
+  "min_order_eur": 150,
+  "benchmark_etf": "EWLD.PA",
+  "universes": {
+    "cac": "universe.txt",
+    "us": [
+      "AAPL",
+      "MSFT",
+      "NVDA",
+      "AMZN",
+      "GOOGL",
+      "META",
+      "BRK-B",
+      "JPM",
+      "V",
+      "UNH",
+      "XOM",
+      "JNJ",
+      "PG",
+      "MA",
+      "HD",
+      "COST",
+      "ABBV",
+      "MRK",
+      "PEP",
+      "KO",
+      "AVGO",
+      "LLY",
+      "WMT",
+      "BAC",
+      "CVX",
+      "ORCL",
+      "CSCO",
+      "ADBE",
+      "CRM",
+      "NFLX"
+    ],
+    "etf": [
+      "EWLD.PA",
+      "ESE.PA",
+      "PUST.PA",
+      "PAEEM.PA",
+      "MEUD.PA",
+      "CAC.PA"
+    ],
+    "world": [
+      "EWLD.PA"
+    ],
+    "sp500": [
+      "ESE.PA"
+    ]
+  },
+  "costs": {
+    "euronext": {
+      "pct": 0.05,
+      "min": 2.0
+    },
+    "us": {
+      "usd_per_share": 0.0035,
+      "min_usd": 0.35,
+      "max_pct": 1.0
+    }
+  },
+  "fx_pct": 0.03,
+  "slippage_pct": 0.05,
+  "ttf_pct": 0.4,
+  "ttf_exempt": [
+    "AIR.PA",
+    "STMPA.PA",
+    "STLAP.PA",
+    "ERF.PA",
+    "ENX.PA"
+  ],
+  "pause_s": 1.0,
+  "families": [
+    {
+      "family": "dca_world",
+      "label": "Versement mensuel ETF Monde (référence)",
+      "kind": "dca",
+      "universe": "world",
+      "costs": "free"
+    },
+    {
+      "family": "dca_sp500",
+      "label": "Versement mensuel ETF S&P 500",
+      "kind": "dca",
+      "universe": "sp500",
+      "costs": "free"
+    },
+    {
+      "family": "trend_world",
+      "label": "ETF Monde + filtre de tendance",
+      "kind": "trend",
+      "universe": "world",
+      "grid": {
+        "sma": [
+          100,
+          150,
+          200
+        ]
+      },
+      "names": {
+        "sma": "moyenne (jours)"
+      }
+    },
+    {
+      "family": "trend_sp500",
+      "label": "ETF S&P 500 + filtre de tendance",
+      "kind": "trend",
+      "universe": "sp500",
+      "grid": {
+        "sma": [
+          100,
+          150,
+          200
+        ]
+      },
+      "names": {
+        "sma": "moyenne (jours)"
+      }
+    },
+    {
+      "family": "dual_momentum",
+      "label": "Dual momentum sur 6 ETF",
+      "kind": "dual_momentum",
+      "universe": "etf",
+      "grid": {
+        "lookback": [
+          3,
+          6,
+          9,
+          12
+        ]
+      },
+      "names": {
+        "lookback": "période (mois)"
+      }
+    },
+    {
+      "family": "momentum_cac",
+      "label": "Momentum actions CAC 40",
+      "kind": "momentum",
+      "universe": "cac",
+      "grid": {
+        "lookback": [
+          3,
+          6,
+          12
+        ],
+        "top": [
+          1,
+          3,
+          5
+        ]
+      },
+      "names": {
+        "lookback": "période (mois)",
+        "top": "nb actions"
+      }
+    },
+    {
+      "family": "momentum_us",
+      "label": "Momentum grandes actions US",
+      "kind": "momentum",
+      "universe": "us",
+      "grid": {
+        "lookback": [
+          3,
+          6,
+          12
+        ],
+        "top": [
+          1,
+          3,
+          5
+        ]
+      },
+      "names": {
+        "lookback": "période (mois)",
+        "top": "nb actions"
+      }
+    },
+    {
+      "family": "high52_cac",
+      "label": "Plus haut annuel, CAC 40",
+      "kind": "high52",
+      "universe": "cac",
+      "grid": {
+        "top": [
+          2,
+          3
+        ],
+        "exit_sma": [
+          50,
+          100
+        ]
+      },
+      "names": {
+        "top": "nb actions",
+        "exit_sma": "sortie sous moyenne"
+      }
+    },
+    {
+      "family": "high52_us",
+      "label": "Plus haut annuel, actions US",
+      "kind": "high52",
+      "universe": "us",
+      "grid": {
+        "top": [
+          2,
+          3
+        ],
+        "exit_sma": [
+          50,
+          100
+        ]
+      },
+      "names": {
+        "top": "nb actions",
+        "exit_sma": "sortie sous moyenne"
+      }
+    },
+    {
+      "family": "rsi2_cac",
+      "label": "Retour à la moyenne (RSI 2), CAC 40",
+      "kind": "rsi2",
+      "universe": "cac",
+      "grid": {
+        "entry": [
+          5,
+          10
+        ],
+        "top": [
+          2,
+          3
+        ]
+      },
+      "names": {
+        "entry": "RSI sous",
+        "top": "nb actions"
+      }
+    },
+    {
+      "family": "rsi2_us",
+      "label": "Retour à la moyenne (RSI 2), actions US",
+      "kind": "rsi2",
+      "universe": "us",
+      "grid": {
+        "entry": [
+          5,
+          10
+        ],
+        "top": [
+          2,
+          3
+        ]
+      },
+      "names": {
+        "entry": "RSI sous",
+        "top": "nb actions"
+      }
+    }
+  ]
+}

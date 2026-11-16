@@ -48,7 +48,19 @@ footer{color:var(--muted);font-size:12px;margin-top:32px}
 <h2>Derniers trades clôturés</h2>
 <div class="card tbl" id="trades"></div>
 
-<h2>Labo : quelle stratégie aurait le mieux marché ?</h2>
+<h2>Actualités du jour</h2>
+<p class="sub" id="newssub">Chargement…</p>
+<div class="card tbl" id="newsflag"></div>
+<div class="card tbl" id="newslist" style="margin-top:12px"></div>
+
+<h2>Labo v2 : classement des stratégies (budget réel)</h2>
+<p class="sub" id="labsub"></p>
+<div class="card tbl" id="labtable"></div>
+<div class="card" id="labchart" style="margin-top:12px"></div>
+<h3 style="font-size:14px;margin:16px 0 8px">Ce que chaque stratégie détient ou viserait aujourd'hui</h3>
+<div class="card tbl" id="labsignals"></div>
+
+<h2>Labo v1 : quelle stratégie aurait le mieux marché ?</h2>
 <p class="sub" id="cmpsub">Les mêmes 3 années, frais et taxes inclus. Performance = gain ou perte par rapport à l'argent versé.</p>
 <h3 style="font-size:14px;margin:16px 0 8px">Mise unique de 1 000 €</h3>
 <div class="card" id="cmpchart"></div>
@@ -162,6 +174,28 @@ async function get(p){try{const r=await fetch(p+"?t="+Date.now());return r.ok?aw
       {h:"Résultat",n:1,f:r=>eur(r.pnl),sign:r=>r.pnl},{h:"R (net)",n:1,f:r=>(r.r>0?"+":"")+num(r.r),sign:r=>r.r}],
       s.recent_trades.slice().reverse(),"Aucun trade clôturé pour l'instant.");
   } else {document.getElementById("asof").textContent="Pas encore de données : le premier passage automatique a lieu après la clôture d'un jour de bourse.";}
+  const [lab,sig,news]=await Promise.all([get("data/lab.json"),get("data/lab_signals.json"),get("data/news.json")]);
+  if(news){
+    document.getElementById("newssub").textContent=`${news.counts.headlines} titres sur ${news.hours} h, ${news.counts.tickers_with_news} valeurs concernées, mis à jour le ${news.generated_utc.slice(0,10)}. Le ton est un simple comptage de mots : ce sont des pistes à lire, pas des signaux d'achat.`;
+    table("newsflag",[{h:"Valeur",f:r=>r.name},{h:"Ce qui se passe",f:r=>r.flag},{h:"Variation 1 j",n:1,f:r=>pct(r.move_1d_pct),sign:r=>r.move_1d_pct},{h:"Volume / moyenne",n:1,f:r=>r.volume_ratio==null?"—":"×"+num(r.volume_ratio)},
+      {h:"Tendance",f:r=>r.trend_up==null?"—":(r.trend_up?"haussière":"baissière")},{h:"Dans le labo",f:r=>(r.lab_strategies||[]).join(", ")||"—"},{h:"Titre",f:r=>r.top_headline||""}],news.flagged,"Aucune valeur où l'actualité et le cours se répondent clairement aujourd'hui.");
+    const box=document.getElementById("newslist");box.textContent="";const ul=el("ul",{style:"margin:0;padding-left:18px"});
+    (news.headlines||[]).slice(0,25).forEach(h=>{const li=el("li",{style:"margin:4px 0"});const a=el("a",{href:h.link,target:"_blank",rel:"noopener"},h.title);li.append(el("b",{},h.ticker+" "),a);
+      li.append(document.createTextNode(" · "+(h.tone>0?"ton positif":h.tone<0?"ton négatif":"neutre")+(h.tags.length?" · "+h.tags.join(", "):"")));ul.append(li);});
+    box.append(ul);
+  } else document.getElementById("newssub").textContent="Pas encore de revue des actualités : elle tourne chaque soir de bourse.";
+  if(lab){
+    const b=lab.benchmark||{},bo=lab.benchmark_oos||{};
+    document.getElementById("labsub").textContent=`${lab.configs} réglages testés du ${lab.from} au ${lab.to}, avec ${lab.monthly_eur} € versés chaque mois et les frais Interactive Brokers. Chaque famille garde le réglage qui a le mieux marché avant le ${lab.split} ; seul son résultat après cette date (hors échantillon) sert à juger. Référence, l'ETF Monde en versement mensuel : ${pct(b.irr_pct)} par an sur toute la période, ${pct(bo.irr_pct)} par an hors échantillon.`;
+    table("labtable",[{h:"Famille",f:r=>r.label},{h:"Réglage retenu",f:r=>r.setting||"—"},{h:"Rendement/an hors échantillon",n:1,f:r=>pct(r.oos_irr),sign:r=>r.oos_irr},{h:"Écart vs ETF Monde",n:1,f:r=>r.edge_vs_dca_oos==null?"—":(r.edge_vs_dca_oos>0?"+":"")+num(r.edge_vs_dca_oos)+" pt",sign:r=>r.edge_vs_dca_oos},
+      {h:"Rendement/an total",n:1,f:r=>pct(r.full_irr),sign:r=>r.full_irr},{h:"Frais / versements",n:1,f:r=>pct(r.full_cost_share)},{h:"Pire baisse",n:1,f:r=>pct(r.full_drawdown)},{h:"Réglages testés",n:1,f:r=>num(r.settings_tested,0)},
+      {h:"Bat l'ETF ?",f:r=>r.family==="dca_world"?"référence":(r.beats_dca_oos?"oui":"non")}],lab.winners,"—");
+    multiChart("labchart",(lab.winners||[]).slice(0,6).map(w=>({label:w.label,curve:(lab.curves[w.family]||[]).map(p=>({d:p.d,pct:Math.round(10000*(p.value/p.contributed-1))/100}))})));
+  } else document.getElementById("labsub").textContent="Pas encore de labo v2 : il tourne le dimanche, ou à la demande (Run workflow → backtest).";
+  if(sig){
+    table("labsignals",[{h:"Stratégie",f:r=>r.label},{h:"Réglage",f:r=>r.setting||""},{h:"Détient",f:r=>(r.holds_now||[]).join(", ")||"liquidités"},{h:"Viserait",f:r=>(r.target||[]).join(", ")||"liquidités"},
+      {h:"Acheter",f:r=>(r.buy||[]).join(", ")||"—"},{h:"Vendre",f:r=>(r.sell||[]).join(", ")||"—"},{h:"Rythme",f:r=>({monthly:"mensuel",weekly:"hebdo",daily:"quotidien"})[r.next_check]||""}],sig.signals.filter(r=>!r.error),"—");
+  }
   const cmp=await get("data/compare.json");
   if(cmp){
     document.getElementById("cmpsub").textContent=`Du ${cmp.from} au ${cmp.to}, frais et taxes inclus. Performance = gain ou perte par rapport à l'argent versé (le versement mensuel part de 100 € et ajoute 100 € chaque mois).`;
