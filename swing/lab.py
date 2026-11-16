@@ -292,7 +292,7 @@ def simulate(v, series, cfg, start, end, keep_curve=False):
     peak_ratio, mdd = 0.0, 0.0
     slip = cfg["slippage_pct"] / 100.0
     min_order = float(cfg["min_order_eur"]) if costs_kind != "free" else 1.0
-    fractional = us
+    fractional = us or costs_kind == "free"   # free monthly plans (e.g. Trade Republic) buy fractions
 
     def fxr(d):
         if not fx:
@@ -488,7 +488,8 @@ def cmd_backtest(a, cfg):
            "benchmark": bench["full"] if bench else None, "benchmark_oos": bench["oos"] if bench else None,
            "winners": winners, "rows": [dict(r, **{k: dict(r[k], holdings=None) for k in ("is", "oos", "full") if k in r})
                                         for r in rows],
-           "curves": curves, "data_errors": errors}
+           "curves": curves, "data_errors": errors,
+           "history": {k: {"first": v.b[0]["d"], "bars": len(v.b)} for k, v in sorted(series.items())}}
     S.save_json(os.path.join(DATA, "lab.json"), doc)
     S.save_json(os.path.join(DATA, "lab_winners.json"), {"generated_utc": doc["generated_utc"],
                                                           "winners": [w["id"] for w in winners]})

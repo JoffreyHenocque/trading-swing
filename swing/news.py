@@ -151,15 +151,18 @@ def lab_positions():
 def classify(st, items):
     if not st or not items:
         return None
-    avg = sum(i["tone"] for i in items) / len(items)
+    toned = [i for i in items if i["tone"]]
+    if not toned:
+        return None
+    avg = sum(i["tone"] for i in toned) / len(toned)
     up, vol = st["move_1d_pct"], st["volume_ratio"] or 1.0
-    if avg > 0 and up > 0.5 and vol >= 1.2:
+    if avg >= 0.5 and up > 1 and vol >= 1.2:
         return "bonne nouvelle confirmée par le cours"
-    if avg < 0 and up < -0.5:
+    if avg <= -0.5 and up < -1:
         return "mauvaise nouvelle confirmée par le cours"
-    if avg > 0 and up < -1:
+    if len(toned) >= 2 and avg >= 0.5 and up < -2:
         return "divergence : ton positif mais le cours baisse"
-    if avg < 0 and up > 1:
+    if len(toned) >= 2 and avg <= -0.5 and up > 2:
         return "divergence : ton négatif mais le cours monte"
     return None
 
