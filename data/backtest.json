@@ -1,7 +1,7 @@
 {
- "generated_utc": "2026-11-15T14:32:23Z",
- "from": "2023-11-14",
- "to": "2026-11-13",
+ "generated_utc": "2026-11-16T15:53:55Z",
+ "from": "2023-11-17",
+ "to": "2026-11-16",
  "years": 3.0,
  "config": {
   "universe": "universe.txt",
@@ -138,4772 +138,4739 @@
   ]
  },
  "stats": {
-  "trades": 174,
-  "wins": 65,
-  "win_rate": 37.4,
-  "avg_r": -0.722,
-  "profit_factor": 0.34,
-  "total_pnl": -648.09,
-  "costs": 612.07,
-  "equity": 351.89,
-  "return_pct": -64.81,
-  "max_drawdown_pct": -66.95
+  "trades": 173,
+  "wins": 62,
+  "win_rate": 35.8,
+  "avg_r": -0.741,
+  "profit_factor": 0.33,
+  "total_pnl": -654.03,
+  "costs": 607.3,
+  "equity": 345.93,
+  "return_pct": -65.41,
+  "max_drawdown_pct": -67.37
  },
  "by_year": {
   "2023": {
-   "trades": 5,
-   "pnl": 9.49,
-   "win_rate": 60.0
+   "trades": 4,
+   "pnl": 20.12,
+   "win_rate": 75.0
   },
   "2024": {
-   "trades": 60,
-   "pnl": -312.96,
-   "win_rate": 31.7
+   "trades": 58,
+   "pnl": -313.5,
+   "win_rate": 27.6
   },
   "2025": {
    "trades": 56,
-   "pnl": -204.01,
+   "pnl": -206.9,
    "win_rate": 39.3
   },
   "2026": {
-   "trades": 53,
-   "pnl": -140.61,
-   "win_rate": 39.6
+   "trades": 55,
+   "pnl": -153.75,
+   "win_rate": 38.2
   }
  },
  "benchmark": {
-  "^FCHI": 17.89
+  "^FCHI": 16.36
  },
  "equity": [
   {
-   "d": "2023-11-14",
+   "d": "2023-11-17",
    "equity": 1000.0,
    "cash": 1000,
    "contributed": 1000
   },
   {
-   "d": "2023-11-15",
-   "equity": 998.43,
-   "cash": 399.27,
-   "contributed": 1000
-  },
-  {
-   "d": "2023-11-16",
-   "equity": 995.32,
-   "cash": 399.27,
-   "contributed": 1000
-  },
-  {
-   "d": "2023-11-17",
-   "equity": 1002.21,
-   "cash": 399.27,
-   "contributed": 1000
-  },
-  {
    "d": "2023-11-20",
-   "equity": 1000.73,
-   "cash": 399.27,
+   "equity": 990.83,
+   "cash": 217.21,
    "contributed": 1000
   },
   {
    "d": "2023-11-21",
-   "equity": 1000.68,
-   "cash": 399.27,
+   "equity": 985.82,
+   "cash": 217.21,
    "contributed": 1000
   },
   {
    "d": "2023-11-22",
-   "equity": 1005.78,
-   "cash": 399.27,
+   "equity": 985.69,
+   "cash": 217.21,
    "contributed": 1000
   },
   {
    "d": "2023-11-23",
-   "equity": 1003.79,
-   "cash": 399.27,
+   "equity": 990.06,
+   "cash": 217.21,
    "contributed": 1000
   },
   {
    "d": "2023-11-24",
-   "equity": 1003.93,
-   "cash": 399.27,
+   "equity": 994.87,
+   "cash": 217.21,
    "contributed": 1000
   },
   {
    "d": "2023-11-27",
-   "equity": 1002.38,
-   "cash": 399.27,
+   "equity": 991.97,
+   "cash": 217.21,
    "contributed": 1000
   },
   {
    "d": "2023-11-28",
-   "equity": 1004.51,
-   "cash": 399.27,
+   "equity": 994.89,
+   "cash": 217.21,
    "contributed": 1000
   },
   {
    "d": "2023-11-29",
-   "equity": 1009.72,
-   "cash": 399.27,
+   "equity": 1003.75,
+   "cash": 217.21,
    "contributed": 1000
   },
   {
    "d": "2023-11-30",
-   "equity": 1007.86,
-   "cash": 399.27,
+   "equity": 1010.23,
+   "cash": 217.21,
    "contributed": 1000
   },
   {
    "d": "2023-12-01",
-   "equity": 1012.89,
-   "cash": 399.27,
+   "equity": 1011.39,
+   "cash": 217.21,
    "contributed": 1000
   },
   {
    "d": "2023-12-04",
-   "equity": 1010.91,
-   "cash": 399.27,
+   "equity": 1011.94,
+   "cash": 217.21,
    "contributed": 1000
   },
   {
    "d": "2023-12-05",
-   "equity": 1018.12,
-   "cash": 399.27,
+   "equity": 1021.3,
+   "cash": 217.21,
    "contributed": 1000
   },
   {
    "d": "2023-12-06",
-   "equity": 1023.4,
-   "cash": 399.27,
+   "equity": 1028.75,
+   "cash": 217.21,
    "contributed": 1000
   },
   {
    "d": "2023-12-07",
-   "equity": 1023.03,
-   "cash": 399.27,
+   "equity": 1028.03,
+   "cash": 217.21,
    "contributed": 1000
   },
   {
    "d": "2023-12-08",
-   "equity": 1027.29,
-   "cash": 848.51,
+   "equity": 1036.44,
+   "cash": 217.21,
    "contributed": 1000
   },
   {
    "d": "2023-12-11",
-   "equity": 1026.9,
-   "cash": 278.2,
+   "equity": 1033.42,
+   "cash": 217.21,
    "contributed": 1000
   },
   {
    "d": "2023-12-12",
-   "equity": 1027.58,
-   "cash": 278.2,
+   "equity": 1030.27,
+   "cash": 506.93,
    "contributed": 1000
   },
   {
    "d": "2023-12-13",
-   "equity": 1026.03,
-   "cash": 458.05,
+   "equity": 1021.74,
+   "cash": 167.87,
    "contributed": 1000
   },
   {
    "d": "2023-12-14",
-   "equity": 1022.48,
-   "cash": 271.75,
+   "equity": 1029.49,
+   "cash": 760.39,
    "contributed": 1000
   },
   {
    "d": "2023-12-15",
-   "equity": 1022.76,
-   "cash": 271.75,
+   "equity": 1024.88,
+   "cash": 258.87,
    "contributed": 1000
   },
   {
    "d": "2023-12-18",
-   "equity": 1016.68,
-   "cash": 449.78,
+   "equity": 1007.0,
+   "cash": 518.6,
    "contributed": 1000
   },
   {
    "d": "2023-12-19",
-   "equity": 1012.72,
-   "cash": 240.02,
+   "equity": 1015.16,
+   "cash": 308.84,
    "contributed": 1000
   },
   {
    "d": "2023-12-20",
-   "equity": 1009.26,
-   "cash": 515.12,
+   "equity": 1020.84,
+   "cash": 308.84,
    "contributed": 1000
   },
   {
    "d": "2023-12-21",
-   "equity": 1007.73,
-   "cash": 261.69,
+   "equity": 1016.56,
+   "cash": 308.84,
    "contributed": 1000
   },
   {
    "d": "2023-12-22",
-   "equity": 1007.55,
-   "cash": 261.69,
+   "equity": 1020.28,
+   "cash": 308.84,
    "contributed": 1000
   },
   {
    "d": "2023-12-27",
-   "equity": 1006.69,
-   "cash": 261.69,
+   "equity": 1018.96,
+   "cash": 308.84,
    "contributed": 1000
   },
   {
    "d": "2023-12-28",
-   "equity": 1003.45,
-   "cash": 261.69,
+   "equity": 1018.2,
+   "cash": 308.84,
    "contributed": 1000
   },
   {
    "d": "2023-12-29",
-   "equity": 1001.39,
-   "cash": 261.69,
+   "equity": 1016.8,
+   "cash": 308.84,
    "contributed": 1000
   },
   {
    "d": "2024-01-02",
-   "equity": 1001.17,
-   "cash": 261.69,
+   "equity": 1018.92,
+   "cash": 308.84,
    "contributed": 1000
   },
   {
    "d": "2024-01-03",
-   "equity": 988.71,
-   "cash": 534.67,
+   "equity": 998.09,
+   "cash": 563.53,
    "contributed": 1000
   },
   {
    "d": "2024-01-04",
-   "equity": 989.85,
-   "cash": 230.32,
+   "equity": 997.7,
+   "cash": 259.17,
    "contributed": 1000
   },
   {
    "d": "2024-01-05",
-   "equity": 989.97,
-   "cash": 230.32,
+   "equity": 994.8,
+   "cash": 259.17,
    "contributed": 1000
   },
   {
    "d": "2024-01-08",
-   "equity": 992.77,
-   "cash": 230.32,
+   "equity": 996.78,
+   "cash": 259.17,
    "contributed": 1000
   },
   {
    "d": "2024-01-09",
-   "equity": 987.46,
-   "cash": 427.52,
+   "equity": 992.89,
+   "cash": 456.37,
    "contributed": 1000
   },
   {
    "d": "2024-01-10",
-   "equity": 987.23,
-   "cash": 141.96,
+   "equity": 990.99,
+   "cash": 170.82,
    "contributed": 1000
   },
   {
    "d": "2024-01-11",
-   "equity": 982.23,
-   "cash": 141.96,
+   "equity": 987.55,
+   "cash": 170.82,
    "contributed": 1000
   },
   {
    "d": "2024-01-12",
-   "equity": 989.51,
-   "cash": 141.96,
+   "equity": 992.17,
+   "cash": 170.82,
    "contributed": 1000
   },
   {
    "d": "2024-01-15",
-   "equity": 989.17,
-   "cash": 141.96,
+   "equity": 990.21,
+   "cash": 170.82,
    "contributed": 1000
   },
   {
    "d": "2024-01-16",
-   "equity": 996.95,
-   "cash": 141.96,
+   "equity": 993.27,
+   "cash": 170.82,
    "contributed": 1000
   },
   {
    "d": "2024-01-17",
-   "equity": 996.18,
-   "cash": 141.96,
+   "equity": 985.21,
+   "cash": 391.57,
    "contributed": 1000
   },
   {
    "d": "2024-01-18",
-   "equity": 995.63,
-   "cash": 141.96,
+   "equity": 980.31,
+   "cash": 65.44,
    "contributed": 1000
   },
   {
    "d": "2024-01-19",
-   "equity": 992.54,
-   "cash": 141.96,
+   "equity": 980.47,
+   "cash": 65.44,
    "contributed": 1000
   },
   {
    "d": "2024-01-22",
-   "equity": 997.82,
-   "cash": 141.96,
+   "equity": 981.65,
+   "cash": 65.44,
    "contributed": 1000
   },
   {
    "d": "2024-01-23",
-   "equity": 984.51,
-   "cash": 676.81,
+   "equity": 975.17,
+   "cash": 339.83,
    "contributed": 1000
   },
   {
    "d": "2024-01-24",
-   "equity": 976.44,
-   "cash": 74.38,
+   "equity": 971.89,
+   "cash": 69.83,
    "contributed": 1000
   },
   {
    "d": "2024-01-25",
-   "equity": 973.83,
-   "cash": 74.38,
+   "equity": 969.28,
+   "cash": 69.83,
    "contributed": 1000
   },
   {
    "d": "2024-01-26",
-   "equity": 977.62,
-   "cash": 74.38,
+   "equity": 973.06,
+   "cash": 69.83,
    "contributed": 1000
   },
   {
    "d": "2024-01-29",
-   "equity": 974.74,
-   "cash": 394.04,
+   "equity": 970.86,
+   "cash": 69.83,
    "contributed": 1000
   },
   {
    "d": "2024-01-30",
-   "equity": 972.3,
-   "cash": 216.79,
+   "equity": 969.74,
+   "cash": 69.83,
    "contributed": 1000
   },
   {
    "d": "2024-01-31",
-   "equity": 970.61,
-   "cash": 216.79,
+   "equity": 969.17,
+   "cash": 69.83,
    "contributed": 1000
   },
   {
    "d": "2024-02-01",
-   "equity": 967.55,
-   "cash": 522.19,
+   "equity": 964.62,
+   "cash": 375.22,
    "contributed": 1000
   },
   {
    "d": "2024-02-02",
-   "equity": 971.06,
-   "cash": 332.56,
+   "equity": 966.42,
+   "cash": 185.6,
    "contributed": 1000
   },
   {
    "d": "2024-02-05",
-   "equity": 970.97,
-   "cash": 332.56,
+   "equity": 961.48,
+   "cash": 498.59,
    "contributed": 1000
   },
   {
    "d": "2024-02-06",
-   "equity": 976.44,
-   "cash": 332.56,
+   "equity": 962.62,
+   "cash": 258.26,
    "contributed": 1000
   },
   {
    "d": "2024-02-07",
-   "equity": 971.85,
-   "cash": 332.56,
+   "equity": 957.47,
+   "cash": 258.26,
    "contributed": 1000
   },
   {
    "d": "2024-02-08",
-   "equity": 977.01,
-   "cash": 332.56,
+   "equity": 957.74,
+   "cash": 488.71,
    "contributed": 1000
   },
   {
    "d": "2024-02-09",
-   "equity": 976.53,
-   "cash": 332.56,
+   "equity": 955.65,
+   "cash": 346.98,
    "contributed": 1000
   },
   {
    "d": "2024-02-12",
-   "equity": 976.28,
-   "cash": 332.56,
+   "equity": 960.5,
+   "cash": 346.98,
    "contributed": 1000
   },
   {
    "d": "2024-02-13",
-   "equity": 968.91,
-   "cash": 332.56,
+   "equity": 948.45,
+   "cash": 346.98,
    "contributed": 1000
   },
   {
    "d": "2024-02-14",
-   "equity": 977.12,
-   "cash": 332.56,
+   "equity": 953.66,
+   "cash": 346.98,
    "contributed": 1000
   },
   {
    "d": "2024-02-15",
-   "equity": 988.97,
-   "cash": 531.25,
+   "equity": 961.39,
+   "cash": 545.67,
    "contributed": 1000
   },
   {
    "d": "2024-02-16",
-   "equity": 989.8,
-   "cash": 521.71,
+   "equity": 958.6,
+   "cash": 350.47,
    "contributed": 1000
   },
   {
    "d": "2024-02-19",
-   "equity": 988.39,
-   "cash": 332.27,
+   "equity": 958.75,
+   "cash": 350.47,
    "contributed": 1000
   },
   {
    "d": "2024-02-20",
-   "equity": 987.53,
-   "cash": 332.27,
+   "equity": 954.55,
+   "cash": 350.47,
    "contributed": 1000
   },
   {
    "d": "2024-02-21",
-   "equity": 984.73,
-   "cash": 607.17,
+   "equity": 951.89,
+   "cash": 625.37,
    "contributed": 1000
   },
   {
    "d": "2024-02-22",
-   "equity": 988.48,
-   "cash": 391.51,
+   "equity": 952.68,
+   "cash": 409.71,
    "contributed": 1000
   },
   {
    "d": "2024-02-23",
-   "equity": 994.73,
-   "cash": 391.51,
+   "equity": 957.31,
+   "cash": 409.71,
    "contributed": 1000
   },
   {
    "d": "2024-02-26",
-   "equity": 984.67,
-   "cash": 391.51,
+   "equity": 945.13,
+   "cash": 409.71,
    "contributed": 1000
   },
   {
    "d": "2024-02-27",
-   "equity": 985.05,
-   "cash": 391.51,
+   "equity": 949.65,
+   "cash": 409.71,
    "contributed": 1000
   },
   {
    "d": "2024-02-28",
-   "equity": 981.98,
-   "cash": 593.88,
+   "equity": 941.8,
+   "cash": 612.08,
    "contributed": 1000
   },
   {
    "d": "2024-02-29",
-   "equity": 977.24,
-   "cash": 305.7,
+   "equity": 937.37,
+   "cash": 395.57,
    "contributed": 1000
   },
   {
    "d": "2024-03-01",
-   "equity": 968.78,
-   "cash": 579.94,
+   "equity": 934.43,
+   "cash": 600.87,
    "contributed": 1000
   },
   {
    "d": "2024-03-04",
-   "equity": 972.26,
-   "cash": 383.66,
+   "equity": 936.91,
+   "cash": 404.59,
    "contributed": 1000
   },
   {
    "d": "2024-03-05",
-   "equity": 976.4,
-   "cash": 383.66,
+   "equity": 937.68,
+   "cash": 404.59,
    "contributed": 1000
   },
   {
    "d": "2024-03-06",
-   "equity": 979.66,
-   "cash": 383.66,
+   "equity": 939.16,
+   "cash": 404.59,
    "contributed": 1000
   },
   {
    "d": "2024-03-07",
-   "equity": 980.76,
-   "cash": 383.66,
+   "equity": 945.72,
+   "cash": 404.59,
    "contributed": 1000
   },
   {
    "d": "2024-03-08",
-   "equity": 980.76,
-   "cash": 383.66,
+   "equity": 946.44,
+   "cash": 544.78,
    "contributed": 1000
   },
   {
    "d": "2024-03-11",
-   "equity": 980.93,
-   "cash": 383.66,
+   "equity": 946.59,
+   "cash": 244.31,
    "contributed": 1000
   },
   {
    "d": "2024-03-12",
-   "equity": 988.85,
-   "cash": 383.66,
+   "equity": 957.22,
+   "cash": 244.31,
    "contributed": 1000
   },
   {
    "d": "2024-03-13",
-   "equity": 987.79,
-   "cash": 383.66,
+   "equity": 953.83,
+   "cash": 244.31,
    "contributed": 1000
   },
   {
    "d": "2024-03-14",
-   "equity": 988.63,
-   "cash": 582.02,
+   "equity": 956.97,
+   "cash": 244.31,
    "contributed": 1000
   },
   {
    "d": "2024-03-15",
-   "equity": 989.1,
-   "cash": 471.89,
+   "equity": 964.48,
+   "cash": 450.75,
    "contributed": 1000
   },
   {
    "d": "2024-03-18",
-   "equity": 987.04,
-   "cash": 308.01,
+   "equity": 960.86,
+   "cash": 286.87,
    "contributed": 1000
   },
   {
    "d": "2024-03-19",
-   "equity": 1000.99,
-   "cash": 308.01,
+   "equity": 969.92,
+   "cash": 286.87,
    "contributed": 1000
   },
   {
    "d": "2024-03-20",
-   "equity": 997.66,
-   "cash": 308.01,
+   "equity": 971.87,
+   "cash": 286.87,
    "contributed": 1000
   },
   {
    "d": "2024-03-21",
-   "equity": 998.04,
-   "cash": 308.01,
+   "equity": 974.15,
+   "cash": 286.87,
    "contributed": 1000
   },
   {
    "d": "2024-03-22",
-   "equity": 996.38,
-   "cash": 308.01,
+   "equity": 971.31,
+   "cash": 286.87,
    "contributed": 1000
   },
   {
    "d": "2024-03-25",
-   "equity": 999.43,
-   "cash": 308.01,
+   "equity": 973.31,
+   "cash": 286.87,
    "contributed": 1000
   },
   {
    "d": "2024-03-26",
-   "equity": 998.8,
-   "cash": 308.01,
+   "equity": 974.16,
+   "cash": 286.87,
    "contributed": 1000
   },
   {
    "d": "2024-03-27",
-   "equity": 1000.67,
-   "cash": 479.14,
+   "equity": 976.54,
+   "cash": 458.0,
    "contributed": 1000
   },
   {
    "d": "2024-03-28",
-   "equity": 995.06,
-   "cash": 141.08,
+   "equity": 970.36,
+   "cash": 150.53,
    "contributed": 1000
   },
   {
    "d": "2024-04-02",
-   "equity": 1004.57,
-   "cash": 141.08,
+   "equity": 968.05,
+   "cash": 464.32,
    "contributed": 1000
   },
   {
    "d": "2024-04-03",
-   "equity": 1005.36,
-   "cash": 675.14,
+   "equity": 967.59,
+   "cash": 400.75,
    "contributed": 1000
   },
   {
    "d": "2024-04-04",
-   "equity": 1005.59,
-   "cash": 78.7,
+   "equity": 969.82,
+   "cash": 74.18,
    "contributed": 1000
   },
   {
    "d": "2024-04-05",
-   "equity": 991.93,
-   "cash": 402.86,
+   "equity": 960.35,
+   "cash": 368.73,
    "contributed": 1000
   },
   {
    "d": "2024-04-08",
-   "equity": 993.13,
-   "cash": 202.07,
+   "equity": 965.69,
+   "cash": 167.94,
    "contributed": 1000
   },
   {
    "d": "2024-04-09",
-   "equity": 991.73,
-   "cash": 202.07,
+   "equity": 963.44,
+   "cash": 167.94,
    "contributed": 1000
   },
   {
    "d": "2024-04-10",
-   "equity": 992.05,
-   "cash": 202.07,
+   "equity": 964.69,
+   "cash": 167.94,
    "contributed": 1000
   },
   {
    "d": "2024-04-11",
-   "equity": 982.94,
-   "cash": 529.44,
+   "equity": 953.61,
+   "cash": 481.61,
    "contributed": 1000
   },
   {
    "d": "2024-04-12",
-   "equity": 982.6,
-   "cash": 213.78,
+   "equity": 953.54,
+   "cash": 165.96,
    "contributed": 1000
   },
   {
    "d": "2024-04-15",
-   "equity": 971.51,
-   "cash": 213.78,
+   "equity": 947.1,
+   "cash": 165.96,
    "contributed": 1000
   },
   {
    "d": "2024-04-16",
-   "equity": 949.77,
-   "cash": 757.01,
+   "equity": 928.46,
+   "cash": 466.7,
    "contributed": 1000
   },
   {
    "d": "2024-04-17",
-   "equity": 950.17,
-   "cash": 757.01,
+   "equity": 930.5,
+   "cash": 466.7,
    "contributed": 1000
   },
   {
    "d": "2024-04-18",
-   "equity": 952.29,
-   "cash": 757.01,
+   "equity": 931.66,
+   "cash": 466.7,
    "contributed": 1000
   },
   {
    "d": "2024-04-19",
-   "equity": 944.34,
-   "cash": 944.34,
+   "equity": 923.15,
+   "cash": 654.03,
    "contributed": 1000
   },
   {
    "d": "2024-04-22",
-   "equity": 941.79,
-   "cash": 484.71,
+   "equity": 923.09,
+   "cash": 194.4,
    "contributed": 1000
   },
   {
    "d": "2024-04-23",
-   "equity": 938.86,
-   "cash": 171.85,
+   "equity": 923.93,
+   "cash": 194.4,
    "contributed": 1000
   },
   {
    "d": "2024-04-24",
-   "equity": 931.18,
-   "cash": 471.76,
+   "equity": 925.46,
+   "cash": 194.4,
    "contributed": 1000
   },
   {
    "d": "2024-04-25",
-   "equity": 924.92,
-   "cash": 260.52,
+   "equity": 925.84,
+   "cash": 194.4,
    "contributed": 1000
   },
   {
    "d": "2024-04-26",
-   "equity": 930.54,
-   "cash": 260.52,
+   "equity": 933.54,
+   "cash": 194.4,
    "contributed": 1000
   },
   {
    "d": "2024-04-29",
-   "equity": 934.37,
-   "cash": 260.52,
+   "equity": 936.95,
+   "cash": 194.4,
    "contributed": 1000
   },
   {
    "d": "2024-04-30",
-   "equity": 934.31,
-   "cash": 260.52,
+   "equity": 934.85,
+   "cash": 194.4,
    "contributed": 1000
   },
   {
    "d": "2024-05-02",
-   "equity": 908.82,
-   "cash": 544.26,
+   "equity": 901.07,
+   "cash": 743.91,
    "contributed": 1000
   },
   {
    "d": "2024-05-03",
-   "equity": 907.95,
-   "cash": 284.07,
+   "equity": 899.29,
+   "cash": 365.89,
    "contributed": 1000
   },
   {
    "d": "2024-05-06",
-   "equity": 911.22,
-   "cash": 284.07,
+   "equity": 902.03,
+   "cash": 365.89,
    "contributed": 1000
   },
   {
    "d": "2024-05-07",
-   "equity": 913.52,
-   "cash": 284.07,
+   "equity": 904.91,
+   "cash": 365.89,
    "contributed": 1000
   },
   {
    "d": "2024-05-08",
-   "equity": 915.3,
-   "cash": 284.07,
+   "equity": 906.39,
+   "cash": 365.89,
    "contributed": 1000
   },
   {
    "d": "2024-05-09",
-   "equity": 915.82,
-   "cash": 284.07,
+   "equity": 909.19,
+   "cash": 365.89,
    "contributed": 1000
   },
   {
    "d": "2024-05-10",
-   "equity": 918.95,
-   "cash": 284.07,
+   "equity": 908.93,
+   "cash": 365.89,
    "contributed": 1000
   },
   {
    "d": "2024-05-13",
-   "equity": 919.49,
-   "cash": 284.07,
+   "equity": 911.21,
+   "cash": 365.89,
    "contributed": 1000
   },
   {
    "d": "2024-05-14",
-   "equity": 914.93,
-   "cash": 284.07,
+   "equity": 909.85,
+   "cash": 365.89,
    "contributed": 1000
   },
   {
    "d": "2024-05-15",
-   "equity": 917.68,
-   "cash": 284.07,
+   "equity": 913.18,
+   "cash": 529.2,
    "contributed": 1000
   },
   {
    "d": "2024-05-16",
-   "equity": 915.52,
-   "cash": 284.07,
+   "equity": 908.22,
+   "cash": 312.82,
    "contributed": 1000
   },
   {
    "d": "2024-05-17",
-   "equity": 915.83,
-   "cash": 284.07,
+   "equity": 910.12,
+   "cash": 312.82,
    "contributed": 1000
   },
   {
    "d": "2024-05-20",
-   "equity": 917.18,
-   "cash": 284.07,
+   "equity": 910.62,
+   "cash": 312.82,
    "contributed": 1000
   },
   {
    "d": "2024-05-21",
-   "equity": 917.95,
-   "cash": 440.89,
+   "equity": 912.55,
+   "cash": 469.64,
    "contributed": 1000
   },
   {
    "d": "2024-05-22",
-   "equity": 900.28,
-   "cash": 221.7,
+   "equity": 901.81,
+   "cash": 254.58,
    "contributed": 1000
   },
   {
    "d": "2024-05-23",
-   "equity": 904.67,
-   "cash": 221.7,
+   "equity": 904.89,
+   "cash": 254.58,
    "contributed": 1000
   },
   {
    "d": "2024-05-24",
-   "equity": 901.46,
-   "cash": 433.09,
+   "equity": 903.2,
+   "cash": 254.58,
    "contributed": 1000
   },
   {
    "d": "2024-05-27",
-   "equity": 902.42,
-   "cash": 192.27,
+   "equity": 909.55,
+   "cash": 254.58,
    "contributed": 1000
   },
   {
    "d": "2024-05-28",
-   "equity": 899.15,
-   "cash": 192.27,
+   "equity": 906.84,
+   "cash": 254.58,
    "contributed": 1000
   },
   {
    "d": "2024-05-29",
-   "equity": 892.62,
-   "cash": 420.75,
+   "equity": 902.21,
+   "cash": 254.58,
    "contributed": 1000
   },
   {
    "d": "2024-05-30",
-   "equity": 895.37,
-   "cash": 259.6,
+   "equity": 905.09,
+   "cash": 254.58,
    "contributed": 1000
   },
   {
    "d": "2024-05-31",
-   "equity": 893.66,
-   "cash": 518.02,
+   "equity": 904.87,
+   "cash": 475.87,
    "contributed": 1000
   },
   {
    "d": "2024-06-03",
-   "equity": 892.34,
-   "cash": 271.82,
+   "equity": 904.44,
+   "cash": 229.68,
    "contributed": 1000
   },
   {
    "d": "2024-06-04",
-   "equity": 886.91,
-   "cash": 271.82,
+   "equity": 898.63,
+   "cash": 229.68,
    "contributed": 1000
   },
   {
    "d": "2024-06-05",
-   "equity": 888.78,
-   "cash": 271.82,
+   "equity": 901.98,
+   "cash": 229.68,
    "contributed": 1000
   },
   {
    "d": "2024-06-06",
-   "equity": 888.63,
-   "cash": 271.82,
+   "equity": 901.63,
+   "cash": 229.68,
    "contributed": 1000
   },
   {
    "d": "2024-06-07",
-   "equity": 880.2,
-   "cash": 271.82,
+   "equity": 893.0,
+   "cash": 229.68,
    "contributed": 1000
   },
   {
    "d": "2024-06-10",
-   "equity": 866.06,
-   "cash": 653.26,
+   "equity": 879.36,
+   "cash": 666.56,
    "contributed": 1000
   },
   {
    "d": "2024-06-11",
-   "equity": 855.65,
-   "cash": 628.67,
+   "equity": 869.72,
+   "cash": 435.19,
    "contributed": 1000
   },
   {
    "d": "2024-06-12",
-   "equity": 858.89,
-   "cash": 628.67,
+   "equity": 874.57,
+   "cash": 435.19,
    "contributed": 1000
   },
   {
    "d": "2024-06-13",
-   "equity": 852.23,
-   "cash": 459.89,
+   "equity": 862.87,
+   "cash": 470.53,
    "contributed": 1000
   },
   {
    "d": "2024-06-14",
-   "equity": 836.54,
-   "cash": 836.54,
+   "equity": 847.18,
+   "cash": 847.18,
    "contributed": 1000
   },
   {
    "d": "2024-06-17",
-   "equity": 836.54,
-   "cash": 836.54,
+   "equity": 847.18,
+   "cash": 847.18,
    "contributed": 1000
   },
   {
    "d": "2024-06-18",
-   "equity": 836.54,
-   "cash": 836.54,
+   "equity": 847.18,
+   "cash": 847.18,
    "contributed": 1000
   },
   {
    "d": "2024-06-19",
-   "equity": 836.54,
-   "cash": 836.54,
+   "equity": 847.18,
+   "cash": 847.18,
    "contributed": 1000
   },
   {
    "d": "2024-06-20",
-   "equity": 836.54,
-   "cash": 836.54,
+   "equity": 847.18,
+   "cash": 847.18,
    "contributed": 1000
   },
   {
    "d": "2024-06-21",
-   "equity": 836.54,
-   "cash": 836.54,
+   "equity": 847.18,
+   "cash": 847.18,
    "contributed": 1000
   },
   {
    "d": "2024-06-24",
-   "equity": 836.54,
-   "cash": 836.54,
+   "equity": 847.18,
+   "cash": 847.18,
    "contributed": 1000
   },
   {
    "d": "2024-06-25",
-   "equity": 836.54,
-   "cash": 836.54,
+   "equity": 847.18,
+   "cash": 847.18,
    "contributed": 1000
   },
   {
    "d": "2024-06-26",
-   "equity": 836.54,
-   "cash": 836.54,
+   "equity": 847.18,
+   "cash": 847.18,
    "contributed": 1000
   },
   {
    "d": "2024-06-27",
-   "equity": 836.54,
-   "cash": 836.54,
+   "equity": 847.18,
+   "cash": 847.18,
    "contributed": 1000
   },
   {
    "d": "2024-06-28",
-   "equity": 836.54,
-   "cash": 836.54,
+   "equity": 847.18,
+   "cash": 847.18,
    "contributed": 1000
   },
   {
    "d": "2024-07-01",
-   "equity": 836.54,
-   "cash": 836.54,
+   "equity": 847.18,
+   "cash": 847.18,
    "contributed": 1000
   },
   {
    "d": "2024-07-02",
-   "equity": 831.77,
-   "cash": 650.89,
+   "equity": 842.41,
+   "cash": 661.53,
    "contributed": 1000
   },
   {
    "d": "2024-07-03",
-   "equity": 831.35,
-   "cash": 650.89,
+   "equity": 841.99,
+   "cash": 661.53,
    "contributed": 1000
   },
   {
    "d": "2024-07-04",
-   "equity": 832.89,
-   "cash": 650.89,
+   "equity": 843.53,
+   "cash": 661.53,
    "contributed": 1000
   },
   {
    "d": "2024-07-05",
-   "equity": 829.52,
-   "cash": 451.56,
+   "equity": 840.16,
+   "cash": 462.2,
    "contributed": 1000
   },
   {
    "d": "2024-07-08",
-   "equity": 829.8,
-   "cash": 451.56,
+   "equity": 840.44,
+   "cash": 462.2,
    "contributed": 1000
   },
   {
    "d": "2024-07-09",
-   "equity": 824.31,
-   "cash": 640.25,
+   "equity": 834.95,
+   "cash": 650.89,
    "contributed": 1000
   },
   {
    "d": "2024-07-10",
-   "equity": 827.35,
-   "cash": 640.25,
+   "equity": 837.99,
+   "cash": 650.89,
    "contributed": 1000
   },
   {
    "d": "2024-07-11",
-   "equity": 827.87,
-   "cash": 640.25,
+   "equity": 838.51,
+   "cash": 650.89,
    "contributed": 1000
   },
   {
    "d": "2024-07-12",
-   "equity": 828.26,
-   "cash": 454.46,
+   "equity": 838.9,
+   "cash": 465.1,
    "contributed": 1000
   },
   {
    "d": "2024-07-15",
-   "equity": 820.53,
-   "cash": 295.01,
+   "equity": 831.17,
+   "cash": 305.65,
    "contributed": 1000
   },
   {
    "d": "2024-07-16",
-   "equity": 821.99,
-   "cash": 295.01,
+   "equity": 832.63,
+   "cash": 305.65,
    "contributed": 1000
   },
   {
    "d": "2024-07-17",
-   "equity": 820.25,
-   "cash": 295.01,
+   "equity": 830.89,
+   "cash": 305.65,
    "contributed": 1000
   },
   {
    "d": "2024-07-18",
-   "equity": 821.13,
-   "cash": 295.01,
+   "equity": 831.77,
+   "cash": 305.65,
    "contributed": 1000
   },
   {
    "d": "2024-07-19",
-   "equity": 817.33,
-   "cash": 295.01,
+   "equity": 827.97,
+   "cash": 305.65,
    "contributed": 1000
   },
   {
    "d": "2024-07-22",
-   "equity": 823.99,
-   "cash": 295.01,
+   "equity": 834.63,
+   "cash": 305.65,
    "contributed": 1000
   },
   {
    "d": "2024-07-23",
-   "equity": 822.91,
-   "cash": 295.01,
+   "equity": 833.55,
+   "cash": 305.65,
    "contributed": 1000
   },
   {
    "d": "2024-07-24",
-   "equity": 820.13,
-   "cash": 295.01,
+   "equity": 830.77,
+   "cash": 305.65,
    "contributed": 1000
   },
   {
    "d": "2024-07-25",
-   "equity": 822.32,
-   "cash": 443.94,
+   "equity": 832.96,
+   "cash": 454.58,
    "contributed": 1000
   },
   {
    "d": "2024-07-26",
-   "equity": 825.54,
-   "cash": 338.62,
+   "equity": 836.19,
+   "cash": 349.27,
    "contributed": 1000
   },
   {
    "d": "2024-07-29",
-   "equity": 821.52,
-   "cash": 338.62,
+   "equity": 832.17,
+   "cash": 349.27,
    "contributed": 1000
   },
   {
    "d": "2024-07-30",
-   "equity": 825.03,
-   "cash": 527.81,
+   "equity": 835.67,
+   "cash": 538.45,
    "contributed": 1000
   },
   {
    "d": "2024-07-31",
-   "equity": 820.13,
-   "cash": 263.53,
+   "equity": 830.77,
+   "cash": 274.17,
    "contributed": 1000
   },
   {
    "d": "2024-08-01",
-   "equity": 812.94,
-   "cash": 515.74,
+   "equity": 823.59,
+   "cash": 526.39,
    "contributed": 1000
   },
   {
    "d": "2024-08-02",
-   "equity": 809.27,
-   "cash": 245.24,
+   "equity": 819.91,
+   "cash": 255.88,
    "contributed": 1000
   },
   {
    "d": "2024-08-05",
-   "equity": 797.77,
-   "cash": 245.24,
+   "equity": 808.41,
+   "cash": 255.88,
    "contributed": 1000
   },
   {
    "d": "2024-08-06",
-   "equity": 793.89,
-   "cash": 504.91,
+   "equity": 804.53,
+   "cash": 515.55,
    "contributed": 1000
   },
   {
    "d": "2024-08-07",
-   "equity": 793.93,
-   "cash": 504.91,
+   "equity": 804.57,
+   "cash": 515.55,
    "contributed": 1000
   },
   {
    "d": "2024-08-08",
-   "equity": 790.32,
-   "cash": 260.96,
+   "equity": 800.96,
+   "cash": 271.6,
    "contributed": 1000
   },
   {
    "d": "2024-08-09",
-   "equity": 792.01,
-   "cash": 442.17,
+   "equity": 802.65,
+   "cash": 452.81,
    "contributed": 1000
   },
   {
    "d": "2024-08-12",
-   "equity": 792.93,
-   "cash": 442.17,
+   "equity": 803.57,
+   "cash": 452.81,
    "contributed": 1000
   },
   {
    "d": "2024-08-13",
-   "equity": 794.33,
-   "cash": 442.17,
+   "equity": 804.97,
+   "cash": 452.81,
    "contributed": 1000
   },
   {
    "d": "2024-08-14",
-   "equity": 794.85,
-   "cash": 442.17,
+   "equity": 805.49,
+   "cash": 452.81,
    "contributed": 1000
   },
   {
    "d": "2024-08-15",
-   "equity": 789.29,
-   "cash": 244.31,
+   "equity": 799.93,
+   "cash": 254.95,
    "contributed": 1000
   },
   {
    "d": "2024-08-16",
-   "equity": 794.29,
-   "cash": 244.31,
+   "equity": 804.93,
+   "cash": 254.95,
    "contributed": 1000
   },
   {
    "d": "2024-08-19",
-   "equity": 793.95,
-   "cash": 244.31,
+   "equity": 804.59,
+   "cash": 254.95,
    "contributed": 1000
   },
   {
    "d": "2024-08-20",
-   "equity": 792.17,
-   "cash": 244.31,
+   "equity": 802.81,
+   "cash": 254.95,
    "contributed": 1000
   },
   {
    "d": "2024-08-21",
-   "equity": 793.43,
-   "cash": 244.31,
+   "equity": 804.07,
+   "cash": 254.95,
    "contributed": 1000
   },
   {
    "d": "2024-08-22",
-   "equity": 793.45,
-   "cash": 244.31,
+   "equity": 804.09,
+   "cash": 254.95,
    "contributed": 1000
   },
   {
    "d": "2024-08-23",
-   "equity": 796.0,
-   "cash": 347.16,
+   "equity": 806.64,
+   "cash": 357.8,
    "contributed": 1000
   },
   {
    "d": "2024-08-26",
-   "equity": 797.4,
-   "cash": 122.48,
+   "equity": 808.04,
+   "cash": 133.12,
    "contributed": 1000
   },
   {
    "d": "2024-08-27",
-   "equity": 799.78,
-   "cash": 122.48,
+   "equity": 810.42,
+   "cash": 133.12,
    "contributed": 1000
   },
   {
    "d": "2024-08-28",
-   "equity": 800.86,
-   "cash": 122.48,
+   "equity": 811.5,
+   "cash": 133.12,
    "contributed": 1000
   },
   {
    "d": "2024-08-29",
-   "equity": 806.88,
-   "cash": 122.48,
+   "equity": 817.52,
+   "cash": 133.12,
    "contributed": 1000
   },
   {
    "d": "2024-08-30",
-   "equity": 808.18,
-   "cash": 122.48,
+   "equity": 818.82,
+   "cash": 133.12,
    "contributed": 1000
   },
   {
    "d": "2024-09-02",
-   "equity": 813.91,
-   "cash": 330.69,
+   "equity": 824.55,
+   "cash": 341.33,
    "contributed": 1000
   },
   {
    "d": "2024-09-03",
-   "equity": 808.63,
-   "cash": 119.69,
+   "equity": 819.27,
+   "cash": 130.33,
    "contributed": 1000
   },
   {
    "d": "2024-09-04",
-   "equity": 811.77,
-   "cash": 119.69,
+   "equity": 822.41,
+   "cash": 130.33,
    "contributed": 1000
   },
   {
    "d": "2024-09-05",
-   "equity": 814.85,
-   "cash": 375.03,
+   "equity": 825.49,
+   "cash": 385.67,
    "contributed": 1000
   },
   {
    "d": "2024-09-06",
-   "equity": 807.04,
-   "cash": 153.14,
+   "equity": 817.68,
+   "cash": 163.78,
    "contributed": 1000
   },
   {
    "d": "2024-09-09",
-   "equity": 814.06,
-   "cash": 153.14,
+   "equity": 824.7,
+   "cash": 163.78,
    "contributed": 1000
   },
   {
    "d": "2024-09-10",
-   "equity": 810.5,
-   "cash": 153.14,
+   "equity": 821.14,
+   "cash": 163.78,
    "contributed": 1000
   },
   {
    "d": "2024-09-11",
-   "equity": 810.48,
-   "cash": 153.14,
+   "equity": 821.12,
+   "cash": 163.78,
    "contributed": 1000
   },
   {
    "d": "2024-09-12",
-   "equity": 800.17,
-   "cash": 366.03,
+   "equity": 810.81,
+   "cash": 376.67,
    "contributed": 1000
   },
   {
    "d": "2024-09-13",
-   "equity": 796.78,
-   "cash": 363.38,
+   "equity": 807.42,
+   "cash": 374.02,
    "contributed": 1000
   },
   {
    "d": "2024-09-16",
-   "equity": 796.03,
-   "cash": 109.02,
+   "equity": 806.68,
+   "cash": 119.67,
    "contributed": 1000
   },
   {
    "d": "2024-09-17",
-   "equity": 798.86,
-   "cash": 109.02,
+   "equity": 809.5,
+   "cash": 119.67,
    "contributed": 1000
   },
   {
    "d": "2024-09-18",
-   "equity": 794.98,
-   "cash": 109.02,
+   "equity": 805.63,
+   "cash": 119.67,
    "contributed": 1000
   },
   {
    "d": "2024-09-19",
-   "equity": 812.67,
-   "cash": 344.95,
+   "equity": 823.31,
+   "cash": 355.59,
    "contributed": 1000
   },
   {
    "d": "2024-09-20",
-   "equity": 806.97,
-   "cash": 174.09,
+   "equity": 817.61,
+   "cash": 184.73,
    "contributed": 1000
   },
   {
    "d": "2024-09-23",
-   "equity": 807.69,
-   "cash": 174.09,
+   "equity": 818.33,
+   "cash": 184.73,
    "contributed": 1000
   },
   {
    "d": "2024-09-24",
-   "equity": 809.34,
-   "cash": 174.09,
+   "equity": 819.98,
+   "cash": 184.73,
    "contributed": 1000
   },
   {
    "d": "2024-09-25",
-   "equity": 806.8,
-   "cash": 174.09,
+   "equity": 817.44,
+   "cash": 184.73,
    "contributed": 1000
   },
   {
    "d": "2024-09-26",
-   "equity": 814.58,
-   "cash": 387.38,
+   "equity": 825.22,
+   "cash": 398.02,
    "contributed": 1000
   },
   {
    "d": "2024-09-27",
-   "equity": 816.5,
-   "cash": 216.11,
+   "equity": 827.15,
+   "cash": 226.76,
    "contributed": 1000
   },
   {
    "d": "2024-09-30",
-   "equity": 805.47,
-   "cash": 216.11,
+   "equity": 816.12,
+   "cash": 226.76,
    "contributed": 1000
   },
   {
    "d": "2024-10-01",
-   "equity": 801.96,
-   "cash": 216.11,
+   "equity": 812.61,
+   "cash": 226.76,
    "contributed": 1000
   },
   {
    "d": "2024-10-02",
-   "equity": 798.61,
-   "cash": 216.11,
+   "equity": 809.26,
+   "cash": 226.76,
    "contributed": 1000
   },
   {
    "d": "2024-10-03",
-   "equity": 785.9,
-   "cash": 619.4,
+   "equity": 796.54,
+   "cash": 630.04,
    "contributed": 1000
   },
   {
    "d": "2024-10-04",
-   "equity": 784.4,
-   "cash": 619.4,
+   "equity": 795.04,
+   "cash": 630.04,
    "contributed": 1000
   },
   {
    "d": "2024-10-07",
-   "equity": 784.76,
-   "cash": 619.4,
+   "equity": 795.4,
+   "cash": 630.04,
    "contributed": 1000
   },
   {
    "d": "2024-10-08",
-   "equity": 782.55,
-   "cash": 491.29,
+   "equity": 793.19,
+   "cash": 501.93,
    "contributed": 1000
   },
   {
    "d": "2024-10-09",
-   "equity": 781.62,
-   "cash": 338.92,
+   "equity": 792.26,
+   "cash": 349.56,
    "contributed": 1000
   },
   {
    "d": "2024-10-10",
-   "equity": 778.02,
-   "cash": 338.92,
+   "equity": 788.66,
+   "cash": 349.56,
    "contributed": 1000
   },
   {
    "d": "2024-10-11",
-   "equity": 778.08,
-   "cash": 338.92,
+   "equity": 788.72,
+   "cash": 349.56,
    "contributed": 1000
   },
   {
    "d": "2024-10-14",
-   "equity": 780.04,
-   "cash": 338.92,
+   "equity": 790.68,
+   "cash": 349.56,
    "contributed": 1000
   },
   {
    "d": "2024-10-15",
-   "equity": 773.73,
-   "cash": 457.84,
+   "equity": 784.37,
+   "cash": 468.48,
    "contributed": 1000
   },
   {
    "d": "2024-10-16",
-   "equity": 772.85,
-   "cash": 213.9,
+   "equity": 783.47,
+   "cash": 208.38,
    "contributed": 1000
   },
   {
    "d": "2024-10-17",
-   "equity": 776.89,
-   "cash": 213.9,
+   "equity": 787.39,
+   "cash": 208.38,
    "contributed": 1000
   },
   {
    "d": "2024-10-18",
-   "equity": 775.61,
-   "cash": 213.9,
+   "equity": 786.02,
+   "cash": 208.38,
    "contributed": 1000
   },
   {
    "d": "2024-10-21",
-   "equity": 765.55,
-   "cash": 374.95,
+   "equity": 775.86,
+   "cash": 369.43,
    "contributed": 1000
   },
   {
    "d": "2024-10-22",
-   "equity": 762.5,
-   "cash": 386.6,
+   "equity": 772.58,
+   "cash": 396.68,
    "contributed": 1000
   },
   {
    "d": "2024-10-23",
-   "equity": 757.83,
-   "cash": 215.82,
+   "equity": 767.91,
+   "cash": 225.9,
    "contributed": 1000
   },
   {
    "d": "2024-10-24",
-   "equity": 759.25,
-   "cash": 215.82,
+   "equity": 769.33,
+   "cash": 225.9,
    "contributed": 1000
   },
   {
    "d": "2024-10-25",
-   "equity": 754.53,
-   "cash": 215.82,
+   "equity": 764.61,
+   "cash": 225.9,
    "contributed": 1000
   },
   {
    "d": "2024-10-28",
-   "equity": 754.95,
-   "cash": 215.82,
+   "equity": 765.03,
+   "cash": 225.9,
    "contributed": 1000
   },
   {
    "d": "2024-10-29",
-   "equity": 749.86,
-   "cash": 215.82,
+   "equity": 759.94,
+   "cash": 225.9,
    "contributed": 1000
   },
   {
    "d": "2024-10-30",
-   "equity": 737.92,
-   "cash": 586.87,
+   "equity": 748.0,
+   "cash": 596.95,
    "contributed": 1000
   },
   {
    "d": "2024-10-31",
-   "equity": 735.02,
-   "cash": 586.87,
+   "equity": 745.1,
+   "cash": 596.95,
    "contributed": 1000
   },
   {
    "d": "2024-11-01",
-   "equity": 737.49,
-   "cash": 424.39,
+   "equity": 747.57,
+   "cash": 434.47,
    "contributed": 1000
   },
   {
    "d": "2024-11-04",
-   "equity": 731.82,
-   "cash": 281.9,
+   "equity": 741.9,
+   "cash": 291.98,
    "contributed": 1000
   },
   {
    "d": "2024-11-05",
-   "equity": 734.32,
-   "cash": 281.9,
+   "equity": 744.4,
+   "cash": 291.98,
    "contributed": 1000
   },
   {
    "d": "2024-11-06",
-   "equity": 739.38,
-   "cash": 434.57,
+   "equity": 749.46,
+   "cash": 444.65,
    "contributed": 1000
   },
   {
    "d": "2024-11-07",
-   "equity": 739.4,
-   "cash": 329.86,
+   "equity": 749.48,
+   "cash": 339.94,
    "contributed": 1000
   },
   {
    "d": "2024-11-08",
-   "equity": 734.56,
-   "cash": 329.86,
+   "equity": 744.64,
+   "cash": 339.94,
    "contributed": 1000
   },
   {
    "d": "2024-11-11",
-   "equity": 740.12,
-   "cash": 329.86,
+   "equity": 750.2,
+   "cash": 339.94,
    "contributed": 1000
   },
   {
    "d": "2024-11-12",
-   "equity": 729.45,
-   "cash": 329.86,
+   "equity": 739.53,
+   "cash": 339.94,
    "contributed": 1000
   },
   {
    "d": "2024-11-13",
-   "equity": 725.95,
-   "cash": 329.86,
+   "equity": 736.03,
+   "cash": 339.94,
    "contributed": 1000
   },
   {
    "d": "2024-11-14",
-   "equity": 729.61,
-   "cash": 329.86,
+   "equity": 739.69,
+   "cash": 339.94,
    "contributed": 1000
   },
   {
    "d": "2024-11-15",
-   "equity": 721.91,
-   "cash": 427.21,
+   "equity": 731.99,
+   "cash": 437.29,
    "contributed": 1000
   },
   {
    "d": "2024-11-18",
-   "equity": 723.48,
-   "cash": 335.29,
+   "equity": 733.56,
+   "cash": 345.37,
    "contributed": 1000
   },
   {
    "d": "2024-11-19",
-   "equity": 718.29,
-   "cash": 335.29,
+   "equity": 728.37,
+   "cash": 345.37,
    "contributed": 1000
   },
   {
    "d": "2024-11-20",
-   "equity": 720.07,
-   "cash": 335.29,
+   "equity": 730.15,
+   "cash": 345.37,
    "contributed": 1000
   },
   {
    "d": "2024-11-21",
-   "equity": 722.53,
-   "cash": 335.29,
+   "equity": 732.61,
+   "cash": 345.37,
    "contributed": 1000
   },
   {
    "d": "2024-11-22",
-   "equity": 716.43,
-   "cash": 335.29,
+   "equity": 726.51,
+   "cash": 345.37,
    "contributed": 1000
   },
   {
    "d": "2024-11-25",
-   "equity": 712.93,
-   "cash": 487.13,
+   "equity": 723.01,
+   "cash": 497.21,
    "contributed": 1000
   },
   {
    "d": "2024-11-26",
-   "equity": 707.98,
-   "cash": 379.48,
+   "equity": 718.06,
+   "cash": 389.56,
    "contributed": 1000
   },
   {
    "d": "2024-11-27",
-   "equity": 709.73,
-   "cash": 463.85,
+   "equity": 719.81,
+   "cash": 473.93,
    "contributed": 1000
   },
   {
    "d": "2024-11-28",
-   "equity": 715.09,
-   "cash": 463.85,
+   "equity": 725.17,
+   "cash": 473.93,
    "contributed": 1000
   },
   {
    "d": "2024-11-29",
-   "equity": 715.6,
-   "cash": 307.22,
+   "equity": 725.68,
+   "cash": 317.3,
    "contributed": 1000
   },
   {
    "d": "2024-12-02",
-   "equity": 711.76,
-   "cash": 456.16,
+   "equity": 721.84,
+   "cash": 466.24,
    "contributed": 1000
   },
   {
    "d": "2024-12-03",
-   "equity": 712.83,
-   "cash": 303.87,
+   "equity": 722.91,
+   "cash": 313.95,
    "contributed": 1000
   },
   {
    "d": "2024-12-04",
-   "equity": 717.67,
-   "cash": 303.87,
+   "equity": 727.75,
+   "cash": 313.95,
    "contributed": 1000
   },
   {
    "d": "2024-12-05",
-   "equity": 720.17,
-   "cash": 303.87,
+   "equity": 730.25,
+   "cash": 313.95,
    "contributed": 1000
   },
   {
    "d": "2024-12-06",
-   "equity": 722.19,
-   "cash": 303.87,
+   "equity": 732.27,
+   "cash": 313.95,
    "contributed": 1000
   },
   {
    "d": "2024-12-09",
-   "equity": 720.73,
-   "cash": 303.87,
+   "equity": 730.81,
+   "cash": 313.95,
    "contributed": 1000
   },
   {
    "d": "2024-12-10",
-   "equity": 715.09,
-   "cash": 303.87,
+   "equity": 725.17,
+   "cash": 313.95,
    "contributed": 1000
   },
   {
    "d": "2024-12-11",
-   "equity": 713.43,
-   "cash": 450.09,
+   "equity": 723.51,
+   "cash": 460.17,
    "contributed": 1000
   },
   {
    "d": "2024-12-12",
-   "equity": 714.06,
-   "cash": 235.54,
+   "equity": 724.14,
+   "cash": 245.62,
    "contributed": 1000
   },
   {
    "d": "2024-12-13",
-   "equity": 714.3,
-   "cash": 235.54,
+   "equity": 724.38,
+   "cash": 245.62,
    "contributed": 1000
   },
   {
    "d": "2024-12-16",
-   "equity": 712.54,
-   "cash": 235.54,
+   "equity": 722.62,
+   "cash": 245.62,
    "contributed": 1000
   },
   {
    "d": "2024-12-17",
-   "equity": 710.88,
-   "cash": 235.54,
+   "equity": 720.96,
+   "cash": 245.62,
    "contributed": 1000
   },
   {
    "d": "2024-12-18",
-   "equity": 711.88,
-   "cash": 235.54,
+   "equity": 721.96,
+   "cash": 245.62,
    "contributed": 1000
   },
   {
    "d": "2024-12-19",
-   "equity": 704.62,
-   "cash": 235.54,
+   "equity": 714.7,
+   "cash": 245.62,
    "contributed": 1000
   },
   {
    "d": "2024-12-20",
-   "equity": 700.88,
-   "cash": 438.9,
+   "equity": 710.96,
+   "cash": 448.98,
    "contributed": 1000
   },
   {
    "d": "2024-12-23",
-   "equity": 698.9,
-   "cash": 438.9,
+   "equity": 708.98,
+   "cash": 448.98,
    "contributed": 1000
   },
   {
    "d": "2024-12-24",
-   "equity": 698.83,
-   "cash": 347.21,
+   "equity": 708.91,
+   "cash": 357.29,
    "contributed": 1000
   },
   {
    "d": "2024-12-27",
-   "equity": 696.62,
-   "cash": 251.22,
+   "equity": 706.7,
+   "cash": 261.3,
    "contributed": 1000
   },
   {
    "d": "2024-12-30",
-   "equity": 693.06,
-   "cash": 251.22,
+   "equity": 703.14,
+   "cash": 261.3,
    "contributed": 1000
   },
   {
    "d": "2024-12-31",
-   "equity": 697.34,
-   "cash": 251.22,
+   "equity": 707.42,
+   "cash": 261.3,
    "contributed": 1000
   },
   {
    "d": "2025-01-02",
-   "equity": 700.56,
-   "cash": 251.22,
+   "equity": 710.64,
+   "cash": 261.3,
    "contributed": 1000
   },
   {
    "d": "2025-01-03",
-   "equity": 694.66,
-   "cash": 408.22,
+   "equity": 704.74,
+   "cash": 418.3,
    "contributed": 1000
   },
   {
    "d": "2025-01-06",
-   "equity": 698.8,
-   "cash": 187.13,
+   "equity": 708.84,
+   "cash": 181.52,
    "contributed": 1000
   },
   {
    "d": "2025-01-07",
-   "equity": 703.03,
-   "cash": 187.13,
+   "equity": 713.14,
+   "cash": 181.52,
    "contributed": 1000
   },
   {
    "d": "2025-01-08",
-   "equity": 694.24,
-   "cash": 187.13,
+   "equity": 704.35,
+   "cash": 181.52,
    "contributed": 1000
   },
   {
    "d": "2025-01-09",
-   "equity": 697.47,
-   "cash": 187.13,
+   "equity": 707.64,
+   "cash": 181.52,
    "contributed": 1000
   },
   {
    "d": "2025-01-10",
-   "equity": 693.95,
-   "cash": 187.13,
+   "equity": 703.98,
+   "cash": 181.52,
    "contributed": 1000
   },
   {
    "d": "2025-01-13",
-   "equity": 695.94,
-   "cash": 187.13,
+   "equity": 706.13,
+   "cash": 181.52,
    "contributed": 1000
   },
   {
    "d": "2025-01-14",
-   "equity": 687.93,
-   "cash": 374.53,
+   "equity": 698.05,
+   "cash": 368.93,
    "contributed": 1000
   },
   {
    "d": "2025-01-15",
-   "equity": 690.51,
-   "cash": 193.94,
+   "equity": 700.8,
+   "cash": 174.56,
    "contributed": 1000
   },
   {
    "d": "2025-01-16",
-   "equity": 693.52,
-   "cash": 193.94,
+   "equity": 703.91,
+   "cash": 174.56,
    "contributed": 1000
   },
   {
    "d": "2025-01-17",
-   "equity": 698.34,
-   "cash": 193.94,
+   "equity": 709.02,
+   "cash": 174.56,
    "contributed": 1000
   },
   {
    "d": "2025-01-20",
-   "equity": 695.75,
-   "cash": 193.94,
+   "equity": 706.35,
+   "cash": 174.56,
    "contributed": 1000
   },
   {
    "d": "2025-01-21",
-   "equity": 694.22,
-   "cash": 193.94,
+   "equity": 704.7,
+   "cash": 174.56,
    "contributed": 1000
   },
   {
    "d": "2025-01-22",
-   "equity": 693.45,
-   "cash": 193.94,
+   "equity": 703.66,
+   "cash": 174.56,
    "contributed": 1000
   },
   {
    "d": "2025-01-23",
-   "equity": 693.3,
-   "cash": 193.94,
+   "equity": 703.67,
+   "cash": 174.56,
    "contributed": 1000
   },
   {
    "d": "2025-01-24",
-   "equity": 694.12,
-   "cash": 193.94,
+   "equity": 704.47,
+   "cash": 174.56,
    "contributed": 1000
   },
   {
    "d": "2025-01-27",
-   "equity": 692.0,
-   "cash": 290.49,
+   "equity": 702.32,
+   "cash": 271.11,
    "contributed": 1000
   },
   {
    "d": "2025-01-28",
-   "equity": 695.84,
-   "cash": 89.25,
+   "equity": 706.36,
+   "cash": 69.87,
    "contributed": 1000
   },
   {
    "d": "2025-01-29",
-   "equity": 696.16,
-   "cash": 89.25,
+   "equity": 706.82,
+   "cash": 69.87,
    "contributed": 1000
   },
   {
    "d": "2025-01-30",
-   "equity": 701.81,
-   "cash": 89.25,
+   "equity": 712.68,
+   "cash": 69.87,
    "contributed": 1000
   },
   {
    "d": "2025-01-31",
-   "equity": 703.59,
-   "cash": 89.25,
+   "equity": 714.67,
+   "cash": 69.87,
    "contributed": 1000
   },
   {
    "d": "2025-02-03",
-   "equity": 697.41,
-   "cash": 310.52,
+   "equity": 708.35,
+   "cash": 307.05,
    "contributed": 1000
   },
   {
    "d": "2025-02-04",
-   "equity": 695.03,
-   "cash": 149.66,
+   "equity": 706.12,
+   "cash": 146.19,
    "contributed": 1000
   },
   {
    "d": "2025-02-05",
-   "equity": 697.53,
-   "cash": 341.24,
+   "equity": 708.91,
+   "cash": 352.62,
    "contributed": 1000
   },
   {
    "d": "2025-02-06",
-   "equity": 693.06,
-   "cash": 231.25,
+   "equity": 704.45,
+   "cash": 242.64,
    "contributed": 1000
   },
   {
    "d": "2025-02-07",
-   "equity": 696.3,
-   "cash": 231.25,
+   "equity": 707.69,
+   "cash": 242.64,
    "contributed": 1000
   },
   {
    "d": "2025-02-10",
-   "equity": 696.22,
-   "cash": 231.25,
+   "equity": 707.61,
+   "cash": 242.64,
    "contributed": 1000
   },
   {
    "d": "2025-02-11",
-   "equity": 697.9,
-   "cash": 231.25,
+   "equity": 709.29,
+   "cash": 242.64,
    "contributed": 1000
   },
   {
    "d": "2025-02-12",
-   "equity": 698.8,
-   "cash": 231.25,
+   "equity": 710.19,
+   "cash": 242.64,
    "contributed": 1000
   },
   {
    "d": "2025-02-13",
-   "equity": 699.53,
-   "cash": 231.25,
+   "equity": 710.92,
+   "cash": 242.64,
    "contributed": 1000
   },
   {
    "d": "2025-02-14",
-   "equity": 703.73,
-   "cash": 231.25,
+   "equity": 715.12,
+   "cash": 242.64,
    "contributed": 1000
   },
   {
    "d": "2025-02-17",
-   "equity": 709.98,
-   "cash": 399.77,
+   "equity": 721.36,
+   "cash": 411.15,
    "contributed": 1000
   },
   {
    "d": "2025-02-18",
-   "equity": 707.24,
-   "cash": 300.05,
+   "equity": 718.62,
+   "cash": 311.43,
    "contributed": 1000
   },
   {
    "d": "2025-02-19",
-   "equity": 701.47,
-   "cash": 392.08,
+   "equity": 712.86,
+   "cash": 403.47,
    "contributed": 1000
   },
   {
    "d": "2025-02-20",
-   "equity": 697.3,
-   "cash": 372.8,
+   "equity": 708.68,
+   "cash": 384.18,
    "contributed": 1000
   },
   {
    "d": "2025-02-21",
-   "equity": 695.03,
-   "cash": 263.59,
+   "equity": 706.41,
+   "cash": 274.97,
    "contributed": 1000
   },
   {
    "d": "2025-02-24",
-   "equity": 694.9,
-   "cash": 471.38,
+   "equity": 706.28,
+   "cash": 482.76,
    "contributed": 1000
   },
   {
    "d": "2025-02-25",
-   "equity": 690.14,
-   "cash": 259.96,
+   "equity": 701.52,
+   "cash": 271.34,
    "contributed": 1000
   },
   {
    "d": "2025-02-26",
-   "equity": 687.53,
-   "cash": 359.65,
+   "equity": 698.91,
+   "cash": 371.03,
    "contributed": 1000
   },
   {
    "d": "2025-02-27",
-   "equity": 682.14,
-   "cash": 336.68,
+   "equity": 693.52,
+   "cash": 348.06,
    "contributed": 1000
   },
   {
    "d": "2025-02-28",
-   "equity": 680.1,
-   "cash": 238.18,
+   "equity": 691.48,
+   "cash": 249.56,
    "contributed": 1000
   },
   {
    "d": "2025-03-03",
-   "equity": 683.3,
-   "cash": 238.18,
+   "equity": 694.68,
+   "cash": 249.56,
    "contributed": 1000
   },
   {
    "d": "2025-03-04",
-   "equity": 676.6,
-   "cash": 238.18,
+   "equity": 687.98,
+   "cash": 249.56,
    "contributed": 1000
   },
   {
    "d": "2025-03-05",
-   "equity": 692.92,
-   "cash": 340.4,
+   "equity": 704.3,
+   "cash": 351.78,
    "contributed": 1000
   },
   {
    "d": "2025-03-06",
-   "equity": 696.89,
-   "cash": 232.32,
+   "equity": 708.27,
+   "cash": 243.7,
    "contributed": 1000
   },
   {
    "d": "2025-03-07",
-   "equity": 694.12,
-   "cash": 232.32,
+   "equity": 705.5,
+   "cash": 243.7,
    "contributed": 1000
   },
   {
    "d": "2025-03-10",
-   "equity": 685.52,
-   "cash": 232.32,
+   "equity": 696.9,
+   "cash": 243.7,
    "contributed": 1000
   },
   {
    "d": "2025-03-11",
-   "equity": 681.74,
-   "cash": 332.43,
+   "equity": 693.12,
+   "cash": 343.81,
    "contributed": 1000
   },
   {
    "d": "2025-03-12",
-   "equity": 684.0,
-   "cash": 332.43,
+   "equity": 695.38,
+   "cash": 343.81,
    "contributed": 1000
   },
   {
    "d": "2025-03-13",
-   "equity": 681.48,
-   "cash": 175.47,
+   "equity": 692.87,
+   "cash": 186.86,
    "contributed": 1000
   },
   {
    "d": "2025-03-14",
-   "equity": 685.55,
-   "cash": 175.47,
+   "equity": 696.94,
+   "cash": 186.86,
    "contributed": 1000
   },
   {
    "d": "2025-03-17",
-   "equity": 689.93,
-   "cash": 301.26,
+   "equity": 701.31,
+   "cash": 312.64,
    "contributed": 1000
   },
   {
    "d": "2025-03-18",
-   "equity": 692.96,
-   "cash": 374.77,
+   "equity": 704.34,
+   "cash": 386.15,
    "contributed": 1000
   },
   {
    "d": "2025-03-19",
-   "equity": 691.57,
-   "cash": 293.0,
+   "equity": 702.95,
+   "cash": 304.38,
    "contributed": 1000
   },
   {
    "d": "2025-03-20",
-   "equity": 687.91,
-   "cash": 293.0,
+   "equity": 699.29,
+   "cash": 304.38,
    "contributed": 1000
   },
   {
    "d": "2025-03-21",
-   "equity": 687.61,
-   "cash": 293.0,
+   "equity": 698.99,
+   "cash": 304.38,
    "contributed": 1000
   },
   {
    "d": "2025-03-24",
-   "equity": 688.25,
-   "cash": 293.0,
+   "equity": 699.63,
+   "cash": 304.38,
    "contributed": 1000
   },
   {
    "d": "2025-03-25",
-   "equity": 694.29,
-   "cash": 293.0,
+   "equity": 705.67,
+   "cash": 304.38,
    "contributed": 1000
   },
   {
    "d": "2025-03-26",
-   "equity": 692.59,
-   "cash": 293.0,
+   "equity": 703.97,
+   "cash": 304.38,
    "contributed": 1000
   },
   {
    "d": "2025-03-27",
-   "equity": 693.57,
-   "cash": 293.0,
+   "equity": 704.95,
+   "cash": 304.38,
    "contributed": 1000
   },
   {
    "d": "2025-03-28",
-   "equity": 692.26,
-   "cash": 293.0,
+   "equity": 703.64,
+   "cash": 304.38,
    "contributed": 1000
   },
   {
    "d": "2025-03-31",
-   "equity": 686.26,
-   "cash": 293.0,
+   "equity": 697.64,
+   "cash": 304.38,
    "contributed": 1000
   },
   {
    "d": "2025-04-01",
-   "equity": 693.39,
-   "cash": 293.0,
+   "equity": 704.77,
+   "cash": 304.38,
    "contributed": 1000
   },
   {
    "d": "2025-04-02",
-   "equity": 695.55,
-   "cash": 293.0,
+   "equity": 706.93,
+   "cash": 304.38,
    "contributed": 1000
   },
   {
    "d": "2025-04-03",
-   "equity": 688.69,
-   "cash": 366.77,
+   "equity": 700.07,
+   "cash": 378.15,
    "contributed": 1000
   },
   {
    "d": "2025-04-04",
-   "equity": 658.12,
-   "cash": 504.27,
+   "equity": 669.5,
+   "cash": 515.65,
    "contributed": 1000
   },
   {
    "d": "2025-04-07",
-   "equity": 640.7,
-   "cash": 640.7,
+   "equity": 652.08,
+   "cash": 652.08,
    "contributed": 1000
   },
   {
    "d": "2025-04-08",
-   "equity": 640.7,
-   "cash": 640.7,
+   "equity": 652.08,
+   "cash": 652.08,
    "contributed": 1000
   },
   {
    "d": "2025-04-09",
-   "equity": 640.7,
-   "cash": 640.7,
+   "equity": 652.08,
+   "cash": 652.08,
    "contributed": 1000
   },
   {
    "d": "2025-04-10",
-   "equity": 640.7,
-   "cash": 640.7,
+   "equity": 652.08,
+   "cash": 652.08,
    "contributed": 1000
   },
   {
    "d": "2025-04-11",
-   "equity": 640.7,
-   "cash": 640.7,
+   "equity": 652.08,
+   "cash": 652.08,
    "contributed": 1000
   },
   {
    "d": "2025-04-14",
-   "equity": 640.7,
-   "cash": 640.7,
+   "equity": 652.08,
+   "cash": 652.08,
    "contributed": 1000
   },
   {
    "d": "2025-04-15",
-   "equity": 640.7,
-   "cash": 640.7,
+   "equity": 652.08,
+   "cash": 652.08,
    "contributed": 1000
   },
   {
    "d": "2025-04-16",
-   "equity": 640.7,
-   "cash": 640.7,
+   "equity": 652.08,
+   "cash": 652.08,
    "contributed": 1000
   },
   {
    "d": "2025-04-17",
-   "equity": 636.82,
-   "cash": 325.26,
+   "equity": 648.26,
+   "cash": 324.12,
    "contributed": 1000
   },
   {
    "d": "2025-04-22",
-   "equity": 639.12,
-   "cash": 325.26,
+   "equity": 650.73,
+   "cash": 324.12,
    "contributed": 1000
   },
   {
    "d": "2025-04-23",
-   "equity": 639.04,
-   "cash": 325.26,
+   "equity": 650.56,
+   "cash": 324.12,
    "contributed": 1000
   },
   {
    "d": "2025-04-24",
-   "equity": 640.77,
-   "cash": 325.26,
+   "equity": 652.33,
+   "cash": 324.12,
    "contributed": 1000
   },
   {
    "d": "2025-04-25",
-   "equity": 636.65,
-   "cash": 325.26,
+   "equity": 647.84,
+   "cash": 324.12,
    "contributed": 1000
   },
   {
    "d": "2025-04-28",
-   "equity": 638.29,
-   "cash": 325.26,
+   "equity": 649.54,
+   "cash": 324.12,
    "contributed": 1000
   },
   {
    "d": "2025-04-29",
-   "equity": 640.5,
-   "cash": 325.26,
+   "equity": 651.89,
+   "cash": 324.12,
    "contributed": 1000
   },
   {
    "d": "2025-04-30",
-   "equity": 645.17,
-   "cash": 325.26,
+   "equity": 656.81,
+   "cash": 324.12,
    "contributed": 1000
   },
   {
    "d": "2025-05-02",
-   "equity": 646.07,
-   "cash": 325.26,
+   "equity": 657.6,
+   "cash": 324.12,
    "contributed": 1000
   },
   {
    "d": "2025-05-05",
-   "equity": 640.57,
-   "cash": 325.26,
+   "equity": 652.13,
+   "cash": 324.12,
    "contributed": 1000
   },
   {
    "d": "2025-05-06",
-   "equity": 642.2,
-   "cash": 325.26,
+   "equity": 653.89,
+   "cash": 324.12,
    "contributed": 1000
   },
   {
    "d": "2025-05-07",
-   "equity": 641.77,
-   "cash": 325.26,
+   "equity": 653.45,
+   "cash": 324.12,
    "contributed": 1000
   },
   {
    "d": "2025-05-08",
-   "equity": 638.53,
-   "cash": 325.26,
+   "equity": 649.99,
+   "cash": 324.12,
    "contributed": 1000
   },
   {
    "d": "2025-05-09",
-   "equity": 639.47,
-   "cash": 325.26,
+   "equity": 650.97,
+   "cash": 324.12,
    "contributed": 1000
   },
   {
    "d": "2025-05-12",
-   "equity": 633.22,
-   "cash": 325.26,
+   "equity": 644.46,
+   "cash": 324.12,
    "contributed": 1000
   },
   {
    "d": "2025-05-13",
-   "equity": 631.37,
-   "cash": 325.26,
+   "equity": 642.54,
+   "cash": 324.12,
    "contributed": 1000
   },
   {
    "d": "2025-05-14",
-   "equity": 635.45,
-   "cash": 325.26,
+   "equity": 646.67,
+   "cash": 324.12,
    "contributed": 1000
   },
   {
    "d": "2025-05-15",
-   "equity": 640.37,
-   "cash": 325.26,
+   "equity": 651.82,
+   "cash": 324.12,
    "contributed": 1000
   },
   {
    "d": "2025-05-16",
-   "equity": 643.16,
-   "cash": 325.26,
+   "equity": 654.75,
+   "cash": 324.12,
    "contributed": 1000
   },
   {
    "d": "2025-05-19",
-   "equity": 644.53,
-   "cash": 325.26,
+   "equity": 656.18,
+   "cash": 324.12,
    "contributed": 1000
   },
   {
    "d": "2025-05-20",
-   "equity": 646.87,
-   "cash": 646.87,
+   "equity": 659.01,
+   "cash": 659.01,
    "contributed": 1000
   },
   {
    "d": "2025-05-21",
-   "equity": 642.04,
-   "cash": 33.81,
+   "equity": 654.2,
+   "cash": 32.64,
    "contributed": 1000
   },
   {
    "d": "2025-05-22",
-   "equity": 643.49,
-   "cash": 33.81,
+   "equity": 655.75,
+   "cash": 32.64,
    "contributed": 1000
   },
   {
    "d": "2025-05-23",
-   "equity": 638.23,
-   "cash": 33.81,
+   "equity": 650.4,
+   "cash": 32.64,
    "contributed": 1000
   },
   {
    "d": "2025-05-26",
-   "equity": 639.83,
-   "cash": 33.81,
+   "equity": 652.0,
+   "cash": 32.64,
    "contributed": 1000
   },
   {
    "d": "2025-05-27",
-   "equity": 637.29,
-   "cash": 33.81,
+   "equity": 649.32,
+   "cash": 32.64,
    "contributed": 1000
   },
   {
    "d": "2025-05-28",
-   "equity": 636.23,
-   "cash": 33.81,
+   "equity": 648.22,
+   "cash": 32.64,
    "contributed": 1000
   },
   {
    "d": "2025-05-29",
-   "equity": 632.55,
-   "cash": 231.72,
+   "equity": 644.52,
+   "cash": 230.54,
    "contributed": 1000
   },
   {
    "d": "2025-05-30",
-   "equity": 628.62,
-   "cash": 146.06,
+   "equity": 640.58,
+   "cash": 144.88,
    "contributed": 1000
   },
   {
    "d": "2025-06-02",
-   "equity": 628.11,
-   "cash": 146.06,
+   "equity": 640.14,
+   "cash": 144.88,
    "contributed": 1000
   },
   {
    "d": "2025-06-03",
-   "equity": 612.28,
-   "cash": 530.16,
+   "equity": 623.9,
+   "cash": 541.78,
    "contributed": 1000
   },
   {
    "d": "2025-06-04",
-   "equity": 608.9,
-   "cash": 358.42,
+   "equity": 620.52,
+   "cash": 370.04,
    "contributed": 1000
   },
   {
    "d": "2025-06-05",
-   "equity": 609.8,
-   "cash": 282.23,
+   "equity": 621.42,
+   "cash": 293.85,
    "contributed": 1000
   },
   {
    "d": "2025-06-06",
-   "equity": 610.5,
-   "cash": 282.23,
+   "equity": 622.12,
+   "cash": 293.85,
    "contributed": 1000
   },
   {
    "d": "2025-06-09",
-   "equity": 612.08,
-   "cash": 282.23,
+   "equity": 623.7,
+   "cash": 293.85,
    "contributed": 1000
   },
   {
    "d": "2025-06-10",
-   "equity": 613.85,
-   "cash": 282.23,
+   "equity": 625.47,
+   "cash": 293.85,
    "contributed": 1000
   },
   {
    "d": "2025-06-11",
-   "equity": 613.96,
-   "cash": 282.23,
+   "equity": 625.58,
+   "cash": 293.85,
    "contributed": 1000
   },
   {
    "d": "2025-06-12",
-   "equity": 610.59,
-   "cash": 282.23,
+   "equity": 622.21,
+   "cash": 293.85,
    "contributed": 1000
   },
   {
    "d": "2025-06-13",
-   "equity": 605.46,
-   "cash": 445.85,
+   "equity": 617.08,
+   "cash": 457.47,
    "contributed": 1000
   },
   {
    "d": "2025-06-16",
-   "equity": 603.88,
-   "cash": 245.35,
+   "equity": 615.5,
+   "cash": 256.97,
    "contributed": 1000
   },
   {
    "d": "2025-06-17",
-   "equity": 595.91,
-   "cash": 437.16,
+   "equity": 607.53,
+   "cash": 448.78,
    "contributed": 1000
   },
   {
    "d": "2025-06-18",
-   "equity": 591.34,
-   "cash": 323.54,
+   "equity": 602.95,
+   "cash": 335.15,
    "contributed": 1000
   },
   {
    "d": "2025-06-19",
-   "equity": 589.1,
-   "cash": 323.54,
+   "equity": 600.71,
+   "cash": 335.15,
    "contributed": 1000
   },
   {
    "d": "2025-06-20",
-   "equity": 588.74,
-   "cash": 323.54,
+   "equity": 600.35,
+   "cash": 335.15,
    "contributed": 1000
   },
   {
    "d": "2025-06-23",
-   "equity": 585.67,
-   "cash": 402.14,
+   "equity": 597.28,
+   "cash": 413.75,
    "contributed": 1000
   },
   {
    "d": "2025-06-24",
-   "equity": 580.42,
-   "cash": 503.18,
+   "equity": 592.04,
+   "cash": 514.8,
    "contributed": 1000
   },
   {
    "d": "2025-06-25",
-   "equity": 578.92,
-   "cash": 503.18,
+   "equity": 590.54,
+   "cash": 514.8,
    "contributed": 1000
   },
   {
    "d": "2025-06-26",
-   "equity": 580.63,
-   "cash": 503.18,
+   "equity": 592.25,
+   "cash": 514.8,
    "contributed": 1000
   },
   {
    "d": "2025-06-27",
-   "equity": 577.93,
-   "cash": 392.95,
+   "equity": 589.55,
+   "cash": 404.57,
    "contributed": 1000
   },
   {
    "d": "2025-06-30",
-   "equity": 575.02,
-   "cash": 276.23,
+   "equity": 586.64,
+   "cash": 287.85,
    "contributed": 1000
   },
   {
    "d": "2025-07-01",
-   "equity": 569.16,
-   "cash": 276.23,
+   "equity": 580.78,
+   "cash": 287.85,
    "contributed": 1000
   },
   {
    "d": "2025-07-02",
-   "equity": 580.55,
-   "cash": 276.23,
+   "equity": 592.17,
+   "cash": 287.85,
    "contributed": 1000
   },
   {
    "d": "2025-07-03",
-   "equity": 581.05,
-   "cash": 357.04,
+   "equity": 592.67,
+   "cash": 368.66,
    "contributed": 1000
   },
   {
    "d": "2025-07-04",
-   "equity": 576.33,
-   "cash": 246.45,
+   "equity": 587.95,
+   "cash": 258.07,
    "contributed": 1000
   },
   {
    "d": "2025-07-07",
-   "equity": 579.16,
-   "cash": 246.45,
+   "equity": 590.78,
+   "cash": 258.07,
    "contributed": 1000
   },
   {
    "d": "2025-07-08",
-   "equity": 582.43,
-   "cash": 246.45,
+   "equity": 594.05,
+   "cash": 258.07,
    "contributed": 1000
   },
   {
    "d": "2025-07-09",
-   "equity": 582.92,
-   "cash": 246.45,
+   "equity": 594.54,
+   "cash": 258.07,
    "contributed": 1000
   },
   {
    "d": "2025-07-10",
-   "equity": 591.39,
-   "cash": 246.45,
+   "equity": 603.01,
+   "cash": 258.07,
    "contributed": 1000
   },
   {
    "d": "2025-07-11",
-   "equity": 588.54,
-   "cash": 246.45,
+   "equity": 600.16,
+   "cash": 258.07,
    "contributed": 1000
   },
   {
    "d": "2025-07-14",
-   "equity": 584.22,
-   "cash": 246.45,
+   "equity": 595.84,
+   "cash": 258.07,
    "contributed": 1000
   },
   {
    "d": "2025-07-15",
-   "equity": 585.01,
-   "cash": 246.45,
+   "equity": 596.63,
+   "cash": 258.07,
    "contributed": 1000
   },
   {
    "d": "2025-07-16",
-   "equity": 577.5,
-   "cash": 246.45,
+   "equity": 589.12,
+   "cash": 258.07,
    "contributed": 1000
   },
   {
    "d": "2025-07-17",
-   "equity": 591.54,
-   "cash": 246.45,
+   "equity": 603.16,
+   "cash": 258.07,
    "contributed": 1000
   },
   {
    "d": "2025-07-18",
-   "equity": 591.93,
-   "cash": 368.09,
+   "equity": 603.54,
+   "cash": 379.7,
    "contributed": 1000
   },
   {
    "d": "2025-07-21",
-   "equity": 595.73,
-   "cash": 213.31,
+   "equity": 607.35,
+   "cash": 224.93,
    "contributed": 1000
   },
   {
    "d": "2025-07-22",
-   "equity": 592.75,
-   "cash": 213.31,
+   "equity": 604.37,
+   "cash": 224.93,
    "contributed": 1000
   },
   {
    "d": "2025-07-23",
-   "equity": 585.0,
-   "cash": 360.56,
+   "equity": 596.62,
+   "cash": 372.18,
    "contributed": 1000
   },
   {
    "d": "2025-07-24",
-   "equity": 568.51,
-   "cash": 305.3,
+   "equity": 579.44,
+   "cash": 267.0,
    "contributed": 1000
   },
   {
    "d": "2025-07-25",
-   "equity": 571.29,
-   "cash": 284.58,
+   "equity": 582.72,
+   "cash": 246.28,
    "contributed": 1000
   },
   {
    "d": "2025-07-28",
-   "equity": 557.43,
-   "cash": 125.9,
+   "equity": 568.59,
+   "cash": 87.59,
    "contributed": 1000
   },
   {
    "d": "2025-07-29",
-   "equity": 558.3,
-   "cash": 125.9,
+   "equity": 569.17,
+   "cash": 87.59,
    "contributed": 1000
   },
   {
    "d": "2025-07-30",
-   "equity": 555.76,
-   "cash": 275.4,
+   "equity": 566.86,
+   "cash": 237.1,
    "contributed": 1000
   },
   {
    "d": "2025-07-31",
-   "equity": 544.59,
-   "cash": 266.19,
+   "equity": 551.77,
+   "cash": 273.37,
    "contributed": 1000
   },
   {
    "d": "2025-08-01",
-   "equity": 537.99,
-   "cash": 153.19,
+   "equity": 545.17,
+   "cash": 160.37,
    "contributed": 1000
   },
   {
    "d": "2025-08-04",
-   "equity": 541.95,
-   "cash": 153.19,
+   "equity": 549.13,
+   "cash": 160.37,
    "contributed": 1000
   },
   {
    "d": "2025-08-05",
-   "equity": 541.03,
-   "cash": 153.19,
+   "equity": 548.21,
+   "cash": 160.37,
    "contributed": 1000
   },
   {
    "d": "2025-08-06",
-   "equity": 537.11,
-   "cash": 153.19,
+   "equity": 544.29,
+   "cash": 160.37,
    "contributed": 1000
   },
   {
    "d": "2025-08-07",
-   "equity": 540.59,
-   "cash": 153.19,
+   "equity": 547.77,
+   "cash": 160.37,
    "contributed": 1000
   },
   {
    "d": "2025-08-08",
-   "equity": 545.03,
-   "cash": 153.19,
+   "equity": 552.21,
+   "cash": 160.37,
    "contributed": 1000
   },
   {
    "d": "2025-08-11",
-   "equity": 542.59,
-   "cash": 153.19,
+   "equity": 549.77,
+   "cash": 160.37,
    "contributed": 1000
   },
   {
    "d": "2025-08-12",
-   "equity": 545.03,
-   "cash": 153.19,
+   "equity": 552.21,
+   "cash": 160.37,
    "contributed": 1000
   },
   {
    "d": "2025-08-13",
-   "equity": 545.27,
-   "cash": 153.19,
+   "equity": 552.45,
+   "cash": 160.37,
    "contributed": 1000
   },
   {
    "d": "2025-08-14",
-   "equity": 548.63,
-   "cash": 153.19,
+   "equity": 555.81,
+   "cash": 160.37,
    "contributed": 1000
   },
   {
    "d": "2025-08-15",
-   "equity": 550.19,
-   "cash": 153.19,
+   "equity": 557.37,
+   "cash": 160.37,
    "contributed": 1000
   },
   {
    "d": "2025-08-18",
-   "equity": 546.79,
-   "cash": 153.19,
+   "equity": 553.97,
+   "cash": 160.37,
    "contributed": 1000
   },
   {
    "d": "2025-08-19",
-   "equity": 549.91,
-   "cash": 153.19,
+   "equity": 557.09,
+   "cash": 160.37,
    "contributed": 1000
   },
   {
    "d": "2025-08-20",
-   "equity": 554.71,
-   "cash": 153.19,
+   "equity": 561.89,
+   "cash": 160.37,
    "contributed": 1000
   },
   {
    "d": "2025-08-21",
-   "equity": 552.59,
-   "cash": 153.19,
+   "equity": 559.77,
+   "cash": 160.37,
    "contributed": 1000
   },
   {
    "d": "2025-08-22",
-   "equity": 550.51,
-   "cash": 288.35,
+   "equity": 557.68,
+   "cash": 295.52,
    "contributed": 1000
   },
   {
    "d": "2025-08-25",
-   "equity": 542.1,
-   "cash": 122.76,
+   "equity": 549.27,
+   "cash": 129.93,
    "contributed": 1000
   },
   {
    "d": "2025-08-26",
-   "equity": 528.34,
-   "cash": 384.26,
+   "equity": 535.51,
+   "cash": 391.43,
    "contributed": 1000
   },
   {
    "d": "2025-08-27",
-   "equity": 527.7,
-   "cash": 384.26,
+   "equity": 534.87,
+   "cash": 391.43,
    "contributed": 1000
   },
   {
    "d": "2025-08-28",
-   "equity": 524.77,
-   "cash": 524.77,
+   "equity": 531.94,
+   "cash": 531.94,
    "contributed": 1000
   },
   {
    "d": "2025-08-29",
-   "equity": 524.77,
-   "cash": 524.77,
+   "equity": 531.94,
+   "cash": 531.94,
    "contributed": 1000
   },
   {
    "d": "2025-09-01",
-   "equity": 524.77,
-   "cash": 524.77,
+   "equity": 531.94,
+   "cash": 531.94,
    "contributed": 1000
   },
   {
    "d": "2025-09-02",
-   "equity": 524.77,
-   "cash": 524.77,
+   "equity": 531.94,
+   "cash": 531.94,
    "contributed": 1000
   },
   {
    "d": "2025-09-03",
-   "equity": 524.77,
-   "cash": 524.77,
+   "equity": 531.94,
+   "cash": 531.94,
    "contributed": 1000
   },
   {
    "d": "2025-09-04",
-   "equity": 524.77,
-   "cash": 524.77,
+   "equity": 531.94,
+   "cash": 531.94,
    "contributed": 1000
   },
   {
    "d": "2025-09-05",
-   "equity": 523.11,
-   "cash": 372.95,
+   "equity": 530.29,
+   "cash": 380.13,
    "contributed": 1000
   },
   {
    "d": "2025-09-08",
-   "equity": 522.39,
-   "cash": 372.95,
+   "equity": 529.57,
+   "cash": 380.13,
    "contributed": 1000
   },
   {
    "d": "2025-09-09",
-   "equity": 517.61,
-   "cash": 149.77,
+   "equity": 524.78,
+   "cash": 156.94,
    "contributed": 1000
   },
   {
    "d": "2025-09-10",
-   "equity": 518.13,
-   "cash": 149.77,
+   "equity": 525.3,
+   "cash": 156.94,
    "contributed": 1000
   },
   {
    "d": "2025-09-11",
-   "equity": 520.04,
-   "cash": 149.77,
+   "equity": 527.21,
+   "cash": 156.94,
    "contributed": 1000
   },
   {
    "d": "2025-09-12",
-   "equity": 521.31,
-   "cash": 149.77,
+   "equity": 528.48,
+   "cash": 156.94,
    "contributed": 1000
   },
   {
    "d": "2025-09-15",
-   "equity": 520.65,
-   "cash": 149.77,
+   "equity": 527.82,
+   "cash": 156.94,
    "contributed": 1000
   },
   {
    "d": "2025-09-16",
-   "equity": 516.38,
-   "cash": 230.17,
+   "equity": 523.55,
+   "cash": 237.34,
    "contributed": 1000
   },
   {
    "d": "2025-09-17",
-   "equity": 513.0,
-   "cash": 158.35,
+   "equity": 520.17,
+   "cash": 165.52,
    "contributed": 1000
   },
   {
    "d": "2025-09-18",
-   "equity": 515.88,
-   "cash": 158.35,
+   "equity": 523.05,
+   "cash": 165.52,
    "contributed": 1000
   },
   {
    "d": "2025-09-19",
-   "equity": 516.71,
-   "cash": 158.35,
+   "equity": 523.88,
+   "cash": 165.52,
    "contributed": 1000
   },
   {
    "d": "2025-09-22",
-   "equity": 513.46,
-   "cash": 302.22,
+   "equity": 520.63,
+   "cash": 309.39,
    "contributed": 1000
   },
   {
    "d": "2025-09-23",
-   "equity": 513.13,
-   "cash": 351.76,
+   "equity": 520.3,
+   "cash": 358.93,
    "contributed": 1000
   },
   {
    "d": "2025-09-24",
-   "equity": 511.35,
-   "cash": 276.84,
+   "equity": 518.53,
+   "cash": 284.02,
    "contributed": 1000
   },
   {
    "d": "2025-09-25",
-   "equity": 511.62,
-   "cash": 276.84,
+   "equity": 518.8,
+   "cash": 284.02,
    "contributed": 1000
   },
   {
    "d": "2025-09-26",
-   "equity": 512.08,
-   "cash": 276.84,
+   "equity": 519.25,
+   "cash": 284.02,
    "contributed": 1000
   },
   {
    "d": "2025-09-29",
-   "equity": 512.15,
-   "cash": 276.84,
+   "equity": 519.33,
+   "cash": 284.02,
    "contributed": 1000
   },
   {
    "d": "2025-09-30",
-   "equity": 509.73,
-   "cash": 276.84,
+   "equity": 516.91,
+   "cash": 284.02,
    "contributed": 1000
   },
   {
    "d": "2025-10-01",
-   "equity": 515.71,
-   "cash": 276.84,
+   "equity": 522.89,
+   "cash": 284.02,
    "contributed": 1000
   },
   {
    "d": "2025-10-02",
-   "equity": 519.05,
-   "cash": 276.84,
+   "equity": 526.22,
+   "cash": 284.02,
    "contributed": 1000
   },
   {
    "d": "2025-10-03",
-   "equity": 521.98,
-   "cash": 276.84,
+   "equity": 529.16,
+   "cash": 284.02,
    "contributed": 1000
   },
   {
    "d": "2025-10-06",
-   "equity": 520.26,
-   "cash": 375.28,
+   "equity": 527.44,
+   "cash": 382.46,
    "contributed": 1000
   },
   {
    "d": "2025-10-07",
-   "equity": 520.64,
-   "cash": 309.1,
+   "equity": 527.82,
+   "cash": 316.27,
    "contributed": 1000
   },
   {
    "d": "2025-10-08",
-   "equity": 519.35,
-   "cash": 309.1,
+   "equity": 526.52,
+   "cash": 316.27,
    "contributed": 1000
   },
   {
    "d": "2025-10-09",
-   "equity": 518.13,
-   "cash": 309.1,
+   "equity": 525.3,
+   "cash": 316.27,
    "contributed": 1000
   },
   {
    "d": "2025-10-10",
-   "equity": 509.6,
-   "cash": 309.1,
+   "equity": 516.78,
+   "cash": 316.27,
    "contributed": 1000
   },
   {
    "d": "2025-10-13",
-   "equity": 513.62,
-   "cash": 309.1,
+   "equity": 520.79,
+   "cash": 316.27,
    "contributed": 1000
   },
   {
    "d": "2025-10-14",
-   "equity": 507.97,
-   "cash": 367.42,
+   "equity": 515.14,
+   "cash": 374.59,
    "contributed": 1000
   },
   {
    "d": "2025-10-15",
-   "equity": 505.45,
-   "cash": 276.75,
+   "equity": 512.62,
+   "cash": 283.93,
    "contributed": 1000
   },
   {
    "d": "2025-10-16",
-   "equity": 509.8,
-   "cash": 193.29,
+   "equity": 516.97,
+   "cash": 200.46,
    "contributed": 1000
   },
   {
    "d": "2025-10-17",
-   "equity": 507.53,
-   "cash": 193.29,
+   "equity": 514.7,
+   "cash": 200.46,
    "contributed": 1000
   },
   {
    "d": "2025-10-20",
-   "equity": 510.09,
-   "cash": 193.29,
+   "equity": 517.26,
+   "cash": 200.46,
    "contributed": 1000
   },
   {
    "d": "2025-10-21",
-   "equity": 510.78,
-   "cash": 193.29,
+   "equity": 517.95,
+   "cash": 200.46,
    "contributed": 1000
   },
   {
    "d": "2025-10-22",
-   "equity": 506.4,
-   "cash": 268.22,
+   "equity": 513.57,
+   "cash": 275.39,
    "contributed": 1000
   },
   {
    "d": "2025-10-23",
-   "equity": 507.15,
-   "cash": 174.65,
+   "equity": 514.32,
+   "cash": 181.82,
    "contributed": 1000
   },
   {
    "d": "2025-10-24",
-   "equity": 505.05,
-   "cash": 174.65,
+   "equity": 512.22,
+   "cash": 181.82,
    "contributed": 1000
   },
   {
    "d": "2025-10-27",
-   "equity": 503.27,
-   "cash": 174.65,
+   "equity": 510.44,
+   "cash": 181.82,
    "contributed": 1000
   },
   {
    "d": "2025-10-28",
-   "equity": 504.71,
-   "cash": 174.65,
+   "equity": 511.88,
+   "cash": 181.82,
    "contributed": 1000
   },
   {
    "d": "2025-10-29",
-   "equity": 506.05,
-   "cash": 174.65,
+   "equity": 513.22,
+   "cash": 181.82,
    "contributed": 1000
   },
   {
    "d": "2025-10-30",
-   "equity": 506.73,
-   "cash": 174.65,
+   "equity": 513.9,
+   "cash": 181.82,
    "contributed": 1000
   },
   {
    "d": "2025-10-31",
-   "equity": 504.95,
-   "cash": 174.65,
+   "equity": 512.12,
+   "cash": 181.82,
    "contributed": 1000
   },
   {
    "d": "2025-11-03",
-   "equity": 502.56,
-   "cash": 423.96,
+   "equity": 509.73,
+   "cash": 431.13,
    "contributed": 1000
   },
   {
    "d": "2025-11-04",
-   "equity": 500.54,
-   "cash": 333.98,
+   "equity": 507.72,
+   "cash": 341.16,
    "contributed": 1000
   },
   {
    "d": "2025-11-05",
-   "equity": 499.74,
-   "cash": 188.24,
+   "equity": 506.91,
+   "cash": 195.41,
    "contributed": 1000
   },
   {
    "d": "2025-11-06",
-   "equity": 500.64,
-   "cash": 188.24,
+   "equity": 507.81,
+   "cash": 195.41,
    "contributed": 1000
   },
   {
    "d": "2025-11-07",
-   "equity": 495.93,
-   "cash": 326.57,
+   "equity": 503.1,
+   "cash": 333.74,
    "contributed": 1000
   },
   {
    "d": "2025-11-10",
-   "equity": 496.01,
-   "cash": 326.57,
+   "equity": 503.18,
+   "cash": 333.74,
    "contributed": 1000
   },
   {
    "d": "2025-11-11",
-   "equity": 493.31,
-   "cash": 173.05,
+   "equity": 500.48,
+   "cash": 180.22,
    "contributed": 1000
   },
   {
    "d": "2025-11-12",
-   "equity": 497.93,
-   "cash": 345.23,
+   "equity": 505.1,
+   "cash": 352.4,
    "contributed": 1000
   },
   {
    "d": "2025-11-13",
-   "equity": 497.04,
-   "cash": 212.76,
+   "equity": 504.21,
+   "cash": 219.93,
    "contributed": 1000
   },
   {
    "d": "2025-11-14",
-   "equity": 494.46,
-   "cash": 212.76,
+   "equity": 501.63,
+   "cash": 219.93,
    "contributed": 1000
   },
   {
    "d": "2025-11-17",
-   "equity": 495.28,
-   "cash": 212.76,
+   "equity": 502.45,
+   "cash": 219.93,
    "contributed": 1000
   },
   {
    "d": "2025-11-18",
-   "equity": 490.64,
-   "cash": 212.76,
+   "equity": 497.81,
+   "cash": 219.93,
    "contributed": 1000
   },
   {
    "d": "2025-11-19",
-   "equity": 486.53,
-   "cash": 300.23,
+   "equity": 493.71,
+   "cash": 307.41,
    "contributed": 1000
   },
   {
    "d": "2025-11-20",
-   "equity": 484.91,
-   "cash": 184.77,
+   "equity": 492.09,
+   "cash": 191.95,
    "contributed": 1000
   },
   {
    "d": "2025-11-21",
-   "equity": 483.48,
-   "cash": 184.77,
+   "equity": 490.66,
+   "cash": 191.95,
    "contributed": 1000
   },
   {
    "d": "2025-11-24",
-   "equity": 485.11,
-   "cash": 184.77,
+   "equity": 492.29,
+   "cash": 191.95,
    "contributed": 1000
   },
   {
    "d": "2025-11-25",
-   "equity": 489.12,
-   "cash": 184.77,
+   "equity": 496.3,
+   "cash": 191.95,
    "contributed": 1000
   },
   {
    "d": "2025-11-26",
-   "equity": 492.3,
-   "cash": 184.77,
+   "equity": 499.48,
+   "cash": 191.95,
    "contributed": 1000
   },
   {
    "d": "2025-11-27",
-   "equity": 494.57,
-   "cash": 184.77,
+   "equity": 501.75,
+   "cash": 191.95,
    "contributed": 1000
   },
   {
    "d": "2025-11-28",
-   "equity": 495.11,
-   "cash": 184.77,
+   "equity": 502.29,
+   "cash": 191.95,
    "contributed": 1000
   },
   {
    "d": "2025-12-01",
-   "equity": 494.59,
-   "cash": 184.77,
+   "equity": 501.77,
+   "cash": 191.95,
    "contributed": 1000
   },
   {
    "d": "2025-12-02",
-   "equity": 494.74,
-   "cash": 303.96,
+   "equity": 501.92,
+   "cash": 311.14,
    "contributed": 1000
   },
   {
    "d": "2025-12-03",
-   "equity": 491.41,
-   "cash": 150.27,
+   "equity": 498.58,
+   "cash": 157.44,
    "contributed": 1000
   },
   {
    "d": "2025-12-04",
-   "equity": 494.35,
-   "cash": 150.27,
+   "equity": 501.52,
+   "cash": 157.44,
    "contributed": 1000
   },
   {
    "d": "2025-12-05",
-   "equity": 491.42,
-   "cash": 150.27,
+   "equity": 498.59,
+   "cash": 157.44,
    "contributed": 1000
   },
   {
    "d": "2025-12-08",
-   "equity": 495.01,
-   "cash": 150.27,
+   "equity": 502.18,
+   "cash": 157.44,
    "contributed": 1000
   },
   {
    "d": "2025-12-09",
-   "equity": 495.97,
-   "cash": 211.63,
+   "equity": 503.15,
+   "cash": 218.81,
    "contributed": 1000
   },
   {
    "d": "2025-12-10",
-   "equity": 492.18,
-   "cash": 132.56,
+   "equity": 499.35,
+   "cash": 139.73,
    "contributed": 1000
   },
   {
    "d": "2025-12-11",
-   "equity": 493.94,
-   "cash": 259.75,
+   "equity": 501.11,
+   "cash": 266.92,
    "contributed": 1000
   },
   {
    "d": "2025-12-12",
-   "equity": 490.23,
-   "cash": 102.23,
+   "equity": 497.4,
+   "cash": 109.41,
    "contributed": 1000
   },
   {
    "d": "2025-12-15",
-   "equity": 492.95,
-   "cash": 102.23,
+   "equity": 500.13,
+   "cash": 109.41,
    "contributed": 1000
   },
   {
    "d": "2025-12-16",
-   "equity": 494.1,
-   "cash": 102.23,
+   "equity": 501.28,
+   "cash": 109.41,
    "contributed": 1000
   },
   {
    "d": "2025-12-17",
-   "equity": 496.72,
-   "cash": 102.23,
+   "equity": 503.89,
+   "cash": 109.41,
    "contributed": 1000
   },
   {
    "d": "2025-12-18",
-   "equity": 497.05,
-   "cash": 102.23,
+   "equity": 504.23,
+   "cash": 109.41,
    "contributed": 1000
   },
   {
    "d": "2025-12-19",
-   "equity": 499.25,
-   "cash": 102.23,
+   "equity": 506.42,
+   "cash": 109.41,
    "contributed": 1000
   },
   {
    "d": "2025-12-22",
-   "equity": 497.61,
-   "cash": 102.23,
+   "equity": 504.79,
+   "cash": 109.41,
    "contributed": 1000
   },
   {
    "d": "2025-12-23",
-   "equity": 496.34,
-   "cash": 102.23,
+   "equity": 503.51,
+   "cash": 109.41,
    "contributed": 1000
   },
   {
    "d": "2025-12-24",
-   "equity": 495.99,
-   "cash": 102.23,
+   "equity": 503.16,
+   "cash": 109.41,
    "contributed": 1000
   },
   {
    "d": "2025-12-29",
-   "equity": 495.56,
-   "cash": 102.23,
+   "equity": 502.73,
+   "cash": 109.41,
    "contributed": 1000
   },
   {
    "d": "2025-12-30",
-   "equity": 498.23,
-   "cash": 102.23,
+   "equity": 505.41,
+   "cash": 109.41,
    "contributed": 1000
   },
   {
    "d": "2025-12-31",
-   "equity": 497.5,
-   "cash": 102.23,
+   "equity": 504.68,
+   "cash": 109.41,
    "contributed": 1000
   },
   {
    "d": "2026-01-02",
-   "equity": 502.77,
-   "cash": 102.23,
+   "equity": 509.95,
+   "cash": 109.41,
    "contributed": 1000
   },
   {
    "d": "2026-01-05",
-   "equity": 498.75,
-   "cash": 260.4,
+   "equity": 505.92,
+   "cash": 267.58,
    "contributed": 1000
   },
   {
    "d": "2026-01-06",
-   "equity": 496.01,
-   "cash": 191.27,
+   "equity": 503.19,
+   "cash": 198.44,
    "contributed": 1000
   },
   {
    "d": "2026-01-07",
-   "equity": 497.6,
-   "cash": 191.27,
+   "equity": 504.77,
+   "cash": 198.44,
    "contributed": 1000
   },
   {
    "d": "2026-01-08",
-   "equity": 500.7,
-   "cash": 191.27,
+   "equity": 507.87,
+   "cash": 198.44,
    "contributed": 1000
   },
   {
    "d": "2026-01-09",
-   "equity": 500.33,
-   "cash": 274.36,
+   "equity": 507.5,
+   "cash": 281.53,
    "contributed": 1000
   },
   {
    "d": "2026-01-12",
-   "equity": 501.49,
-   "cash": 186.17,
+   "equity": 508.66,
+   "cash": 193.34,
    "contributed": 1000
   },
   {
    "d": "2026-01-13",
-   "equity": 497.31,
-   "cash": 257.4,
+   "equity": 504.48,
+   "cash": 264.57,
    "contributed": 1000
   },
   {
    "d": "2026-01-14",
-   "equity": 492.45,
-   "cash": 333.45,
+   "equity": 499.62,
+   "cash": 340.62,
    "contributed": 1000
   },
   {
    "d": "2026-01-15",
-   "equity": 491.16,
-   "cash": 217.84,
+   "equity": 498.33,
+   "cash": 225.01,
    "contributed": 1000
   },
   {
    "d": "2026-01-16",
-   "equity": 490.77,
-   "cash": 217.84,
+   "equity": 497.94,
+   "cash": 225.01,
    "contributed": 1000
   },
   {
    "d": "2026-01-19",
-   "equity": 488.83,
-   "cash": 217.84,
+   "equity": 496.0,
+   "cash": 225.01,
    "contributed": 1000
   },
   {
    "d": "2026-01-20",
-   "equity": 488.42,
-   "cash": 217.84,
+   "equity": 495.59,
+   "cash": 225.01,
    "contributed": 1000
   },
   {
    "d": "2026-01-21",
-   "equity": 489.12,
-   "cash": 217.84,
+   "equity": 496.29,
+   "cash": 225.01,
    "contributed": 1000
   },
   {
    "d": "2026-01-22",
-   "equity": 492.03,
-   "cash": 217.84,
+   "equity": 499.2,
+   "cash": 225.01,
    "contributed": 1000
   },
   {
    "d": "2026-01-23",
-   "equity": 492.66,
-   "cash": 217.84,
+   "equity": 499.83,
+   "cash": 225.01,
    "contributed": 1000
   },
   {
    "d": "2026-01-26",
-   "equity": 495.04,
-   "cash": 217.84,
+   "equity": 502.21,
+   "cash": 225.01,
    "contributed": 1000
   },
   {
    "d": "2026-01-27",
-   "equity": 497.91,
-   "cash": 217.84,
+   "equity": 505.08,
+   "cash": 225.01,
    "contributed": 1000
   },
   {
    "d": "2026-01-28",
-   "equity": 498.85,
-   "cash": 217.84,
+   "equity": 506.02,
+   "cash": 225.01,
    "contributed": 1000
   },
   {
    "d": "2026-01-29",
-   "equity": 496.72,
-   "cash": 406.68,
+   "equity": 503.89,
+   "cash": 413.85,
    "contributed": 1000
   },
   {
    "d": "2026-01-30",
-   "equity": 496.89,
-   "cash": 132.79,
+   "equity": 504.06,
+   "cash": 139.96,
    "contributed": 1000
   },
   {
    "d": "2026-02-02",
-   "equity": 496.79,
-   "cash": 132.79,
+   "equity": 503.96,
+   "cash": 139.96,
    "contributed": 1000
   },
   {
    "d": "2026-02-03",
-   "equity": 501.28,
-   "cash": 224.54,
+   "equity": 508.45,
+   "cash": 231.71,
    "contributed": 1000
   },
   {
    "d": "2026-02-04",
-   "equity": 507.62,
-   "cash": 92.98,
+   "equity": 514.79,
+   "cash": 100.15,
    "contributed": 1000
   },
   {
    "d": "2026-02-05",
-   "equity": 501.5,
-   "cash": 92.98,
+   "equity": 508.67,
+   "cash": 100.15,
    "contributed": 1000
   },
   {
    "d": "2026-02-06",
-   "equity": 504.26,
-   "cash": 92.98,
+   "equity": 511.43,
+   "cash": 100.15,
    "contributed": 1000
   },
   {
    "d": "2026-02-09",
-   "equity": 506.04,
-   "cash": 92.98,
+   "equity": 513.21,
+   "cash": 100.15,
    "contributed": 1000
   },
   {
    "d": "2026-02-10",
-   "equity": 505.26,
-   "cash": 92.98,
+   "equity": 512.43,
+   "cash": 100.15,
    "contributed": 1000
   },
   {
    "d": "2026-02-11",
-   "equity": 508.02,
-   "cash": 250.1,
+   "equity": 515.19,
+   "cash": 257.27,
    "contributed": 1000
   },
   {
    "d": "2026-02-12",
-   "equity": 515.01,
-   "cash": 411.18,
+   "equity": 522.24,
+   "cash": 401.11,
    "contributed": 1000
   },
   {
    "d": "2026-02-13",
-   "equity": 512.55,
-   "cash": 225.52,
+   "equity": 519.63,
+   "cash": 215.45,
    "contributed": 1000
   },
   {
    "d": "2026-02-16",
-   "equity": 514.78,
-   "cash": 225.52,
+   "equity": 522.0,
+   "cash": 215.45,
    "contributed": 1000
   },
   {
    "d": "2026-02-17",
-   "equity": 515.37,
-   "cash": 327.71,
+   "equity": 522.45,
+   "cash": 317.64,
    "contributed": 1000
   },
   {
    "d": "2026-02-18",
-   "equity": 507.17,
-   "cash": 220.74,
+   "equity": 513.97,
+   "cash": 210.66,
    "contributed": 1000
   },
   {
    "d": "2026-02-19",
-   "equity": 516.32,
-   "cash": 220.74,
+   "equity": 524.38,
+   "cash": 210.66,
    "contributed": 1000
   },
   {
    "d": "2026-02-20",
-   "equity": 518.48,
-   "cash": 220.74,
+   "equity": 526.15,
+   "cash": 210.66,
    "contributed": 1000
   },
   {
    "d": "2026-02-23",
-   "equity": 515.59,
-   "cash": 220.74,
+   "equity": 523.24,
+   "cash": 210.66,
    "contributed": 1000
   },
   {
    "d": "2026-02-24",
-   "equity": 517.57,
-   "cash": 220.74,
+   "equity": 525.53,
+   "cash": 210.66,
    "contributed": 1000
   },
   {
    "d": "2026-02-25",
-   "equity": 511.48,
-   "cash": 299.14,
+   "equity": 519.47,
+   "cash": 289.06,
    "contributed": 1000
   },
   {
    "d": "2026-02-26",
-   "equity": 510.28,
-   "cash": 180.87,
+   "equity": 518.05,
+   "cash": 170.8,
    "contributed": 1000
   },
   {
    "d": "2026-02-27",
-   "equity": 511.88,
-   "cash": 180.87,
+   "equity": 520.0,
+   "cash": 170.8,
    "contributed": 1000
   },
   {
    "d": "2026-03-02",
-   "equity": 501.21,
-   "cash": 291.04,
+   "equity": 509.0,
+   "cash": 280.96,
    "contributed": 1000
   },
   {
    "d": "2026-03-03",
-   "equity": 493.58,
-   "cash": 318.62,
+   "equity": 501.32,
+   "cash": 308.55,
    "contributed": 1000
   },
   {
    "d": "2026-03-04",
-   "equity": 489.93,
-   "cash": 384.06,
+   "equity": 497.5,
+   "cash": 373.98,
    "contributed": 1000
   },
   {
    "d": "2026-03-05",
-   "equity": 489.39,
-   "cash": 384.06,
+   "equity": 496.87,
+   "cash": 373.98,
    "contributed": 1000
   },
   {
    "d": "2026-03-06",
-   "equity": 488.91,
-   "cash": 384.06,
+   "equity": 496.31,
+   "cash": 373.98,
    "contributed": 1000
   },
   {
    "d": "2026-03-09",
-   "equity": 486.81,
-   "cash": 384.06,
+   "equity": 493.86,
+   "cash": 373.98,
    "contributed": 1000
   },
   {
    "d": "2026-03-10",
-   "equity": 486.93,
-   "cash": 384.06,
+   "equity": 494.0,
+   "cash": 373.98,
    "contributed": 1000
   },
   {
    "d": "2026-03-11",
-   "equity": 485.13,
-   "cash": 353.59,
+   "equity": 492.12,
+   "cash": 343.52,
    "contributed": 1000
   },
   {
    "d": "2026-03-12",
-   "equity": 482.62,
-   "cash": 383.26,
+   "equity": 489.71,
+   "cash": 390.35,
    "contributed": 1000
   },
   {
    "d": "2026-03-13",
-   "equity": 484.21,
-   "cash": 383.26,
+   "equity": 491.3,
+   "cash": 390.35,
    "contributed": 1000
   },
   {
    "d": "2026-03-16",
-   "equity": 485.04,
-   "cash": 383.26,
+   "equity": 492.13,
+   "cash": 390.35,
    "contributed": 1000
   },
   {
    "d": "2026-03-17",
-   "equity": 486.98,
-   "cash": 383.26,
+   "equity": 494.07,
+   "cash": 390.35,
    "contributed": 1000
   },
   {
    "d": "2026-03-18",
-   "equity": 487.8,
-   "cash": 383.26,
+   "equity": 494.89,
+   "cash": 390.35,
    "contributed": 1000
   },
   {
    "d": "2026-03-19",
-   "equity": 486.75,
-   "cash": 458.95,
+   "equity": 493.85,
+   "cash": 466.05,
    "contributed": 1000
   },
   {
    "d": "2026-03-20",
-   "equity": 483.0,
-   "cash": 379.12,
+   "equity": 490.1,
+   "cash": 386.22,
    "contributed": 1000
   },
   {
    "d": "2026-03-23",
-   "equity": 475.64,
-   "cash": 475.64,
+   "equity": 482.73,
+   "cash": 482.73,
    "contributed": 1000
   },
   {
    "d": "2026-03-24",
-   "equity": 475.64,
-   "cash": 475.64,
+   "equity": 482.73,
+   "cash": 482.73,
    "contributed": 1000
   },
   {
    "d": "2026-03-25",
-   "equity": 475.64,
-   "cash": 475.64,
+   "equity": 482.73,
+   "cash": 482.73,
    "contributed": 1000
   },
   {
    "d": "2026-03-26",
-   "equity": 475.64,
-   "cash": 475.64,
+   "equity": 482.73,
+   "cash": 482.73,
    "contributed": 1000
   },
   {
    "d": "2026-03-27",
-   "equity": 473.78,
-   "cash": 395.29,
+   "equity": 480.87,
+   "cash": 402.38,
    "contributed": 1000
   },
   {
    "d": "2026-03-30",
-   "equity": 476.31,
-   "cash": 395.29,
+   "equity": 483.4,
+   "cash": 402.38,
    "contributed": 1000
   },
   {
    "d": "2026-03-31",
-   "equity": 476.2,
-   "cash": 395.29,
+   "equity": 483.29,
+   "cash": 402.38,
    "contributed": 1000
   },
   {
    "d": "2026-04-01",
-   "equity": 468.61,
-   "cash": 196.43,
+   "equity": 475.7,
+   "cash": 203.52,
    "contributed": 1000
   },
   {
    "d": "2026-04-02",
-   "equity": 471.79,
-   "cash": 196.43,
+   "equity": 478.88,
+   "cash": 203.52,
    "contributed": 1000
   },
   {
    "d": "2026-04-07",
-   "equity": 468.48,
-   "cash": 196.43,
+   "equity": 475.57,
+   "cash": 203.52,
    "contributed": 1000
   },
   {
    "d": "2026-04-08",
-   "equity": 463.13,
-   "cash": 268.89,
+   "equity": 470.22,
+   "cash": 275.98,
    "contributed": 1000
   },
   {
    "d": "2026-04-09",
-   "equity": 459.12,
-   "cash": 282.99,
+   "equity": 466.21,
+   "cash": 290.08,
    "contributed": 1000
   },
   {
    "d": "2026-04-10",
-   "equity": 458.18,
-   "cash": 211.5,
+   "equity": 465.27,
+   "cash": 218.59,
    "contributed": 1000
   },
   {
    "d": "2026-04-13",
-   "equity": 457.2,
-   "cash": 211.5,
+   "equity": 464.29,
+   "cash": 218.59,
    "contributed": 1000
   },
   {
    "d": "2026-04-14",
-   "equity": 460.63,
-   "cash": 211.5,
+   "equity": 467.72,
+   "cash": 218.59,
    "contributed": 1000
   },
   {
    "d": "2026-04-15",
-   "equity": 462.64,
-   "cash": 211.5,
+   "equity": 469.73,
+   "cash": 218.59,
    "contributed": 1000
   },
   {
    "d": "2026-04-16",
-   "equity": 462.3,
-   "cash": 211.5,
+   "equity": 469.39,
+   "cash": 218.59,
    "contributed": 1000
   },
   {
    "d": "2026-04-17",
-   "equity": 463.49,
-   "cash": 211.5,
+   "equity": 470.58,
+   "cash": 218.59,
    "contributed": 1000
   },
   {
    "d": "2026-04-20",
-   "equity": 463.44,
-   "cash": 211.5,
+   "equity": 470.53,
+   "cash": 218.59,
    "contributed": 1000
   },
   {
    "d": "2026-04-21",
-   "equity": 462.03,
-   "cash": 211.5,
+   "equity": 469.12,
+   "cash": 218.59,
    "contributed": 1000
   },
   {
    "d": "2026-04-22",
-   "equity": 462.24,
-   "cash": 211.5,
+   "equity": 469.33,
+   "cash": 218.59,
    "contributed": 1000
   },
   {
    "d": "2026-04-23",
-   "equity": 459.54,
-   "cash": 211.5,
+   "equity": 466.63,
+   "cash": 218.59,
    "contributed": 1000
   },
   {
    "d": "2026-04-24",
-   "equity": 458.09,
-   "cash": 211.5,
+   "equity": 465.18,
+   "cash": 218.59,
    "contributed": 1000
   },
   {
    "d": "2026-04-27",
-   "equity": 459.11,
-   "cash": 211.5,
+   "equity": 466.2,
+   "cash": 218.59,
    "contributed": 1000
   },
   {
    "d": "2026-04-28",
-   "equity": 459.67,
-   "cash": 211.5,
+   "equity": 466.76,
+   "cash": 218.59,
    "contributed": 1000
   },
   {
    "d": "2026-04-29",
-   "equity": 457.48,
-   "cash": 211.5,
+   "equity": 464.57,
+   "cash": 218.59,
    "contributed": 1000
   },
   {
    "d": "2026-04-30",
-   "equity": 459.1,
-   "cash": 268.57,
+   "equity": 466.19,
+   "cash": 275.66,
    "contributed": 1000
   },
   {
    "d": "2026-05-04",
-   "equity": 452.67,
-   "cash": 335.04,
+   "equity": 459.76,
+   "cash": 342.14,
    "contributed": 1000
   },
   {
    "d": "2026-05-05",
-   "equity": 455.18,
-   "cash": 335.04,
+   "equity": 462.28,
+   "cash": 342.14,
    "contributed": 1000
   },
   {
    "d": "2026-05-06",
-   "equity": 454.64,
-   "cash": 274.43,
+   "equity": 461.74,
+   "cash": 281.53,
    "contributed": 1000
   },
   {
    "d": "2026-05-07",
-   "equity": 454.1,
-   "cash": 274.43,
+   "equity": 461.2,
+   "cash": 281.53,
    "contributed": 1000
   },
   {
    "d": "2026-05-08",
-   "equity": 453.74,
-   "cash": 274.43,
+   "equity": 460.84,
+   "cash": 281.53,
    "contributed": 1000
   },
   {
    "d": "2026-05-11",
-   "equity": 450.7,
-   "cash": 342.16,
+   "equity": 457.8,
+   "cash": 349.25,
    "contributed": 1000
   },
   {
    "d": "2026-05-12",
-   "equity": 445.99,
-   "cash": 248.85,
+   "equity": 453.08,
+   "cash": 255.94,
    "contributed": 1000
   },
   {
    "d": "2026-05-13",
-   "equity": 450.64,
-   "cash": 248.85,
+   "equity": 457.73,
+   "cash": 255.94,
    "contributed": 1000
   },
   {
    "d": "2026-05-14",
-   "equity": 454.09,
-   "cash": 302.57,
+   "equity": 461.18,
+   "cash": 309.66,
    "contributed": 1000
   },
   {
    "d": "2026-05-15",
-   "equity": 450.34,
-   "cash": 247.24,
+   "equity": 457.43,
+   "cash": 254.33,
    "contributed": 1000
   },
   {
    "d": "2026-05-18",
-   "equity": 450.89,
-   "cash": 247.24,
+   "equity": 457.98,
+   "cash": 254.33,
    "contributed": 1000
   },
   {
    "d": "2026-05-19",
-   "equity": 453.04,
-   "cash": 247.24,
+   "equity": 460.13,
+   "cash": 254.33,
    "contributed": 1000
   },
   {
    "d": "2026-05-20",
-   "equity": 454.89,
-   "cash": 247.24,
+   "equity": 461.98,
+   "cash": 254.33,
    "contributed": 1000
   },
   {
    "d": "2026-05-21",
-   "equity": 453.36,
-   "cash": 247.24,
+   "equity": 460.45,
+   "cash": 254.33,
    "contributed": 1000
   },
   {
    "d": "2026-05-22",
-   "equity": 456.01,
-   "cash": 247.24,
+   "equity": 463.1,
+   "cash": 254.33,
    "contributed": 1000
   },
   {
    "d": "2026-05-25",
-   "equity": 458.13,
-   "cash": 247.24,
+   "equity": 465.22,
+   "cash": 254.33,
    "contributed": 1000
   },
   {
    "d": "2026-05-26",
-   "equity": 456.34,
-   "cash": 247.24,
+   "equity": 463.43,
+   "cash": 254.33,
    "contributed": 1000
   },
   {
    "d": "2026-05-27",
-   "equity": 455.5,
-   "cash": 247.24,
+   "equity": 462.59,
+   "cash": 254.33,
    "contributed": 1000
   },
   {
    "d": "2026-05-28",
-   "equity": 450.66,
-   "cash": 300.95,
+   "equity": 457.75,
+   "cash": 308.04,
    "contributed": 1000
   },
   {
    "d": "2026-05-29",
-   "equity": 448.19,
-   "cash": 252.16,
+   "equity": 455.28,
+   "cash": 259.26,
    "contributed": 1000
   },
   {
    "d": "2026-06-01",
-   "equity": 446.96,
-   "cash": 252.16,
+   "equity": 454.05,
+   "cash": 259.26,
    "contributed": 1000
   },
   {
    "d": "2026-06-02",
-   "equity": 447.63,
-   "cash": 252.16,
+   "equity": 454.72,
+   "cash": 259.26,
    "contributed": 1000
   },
   {
    "d": "2026-06-03",
-   "equity": 447.62,
-   "cash": 252.16,
+   "equity": 454.71,
+   "cash": 259.26,
    "contributed": 1000
   },
   {
    "d": "2026-06-04",
-   "equity": 447.62,
-   "cash": 252.16,
+   "equity": 454.71,
+   "cash": 259.26,
    "contributed": 1000
   },
   {
    "d": "2026-06-05",
-   "equity": 442.38,
-   "cash": 337.77,
+   "equity": 449.47,
+   "cash": 344.86,
    "contributed": 1000
   },
   {
    "d": "2026-06-08",
-   "equity": 438.52,
-   "cash": 284.41,
+   "equity": 445.61,
+   "cash": 291.5,
    "contributed": 1000
   },
   {
    "d": "2026-06-09",
-   "equity": 437.14,
-   "cash": 284.41,
+   "equity": 444.23,
+   "cash": 291.5,
    "contributed": 1000
   },
   {
    "d": "2026-06-10",
-   "equity": 436.07,
-   "cash": 216.68,
+   "equity": 443.16,
+   "cash": 223.77,
    "contributed": 1000
   },
   {
    "d": "2026-06-11",
-   "equity": 436.64,
-   "cash": 216.68,
+   "equity": 443.73,
+   "cash": 223.77,
    "contributed": 1000
   },
   {
    "d": "2026-06-12",
-   "equity": 442.35,
-   "cash": 275.75,
+   "equity": 449.44,
+   "cash": 282.84,
    "contributed": 1000
   },
   {
    "d": "2026-06-15",
-   "equity": 441.12,
-   "cash": 175.27,
+   "equity": 448.21,
+   "cash": 182.36,
    "contributed": 1000
   },
   {
    "d": "2026-06-16",
-   "equity": 442.65,
-   "cash": 175.27,
+   "equity": 449.74,
+   "cash": 182.36,
    "contributed": 1000
   },
   {
    "d": "2026-06-17",
-   "equity": 442.23,
-   "cash": 175.27,
+   "equity": 449.32,
+   "cash": 182.36,
    "contributed": 1000
   },
   {
    "d": "2026-06-18",
-   "equity": 442.27,
-   "cash": 175.27,
+   "equity": 449.36,
+   "cash": 182.36,
    "contributed": 1000
   },
   {
    "d": "2026-06-19",
-   "equity": 441.96,
-   "cash": 175.27,
+   "equity": 449.05,
+   "cash": 182.36,
    "contributed": 1000
   },
   {
    "d": "2026-06-22",
-   "equity": 443.86,
-   "cash": 175.27,
+   "equity": 450.95,
+   "cash": 182.36,
    "contributed": 1000
   },
   {
    "d": "2026-06-23",
-   "equity": 442.34,
-   "cash": 175.27,
+   "equity": 449.43,
+   "cash": 182.36,
    "contributed": 1000
   },
   {
    "d": "2026-06-24",
-   "equity": 446.98,
-   "cash": 175.27,
+   "equity": 454.07,
+   "cash": 182.36,
    "contributed": 1000
   },
   {
    "d": "2026-06-25",
-   "equity": 449.92,
-   "cash": 175.27,
+   "equity": 457.01,
+   "cash": 182.36,
    "contributed": 1000
   },
   {
    "d": "2026-06-26",
-   "equity": 447.89,
-   "cash": 245.34,
+   "equity": 454.98,
+   "cash": 252.43,
    "contributed": 1000
   },
   {
    "d": "2026-06-29",
-   "equity": 444.21,
-   "cash": 171.61,
+   "equity": 451.3,
+   "cash": 178.7,
    "contributed": 1000
   },
   {
    "d": "2026-06-30",
-   "equity": 446.74,
-   "cash": 171.61,
+   "equity": 453.83,
+   "cash": 178.7,
    "contributed": 1000
   },
   {
    "d": "2026-07-01",
-   "equity": 446.97,
-   "cash": 171.61,
+   "equity": 454.06,
+   "cash": 178.7,
    "contributed": 1000
   },
   {
    "d": "2026-07-02",
-   "equity": 449.09,
-   "cash": 272.81,
+   "equity": 456.18,
+   "cash": 279.9,
    "contributed": 1000
   },
   {
    "d": "2026-07-03",
-   "equity": 446.74,
-   "cash": 166.14,
+   "equity": 453.83,
+   "cash": 173.23,
    "contributed": 1000
   },
   {
    "d": "2026-07-06",
-   "equity": 447.57,
-   "cash": 166.14,
+   "equity": 454.66,
+   "cash": 173.23,
    "contributed": 1000
   },
   {
    "d": "2026-07-07",
-   "equity": 447.07,
-   "cash": 166.14,
+   "equity": 454.16,
+   "cash": 173.23,
    "contributed": 1000
   },
   {
    "d": "2026-07-08",
-   "equity": 440.25,
-   "cash": 166.14,
+   "equity": 447.34,
+   "cash": 173.23,
    "contributed": 1000
   },
   {
    "d": "2026-07-09",
-   "equity": 441.13,
-   "cash": 166.14,
+   "equity": 448.22,
+   "cash": 173.23,
    "contributed": 1000
   },
   {
    "d": "2026-07-10",
-   "equity": 443.87,
-   "cash": 166.14,
+   "equity": 450.96,
+   "cash": 173.23,
    "contributed": 1000
   },
   {
    "d": "2026-07-13",
-   "equity": 441.9,
-   "cash": 265.51,
+   "equity": 448.99,
+   "cash": 272.6,
    "contributed": 1000
   },
   {
    "d": "2026-07-14",
-   "equity": 436.51,
-   "cash": 186.75,
+   "equity": 443.6,
+   "cash": 193.84,
    "contributed": 1000
   },
   {
    "d": "2026-07-15",
-   "equity": 438.49,
-   "cash": 186.75,
+   "equity": 445.58,
+   "cash": 193.84,
    "contributed": 1000
   },
   {
    "d": "2026-07-16",
-   "equity": 441.96,
-   "cash": 186.75,
+   "equity": 449.05,
+   "cash": 193.84,
    "contributed": 1000
   },
   {
    "d": "2026-07-17",
-   "equity": 442.43,
-   "cash": 186.75,
+   "equity": 449.52,
+   "cash": 193.84,
    "contributed": 1000
   },
   {
    "d": "2026-07-20",
-   "equity": 441.35,
-   "cash": 186.75,
+   "equity": 448.44,
+   "cash": 193.84,
    "contributed": 1000
   },
   {
    "d": "2026-07-21",
-   "equity": 440.14,
-   "cash": 186.75,
+   "equity": 447.23,
+   "cash": 193.84,
    "contributed": 1000
   },
   {
    "d": "2026-07-22",
-   "equity": 436.32,
-   "cash": 254.45,
+   "equity": 443.41,
+   "cash": 261.54,
    "contributed": 1000
   },
   {
    "d": "2026-07-23",
-   "equity": 433.79,
-   "cash": 177.69,
+   "equity": 440.88,
+   "cash": 184.78,
    "contributed": 1000
   },
   {
    "d": "2026-07-24",
-   "equity": 432.85,
-   "cash": 177.69,
+   "equity": 439.94,
+   "cash": 184.78,
    "contributed": 1000
   },
   {
    "d": "2026-07-27",
-   "equity": 434.59,
-   "cash": 177.69,
+   "equity": 441.68,
+   "cash": 184.78,
    "contributed": 1000
   },
   {
    "d": "2026-07-28",
-   "equity": 430.43,
-   "cash": 277.27,
+   "equity": 437.52,
+   "cash": 284.36,
    "contributed": 1000
   },
   {
    "d": "2026-07-29",
-   "equity": 432.38,
-   "cash": 172.23,
+   "equity": 439.47,
+   "cash": 179.32,
    "contributed": 1000
   },
   {
    "d": "2026-07-30",
-   "equity": 422.22,
-   "cash": 244.2,
+   "equity": 429.31,
+   "cash": 251.29,
    "contributed": 1000
   },
   {
    "d": "2026-07-31",
-   "equity": 414.42,
-   "cash": 240.48,
+   "equity": 421.51,
+   "cash": 247.57,
    "contributed": 1000
   },
   {
    "d": "2026-08-03",
-   "equity": 414.06,
-   "cash": 141.84,
+   "equity": 421.17,
+   "cash": 129.51,
    "contributed": 1000
   },
   {
    "d": "2026-08-04",
-   "equity": 411.67,
-   "cash": 141.84,
+   "equity": 418.71,
+   "cash": 129.51,
    "contributed": 1000
   },
   {
    "d": "2026-08-05",
-   "equity": 410.04,
-   "cash": 141.84,
+   "equity": 417.06,
+   "cash": 129.51,
    "contributed": 1000
   },
   {
    "d": "2026-08-06",
-   "equity": 412.06,
-   "cash": 141.84,
+   "equity": 419.19,
+   "cash": 129.51,
    "contributed": 1000
   },
   {
    "d": "2026-08-07",
-   "equity": 411.24,
-   "cash": 141.84,
+   "equity": 418.51,
+   "cash": 129.51,
    "contributed": 1000
   },
   {
    "d": "2026-08-10",
-   "equity": 413.49,
-   "cash": 141.84,
+   "equity": 421.09,
+   "cash": 129.51,
    "contributed": 1000
   },
   {
    "d": "2026-08-11",
-   "equity": 413.33,
-   "cash": 141.84,
+   "equity": 421.02,
+   "cash": 129.51,
    "contributed": 1000
   },
   {
    "d": "2026-08-12",
-   "equity": 413.52,
-   "cash": 141.84,
+   "equity": 421.36,
+   "cash": 129.51,
    "contributed": 1000
   },
   {
    "d": "2026-08-13",
-   "equity": 412.91,
-   "cash": 141.84,
+   "equity": 420.68,
+   "cash": 129.51,
    "contributed": 1000
   },
   {
    "d": "2026-08-14",
-   "equity": 411.45,
-   "cash": 234.67,
+   "equity": 419.32,
+   "cash": 222.34,
    "contributed": 1000
   },
   {
    "d": "2026-08-17",
-   "equity": 410.95,
-   "cash": 234.67,
+   "equity": 418.69,
+   "cash": 222.34,
    "contributed": 1000
   },
   {
    "d": "2026-08-18",
-   "equity": 409.95,
-   "cash": 234.67,
+   "equity": 417.29,
+   "cash": 222.34,
    "contributed": 1000
   },
   {
    "d": "2026-08-19",
-   "equity": 408.16,
-   "cash": 234.67,
+   "equity": 414.99,
+   "cash": 222.34,
    "contributed": 1000
   },
   {
    "d": "2026-08-20",
-   "equity": 402.9,
-   "cash": 221.57,
+   "equity": 409.66,
+   "cash": 209.23,
    "contributed": 1000
   },
   {
    "d": "2026-08-21",
-   "equity": 398.71,
-   "cash": 230.52,
+   "equity": 405.44,
+   "cash": 218.18,
    "contributed": 1000
   },
   {
    "d": "2026-08-24",
-   "equity": 398.33,
-   "cash": 161.67,
+   "equity": 405.08,
+   "cash": 149.33,
    "contributed": 1000
   },
   {
    "d": "2026-08-25",
-   "equity": 398.72,
-   "cash": 161.67,
+   "equity": 405.39,
+   "cash": 149.33,
    "contributed": 1000
   },
   {
    "d": "2026-08-26",
-   "equity": 397.16,
-   "cash": 161.67,
+   "equity": 403.83,
+   "cash": 149.33,
    "contributed": 1000
   },
   {
    "d": "2026-08-27",
-   "equity": 395.58,
-   "cash": 253.37,
+   "equity": 401.89,
+   "cash": 259.68,
    "contributed": 1000
   },
   {
    "d": "2026-08-28",
-   "equity": 395.0,
-   "cash": 253.37,
+   "equity": 401.31,
+   "cash": 259.68,
    "contributed": 1000
   },
   {
    "d": "2026-08-31",
-   "equity": 393.25,
-   "cash": 192.75,
+   "equity": 399.55,
+   "cash": 199.05,
    "contributed": 1000
   },
   {
    "d": "2026-09-01",
-   "equity": 389.08,
-   "cash": 192.75,
+   "equity": 395.38,
+   "cash": 199.05,
    "contributed": 1000
   },
   {
    "d": "2026-09-02",
-   "equity": 386.23,
-   "cash": 247.06,
+   "equity": 392.53,
+   "cash": 253.36,
    "contributed": 1000
   },
   {
    "d": "2026-09-03",
-   "equity": 386.35,
-   "cash": 114.81,
+   "equity": 392.66,
+   "cash": 121.12,
    "contributed": 1000
   },
   {
    "d": "2026-09-04",
-   "equity": 380.69,
-   "cash": 176.73,
+   "equity": 387.0,
+   "cash": 183.04,
    "contributed": 1000
   },
   {
    "d": "2026-09-07",
-   "equity": 375.26,
-   "cash": 70.09,
+   "equity": 381.57,
+   "cash": 76.4,
    "contributed": 1000
   },
   {
    "d": "2026-09-08",
-   "equity": 375.08,
-   "cash": 137.86,
+   "equity": 381.38,
+   "cash": 144.16,
    "contributed": 1000
   },
   {
    "d": "2026-09-09",
-   "equity": 368.73,
-   "cash": 237.41,
+   "equity": 375.03,
+   "cash": 243.71,
    "contributed": 1000
   },
   {
    "d": "2026-09-10",
-   "equity": 369.53,
-   "cash": 237.41,
+   "equity": 375.83,
+   "cash": 243.71,
    "contributed": 1000
   },
   {
    "d": "2026-09-11",
-   "equity": 363.79,
-   "cash": 43.58,
+   "equity": 370.09,
+   "cash": 49.88,
    "contributed": 1000
   },
   {
    "d": "2026-09-14",
-   "equity": 367.71,
-   "cash": 43.58,
+   "equity": 374.01,
+   "cash": 49.88,
    "contributed": 1000
   },
   {
    "d": "2026-09-15",
-   "equity": 369.35,
-   "cash": 43.58,
+   "equity": 375.65,
+   "cash": 49.88,
    "contributed": 1000
   },
   {
    "d": "2026-09-16",
-   "equity": 369.65,
-   "cash": 43.58,
+   "equity": 375.95,
+   "cash": 49.88,
    "contributed": 1000
   },
   {
    "d": "2026-09-17",
-   "equity": 368.05,
-   "cash": 43.58,
+   "equity": 374.35,
+   "cash": 49.88,
    "contributed": 1000
   },
   {
    "d": "2026-09-18",
-   "equity": 363.26,
-   "cash": 43.58,
+   "equity": 369.56,
+   "cash": 49.88,
    "contributed": 1000
   },
   {
    "d": "2026-09-21",
-   "equity": 360.67,
-   "cash": 150.63,
+   "equity": 366.97,
+   "cash": 156.93,
    "contributed": 1000
   },
   {
    "d": "2026-09-22",
-   "equity": 359.98,
-   "cash": 150.63,
+   "equity": 365.7,
+   "cash": 77.39,
    "contributed": 1000
   },
   {
    "d": "2026-09-23",
-   "equity": 359.57,
-   "cash": 150.63,
+   "equity": 362.49,
+   "cash": 77.39,
    "contributed": 1000
   },
   {
    "d": "2026-09-24",
-   "equity": 360.8,
-   "cash": 150.63,
+   "equity": 365.28,
+   "cash": 77.39,
    "contributed": 1000
   },
   {
    "d": "2026-09-25",
-   "equity": 360.22,
-   "cash": 150.63,
+   "equity": 364.34,
+   "cash": 77.39,
    "contributed": 1000
   },
   {
    "d": "2026-09-28",
-   "equity": 362.55,
-   "cash": 150.63,
+   "equity": 368.03,
+   "cash": 77.39,
    "contributed": 1000
   },
   {
    "d": "2026-09-29",
-   "equity": 358.85,
-   "cash": 150.63,
+   "equity": 361.81,
+   "cash": 77.39,
    "contributed": 1000
   },
   {
    "d": "2026-09-30",
-   "equity": 350.63,
-   "cash": 176.47,
+   "equity": 353.92,
+   "cash": 151.64,
    "contributed": 1000
   },
   {
    "d": "2026-10-01",
-   "equity": 348.36,
-   "cash": 301.11,
+   "equity": 348.44,
+   "cash": 348.44,
    "contributed": 1000
   },
   {
    "d": "2026-10-02",
-   "equity": 351.45,
-   "cash": 301.11,
+   "equity": 349.44,
+   "cash": 299.1,
    "contributed": 1000
   },
   {
    "d": "2026-10-05",
-   "equity": 351.98,
-   "cash": 301.11,
+   "equity": 349.97,
+   "cash": 299.1,
    "contributed": 1000
   },
   {
    "d": "2026-10-06",
-   "equity": 351.55,
-   "cash": 256.53,
+   "equity": 349.55,
+   "cash": 254.53,
    "contributed": 1000
   },
   {
    "d": "2026-10-07",
-   "equity": 349.65,
-   "cash": 256.53,
+   "equity": 347.65,
+   "cash": 254.53,
    "contributed": 1000
   },
   {
    "d": "2026-10-08",
-   "equity": 347.7,
-   "cash": 256.53,
+   "equity": 345.7,
+   "cash": 254.53,
    "contributed": 1000
   },
   {
    "d": "2026-10-09",
-   "equity": 346.58,
-   "cash": 256.53,
+   "equity": 344.58,
+   "cash": 254.53,
    "contributed": 1000
   },
   {
    "d": "2026-10-12",
-   "equity": 346.44,
-   "cash": 256.53,
+   "equity": 344.44,
+   "cash": 254.53,
    "contributed": 1000
   },
   {
    "d": "2026-10-13",
-   "equity": 343.6,
-   "cash": 298.52,
+   "equity": 342.15,
+   "cash": 297.07,
    "contributed": 1000
   },
   {
    "d": "2026-10-14",
-   "equity": 342.45,
-   "cash": 231.37,
+   "equity": 341.0,
+   "cash": 229.92,
    "contributed": 1000
   },
   {
    "d": "2026-10-15",
-   "equity": 344.29,
-   "cash": 231.37,
+   "equity": 342.84,
+   "cash": 229.92,
    "contributed": 1000
   },
   {
    "d": "2026-10-16",
-   "equity": 343.4,
-   "cash": 131.78,
+   "equity": 342.25,
+   "cash": 163.03,
    "contributed": 1000
   },
   {
    "d": "2026-10-19",
-   "equity": 341.61,
-   "cash": 131.78,
+   "equity": 340.93,
+   "cash": 163.03,
    "contributed": 1000
   },
   {
    "d": "2026-10-20",
-   "equity": 341.18,
-   "cash": 131.78,
+   "equity": 340.41,
+   "cash": 163.03,
    "contributed": 1000
   },
   {
    "d": "2026-10-21",
-   "equity": 340.6,
-   "cash": 131.78,
+   "equity": 339.83,
+   "cash": 163.03,
    "contributed": 1000
   },
   {
    "d": "2026-10-22",
-   "equity": 341.05,
-   "cash": 177.99,
+   "equity": 340.48,
+   "cash": 209.24,
    "contributed": 1000
   },
   {
    "d": "2026-10-23",
-   "equity": 340.28,
-   "cash": 88.74,
+   "equity": 339.44,
+   "cash": 119.99,
    "contributed": 1000
   },
   {
    "d": "2026-10-26",
-   "equity": 341.08,
-   "cash": 88.74,
+   "equity": 339.89,
+   "cash": 119.99,
    "contributed": 1000
   },
   {
    "d": "2026-10-27",
-   "equity": 339.66,
-   "cash": 88.74,
+   "equity": 338.29,
+   "cash": 119.99,
    "contributed": 1000
   },
   {
    "d": "2026-10-28",
-   "equity": 340.48,
-   "cash": 88.74,
+   "equity": 338.99,
+   "cash": 119.99,
    "contributed": 1000
   },
   {
    "d": "2026-10-29",
-   "equity": 339.83,
-   "cash": 88.74,
+   "equity": 338.23,
+   "cash": 119.99,
    "contributed": 1000
   },
   {
    "d": "2026-10-30",
-   "equity": 343.35,
-   "cash": 88.74,
+   "equity": 341.59,
+   "cash": 119.99,
    "contributed": 1000
   },
   {
    "d": "2026-11-02",
-   "equity": 344.29,
-   "cash": 88.74,
+   "equity": 342.53,
+   "cash": 119.99,
    "contributed": 1000
   },
   {
    "d": "2026-11-03",
-   "equity": 343.3,
-   "cash": 88.74,
+   "equity": 341.6,
+   "cash": 119.99,
    "contributed": 1000
   },
   {
    "d": "2026-11-04",
-   "equity": 350.13,
-   "cash": 88.74,
+   "equity": 347.59,
+   "cash": 119.99,
    "contributed": 1000
   },
   {
    "d": "2026-11-05",
-   "equity": 350.86,
-   "cash": 158.95,
+   "equity": 348.36,
+   "cash": 190.2,
    "contributed": 1000
   },
   {
    "d": "2026-11-06",
-   "equity": 347.68,
-   "cash": 71.91,
+   "equity": 345.15,
+   "cash": 103.16,
    "contributed": 1000
   },
   {
    "d": "2026-11-09",
-   "equity": 351.03,
-   "cash": 71.91,
+   "equity": 347.77,
+   "cash": 103.16,
    "contributed": 1000
   },
   {
    "d": "2026-11-10",
-   "equity": 351.94,
-   "cash": 71.91,
+   "equity": 348.9,
+   "cash": 103.16,
    "contributed": 1000
   },
   {
    "d": "2026-11-11",
-   "equity": 352.6,
-   "cash": 71.91,
+   "equity": 349.55,
+   "cash": 103.16,
    "contributed": 1000
   },
   {
    "d": "2026-11-12",
-   "equity": 354.44,
-   "cash": 71.91,
+   "equity": 351.03,
+   "cash": 103.16,
    "contributed": 1000
   },
   {
    "d": "2026-11-13",
-   "equity": 351.89,
-   "cash": 351.89,
+   "equity": 351.4,
+   "cash": 171.33,
    "contributed": 1000
   },
   {
-   "d": "2026-11-13",
-   "equity": 351.89,
-   "cash": 351.89,
+   "d": "2026-11-16",
+   "equity": 345.93,
+   "cash": 345.93,
+   "contributed": 1000
+  },
+  {
+   "d": "2026-11-16",
+   "equity": 345.93,
+   "cash": 345.93,
    "contributed": 1000
   }
  ],
  "trades": [
   {
-   "symbol": "SGO.PA",
+   "symbol": "FGR.PA",
    "qty": 3,
-   "entry": 56.6083,
-   "entry_date": "2023-11-15",
-   "stop": 53.93,
-   "target": 61.96,
-   "risk_per_share": 2.6742,
-   "cost": 172.0,
+   "entry": 90.9054,
+   "entry_date": "2023-11-20",
+   "stop": 87.8,
+   "target": 97.12,
+   "risk_per_share": 3.1086,
+   "cost": 275.31,
    "entry_fee": 1.5,
-   "entry_tax": 0.68,
-   "held": 17,
-   "signal_date": "2023-11-14",
-   "exit": 61.929,
-   "exit_date": "2023-12-08",
+   "entry_tax": 1.09,
+   "held": 16,
+   "signal_date": "2023-11-17",
+   "exit": 97.0714,
+   "exit_date": "2023-12-12",
    "reason": "target",
    "exit_fee": 1.5,
-   "pnl": 12.29,
-   "r": 1.532,
-   "pnl_pct": 7.14
+   "pnl": 14.4,
+   "r": 1.545,
+   "pnl_pct": 5.23
   },
   {
-   "symbol": "DSY.PA",
-   "qty": 6,
-   "entry": 41.4307,
-   "entry_date": "2023-11-15",
-   "stop": 39.93,
-   "target": 44.43,
-   "risk_per_share": 1.4992,
-   "cost": 251.08,
+   "symbol": "GLE.PA",
+   "qty": 11,
+   "entry": 22.7013,
+   "entry_date": "2023-11-20",
+   "stop": 21.86,
+   "target": 24.37,
+   "risk_per_share": 0.8364,
+   "cost": 252.21,
    "entry_fee": 1.5,
-   "entry_tax": 0.99,
-   "held": 17,
-   "signal_date": "2023-11-14",
-   "exit": 44.4078,
-   "exit_date": "2023-12-08",
+   "entry_tax": 1.0,
+   "held": 18,
+   "signal_date": "2023-11-17",
+   "exit": 24.3578,
+   "exit_date": "2023-12-14",
    "reason": "target",
    "exit_fee": 1.5,
-   "pnl": 13.87,
-   "r": 1.542,
-   "pnl_pct": 5.52
+   "pnl": 14.23,
+   "r": 1.546,
+   "pnl_pct": 5.64
   },
   {
-   "symbol": "EL.PA",
-   "qty": 1,
-   "entry": 175.4422,
-   "entry_date": "2023-11-15",
-   "stop": 169.57,
-   "target": 187.19,
-   "risk_per_share": 5.874,
-   "cost": 177.64,
+   "symbol": "SAF.PA",
+   "qty": 2,
+   "entry": 168.104,
+   "entry_date": "2023-12-13",
+   "stop": 163.87,
+   "target": 176.57,
+   "risk_per_share": 4.2314,
+   "cost": 339.05,
    "entry_fee": 1.5,
-   "entry_tax": 0.7,
+   "entry_tax": 1.34,
+   "held": 1,
+   "signal_date": "2023-12-12",
+   "exit": 163.7881,
+   "exit_date": "2023-12-14",
+   "reason": "stop",
+   "exit_fee": 1.5,
+   "pnl": -12.97,
+   "r": -1.533,
+   "pnl_pct": -3.83
+  },
+  {
+   "symbol": "VIE.PA",
+   "qty": 9,
+   "entry": 28.084,
+   "entry_date": "2023-11-20",
+   "stop": 27.02,
+   "target": 30.21,
+   "risk_per_share": 1.0628,
+   "cost": 255.27,
+   "entry_fee": 1.5,
+   "entry_tax": 1.01,
    "held": 20,
-   "signal_date": "2023-11-14",
-   "exit": 181.3503,
-   "exit_date": "2023-12-13",
+   "signal_date": "2023-11-17",
+   "exit": 29.0255,
+   "exit_date": "2023-12-18",
    "reason": "time",
    "exit_fee": 1.5,
-   "pnl": 2.21,
-   "r": 0.376,
-   "pnl_pct": 1.24
+   "pnl": 4.46,
+   "r": 0.466,
+   "pnl_pct": 1.75
   },
   {
-   "symbol": "EL.PA",
-   "qty": 1,
-   "entry": 184.0577,
-   "entry_date": "2023-12-14",
-   "stop": 179.62,
-   "target": 192.94,
-   "risk_per_share": 4.4426,
-   "cost": 186.29,
+   "symbol": "SGO.PA",
+   "qty": 4,
+   "entry": 66.5332,
+   "entry_date": "2023-12-15",
+   "stop": 64.08,
+   "target": 71.45,
+   "risk_per_share": 2.4572,
+   "cost": 268.7,
    "entry_fee": 1.5,
-   "entry_tax": 0.74,
-   "held": 2,
-   "signal_date": "2023-12-13",
-   "exit": 179.5302,
-   "exit_date": "2023-12-18",
-   "reason": "stop",
-   "exit_fee": 1.5,
-   "pnl": -8.26,
-   "r": -1.859,
-   "pnl_pct": -4.43
-  },
-  {
-   "symbol": "AIR.PA",
-   "qty": 2,
-   "entry": 142.111,
-   "entry_date": "2023-12-11",
-   "stop": 138.37,
-   "target": 149.59,
-   "risk_per_share": 3.74,
-   "cost": 285.72,
-   "entry_fee": 1.5,
-   "entry_tax": 0.0,
-   "held": 7,
-   "signal_date": "2023-12-08",
-   "exit": 138.3008,
-   "exit_date": "2023-12-20",
-   "reason": "stop",
-   "exit_fee": 1.5,
-   "pnl": -10.62,
-   "r": -1.42,
-   "pnl_pct": -3.72
-  },
-  {
-   "symbol": "LR.PA",
-   "qty": 3,
-   "entry": 93.987,
-   "entry_date": "2023-12-11",
-   "stop": 91.54,
-   "target": 98.88,
-   "risk_per_share": 2.4458,
-   "cost": 284.59,
-   "entry_fee": 1.5,
-   "entry_tax": 1.13,
-   "held": 14,
-   "signal_date": "2023-12-08",
-   "exit": 91.4942,
+   "entry_tax": 1.06,
+   "held": 10,
+   "signal_date": "2023-12-14",
+   "exit": 64.048,
    "exit_date": "2024-01-03",
    "reason": "stop",
    "exit_fee": 1.5,
-   "pnl": -11.61,
-   "r": -1.582,
-   "pnl_pct": -4.08
+   "pnl": -14.01,
+   "r": -1.425,
+   "pnl_pct": -5.21
   },
   {
    "symbol": "MT.AS",
@@ -4927,25 +4894,25 @@
    "pnl_pct": -5.99
   },
   {
-   "symbol": "PUB.PA",
-   "qty": 3,
-   "entry": 83.6418,
-   "entry_date": "2023-12-21",
-   "stop": 81.07,
-   "target": 88.78,
-   "risk_per_share": 2.5686,
-   "cost": 253.43,
+   "symbol": "ERF.PA",
+   "qty": 4,
+   "entry": 57.8289,
+   "entry_date": "2023-12-15",
+   "stop": 55.59,
+   "target": 62.31,
+   "risk_per_share": 2.24,
+   "cost": 232.82,
    "entry_fee": 1.5,
-   "entry_tax": 1.0,
+   "entry_tax": 0.0,
    "held": 20,
-   "signal_date": "2023-12-20",
-   "exit": 87.3163,
-   "exit_date": "2024-01-23",
-   "reason": "time",
+   "signal_date": "2023-12-14",
+   "exit": 55.5622,
+   "exit_date": "2024-01-17",
+   "reason": "stop",
    "exit_fee": 1.5,
-   "pnl": 7.02,
-   "r": 0.911,
-   "pnl_pct": 2.77
+   "pnl": -12.07,
+   "r": -1.347,
+   "pnl_pct": -5.18
   },
   {
    "symbol": "SAN.PA",
@@ -4969,27 +4936,6 @@
    "pnl_pct": -3.91
   },
   {
-   "symbol": "ORA.PA",
-   "qty": 29,
-   "entry": 11.3657,
-   "entry_date": "2024-01-24",
-   "stop": 11.08,
-   "target": 11.93,
-   "risk_per_share": 0.2838,
-   "cost": 332.42,
-   "entry_fee": 1.5,
-   "entry_tax": 1.32,
-   "held": 3,
-   "signal_date": "2024-01-23",
-   "exit": 11.0745,
-   "exit_date": "2024-01-29",
-   "reason": "stop",
-   "exit_fee": 1.5,
-   "pnl": -12.76,
-   "r": -1.55,
-   "pnl_pct": -3.84
-  },
-  {
    "symbol": "BN.PA",
    "qty": 5,
    "entry": 60.3301,
@@ -5011,6 +4957,48 @@
    "pnl_pct": 0.34
   },
   {
+   "symbol": "ORA.PA",
+   "qty": 29,
+   "entry": 11.1496,
+   "entry_date": "2024-01-18",
+   "stop": 10.85,
+   "target": 11.76,
+   "risk_per_share": 0.3028,
+   "cost": 326.13,
+   "entry_fee": 1.5,
+   "entry_tax": 1.29,
+   "held": 12,
+   "signal_date": "2024-01-17",
+   "exit": 10.8446,
+   "exit_date": "2024-02-05",
+   "reason": "stop",
+   "exit_fee": 1.5,
+   "pnl": -13.14,
+   "r": -1.496,
+   "pnl_pct": -4.03
+  },
+  {
+   "symbol": "DG.PA",
+   "qty": 2,
+   "entry": 118.9394,
+   "entry_date": "2024-02-06",
+   "stop": 116.03,
+   "target": 124.77,
+   "risk_per_share": 2.9142,
+   "cost": 240.33,
+   "entry_fee": 1.5,
+   "entry_tax": 0.95,
+   "held": 2,
+   "signal_date": "2024-02-05",
+   "exit": 115.972,
+   "exit_date": "2024-02-08",
+   "reason": "stop",
+   "exit_fee": 1.5,
+   "pnl": -9.89,
+   "r": -1.696,
+   "pnl_pct": -4.11
+  },
+  {
    "symbol": "SU.PA",
    "qty": 1,
    "entry": 187.3736,
@@ -5030,27 +5018,6 @@
    "pnl": 9.07,
    "r": 1.405,
    "pnl_pct": 4.78
-  },
-  {
-   "symbol": "SAF.PA",
-   "qty": 1,
-   "entry": 175.0475,
-   "entry_date": "2024-01-30",
-   "stop": 168.94,
-   "target": 187.25,
-   "risk_per_share": 6.1028,
-   "cost": 177.25,
-   "entry_fee": 1.5,
-   "entry_tax": 0.7,
-   "held": 13,
-   "signal_date": "2024-01-29",
-   "exit": 187.1564,
-   "exit_date": "2024-02-16",
-   "reason": "target",
-   "exit_fee": 1.5,
-   "pnl": 8.41,
-   "r": 1.377,
-   "pnl_pct": 4.74
   },
   {
    "symbol": "BVI.PA",
@@ -5096,45 +5063,45 @@
   },
   {
    "symbol": "SGO.PA",
-   "qty": 4,
+   "qty": 3,
    "entry": 71.3857,
    "entry_date": "2024-02-29",
    "stop": 68.97,
    "target": 76.21,
    "risk_per_share": 2.4128,
-   "cost": 288.18,
+   "cost": 216.51,
    "entry_fee": 1.5,
-   "entry_tax": 1.14,
+   "entry_tax": 0.86,
    "held": 1,
    "signal_date": "2024-02-28",
    "exit": 68.9355,
    "exit_date": "2024-03-01",
    "reason": "stop",
    "exit_fee": 1.5,
-   "pnl": -13.94,
-   "r": -1.444,
-   "pnl_pct": -4.84
+   "pnl": -11.2,
+   "r": -1.548,
+   "pnl_pct": -5.17
   },
   {
-   "symbol": "SAF.PA",
-   "qty": 1,
-   "entry": 187.1936,
-   "entry_date": "2024-02-19",
-   "stop": 180.85,
-   "target": 199.89,
-   "risk_per_share": 6.3458,
-   "cost": 189.44,
+   "symbol": "URW.PA",
+   "qty": 2,
+   "entry": 69.8349,
+   "entry_date": "2024-02-09",
+   "stop": 66.32,
+   "target": 76.87,
+   "risk_per_share": 3.5172,
+   "cost": 141.73,
    "entry_fee": 1.5,
-   "entry_tax": 0.75,
-   "held": 18,
-   "signal_date": "2024-02-16",
-   "exit": 199.86,
-   "exit_date": "2024-03-14",
-   "reason": "target (gap)",
+   "entry_tax": 0.56,
+   "held": 20,
+   "signal_date": "2024-02-08",
+   "exit": 70.8446,
+   "exit_date": "2024-03-08",
+   "reason": "time",
    "exit_fee": 1.5,
-   "pnl": 8.92,
-   "r": 1.406,
-   "pnl_pct": 4.71
+   "pnl": -1.54,
+   "r": -0.219,
+   "pnl_pct": -1.09
   },
   {
    "symbol": "STLAP.PA",
@@ -5179,6 +5146,27 @@
    "pnl_pct": 4.43
   },
   {
+   "symbol": "CS.PA",
+   "qty": 9,
+   "entry": 33.0865,
+   "entry_date": "2024-03-11",
+   "stop": 32.11,
+   "target": 35.05,
+   "risk_per_share": 0.9814,
+   "cost": 300.47,
+   "entry_fee": 1.5,
+   "entry_tax": 1.19,
+   "held": 14,
+   "signal_date": "2024-03-08",
+   "exit": 35.0325,
+   "exit_date": "2024-04-02",
+   "reason": "target",
+   "exit_fee": 1.5,
+   "pnl": 13.32,
+   "r": 1.508,
+   "pnl_pct": 4.43
+  },
+  {
    "symbol": "EL.PA",
    "qty": 1,
    "entry": 194.0046,
@@ -5200,88 +5188,46 @@
    "pnl_pct": 4.08
   },
   {
-   "symbol": "TTE.PA",
-   "qty": 5,
-   "entry": 62.7614,
-   "entry_date": "2024-03-15",
-   "stop": 61.09,
-   "target": 66.1,
-   "risk_per_share": 1.6714,
-   "cost": 316.56,
-   "entry_fee": 1.5,
-   "entry_tax": 1.26,
-   "held": 11,
-   "signal_date": "2024-03-14",
-   "exit": 66.2569,
-   "exit_date": "2024-04-03",
-   "reason": "target (gap)",
-   "exit_fee": 1.5,
-   "pnl": 13.22,
-   "r": 1.582,
-   "pnl_pct": 4.18
-  },
-  {
    "symbol": "VIE.PA",
-   "qty": 11,
+   "qty": 10,
    "entry": 30.4752,
    "entry_date": "2024-03-28",
    "stop": 29.62,
    "target": 32.18,
    "risk_per_share": 0.8542,
-   "cost": 338.07,
+   "cost": 307.47,
    "entry_fee": 1.5,
-   "entry_tax": 1.34,
+   "entry_tax": 1.22,
    "held": 4,
    "signal_date": "2024-03-27",
    "exit": 29.6052,
    "exit_date": "2024-04-05",
    "reason": "stop",
    "exit_fee": 1.5,
-   "pnl": -13.91,
-   "r": -1.481,
-   "pnl_pct": -4.12
+   "pnl": -12.92,
+   "r": -1.512,
+   "pnl_pct": -4.2
   },
   {
    "symbol": "ACA.PA",
-   "qty": 24,
+   "qty": 23,
    "entry": 14.077,
    "entry_date": "2024-04-04",
    "stop": 13.71,
    "target": 14.8,
    "risk_per_share": 0.3626,
-   "cost": 340.7,
+   "cost": 326.57,
    "entry_fee": 1.5,
-   "entry_tax": 1.35,
+   "entry_tax": 1.3,
    "held": 5,
    "signal_date": "2024-04-03",
    "exit": 13.7031,
    "exit_date": "2024-04-11",
    "reason": "stop",
    "exit_fee": 1.5,
-   "pnl": -13.32,
-   "r": -1.531,
-   "pnl_pct": -3.91
-  },
-  {
-   "symbol": "GLE.PA",
-   "qty": 10,
-   "entry": 25.3227,
-   "entry_date": "2024-04-04",
-   "stop": 24.41,
-   "target": 27.16,
-   "risk_per_share": 0.9172,
-   "cost": 255.74,
-   "entry_fee": 1.5,
-   "entry_tax": 1.01,
-   "held": 8,
-   "signal_date": "2024-04-03",
-   "exit": 24.3978,
-   "exit_date": "2024-04-16",
-   "reason": "stop",
-   "exit_fee": 1.5,
-   "pnl": -13.26,
-   "r": -1.446,
-   "pnl_pct": -5.19
+   "pnl": -12.9,
+   "r": -1.547,
+   "pnl_pct": -3.95
   },
   {
    "symbol": "PUB.PA",
@@ -5326,25 +5272,25 @@
    "pnl_pct": -6.71
   },
   {
-   "symbol": "ORA.PA",
-   "qty": 28,
-   "entry": 11.0755,
-   "entry_date": "2024-04-23",
-   "stop": 10.77,
-   "target": 11.68,
-   "risk_per_share": 0.3042,
-   "cost": 312.86,
+   "symbol": "TTE.PA",
+   "qty": 4,
+   "entry": 66.3231,
+   "entry_date": "2024-04-03",
+   "stop": 64.14,
+   "target": 70.7,
+   "risk_per_share": 2.1872,
+   "cost": 267.85,
    "entry_fee": 1.5,
-   "entry_tax": 1.24,
-   "held": 1,
-   "signal_date": "2024-04-22",
-   "exit": 10.7646,
-   "exit_date": "2024-04-24",
-   "reason": "stop",
+   "entry_tax": 1.06,
+   "held": 20,
+   "signal_date": "2024-04-02",
+   "exit": 66.8166,
+   "exit_date": "2024-05-02",
+   "reason": "time",
    "exit_fee": 1.5,
-   "pnl": -12.95,
-   "r": -1.52,
-   "pnl_pct": -4.14
+   "pnl": -2.08,
+   "r": -0.238,
+   "pnl_pct": -0.78
   },
   {
    "symbol": "ENGI.PA",
@@ -5368,6 +5314,27 @@
    "pnl_pct": -7.42
   },
   {
+   "symbol": "SGO.PA",
+   "qty": 2,
+   "entry": 76.3382,
+   "entry_date": "2024-05-03",
+   "stop": 73.28,
+   "target": 82.45,
+   "risk_per_share": 3.0572,
+   "cost": 154.79,
+   "entry_fee": 1.5,
+   "entry_tax": 0.61,
+   "held": 8,
+   "signal_date": "2024-05-02",
+   "exit": 82.4088,
+   "exit_date": "2024-05-15",
+   "reason": "target",
+   "exit_fee": 1.5,
+   "pnl": 8.53,
+   "r": 1.395,
+   "pnl_pct": 5.51
+  },
+  {
    "symbol": "URW.PA",
    "qty": 2,
    "entry": 75.5177,
@@ -5389,88 +5356,46 @@
    "pnl_pct": 2.4
   },
   {
-   "symbol": "PUB.PA",
-   "qty": 2,
-   "entry": 104.4522,
-   "entry_date": "2024-04-25",
-   "stop": 100.45,
-   "target": 112.46,
-   "risk_per_share": 4.0042,
-   "cost": 211.24,
-   "entry_fee": 1.5,
-   "entry_tax": 0.84,
-   "held": 20,
-   "signal_date": "2024-04-24",
-   "exit": 106.4468,
-   "exit_date": "2024-05-24",
-   "reason": "time",
-   "exit_fee": 1.5,
-   "pnl": 0.15,
-   "r": 0.019,
-   "pnl_pct": 0.07
-  },
-  {
-   "symbol": "SU.PA",
-   "qty": 1,
-   "entry": 238.3691,
-   "entry_date": "2024-05-27",
-   "stop": 230.1,
-   "target": 254.9,
-   "risk_per_share": 8.2642,
-   "cost": 240.82,
-   "entry_fee": 1.5,
-   "entry_tax": 0.95,
-   "held": 2,
-   "signal_date": "2024-05-24",
-   "exit": 229.9849,
-   "exit_date": "2024-05-29",
-   "reason": "stop",
-   "exit_fee": 1.5,
-   "pnl": -12.34,
-   "r": -1.493,
-   "pnl_pct": -5.12
-  },
-  {
    "symbol": "ML.PA",
-   "qty": 7,
+   "qty": 6,
    "entry": 36.8084,
    "entry_date": "2024-05-03",
    "stop": 35.52,
    "target": 39.39,
    "risk_per_share": 1.2928,
-   "cost": 260.19,
+   "cost": 223.23,
    "entry_fee": 1.5,
-   "entry_tax": 1.03,
+   "entry_tax": 0.88,
    "held": 20,
    "signal_date": "2024-05-02",
    "exit": 37.1314,
    "exit_date": "2024-05-31",
    "reason": "time",
    "exit_fee": 1.5,
-   "pnl": -1.77,
-   "r": -0.196,
-   "pnl_pct": -0.68
+   "pnl": -1.94,
+   "r": -0.25,
+   "pnl_pct": -0.87
   },
   {
-   "symbol": "RNO.PA",
-   "qty": 3,
-   "entry": 53.0065,
-   "entry_date": "2024-05-30",
-   "stop": 50.21,
-   "target": 58.6,
-   "risk_per_share": 2.7986,
-   "cost": 161.16,
+   "symbol": "SAF.PA",
+   "qty": 1,
+   "entry": 212.7063,
+   "entry_date": "2024-05-22",
+   "stop": 206.12,
+   "target": 225.88,
+   "risk_per_share": 6.5858,
+   "cost": 215.06,
    "entry_fee": 1.5,
-   "entry_tax": 0.64,
-   "held": 7,
-   "signal_date": "2024-05-29",
-   "exit": 50.1849,
+   "entry_tax": 0.85,
+   "held": 13,
+   "signal_date": "2024-05-21",
+   "exit": 205.997,
    "exit_date": "2024-06-10",
-   "reason": "stop",
+   "reason": "stop (gap)",
    "exit_fee": 1.5,
-   "pnl": -12.11,
-   "r": -1.442,
-   "pnl_pct": -7.51
+   "pnl": -10.56,
+   "r": -1.604,
+   "pnl_pct": -4.91
   },
   {
    "symbol": "URW.PA",
@@ -5496,22 +5421,22 @@
   {
    "symbol": "VIE.PA",
    "qty": 7,
-   "entry": 30.9755,
-   "entry_date": "2024-05-22",
-   "stop": 29.77,
-   "target": 33.38,
-   "risk_per_share": 1.2014,
-   "cost": 219.2,
+   "entry": 30.5753,
+   "entry_date": "2024-05-16",
+   "stop": 29.39,
+   "target": 32.95,
+   "risk_per_share": 1.1872,
+   "cost": 216.38,
    "entry_fee": 1.5,
-   "entry_tax": 0.87,
-   "held": 14,
-   "signal_date": "2024-05-21",
-   "exit": 29.7551,
-   "exit_date": "2024-06-11",
+   "entry_tax": 0.86,
+   "held": 20,
+   "signal_date": "2024-05-15",
+   "exit": 29.3753,
+   "exit_date": "2024-06-13",
    "reason": "stop",
    "exit_fee": 1.5,
-   "pnl": -12.41,
-   "r": -1.476,
+   "pnl": -12.25,
+   "r": -1.474,
    "pnl_pct": -5.66
   },
   {
@@ -5915,24 +5840,24 @@
   },
   {
    "symbol": "ENGI.PA",
-   "qty": 15,
+   "qty": 16,
    "entry": 16.098,
    "entry_date": "2024-10-16",
    "stop": 15.61,
    "target": 17.07,
    "risk_per_share": 0.4836,
-   "cost": 243.94,
+   "cost": 260.1,
    "entry_fee": 1.5,
-   "entry_tax": 0.97,
+   "entry_tax": 1.03,
    "held": 4,
    "signal_date": "2024-10-15",
    "exit": 15.6022,
    "exit_date": "2024-10-22",
    "reason": "stop",
    "exit_fee": 1.5,
-   "pnl": -11.41,
-   "r": -1.573,
-   "pnl_pct": -4.68
+   "pnl": -11.96,
+   "r": -1.546,
+   "pnl_pct": -4.6
   },
   {
    "symbol": "EL.PA",
@@ -6209,45 +6134,45 @@
   },
   {
    "symbol": "ENGI.PA",
-   "qty": 14,
+   "qty": 15,
    "entry": 15.6228,
    "entry_date": "2025-01-06",
    "stop": 15.19,
    "target": 16.48,
    "risk_per_share": 0.43,
-   "cost": 221.09,
+   "cost": 236.78,
    "entry_fee": 1.5,
-   "entry_tax": 0.87,
+   "entry_tax": 0.94,
    "held": 20,
    "signal_date": "2025-01-03",
    "exit": 15.912,
    "exit_date": "2025-02-03",
    "reason": "time",
    "exit_fee": 1.5,
-   "pnl": 0.18,
-   "r": 0.03,
-   "pnl_pct": 0.08
+   "pnl": 0.4,
+   "r": 0.062,
+   "pnl_pct": 0.17
   },
   {
    "symbol": "ACA.PA",
-   "qty": 13,
+   "qty": 14,
    "entry": 13.7219,
    "entry_date": "2025-01-15",
    "stop": 13.22,
    "target": 14.72,
    "risk_per_share": 0.4978,
-   "cost": 180.6,
+   "cost": 194.37,
    "entry_fee": 1.5,
-   "entry_tax": 0.71,
+   "entry_tax": 0.77,
    "held": 15,
    "signal_date": "2025-01-14",
    "exit": 14.8526,
    "exit_date": "2025-02-05",
    "reason": "target (gap)",
    "exit_fee": 1.5,
-   "pnl": 10.98,
-   "r": 1.697,
-   "pnl_pct": 6.08
+   "pnl": 12.07,
+   "r": 1.731,
+   "pnl_pct": 6.21
   },
   {
    "symbol": "HO.PA",
@@ -6587,24 +6512,24 @@
   },
   {
    "symbol": "ORA.PA",
-   "qty": 10,
+   "qty": 11,
    "entry": 12.4712,
    "entry_date": "2025-04-17",
    "stop": 11.88,
    "target": 13.66,
    "risk_per_share": 0.5928,
-   "cost": 126.71,
+   "cost": 139.23,
    "entry_fee": 1.5,
-   "entry_tax": 0.5,
+   "entry_tax": 0.55,
    "held": 20,
    "signal_date": "2025-04-16",
    "exit": 13.2734,
    "exit_date": "2025-05-20",
    "reason": "time",
    "exit_fee": 1.5,
-   "pnl": 4.52,
-   "r": 0.763,
-   "pnl_pct": 3.57
+   "pnl": 5.28,
+   "r": 0.809,
+   "pnl_pct": 3.79
   },
   {
    "symbol": "CA.PA",
@@ -6629,24 +6554,24 @@
   },
   {
    "symbol": "ORA.PA",
-   "qty": 15,
+   "qty": 16,
    "entry": 13.2566,
    "entry_date": "2025-05-21",
    "stop": 12.85,
    "target": 14.08,
    "risk_per_share": 0.4114,
-   "cost": 201.14,
+   "cost": 214.45,
    "entry_fee": 1.5,
-   "entry_tax": 0.8,
+   "entry_tax": 0.85,
    "held": 9,
    "signal_date": "2025-05-20",
    "exit": 12.7936,
    "exit_date": "2025-06-03",
    "reason": "stop (gap)",
    "exit_fee": 1.5,
-   "pnl": -10.74,
-   "r": -1.74,
-   "pnl_pct": -5.34
+   "pnl": -11.25,
+   "r": -1.709,
+   "pnl_pct": -5.25
   },
   {
    "symbol": "ML.PA",
@@ -6881,24 +6806,24 @@
   },
   {
    "symbol": "AC.PA",
-   "qty": 3,
+   "qty": 4,
    "entry": 49.7249,
    "entry_date": "2025-07-24",
    "stop": 48.26,
    "target": 52.66,
    "risk_per_share": 1.4658,
-   "cost": 151.27,
+   "cost": 201.2,
    "entry_fee": 1.5,
-   "entry_tax": 0.6,
+   "entry_tax": 0.8,
    "held": 5,
    "signal_date": "2025-07-23",
    "exit": 45.4773,
    "exit_date": "2025-07-31",
    "reason": "stop (gap)",
    "exit_fee": 1.5,
-   "pnl": -16.34,
-   "r": -3.715,
-   "pnl_pct": -10.8
+   "pnl": -20.79,
+   "r": -3.546,
+   "pnl_pct": -10.33
   },
   {
    "symbol": "ERF.PA",
@@ -7637,24 +7562,24 @@
   },
   {
    "symbol": "ORA.PA",
-   "qty": 6,
+   "qty": 7,
    "entry": 17.1786,
    "entry_date": "2026-02-12",
    "stop": 16.45,
    "target": 18.63,
    "risk_per_share": 0.7278,
-   "cost": 104.98,
+   "cost": 122.23,
    "entry_fee": 1.5,
-   "entry_tax": 0.41,
+   "entry_tax": 0.48,
    "held": 20,
    "signal_date": "2026-02-11",
    "exit": 17.1664,
    "exit_date": "2026-03-12",
    "reason": "time",
    "exit_fee": 1.5,
-   "pnl": -3.48,
-   "r": -0.797,
-   "pnl_pct": -3.32
+   "pnl": -3.57,
+   "r": -0.7,
+   "pnl_pct": -2.92
   },
   {
    "symbol": "TTE.PA",
@@ -8141,24 +8066,24 @@
   },
   {
    "symbol": "ACA.PA",
-   "qty": 5,
+   "qty": 6,
    "entry": 19.3497,
    "entry_date": "2026-08-03",
    "stop": 18.65,
    "target": 20.75,
    "risk_per_share": 0.7014,
-   "cost": 98.64,
+   "cost": 118.06,
    "entry_fee": 1.5,
-   "entry_tax": 0.39,
+   "entry_tax": 0.46,
    "held": 18,
    "signal_date": "2026-07-31",
    "exit": 18.6407,
    "exit_date": "2026-08-27",
    "reason": "stop",
    "exit_fee": 1.5,
-   "pnl": -6.94,
-   "r": -1.978,
-   "pnl_pct": -7.03
+   "pnl": -7.72,
+   "r": -1.833,
+   "pnl_pct": -6.54
   },
   {
    "symbol": "RNO.PA",
@@ -8308,25 +8233,46 @@
    "pnl_pct": -5.76
   },
   {
-   "symbol": "STMPA.PA",
+   "symbol": "ERF.PA",
    "qty": 1,
-   "entry": 46.9084,
-   "entry_date": "2026-09-30",
-   "stop": 43.51,
-   "target": 53.71,
-   "risk_per_share": 3.3986,
-   "cost": 48.41,
+   "entry": 78.039,
+   "entry_date": "2026-09-22",
+   "stop": 74.4,
+   "target": 85.31,
+   "risk_per_share": 3.6342,
+   "cost": 79.54,
    "entry_fee": 1.5,
    "entry_tax": 0.0,
-   "held": 9,
-   "signal_date": "2026-09-29",
-   "exit": 43.4882,
-   "exit_date": "2026-10-13",
-   "reason": "stop",
+   "held": 7,
+   "signal_date": "2026-09-21",
+   "exit": 73.6631,
+   "exit_date": "2026-10-01",
+   "reason": "stop (gap)",
    "exit_fee": 1.5,
-   "pnl": -6.42,
-   "r": -1.89,
-   "pnl_pct": -13.27
+   "pnl": -7.38,
+   "r": -2.03,
+   "pnl_pct": -9.27
+  },
+  {
+   "symbol": "STMPA.PA",
+   "qty": 1,
+   "entry": 47.8389,
+   "entry_date": "2026-10-02",
+   "stop": 44.5,
+   "target": 54.52,
+   "risk_per_share": 3.3408,
+   "cost": 49.34,
+   "entry_fee": 1.5,
+   "entry_tax": 0.0,
+   "held": 7,
+   "signal_date": "2026-10-01",
+   "exit": 44.043,
+   "exit_date": "2026-10-13",
+   "reason": "stop (gap)",
+   "exit_fee": 1.5,
+   "pnl": -6.8,
+   "r": -2.035,
+   "pnl_pct": -13.78
   },
   {
    "symbol": "DSY.PA",
@@ -8372,24 +8318,24 @@
   },
   {
    "symbol": "VIE.PA",
-   "qty": 3,
+   "qty": 2,
    "entry": 32.5663,
    "entry_date": "2026-10-16",
    "stop": 31.42,
    "target": 34.85,
    "risk_per_share": 1.1442,
-   "cost": 99.59,
+   "cost": 66.89,
    "entry_fee": 1.5,
-   "entry_tax": 0.39,
+   "entry_tax": 0.26,
    "held": 20,
    "signal_date": "2026-10-15",
    "exit": 34.8326,
    "exit_date": "2026-11-13",
    "reason": "target",
    "exit_fee": 1.5,
-   "pnl": 3.41,
-   "r": 0.993,
-   "pnl_pct": 3.42
+   "pnl": 1.28,
+   "r": 0.557,
+   "pnl_pct": 1.91
   },
   {
    "symbol": "BVI.PA",
@@ -8402,15 +8348,15 @@
    "cost": 89.25,
    "entry_fee": 1.5,
    "entry_tax": 0.35,
-   "held": 15,
+   "held": 16,
    "signal_date": "2026-10-22",
-   "exit": 30.4748,
-   "exit_date": "2026-11-13",
+   "exit": 30.4348,
+   "exit_date": "2026-11-16",
    "reason": "end of test",
    "exit_fee": 1.5,
-   "pnl": 0.67,
-   "r": 0.226,
-   "pnl_pct": 0.76
+   "pnl": 0.55,
+   "r": 0.186,
+   "pnl_pct": 0.62
   },
   {
    "symbol": "EN.PA",
@@ -8423,15 +8369,36 @@
    "cost": 87.04,
    "entry_fee": 1.5,
    "entry_tax": 0.34,
-   "held": 5,
+   "held": 6,
    "signal_date": "2026-11-05",
-   "exit": 44.2778,
-   "exit_date": "2026-11-13",
+   "exit": 44.6377,
+   "exit_date": "2026-11-16",
    "reason": "end of test",
    "exit_fee": 1.5,
-   "pnl": 0.02,
-   "r": 0.005,
-   "pnl_pct": 0.02
+   "pnl": 0.74,
+   "r": 0.249,
+   "pnl_pct": 0.84
+  },
+  {
+   "symbol": "BN.PA",
+   "qty": 1,
+   "entry": 70.3952,
+   "entry_date": "2026-11-16",
+   "stop": 67.41,
+   "target": 76.37,
+   "risk_per_share": 2.9858,
+   "cost": 72.18,
+   "entry_fee": 1.5,
+   "entry_tax": 0.28,
+   "held": 0,
+   "signal_date": "2026-11-13",
+   "exit": 70.7046,
+   "exit_date": "2026-11-16",
+   "reason": "end of test",
+   "exit_fee": 1.5,
+   "pnl": -2.98,
+   "r": -0.997,
+   "pnl_pct": -4.12
   }
  ],
  "symbols": 41,
