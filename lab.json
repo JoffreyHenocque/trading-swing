@@ -3,7 +3,7 @@
   "years": 6,
   "is_fraction": 0.6,
   "min_order_eur": 150,
-  "benchmark_etf": "EWLD.PA",
+  "benchmark_etf": "CW8.PA",
   "universes": {
     "cac": "universe.txt",
     "us": [
@@ -39,7 +39,7 @@
       "NFLX"
     ],
     "etf": [
-      "EWLD.PA",
+      "CW8.PA",
       "ESE.PA",
       "PUST.PA",
       "PAEEM.PA",
@@ -47,7 +47,7 @@
       "CAC.PA"
     ],
     "world": [
-      "EWLD.PA"
+      "CW8.PA"
     ],
     "sp500": [
       "ESE.PA"
