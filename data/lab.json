@@ -1,19 +1,19 @@
 {
- "generated_utc": "2026-11-16T16:31:47Z",
+ "generated_utc": "2026-11-16T20:09:55Z",
  "monthly_eur": 75,
  "from": "2020-11-16",
  "split": "2024-06-22",
  "to": "2026-11-16",
- "configs": 46,
+ "configs": 47,
  "errors": 0,
  "benchmark": {
   "from": "2020-11-16",
   "to": "2026-11-16",
   "years": 6.0,
   "contributed": 5475.0,
-  "final": 8394.86,
-  "gain_pct": 53.33,
-  "irr_pct": 14.09,
+  "final": 8405.45,
+  "gain_pct": 53.52,
+  "irr_pct": 14.13,
   "max_drawdown_pct": -22.39,
   "orders": 73,
   "fees": 0.0,
@@ -29,9 +29,9 @@
   "to": "2026-11-16",
   "years": 2.4,
   "contributed": 2250.0,
-  "final": 2707.22,
-  "gain_pct": 20.32,
-  "irr_pct": 15.5,
+  "final": 2710.63,
+  "gain_pct": 20.47,
+  "irr_pct": 15.61,
   "max_drawdown_pct": -22.41,
   "orders": 30,
   "fees": 0.0,
@@ -50,20 +50,20 @@
    "setting": "période (mois) 6",
    "settings_tested": 4,
    "is_irr": 13.23,
-   "oos_irr": 17.49,
-   "full_irr": 13.46,
-   "oos_gain_pct": 23.07,
+   "oos_irr": 17.65,
+   "full_irr": 13.51,
+   "oos_gain_pct": 23.29,
    "oos_drawdown": -21.54,
    "oos_orders": 29,
    "oos_cost_share": 2.58,
-   "full_final": 8235.1,
+   "full_final": 8249.78,
    "full_contributed": 5475.0,
    "full_cost_share": 2.63,
    "full_drawdown": -26.67,
    "median_is_irr": 9.91,
-   "median_oos_irr": 9.13,
+   "median_oos_irr": 9.4,
    "beats_dca_oos": true,
-   "edge_vs_dca_oos": 1.99
+   "edge_vs_dca_oos": 2.04
   },
   {
    "id": "rsi2_us_en10_to2",
@@ -85,7 +85,29 @@
    "median_is_irr": 4.65,
    "median_oos_irr": 12.46,
    "beats_dca_oos": true,
-   "edge_vs_dca_oos": 1.04
+   "edge_vs_dca_oos": 0.93
+  },
+  {
+   "id": "dca_world_em",
+   "family": "dca_world_em",
+   "label": "Versement mensuel 85 % Monde + 15 % émergents",
+   "setting": "",
+   "settings_tested": 1,
+   "is_irr": 12.38,
+   "oos_irr": 16.0,
+   "full_irr": 13.74,
+   "oos_gain_pct": 21.0,
+   "oos_drawdown": -21.53,
+   "oos_orders": 60,
+   "oos_cost_share": 0.0,
+   "full_final": 8306.47,
+   "full_contributed": 5475.0,
+   "full_cost_share": 0.0,
+   "full_drawdown": -21.78,
+   "median_is_irr": 12.38,
+   "median_oos_irr": 16.0,
+   "beats_dca_oos": true,
+   "edge_vs_dca_oos": 0.39
   },
   {
    "id": "dca_sp500",
@@ -94,20 +116,20 @@
    "setting": "",
    "settings_tested": 1,
    "is_irr": 17.58,
-   "oos_irr": 15.61,
-   "full_irr": 15.29,
-   "oos_gain_pct": 20.47,
+   "oos_irr": 15.77,
+   "full_irr": 15.35,
+   "oos_gain_pct": 20.68,
    "oos_drawdown": -24.35,
    "oos_orders": 30,
    "oos_cost_share": 0.0,
-   "full_final": 8703.12,
+   "full_final": 8718.63,
    "full_contributed": 5475.0,
    "full_cost_share": 0.0,
    "full_drawdown": -24.39,
    "median_is_irr": 17.58,
-   "median_oos_irr": 15.61,
+   "median_oos_irr": 15.77,
    "beats_dca_oos": true,
-   "edge_vs_dca_oos": 0.11
+   "edge_vs_dca_oos": 0.16
   },
   {
    "id": "dca_world",
@@ -116,18 +138,18 @@
    "setting": "",
    "settings_tested": 1,
    "is_irr": 14.25,
-   "oos_irr": 15.5,
-   "full_irr": 14.09,
-   "oos_gain_pct": 20.32,
+   "oos_irr": 15.61,
+   "full_irr": 14.13,
+   "oos_gain_pct": 20.47,
    "oos_drawdown": -22.41,
    "oos_orders": 30,
    "oos_cost_share": 0.0,
-   "full_final": 8394.86,
+   "full_final": 8405.45,
    "full_contributed": 5475.0,
    "full_cost_share": 0.0,
    "full_drawdown": -22.39,
    "median_is_irr": 14.25,
-   "median_oos_irr": 15.5,
+   "median_oos_irr": 15.61,
    "beats_dca_oos": false,
    "edge_vs_dca_oos": 0.0
   },
@@ -138,20 +160,20 @@
    "setting": "moyenne (jours) 200",
    "settings_tested": 3,
    "is_irr": 12.22,
-   "oos_irr": 5.87,
-   "full_irr": 8.54,
-   "oos_gain_pct": 7.45,
+   "oos_irr": 6.01,
+   "full_irr": 8.6,
+   "oos_gain_pct": 7.64,
    "oos_drawdown": -14.31,
    "oos_orders": 15,
    "oos_cost_share": 1.33,
-   "full_final": 7097.63,
+   "full_final": 7110.27,
    "full_contributed": 5475.0,
    "full_cost_share": 1.33,
    "full_drawdown": -23.63,
    "median_is_irr": 11.15,
-   "median_oos_irr": 5.87,
+   "median_oos_irr": 6.01,
    "beats_dca_oos": false,
-   "edge_vs_dca_oos": -9.63
+   "edge_vs_dca_oos": -9.6
   },
   {
    "id": "trend_world_sm200",
@@ -160,20 +182,20 @@
    "setting": "moyenne (jours) 200",
    "settings_tested": 3,
    "is_irr": 7.94,
-   "oos_irr": 5.6,
-   "full_irr": 7.63,
-   "oos_gain_pct": 7.1,
+   "oos_irr": 5.69,
+   "full_irr": 7.67,
+   "oos_gain_pct": 7.22,
    "oos_drawdown": -9.16,
    "oos_orders": 7,
    "oos_cost_share": 0.62,
-   "full_final": 6903.43,
+   "full_final": 6911.44,
    "full_contributed": 5475.0,
    "full_cost_share": 0.73,
    "full_drawdown": -16.92,
    "median_is_irr": 7.27,
-   "median_oos_irr": 5.6,
+   "median_oos_irr": 5.69,
    "beats_dca_oos": false,
-   "edge_vs_dca_oos": -9.9
+   "edge_vs_dca_oos": -9.92
   },
   {
    "id": "high52_us_ex100_to2",
@@ -182,20 +204,20 @@
    "setting": "sortie sous moyenne 100, nb actions 2",
    "settings_tested": 4,
    "is_irr": 24.59,
-   "oos_irr": 2.4,
-   "full_irr": 3.25,
-   "oos_gain_pct": 3.02,
+   "oos_irr": 2.07,
+   "full_irr": 3.11,
+   "oos_gain_pct": 2.59,
    "oos_drawdown": -22.52,
    "oos_orders": 24,
    "oos_cost_share": 0.36,
-   "full_final": 6044.14,
+   "full_final": 6017.97,
    "full_contributed": 5475.0,
    "full_cost_share": 0.39,
    "full_drawdown": -42.74,
    "median_is_irr": 19.37,
-   "median_oos_irr": 3.06,
+   "median_oos_irr": 2.65,
    "beats_dca_oos": false,
-   "edge_vs_dca_oos": -13.1
+   "edge_vs_dca_oos": -13.54
   },
   {
    "id": "high52_cac_ex50_to2",
@@ -204,20 +226,20 @@
    "setting": "sortie sous moyenne 50, nb actions 2",
    "settings_tested": 4,
    "is_irr": 0.62,
-   "oos_irr": -0.34,
+   "oos_irr": -0.33,
    "full_irr": 3.28,
-   "oos_gain_pct": -0.42,
+   "oos_gain_pct": -0.41,
    "oos_drawdown": -23.22,
    "oos_orders": 44,
    "oos_cost_share": 5.45,
-   "full_final": 6048.69,
+   "full_final": 6049.24,
    "full_contributed": 5475.0,
    "full_cost_share": 8.01,
    "full_drawdown": -23.68,
    "median_is_irr": -4.7,
-   "median_oos_irr": -0.12,
+   "median_oos_irr": -0.13,
    "beats_dca_oos": false,
-   "edge_vs_dca_oos": -15.84
+   "edge_vs_dca_oos": -15.94
   },
   {
    "id": "momentum_cac_lo6_to1",
@@ -226,20 +248,20 @@
    "setting": "période (mois) 6, nb actions 1",
    "settings_tested": 9,
    "is_irr": 11.5,
-   "oos_irr": -2.49,
-   "full_irr": 6.54,
-   "oos_gain_pct": -3.07,
+   "oos_irr": -2.52,
+   "full_irr": 6.52,
+   "oos_gain_pct": -3.12,
    "oos_drawdown": -43.29,
    "oos_orders": 27,
    "oos_cost_share": 3.74,
-   "full_final": 6678.17,
+   "full_final": 6675.13,
    "full_contributed": 5475.0,
    "full_cost_share": 8.24,
    "full_drawdown": -43.86,
    "median_is_irr": -10.31,
-   "median_oos_irr": 10.98,
+   "median_oos_irr": 10.86,
    "beats_dca_oos": false,
-   "edge_vs_dca_oos": -17.99
+   "edge_vs_dca_oos": -18.13
   },
   {
    "id": "momentum_us_lo3_to1",
@@ -248,20 +270,20 @@
    "setting": "période (mois) 3, nb actions 1",
    "settings_tested": 9,
    "is_irr": 85.4,
-   "oos_irr": -19.94,
-   "full_irr": 16.87,
-   "oos_gain_pct": -23.24,
+   "oos_irr": -20.78,
+   "full_irr": 16.48,
+   "oos_gain_pct": -24.15,
    "oos_drawdown": -48.56,
    "oos_orders": 41,
    "oos_cost_share": 0.6,
-   "full_final": 9127.94,
+   "full_final": 9020.03,
    "full_contributed": 5475.0,
    "full_cost_share": 0.6,
    "full_drawdown": -62.75,
    "median_is_irr": 55.74,
-   "median_oos_irr": 3.29,
+   "median_oos_irr": 2.69,
    "beats_dca_oos": false,
-   "edge_vs_dca_oos": -35.44
+   "edge_vs_dca_oos": -36.39
   },
   {
    "id": "rsi2_cac_en5_to2",
@@ -281,9 +303,9 @@
    "full_cost_share": 39.96,
    "full_drawdown": -51.73,
    "median_is_irr": -31.89,
-   "median_oos_irr": -28.17,
+   "median_oos_irr": -28.23,
    "beats_dca_oos": false,
-   "edge_vs_dca_oos": -41.14
+   "edge_vs_dca_oos": -41.25
   }
  ],
  "rows": [
@@ -316,9 +338,9 @@
     "to": "2026-11-16",
     "years": 2.4,
     "contributed": 2250.0,
-    "final": 2707.22,
-    "gain_pct": 20.32,
-    "irr_pct": 15.5,
+    "final": 2710.63,
+    "gain_pct": 20.47,
+    "irr_pct": 15.61,
     "max_drawdown_pct": -22.41,
     "orders": 30,
     "fees": 0.0,
@@ -332,11 +354,73 @@
     "to": "2026-11-16",
     "years": 6.0,
     "contributed": 5475.0,
-    "final": 8394.86,
-    "gain_pct": 53.33,
-    "irr_pct": 14.09,
+    "final": 8405.45,
+    "gain_pct": 53.52,
+    "irr_pct": 14.13,
     "max_drawdown_pct": -22.39,
     "orders": 73,
+    "fees": 0.0,
+    "taxes": 0.0,
+    "cost_share_pct": 0.0,
+    "holdings": null,
+    "cash": 0.0
+   }
+  },
+  {
+   "id": "dca_world_em",
+   "family": "dca_world_em",
+   "label": "Versement mensuel 85 % Monde + 15 % émergents",
+   "kind": "dca",
+   "universe": "world_em",
+   "setting": "",
+   "params": {
+    "weights": {
+     "CW8.PA": 85,
+     "PAEEM.PA": 15
+    }
+   },
+   "is": {
+    "from": "2020-11-16",
+    "to": "2024-06-21",
+    "years": 3.59,
+    "contributed": 3300.0,
+    "final": 4123.88,
+    "gain_pct": 24.97,
+    "irr_pct": 12.38,
+    "max_drawdown_pct": -19.12,
+    "orders": 88,
+    "fees": 0.0,
+    "taxes": 0.0,
+    "cost_share_pct": 0.0,
+    "holdings": null,
+    "cash": -0.0
+   },
+   "oos": {
+    "from": "2024-06-24",
+    "to": "2026-11-16",
+    "years": 2.4,
+    "contributed": 2250.0,
+    "final": 2722.6,
+    "gain_pct": 21.0,
+    "irr_pct": 16.0,
+    "max_drawdown_pct": -21.53,
+    "orders": 60,
+    "fees": 0.0,
+    "taxes": 0.0,
+    "cost_share_pct": 0.0,
+    "holdings": null,
+    "cash": 0.0
+   },
+   "full": {
+    "from": "2020-11-16",
+    "to": "2026-11-16",
+    "years": 6.0,
+    "contributed": 5475.0,
+    "final": 8306.47,
+    "gain_pct": 51.72,
+    "irr_pct": 13.74,
+    "max_drawdown_pct": -21.78,
+    "orders": 146,
     "fees": 0.0,
     "taxes": 0.0,
     "cost_share_pct": 0.0,
@@ -373,9 +457,9 @@
     "to": "2026-11-16",
     "years": 2.4,
     "contributed": 2250.0,
-    "final": 2710.48,
-    "gain_pct": 20.47,
-    "irr_pct": 15.61,
+    "final": 2715.32,
+    "gain_pct": 20.68,
+    "irr_pct": 15.77,
     "max_drawdown_pct": -24.35,
     "orders": 30,
     "fees": 0.0,
@@ -389,9 +473,9 @@
     "to": "2026-11-16",
     "years": 6.0,
     "contributed": 5475.0,
-    "final": 8703.12,
-    "gain_pct": 58.96,
-    "irr_pct": 15.29,
+    "final": 8718.63,
+    "gain_pct": 59.24,
+    "irr_pct": 15.35,
     "max_drawdown_pct": -24.39,
     "orders": 73,
     "fees": 0.0,
@@ -432,9 +516,9 @@
     "to": "2026-11-16",
     "years": 2.4,
     "contributed": 2250.0,
-    "final": 2432.5,
-    "gain_pct": 8.11,
-    "irr_pct": 6.37,
+    "final": 2435.17,
+    "gain_pct": 8.23,
+    "irr_pct": 6.46,
     "max_drawdown_pct": -9.16,
     "orders": 7,
     "fees": 14.0,
@@ -448,9 +532,9 @@
     "to": "2026-11-16",
     "years": 6.0,
     "contributed": 5475.0,
-    "final": 7023.35,
-    "gain_pct": 28.28,
-    "irr_pct": 8.2,
+    "final": 7031.36,
+    "gain_pct": 28.43,
+    "irr_pct": 8.23,
     "max_drawdown_pct": -20.01,
     "orders": 20,
     "fees": 41.92,
@@ -491,9 +575,9 @@
     "to": "2026-11-16",
     "years": 2.4,
     "contributed": 2250.0,
-    "final": 2409.86,
-    "gain_pct": 7.1,
-    "irr_pct": 5.6,
+    "final": 2412.53,
+    "gain_pct": 7.22,
+    "irr_pct": 5.69,
     "max_drawdown_pct": -9.16,
     "orders": 7,
     "fees": 14.0,
@@ -507,9 +591,9 @@
     "to": "2026-11-16",
     "years": 6.0,
     "contributed": 5475.0,
-    "final": 6610.44,
-    "gain_pct": 20.74,
-    "irr_pct": 6.2,
+    "final": 6618.45,
+    "gain_pct": 20.88,
+    "irr_pct": 6.24,
     "max_drawdown_pct": -24.07,
     "orders": 24,
     "fees": 49.68,
@@ -550,9 +634,9 @@
     "to": "2026-11-16",
     "years": 2.4,
     "contributed": 2250.0,
-    "final": 2409.86,
-    "gain_pct": 7.1,
-    "irr_pct": 5.6,
+    "final": 2412.53,
+    "gain_pct": 7.22,
+    "irr_pct": 5.69,
     "max_drawdown_pct": -9.16,
     "orders": 7,
     "fees": 14.0,
@@ -566,9 +650,9 @@
     "to": "2026-11-16",
     "years": 6.0,
     "contributed": 5475.0,
-    "final": 6903.43,
-    "gain_pct": 26.09,
-    "irr_pct": 7.63,
+    "final": 6911.44,
+    "gain_pct": 26.24,
+    "irr_pct": 7.67,
     "max_drawdown_pct": -16.92,
     "orders": 19,
     "fees": 40.01,
@@ -609,9 +693,9 @@
     "to": "2026-11-16",
     "years": 2.4,
     "contributed": 2250.0,
-    "final": 2594.09,
-    "gain_pct": 15.29,
-    "irr_pct": 11.81,
+    "final": 2598.7,
+    "gain_pct": 15.5,
+    "irr_pct": 11.96,
     "max_drawdown_pct": -6.32,
     "orders": 14,
     "fees": 28.0,
@@ -625,9 +709,9 @@
     "to": "2026-11-16",
     "years": 6.0,
     "contributed": 5475.0,
-    "final": 7997.89,
-    "gain_pct": 46.08,
-    "irr_pct": 12.49,
+    "final": 8012.13,
+    "gain_pct": 46.34,
+    "irr_pct": 12.55,
     "max_drawdown_pct": -24.13,
     "orders": 37,
     "fees": 78.02,
@@ -668,9 +752,9 @@
     "to": "2026-11-16",
     "years": 2.4,
     "contributed": 2250.0,
-    "final": 2417.69,
-    "gain_pct": 7.45,
-    "irr_pct": 5.87,
+    "final": 2421.99,
+    "gain_pct": 7.64,
+    "irr_pct": 6.01,
     "max_drawdown_pct": -14.31,
     "orders": 15,
     "fees": 30.0,
@@ -684,9 +768,9 @@
     "to": "2026-11-16",
     "years": 6.0,
     "contributed": 5475.0,
-    "final": 6883.13,
-    "gain_pct": 25.72,
-    "irr_pct": 7.53,
+    "final": 6895.35,
+    "gain_pct": 25.94,
+    "irr_pct": 7.59,
     "max_drawdown_pct": -26.22,
     "orders": 38,
     "fees": 78.48,
@@ -727,9 +811,9 @@
     "to": "2026-11-16",
     "years": 2.4,
     "contributed": 2250.0,
-    "final": 2417.69,
-    "gain_pct": 7.45,
-    "irr_pct": 5.87,
+    "final": 2421.99,
+    "gain_pct": 7.64,
+    "irr_pct": 6.01,
     "max_drawdown_pct": -14.31,
     "orders": 15,
     "fees": 30.0,
@@ -743,9 +827,9 @@
     "to": "2026-11-16",
     "years": 6.0,
     "contributed": 5475.0,
-    "final": 7097.63,
-    "gain_pct": 29.64,
-    "irr_pct": 8.54,
+    "final": 7110.27,
+    "gain_pct": 29.87,
+    "irr_pct": 8.6,
     "max_drawdown_pct": -23.63,
     "orders": 35,
     "fees": 72.86,
@@ -786,9 +870,9 @@
     "to": "2026-11-16",
     "years": 2.4,
     "contributed": 2250.0,
-    "final": 2327.76,
-    "gain_pct": 3.46,
-    "irr_pct": 2.75,
+    "final": 2331.88,
+    "gain_pct": 3.64,
+    "irr_pct": 2.89,
     "max_drawdown_pct": -18.93,
     "orders": 34,
     "fees": 68.0,
@@ -802,9 +886,9 @@
     "to": "2026-11-16",
     "years": 6.0,
     "contributed": 5475.0,
-    "final": 6481.66,
-    "gain_pct": 18.39,
-    "irr_pct": 5.55,
+    "final": 6493.21,
+    "gain_pct": 18.6,
+    "irr_pct": 5.61,
     "max_drawdown_pct": -32.54,
     "orders": 74,
     "fees": 165.13,
@@ -845,9 +929,9 @@
     "to": "2026-11-16",
     "years": 2.4,
     "contributed": 2250.0,
-    "final": 2769.13,
-    "gain_pct": 23.07,
-    "irr_pct": 17.49,
+    "final": 2774.04,
+    "gain_pct": 23.29,
+    "irr_pct": 17.65,
     "max_drawdown_pct": -21.54,
     "orders": 29,
     "fees": 58.0,
@@ -861,9 +945,9 @@
     "to": "2026-11-16",
     "years": 6.0,
     "contributed": 5475.0,
-    "final": 8235.1,
-    "gain_pct": 50.41,
-    "irr_pct": 13.46,
+    "final": 8249.78,
+    "gain_pct": 50.68,
+    "irr_pct": 13.51,
     "max_drawdown_pct": -26.67,
     "orders": 65,
     "fees": 144.11,
@@ -904,9 +988,9 @@
     "to": "2026-11-16",
     "years": 2.4,
     "contributed": 2250.0,
-    "final": 2410.93,
-    "gain_pct": 7.15,
-    "irr_pct": 5.63,
+    "final": 2422.43,
+    "gain_pct": 7.66,
+    "irr_pct": 6.03,
     "max_drawdown_pct": -25.67,
     "orders": 26,
     "fees": 52.0,
@@ -920,9 +1004,9 @@
     "to": "2026-11-16",
     "years": 6.0,
     "contributed": 5475.0,
-    "final": 6893.92,
-    "gain_pct": 25.92,
-    "irr_pct": 7.58,
+    "final": 6927.92,
+    "gain_pct": 26.54,
+    "irr_pct": 7.75,
     "max_drawdown_pct": -26.72,
     "orders": 61,
     "fees": 133.11,
@@ -963,9 +1047,9 @@
     "to": "2026-11-16",
     "years": 2.4,
     "contributed": 2250.0,
-    "final": 2619.23,
-    "gain_pct": 16.41,
-    "irr_pct": 12.64,
+    "final": 2623.52,
+    "gain_pct": 16.6,
+    "irr_pct": 12.78,
     "max_drawdown_pct": -24.52,
     "orders": 28,
     "fees": 56.0,
@@ -979,9 +1063,9 @@
     "to": "2026-11-16",
     "years": 6.0,
     "contributed": 5475.0,
-    "final": 7813.6,
-    "gain_pct": 42.71,
-    "irr_pct": 11.72,
+    "final": 7826.42,
+    "gain_pct": 42.95,
+    "irr_pct": 11.77,
     "max_drawdown_pct": -28.47,
     "orders": 64,
     "fees": 136.38,
@@ -1023,9 +1107,9 @@
     "to": "2026-11-16",
     "years": 2.4,
     "contributed": 2250.0,
-    "final": 1663.31,
-    "gain_pct": -26.08,
-    "irr_pct": -22.58,
+    "final": 1662.59,
+    "gain_pct": -26.11,
+    "irr_pct": -22.61,
     "max_drawdown_pct": -45.61,
     "orders": 43,
     "fees": 86.0,
@@ -1039,9 +1123,9 @@
     "to": "2026-11-16",
     "years": 6.0,
     "contributed": 5475.0,
-    "final": 3035.05,
-    "gain_pct": -44.57,
-    "irr_pct": -19.57,
+    "final": 3033.69,
+    "gain_pct": -44.59,
+    "irr_pct": -19.58,
     "max_drawdown_pct": -61.85,
     "orders": 106,
     "fees": 212.0,
@@ -1083,9 +1167,9 @@
     "to": "2026-11-16",
     "years": 2.4,
     "contributed": 2250.0,
-    "final": 2902.04,
-    "gain_pct": 28.98,
-    "irr_pct": 21.68,
+    "final": 2897.88,
+    "gain_pct": 28.79,
+    "irr_pct": 21.55,
     "max_drawdown_pct": -36.28,
     "orders": 79,
     "fees": 158.0,
@@ -1099,9 +1183,9 @@
     "to": "2026-11-16",
     "years": 6.0,
     "contributed": 5475.0,
-    "final": 6905.86,
-    "gain_pct": 26.13,
-    "irr_pct": 7.64,
+    "final": 6895.55,
+    "gain_pct": 25.95,
+    "irr_pct": 7.59,
     "max_drawdown_pct": -44.24,
     "orders": 249,
     "fees": 498.0,
@@ -1143,9 +1227,9 @@
     "to": "2026-11-16",
     "years": 2.4,
     "contributed": 2250.0,
-    "final": 2712.89,
-    "gain_pct": 20.57,
-    "irr_pct": 15.69,
+    "final": 2709.77,
+    "gain_pct": 20.43,
+    "irr_pct": 15.59,
     "max_drawdown_pct": -26.88,
     "orders": 79,
     "fees": 158.0,
@@ -1159,9 +1243,9 @@
     "to": "2026-11-16",
     "years": 6.0,
     "contributed": 5475.0,
-    "final": 6602.47,
-    "gain_pct": 20.59,
-    "irr_pct": 6.16,
+    "final": 6594.61,
+    "gain_pct": 20.45,
+    "irr_pct": 6.12,
     "max_drawdown_pct": -32.47,
     "orders": 345,
     "fees": 690.0,
@@ -1203,9 +1287,9 @@
     "to": "2026-11-16",
     "years": 2.4,
     "contributed": 2250.0,
-    "final": 2180.86,
-    "gain_pct": -3.07,
-    "irr_pct": -2.49,
+    "final": 2179.9,
+    "gain_pct": -3.12,
+    "irr_pct": -2.52,
     "max_drawdown_pct": -43.29,
     "orders": 27,
     "fees": 54.0,
@@ -1219,9 +1303,9 @@
     "to": "2026-11-16",
     "years": 6.0,
     "contributed": 5475.0,
-    "final": 6678.17,
-    "gain_pct": 21.98,
-    "irr_pct": 6.54,
+    "final": 6675.13,
+    "gain_pct": 21.92,
+    "irr_pct": 6.52,
     "max_drawdown_pct": -43.86,
     "orders": 79,
     "fees": 178.43,
@@ -1263,9 +1347,9 @@
     "to": "2026-11-16",
     "years": 2.4,
     "contributed": 2250.0,
-    "final": 2569.11,
-    "gain_pct": 14.18,
-    "irr_pct": 10.98,
+    "final": 2565.41,
+    "gain_pct": 14.02,
+    "irr_pct": 10.86,
     "max_drawdown_pct": -23.66,
     "orders": 50,
     "fees": 100.0,
@@ -1279,9 +1363,9 @@
     "to": "2026-11-16",
     "years": 6.0,
     "contributed": 5475.0,
-    "final": 6379.29,
-    "gain_pct": 16.52,
-    "irr_pct": 5.03,
+    "final": 6370.29,
+    "gain_pct": 16.35,
+    "irr_pct": 4.98,
     "max_drawdown_pct": -38.68,
     "orders": 196,
     "fees": 392.0,
@@ -1323,9 +1407,9 @@
     "to": "2026-11-16",
     "years": 2.4,
     "contributed": 2250.0,
-    "final": 2131.77,
-    "gain_pct": -5.25,
-    "irr_pct": -4.28,
+    "final": 2129.8,
+    "gain_pct": -5.34,
+    "irr_pct": -4.35,
     "max_drawdown_pct": -22.49,
     "orders": 74,
     "fees": 148.0,
@@ -1339,9 +1423,9 @@
     "to": "2026-11-16",
     "years": 6.0,
     "contributed": 5475.0,
-    "final": 4782.08,
-    "gain_pct": -12.66,
-    "irr_pct": -4.45,
+    "final": 4777.46,
+    "gain_pct": -12.74,
+    "irr_pct": -4.49,
     "max_drawdown_pct": -39.5,
     "orders": 282,
     "fees": 564.0,
@@ -1383,9 +1467,9 @@
     "to": "2026-11-16",
     "years": 2.4,
     "contributed": 2250.0,
-    "final": 2238.73,
-    "gain_pct": -0.5,
-    "irr_pct": -0.4,
+    "final": 2233.87,
+    "gain_pct": -0.72,
+    "irr_pct": -0.58,
     "max_drawdown_pct": -50.2,
     "orders": 30,
     "fees": 60.0,
@@ -1399,9 +1483,9 @@
     "to": "2026-11-16",
     "years": 6.0,
     "contributed": 5475.0,
-    "final": 5369.61,
-    "gain_pct": -1.93,
-    "irr_pct": -0.64,
+    "final": 5357.91,
+    "gain_pct": -2.14,
+    "irr_pct": -0.71,
     "max_drawdown_pct": -50.19,
     "orders": 70,
     "fees": 151.05,
@@ -1443,9 +1527,9 @@
     "to": "2026-11-16",
     "years": 2.4,
     "contributed": 2250.0,
-    "final": 3085.07,
-    "gain_pct": 37.11,
-    "irr_pct": 27.29,
+    "final": 3082.75,
+    "gain_pct": 37.01,
+    "irr_pct": 27.22,
     "max_drawdown_pct": -26.69,
     "orders": 37,
     "fees": 74.0,
@@ -1459,9 +1543,9 @@
     "to": "2026-11-16",
     "years": 6.0,
     "contributed": 5475.0,
-    "final": 7919.28,
-    "gain_pct": 44.64,
-    "irr_pct": 12.16,
+    "final": 7913.36,
+    "gain_pct": 44.54,
+    "irr_pct": 12.14,
     "max_drawdown_pct": -38.55,
     "orders": 142,
     "fees": 284.0,
@@ -1503,9 +1587,9 @@
     "to": "2026-11-16",
     "years": 2.4,
     "contributed": 2250.0,
-    "final": 2595.21,
-    "gain_pct": 15.34,
-    "irr_pct": 11.84,
+    "final": 2593.76,
+    "gain_pct": 15.28,
+    "irr_pct": 11.8,
     "max_drawdown_pct": -21.87,
     "orders": 66,
     "fees": 132.0,
@@ -1519,9 +1603,9 @@
     "to": "2026-11-16",
     "years": 6.0,
     "contributed": 5475.0,
-    "final": 7167.58,
-    "gain_pct": 30.91,
-    "irr_pct": 8.87,
+    "final": 7164.47,
+    "gain_pct": 30.86,
+    "irr_pct": 8.85,
     "max_drawdown_pct": -36.9,
     "orders": 202,
     "fees": 404.0,
@@ -1563,9 +1647,9 @@
     "to": "2026-11-16",
     "years": 2.4,
     "contributed": 2250.0,
-    "final": 1727.08,
-    "gain_pct": -23.24,
-    "irr_pct": -19.94,
+    "final": 1706.66,
+    "gain_pct": -24.15,
+    "irr_pct": -20.78,
     "max_drawdown_pct": -48.56,
     "orders": 41,
     "fees": 13.48,
@@ -1579,9 +1663,9 @@
     "to": "2026-11-16",
     "years": 6.0,
     "contributed": 5475.0,
-    "final": 9127.94,
-    "gain_pct": 66.72,
-    "irr_pct": 16.87,
+    "final": 9020.03,
+    "gain_pct": 64.75,
+    "irr_pct": 16.48,
     "max_drawdown_pct": -62.75,
     "orders": 97,
     "fees": 32.72,
@@ -1623,9 +1707,9 @@
     "to": "2026-11-16",
     "years": 2.4,
     "contributed": 2250.0,
-    "final": 2343.34,
-    "gain_pct": 4.15,
-    "irr_pct": 3.29,
+    "final": 2326.18,
+    "gain_pct": 3.39,
+    "irr_pct": 2.69,
     "max_drawdown_pct": -38.18,
     "orders": 69,
     "fees": 22.07,
@@ -1639,9 +1723,9 @@
     "to": "2026-11-16",
     "years": 6.0,
     "contributed": 5475.0,
-    "final": 10919.78,
-    "gain_pct": 99.45,
-    "irr_pct": 22.86,
+    "final": 10837.94,
+    "gain_pct": 97.95,
+    "irr_pct": 22.61,
     "max_drawdown_pct": -42.92,
     "orders": 203,
     "fees": 65.83,
@@ -1683,9 +1767,9 @@
     "to": "2026-11-16",
     "years": 2.4,
     "contributed": 2250.0,
-    "final": 2228.92,
-    "gain_pct": -0.94,
-    "irr_pct": -0.75,
+    "final": 2212.32,
+    "gain_pct": -1.67,
+    "irr_pct": -1.35,
     "max_drawdown_pct": -18.09,
     "orders": 89,
     "fees": 27.77,
@@ -1699,9 +1783,9 @@
     "to": "2026-11-16",
     "years": 6.0,
     "contributed": 5475.0,
-    "final": 7688.46,
-    "gain_pct": 40.43,
-    "irr_pct": 11.18,
+    "final": 7631.81,
+    "gain_pct": 39.39,
+    "irr_pct": 10.94,
     "max_drawdown_pct": -32.25,
     "orders": 297,
     "fees": 96.19,
@@ -1743,9 +1827,9 @@
     "to": "2026-11-16",
     "years": 2.4,
     "contributed": 2250.0,
-    "final": 1947.18,
-    "gain_pct": -13.46,
-    "irr_pct": -11.21,
+    "final": 1924.16,
+    "gain_pct": -14.48,
+    "irr_pct": -12.1,
     "max_drawdown_pct": -29.38,
     "orders": 36,
     "fees": 11.86,
@@ -1759,9 +1843,9 @@
     "to": "2026-11-16",
     "years": 6.0,
     "contributed": 5475.0,
-    "final": 9601.02,
-    "gain_pct": 75.36,
-    "irr_pct": 18.56,
+    "final": 9487.51,
+    "gain_pct": 73.29,
+    "irr_pct": 18.16,
     "max_drawdown_pct": -53.4,
     "orders": 81,
     "fees": 27.5,
@@ -1803,9 +1887,9 @@
     "to": "2026-11-16",
     "years": 2.4,
     "contributed": 2250.0,
-    "final": 1993.59,
-    "gain_pct": -11.4,
-    "irr_pct": -9.43,
+    "final": 1973.38,
+    "gain_pct": -12.29,
+    "irr_pct": -10.2,
     "max_drawdown_pct": -30.84,
     "orders": 61,
     "fees": 19.61,
@@ -1819,9 +1903,9 @@
     "to": "2026-11-16",
     "years": 6.0,
     "contributed": 5475.0,
-    "final": 10559.42,
-    "gain_pct": 92.87,
-    "irr_pct": 21.74,
+    "final": 10452.4,
+    "gain_pct": 90.91,
+    "irr_pct": 21.39,
     "max_drawdown_pct": -43.48,
     "orders": 173,
     "fees": 56.03,
@@ -1863,9 +1947,9 @@
     "to": "2026-11-16",
     "years": 2.4,
     "contributed": 2250.0,
-    "final": 2422.82,
-    "gain_pct": 7.68,
-    "irr_pct": 6.04,
+    "final": 2402.38,
+    "gain_pct": 6.77,
+    "irr_pct": 5.34,
     "max_drawdown_pct": -16.96,
     "orders": 85,
     "fees": 26.64,
@@ -1879,9 +1963,9 @@
     "to": "2026-11-16",
     "years": 6.0,
     "contributed": 5475.0,
-    "final": 10686.24,
-    "gain_pct": 95.18,
-    "irr_pct": 22.14,
+    "final": 10596.1,
+    "gain_pct": 93.54,
+    "irr_pct": 21.85,
     "max_drawdown_pct": -30.63,
     "orders": 222,
     "fees": 71.89,
@@ -1923,9 +2007,9 @@
     "to": "2026-11-16",
     "years": 2.4,
     "contributed": 2250.0,
-    "final": 2729.07,
-    "gain_pct": 21.29,
-    "irr_pct": 16.21,
+    "final": 2696.8,
+    "gain_pct": 19.86,
+    "irr_pct": 15.17,
     "max_drawdown_pct": -39.26,
     "orders": 20,
     "fees": 6.97,
@@ -1939,9 +2023,9 @@
     "to": "2026-11-16",
     "years": 6.0,
     "contributed": 5475.0,
-    "final": 15475.02,
-    "gain_pct": 182.65,
-    "irr_pct": 34.71,
+    "final": 15292.07,
+    "gain_pct": 179.31,
+    "irr_pct": 34.3,
     "max_drawdown_pct": -51.78,
     "orders": 51,
     "fees": 17.93,
@@ -1983,9 +2067,9 @@
     "to": "2026-11-16",
     "years": 2.4,
     "contributed": 2250.0,
-    "final": 2635.66,
-    "gain_pct": 17.14,
-    "irr_pct": 13.17,
+    "final": 2613.24,
+    "gain_pct": 16.14,
+    "irr_pct": 12.44,
     "max_drawdown_pct": -24.25,
     "orders": 39,
     "fees": 12.76,
@@ -1999,9 +2083,9 @@
     "to": "2026-11-16",
     "years": 6.0,
     "contributed": 5475.0,
-    "final": 13643.81,
-    "gain_pct": 149.2,
-    "irr_pct": 30.4,
+    "final": 13521.31,
+    "gain_pct": 146.96,
+    "irr_pct": 30.09,
     "max_drawdown_pct": -32.84,
     "orders": 136,
     "fees": 44.68,
@@ -2043,9 +2127,9 @@
     "to": "2026-11-16",
     "years": 2.4,
     "contributed": 2250.0,
-    "final": 2641.2,
-    "gain_pct": 17.39,
-    "irr_pct": 13.36,
+    "final": 2626.49,
+    "gain_pct": 16.73,
+    "irr_pct": 12.87,
     "max_drawdown_pct": -16.61,
     "orders": 61,
     "fees": 19.23,
@@ -2059,9 +2143,9 @@
     "to": "2026-11-16",
     "years": 6.0,
     "contributed": 5475.0,
-    "final": 12244.98,
-    "gain_pct": 123.65,
-    "irr_pct": 26.72,
+    "final": 12177.46,
+    "gain_pct": 122.42,
+    "irr_pct": 26.54,
     "max_drawdown_pct": -29.04,
     "orders": 153,
     "fees": 49.82,
@@ -2103,9 +2187,9 @@
     "to": "2026-11-16",
     "years": 2.4,
     "contributed": 2250.0,
-    "final": 2240.47,
-    "gain_pct": -0.42,
-    "irr_pct": -0.34,
+    "final": 2240.77,
+    "gain_pct": -0.41,
+    "irr_pct": -0.33,
     "max_drawdown_pct": -23.22,
     "orders": 44,
     "fees": 88.0,
@@ -2119,8 +2203,8 @@
     "to": "2026-11-16",
     "years": 6.0,
     "contributed": 5475.0,
-    "final": 6048.69,
-    "gain_pct": 10.48,
+    "final": 6049.24,
+    "gain_pct": 10.49,
     "irr_pct": 3.28,
     "max_drawdown_pct": -23.68,
     "orders": 104,
@@ -2163,9 +2247,9 @@
     "to": "2026-11-16",
     "years": 2.4,
     "contributed": 2250.0,
-    "final": 2239.75,
-    "gain_pct": -0.46,
-    "irr_pct": -0.37,
+    "final": 2238.56,
+    "gain_pct": -0.51,
+    "irr_pct": -0.41,
     "max_drawdown_pct": -21.5,
     "orders": 51,
     "fees": 102.0,
@@ -2179,9 +2263,9 @@
     "to": "2026-11-16",
     "years": 6.0,
     "contributed": 5475.0,
-    "final": 5303.68,
-    "gain_pct": -3.13,
-    "irr_pct": -1.05,
+    "final": 5300.2,
+    "gain_pct": -3.19,
+    "irr_pct": -1.07,
     "max_drawdown_pct": -21.87,
     "orders": 149,
     "fees": 298.0,
@@ -2223,9 +2307,9 @@
     "to": "2026-11-16",
     "years": 2.4,
     "contributed": 2250.0,
-    "final": 2252.48,
-    "gain_pct": 0.11,
-    "irr_pct": 0.09,
+    "final": 2252.08,
+    "gain_pct": 0.09,
+    "irr_pct": 0.07,
     "max_drawdown_pct": -15.54,
     "orders": 28,
     "fees": 56.0,
@@ -2239,9 +2323,9 @@
     "to": "2026-11-16",
     "years": 6.0,
     "contributed": 5475.0,
-    "final": 5775.27,
-    "gain_pct": 5.48,
-    "irr_pct": 1.76,
+    "final": 5774.07,
+    "gain_pct": 5.46,
+    "irr_pct": 1.75,
     "max_drawdown_pct": -24.39,
     "orders": 58,
     "fees": 116.0,
@@ -2283,9 +2367,9 @@
     "to": "2026-11-16",
     "years": 2.4,
     "contributed": 2250.0,
-    "final": 2477.74,
-    "gain_pct": 10.12,
-    "irr_pct": 7.91,
+    "final": 2477.29,
+    "gain_pct": 10.1,
+    "irr_pct": 7.9,
     "max_drawdown_pct": -15.19,
     "orders": 31,
     "fees": 62.0,
@@ -2299,8 +2383,8 @@
     "to": "2026-11-16",
     "years": 6.0,
     "contributed": 5475.0,
-    "final": 6489.55,
-    "gain_pct": 18.53,
+    "final": 6488.1,
+    "gain_pct": 18.5,
     "irr_pct": 5.59,
     "max_drawdown_pct": -21.22,
     "orders": 83,
@@ -2343,25 +2427,25 @@
     "to": "2026-11-16",
     "years": 2.4,
     "contributed": 2250.0,
-    "final": 2354.73,
-    "gain_pct": 4.65,
-    "irr_pct": 3.69,
+    "final": 2341.29,
+    "gain_pct": 4.06,
+    "irr_pct": 3.22,
     "max_drawdown_pct": -21.33,
     "orders": 46,
     "fees": 15.07,
     "taxes": 0.0,
     "cost_share_pct": 0.67,
     "holdings": null,
-    "cash": 93.16
+    "cash": 92.92
    },
    "full": {
     "from": "2020-11-16",
     "to": "2026-11-16",
     "years": 6.0,
     "contributed": 5475.0,
-    "final": 6910.71,
-    "gain_pct": 26.22,
-    "irr_pct": 7.66,
+    "final": 6867.29,
+    "gain_pct": 25.43,
+    "irr_pct": 7.46,
     "max_drawdown_pct": -31.74,
     "orders": 110,
     "fees": 36.56,
@@ -2403,25 +2487,25 @@
     "to": "2026-11-16",
     "years": 2.4,
     "contributed": 2250.0,
-    "final": 2370.63,
-    "gain_pct": 5.36,
-    "irr_pct": 4.24,
+    "final": 2360.66,
+    "gain_pct": 4.92,
+    "irr_pct": 3.9,
     "max_drawdown_pct": -18.93,
     "orders": 61,
     "fees": 19.56,
     "taxes": 0.0,
     "cost_share_pct": 0.87,
     "holdings": null,
-    "cash": 3.05
+    "cash": 2.82
    },
    "full": {
     "from": "2020-11-16",
     "to": "2026-11-16",
     "years": 6.0,
     "contributed": 5475.0,
-    "final": 6290.51,
-    "gain_pct": 14.9,
-    "irr_pct": 4.57,
+    "final": 6261.72,
+    "gain_pct": 14.37,
+    "irr_pct": 4.42,
     "max_drawdown_pct": -29.15,
     "orders": 159,
     "fees": 51.93,
@@ -2463,9 +2547,9 @@
     "to": "2026-11-16",
     "years": 2.4,
     "contributed": 2250.0,
-    "final": 2317.99,
-    "gain_pct": 3.02,
-    "irr_pct": 2.4,
+    "final": 2308.36,
+    "gain_pct": 2.59,
+    "irr_pct": 2.07,
     "max_drawdown_pct": -22.52,
     "orders": 24,
     "fees": 8.09,
@@ -2479,9 +2563,9 @@
     "to": "2026-11-16",
     "years": 6.0,
     "contributed": 5475.0,
-    "final": 6044.14,
-    "gain_pct": 10.4,
-    "irr_pct": 3.25,
+    "final": 6017.97,
+    "gain_pct": 9.92,
+    "irr_pct": 3.11,
     "max_drawdown_pct": -42.74,
     "orders": 62,
     "fees": 21.48,
@@ -2523,9 +2607,9 @@
     "to": "2026-11-16",
     "years": 2.4,
     "contributed": 2250.0,
-    "final": 2319.06,
-    "gain_pct": 3.07,
-    "irr_pct": 2.44,
+    "final": 2305.27,
+    "gain_pct": 2.46,
+    "irr_pct": 1.96,
     "max_drawdown_pct": -20.87,
     "orders": 37,
     "fees": 12.16,
@@ -2539,9 +2623,9 @@
     "to": "2026-11-16",
     "years": 6.0,
     "contributed": 5475.0,
-    "final": 5979.37,
-    "gain_pct": 9.21,
-    "irr_pct": 2.9,
+    "final": 5943.02,
+    "gain_pct": 8.55,
+    "irr_pct": 2.7,
     "max_drawdown_pct": -36.93,
     "orders": 95,
     "fees": 31.83,
@@ -2703,9 +2787,9 @@
     "to": "2026-11-16",
     "years": 2.4,
     "contributed": 2250.0,
-    "final": 1474.53,
-    "gain_pct": -34.47,
-    "irr_pct": -30.7,
+    "final": 1471.68,
+    "gain_pct": -34.59,
+    "irr_pct": -30.82,
     "max_drawdown_pct": -38.07,
     "orders": 355,
     "fees": 710.0,
@@ -2719,9 +2803,9 @@
     "to": "2026-11-16",
     "years": 6.0,
     "contributed": 5475.0,
-    "final": 3051.12,
-    "gain_pct": -44.27,
-    "irr_pct": -19.39,
+    "final": 3043.52,
+    "gain_pct": -44.41,
+    "irr_pct": -19.47,
     "max_drawdown_pct": -50.48,
     "orders": 927,
     "fees": 1854.0,
@@ -2763,9 +2847,9 @@
     "to": "2026-11-16",
     "years": 2.4,
     "contributed": 2250.0,
-    "final": 1301.32,
-    "gain_pct": -42.16,
-    "irr_pct": -38.61,
+    "final": 1299.42,
+    "gain_pct": -42.25,
+    "irr_pct": -38.7,
     "max_drawdown_pct": -44.5,
     "orders": 425,
     "fees": 850.0,
@@ -2779,9 +2863,9 @@
     "to": "2026-11-16",
     "years": 6.0,
     "contributed": 5475.0,
-    "final": 2324.25,
-    "gain_pct": -57.55,
-    "irr_pct": -28.66,
+    "final": 2320.45,
+    "gain_pct": -57.62,
+    "irr_pct": -28.72,
     "max_drawdown_pct": -62.03,
     "orders": 1227,
     "fees": 2454.0,
@@ -3003,9 +3087,9 @@
     "to": "2026-11-16",
     "years": 2.4,
     "contributed": 2250.0,
-    "final": 2462.31,
-    "gain_pct": 9.44,
-    "irr_pct": 7.39,
+    "final": 2445.07,
+    "gain_pct": 8.67,
+    "irr_pct": 6.8,
     "max_drawdown_pct": -17.77,
     "orders": 473,
     "fees": 145.63,
@@ -3019,9 +3103,9 @@
     "to": "2026-11-16",
     "years": 6.0,
     "contributed": 5475.0,
-    "final": 7785.18,
-    "gain_pct": 42.2,
-    "irr_pct": 11.6,
+    "final": 7730.7,
+    "gain_pct": 41.2,
+    "irr_pct": 11.36,
     "max_drawdown_pct": -20.11,
     "orders": 1227,
     "fees": 387.47,
@@ -4136,7 +4220,7 @@
    },
    {
     "d": "2026-11-16",
-    "value": 8235.1,
+    "value": 8249.78,
     "contributed": 5475.0
    }
   ],
@@ -5224,6 +5308,1113 @@
    {
     "d": "2026-11-16",
     "value": 8713.13,
+    "contributed": 5475.0
+   }
+  ],
+  "dca_world_em": [
+   {
+    "d": "2020-11-16",
+    "value": 75.0,
+    "contributed": 75.0
+   },
+   {
+    "d": "2020-11-25",
+    "value": 75.4,
+    "contributed": 75.0
+   },
+   {
+    "d": "2020-12-04",
+    "value": 150.62,
+    "contributed": 150.0
+   },
+   {
+    "d": "2020-12-15",
+    "value": 150.18,
+    "contributed": 150.0
+   },
+   {
+    "d": "2020-12-24",
+    "value": 151.2,
+    "contributed": 150.0
+   },
+   {
+    "d": "2021-01-06",
+    "value": 229.26,
+    "contributed": 225.0
+   },
+   {
+    "d": "2021-01-15",
+    "value": 233.89,
+    "contributed": 225.0
+   },
+   {
+    "d": "2021-01-26",
+    "value": 236.45,
+    "contributed": 225.0
+   },
+   {
+    "d": "2021-02-04",
+    "value": 317.43,
+    "contributed": 300.0
+   },
+   {
+    "d": "2021-02-15",
+    "value": 324.57,
+    "contributed": 300.0
+   },
+   {
+    "d": "2021-02-24",
+    "value": 317.48,
+    "contributed": 300.0
+   },
+   {
+    "d": "2021-03-05",
+    "value": 383.27,
+    "contributed": 375.0
+   },
+   {
+    "d": "2021-03-16",
+    "value": 403.65,
+    "contributed": 375.0
+   },
+   {
+    "d": "2021-03-25",
+    "value": 398.0,
+    "contributed": 375.0
+   },
+   {
+    "d": "2021-04-07",
+    "value": 484.71,
+    "contributed": 450.0
+   },
+   {
+    "d": "2021-04-16",
+    "value": 492.52,
+    "contributed": 450.0
+   },
+   {
+    "d": "2021-04-27",
+    "value": 489.57,
+    "contributed": 450.0
+   },
+   {
+    "d": "2021-05-06",
+    "value": 562.9,
+    "contributed": 525.0
+   },
+   {
+    "d": "2021-05-17",
+    "value": 554.85,
+    "contributed": 525.0
+   },
+   {
+    "d": "2021-05-26",
+    "value": 561.85,
+    "contributed": 525.0
+   },
+   {
+    "d": "2021-06-04",
+    "value": 645.34,
+    "contributed": 600.0
+   },
+   {
+    "d": "2021-06-15",
+    "value": 650.69,
+    "contributed": 600.0
+   },
+   {
+    "d": "2021-06-24",
+    "value": 661.37,
+    "contributed": 600.0
+   },
+   {
+    "d": "2021-07-05",
+    "value": 746.59,
+    "contributed": 675.0
+   },
+   {
+    "d": "2021-07-14",
+    "value": 749.81,
+    "contributed": 675.0
+   },
+   {
+    "d": "2021-07-23",
+    "value": 753.97,
+    "contributed": 675.0
+   },
+   {
+    "d": "2021-08-03",
+    "value": 822.78,
+    "contributed": 750.0
+   },
+   {
+    "d": "2021-08-12",
+    "value": 839.36,
+    "contributed": 750.0
+   },
+   {
+    "d": "2021-08-23",
+    "value": 836.58,
+    "contributed": 750.0
+   },
+   {
+    "d": "2021-09-01",
+    "value": 919.76,
+    "contributed": 825.0
+   },
+   {
+    "d": "2021-09-10",
+    "value": 915.25,
+    "contributed": 825.0
+   },
+   {
+    "d": "2021-09-21",
+    "value": 899.38,
+    "contributed": 825.0
+   },
+   {
+    "d": "2021-09-30",
+    "value": 901.63,
+    "contributed": 825.0
+   },
+   {
+    "d": "2021-10-11",
+    "value": 990.16,
+    "contributed": 900.0
+   },
+   {
+    "d": "2021-10-20",
+    "value": 1012.83,
+    "contributed": 900.0
+   },
+   {
+    "d": "2021-10-29",
+    "value": 1023.33,
+    "contributed": 900.0
+   },
+   {
+    "d": "2021-11-09",
+    "value": 1113.59,
+    "contributed": 975.0
+   },
+   {
+    "d": "2021-11-18",
+    "value": 1135.09,
+    "contributed": 975.0
+   },
+   {
+    "d": "2021-11-29",
+    "value": 1113.64,
+    "contributed": 975.0
+   },
+   {
+    "d": "2021-12-08",
+    "value": 1198.09,
+    "contributed": 1050.0
+   },
+   {
+    "d": "2021-12-17",
+    "value": 1190.67,
+    "contributed": 1050.0
+   },
+   {
+    "d": "2021-12-28",
+    "value": 1219.34,
+    "contributed": 1050.0
+   },
+   {
+    "d": "2022-01-06",
+    "value": 1275.8,
+    "contributed": 1125.0
+   },
+   {
+    "d": "2022-01-17",
+    "value": 1265.75,
+    "contributed": 1125.0
+   },
+   {
+    "d": "2022-01-26",
+    "value": 1217.81,
+    "contributed": 1125.0
+   },
+   {
+    "d": "2022-02-04",
+    "value": 1283.68,
+    "contributed": 1200.0
+   },
+   {
+    "d": "2022-02-15",
+    "value": 1300.61,
+    "contributed": 1200.0
+   },
+   {
+    "d": "2022-02-24",
+    "value": 1236.56,
+    "contributed": 1200.0
+   },
+   {
+    "d": "2022-03-07",
+    "value": 1333.59,
+    "contributed": 1275.0
+   },
+   {
+    "d": "2022-03-16",
+    "value": 1350.03,
+    "contributed": 1275.0
+   },
+   {
+    "d": "2022-03-25",
+    "value": 1401.1,
+    "contributed": 1275.0
+   },
+   {
+    "d": "2022-04-05",
+    "value": 1502.07,
+    "contributed": 1350.0
+   },
+   {
+    "d": "2022-04-14",
+    "value": 1476.01,
+    "contributed": 1350.0
+   },
+   {
+    "d": "2022-04-27",
+    "value": 1430.36,
+    "contributed": 1350.0
+   },
+   {
+    "d": "2022-05-06",
+    "value": 1472.59,
+    "contributed": 1425.0
+   },
+   {
+    "d": "2022-05-17",
+    "value": 1468.62,
+    "contributed": 1425.0
+   },
+   {
+    "d": "2022-05-26",
+    "value": 1445.78,
+    "contributed": 1425.0
+   },
+   {
+    "d": "2022-06-06",
+    "value": 1557.65,
+    "contributed": 1500.0
+   },
+   {
+    "d": "2022-06-15",
+    "value": 1467.74,
+    "contributed": 1500.0
+   },
+   {
+    "d": "2022-06-24",
+    "value": 1476.81,
+    "contributed": 1500.0
+   },
+   {
+    "d": "2022-07-05",
+    "value": 1540.99,
+    "contributed": 1575.0
+   },
+   {
+    "d": "2022-07-14",
+    "value": 1568.69,
+    "contributed": 1575.0
+   },
+   {
+    "d": "2022-07-25",
+    "value": 1625.07,
+    "contributed": 1575.0
+   },
+   {
+    "d": "2022-08-03",
+    "value": 1765.3,
+    "contributed": 1650.0
+   },
+   {
+    "d": "2022-08-12",
+    "value": 1792.05,
+    "contributed": 1650.0
+   },
+   {
+    "d": "2022-08-23",
+    "value": 1786.53,
+    "contributed": 1650.0
+   },
+   {
+    "d": "2022-09-01",
+    "value": 1783.28,
+    "contributed": 1725.0
+   },
+   {
+    "d": "2022-09-12",
+    "value": 1831.78,
+    "contributed": 1725.0
+   },
+   {
+    "d": "2022-09-21",
+    "value": 1767.18,
+    "contributed": 1725.0
+   },
+   {
+    "d": "2022-09-30",
+    "value": 1686.52,
+    "contributed": 1725.0
+   },
+   {
+    "d": "2022-10-11",
+    "value": 1751.83,
+    "contributed": 1800.0
+   },
+   {
+    "d": "2022-10-20",
+    "value": 1779.91,
+    "contributed": 1800.0
+   },
+   {
+    "d": "2022-10-31",
+    "value": 1819.03,
+    "contributed": 1800.0
+   },
+   {
+    "d": "2022-11-09",
+    "value": 1869.3,
+    "contributed": 1875.0
+   },
+   {
+    "d": "2022-11-18",
+    "value": 1903.92,
+    "contributed": 1875.0
+   },
+   {
+    "d": "2022-11-29",
+    "value": 1906.57,
+    "contributed": 1875.0
+   },
+   {
+    "d": "2022-12-08",
+    "value": 1957.08,
+    "contributed": 1950.0
+   },
+   {
+    "d": "2022-12-19",
+    "value": 1893.86,
+    "contributed": 1950.0
+   },
+   {
+    "d": "2022-12-29",
+    "value": 1901.47,
+    "contributed": 1950.0
+   },
+   {
+    "d": "2023-01-09",
+    "value": 2025.48,
+    "contributed": 2025.0
+   },
+   {
+    "d": "2023-01-18",
+    "value": 2037.22,
+    "contributed": 2025.0
+   },
+   {
+    "d": "2023-01-27",
+    "value": 2077.51,
+    "contributed": 2025.0
+   },
+   {
+    "d": "2023-02-07",
+    "value": 2177.44,
+    "contributed": 2100.0
+   },
+   {
+    "d": "2023-02-16",
+    "value": 2188.0,
+    "contributed": 2100.0
+   },
+   {
+    "d": "2023-02-27",
+    "value": 2137.91,
+    "contributed": 2100.0
+   },
+   {
+    "d": "2023-03-08",
+    "value": 2223.21,
+    "contributed": 2175.0
+   },
+   {
+    "d": "2023-03-17",
+    "value": 2147.64,
+    "contributed": 2175.0
+   },
+   {
+    "d": "2023-03-28",
+    "value": 2157.46,
+    "contributed": 2175.0
+   },
+   {
+    "d": "2023-04-06",
+    "value": 2273.81,
+    "contributed": 2250.0
+   },
+   {
+    "d": "2023-04-19",
+    "value": 2298.39,
+    "contributed": 2250.0
+   },
+   {
+    "d": "2023-04-28",
+    "value": 2283.71,
+    "contributed": 2250.0
+   },
+   {
+    "d": "2023-05-10",
+    "value": 2364.72,
+    "contributed": 2325.0
+   },
+   {
+    "d": "2023-05-19",
+    "value": 2417.96,
+    "contributed": 2325.0
+   },
+   {
+    "d": "2023-05-30",
+    "value": 2421.54,
+    "contributed": 2325.0
+   },
+   {
+    "d": "2023-06-08",
+    "value": 2538.17,
+    "contributed": 2400.0
+   },
+   {
+    "d": "2023-06-19",
+    "value": 2569.19,
+    "contributed": 2400.0
+   },
+   {
+    "d": "2023-06-28",
+    "value": 2544.86,
+    "contributed": 2400.0
+   },
+   {
+    "d": "2023-07-07",
+    "value": 2614.83,
+    "contributed": 2475.0
+   },
+   {
+    "d": "2023-07-18",
+    "value": 2638.62,
+    "contributed": 2475.0
+   },
+   {
+    "d": "2023-07-27",
+    "value": 2720.68,
+    "contributed": 2475.0
+   },
+   {
+    "d": "2023-08-07",
+    "value": 2734.36,
+    "contributed": 2550.0
+   },
+   {
+    "d": "2023-08-16",
+    "value": 2703.62,
+    "contributed": 2550.0
+   },
+   {
+    "d": "2023-08-25",
+    "value": 2702.1,
+    "contributed": 2550.0
+   },
+   {
+    "d": "2023-09-05",
+    "value": 2861.23,
+    "contributed": 2625.0
+   },
+   {
+    "d": "2023-09-14",
+    "value": 2875.05,
+    "contributed": 2625.0
+   },
+   {
+    "d": "2023-09-25",
+    "value": 2800.64,
+    "contributed": 2625.0
+   },
+   {
+    "d": "2023-10-04",
+    "value": 2821.48,
+    "contributed": 2700.0
+   },
+   {
+    "d": "2023-10-13",
+    "value": 2885.98,
+    "contributed": 2700.0
+   },
+   {
+    "d": "2023-10-24",
+    "value": 2800.58,
+    "contributed": 2700.0
+   },
+   {
+    "d": "2023-11-02",
+    "value": 2915.23,
+    "contributed": 2775.0
+   },
+   {
+    "d": "2023-11-13",
+    "value": 2952.36,
+    "contributed": 2775.0
+   },
+   {
+    "d": "2023-11-22",
+    "value": 3003.46,
+    "contributed": 2775.0
+   },
+   {
+    "d": "2023-12-01",
+    "value": 3104.03,
+    "contributed": 2850.0
+   },
+   {
+    "d": "2023-12-12",
+    "value": 3142.77,
+    "contributed": 2850.0
+   },
+   {
+    "d": "2023-12-21",
+    "value": 3169.63,
+    "contributed": 2850.0
+   },
+   {
+    "d": "2024-01-04",
+    "value": 3249.12,
+    "contributed": 2925.0
+   },
+   {
+    "d": "2024-01-15",
+    "value": 3274.41,
+    "contributed": 2925.0
+   },
+   {
+    "d": "2024-01-24",
+    "value": 3335.46,
+    "contributed": 2925.0
+   },
+   {
+    "d": "2024-02-02",
+    "value": 3464.36,
+    "contributed": 3000.0
+   },
+   {
+    "d": "2024-02-13",
+    "value": 3497.38,
+    "contributed": 3000.0
+   },
+   {
+    "d": "2024-02-22",
+    "value": 3553.39,
+    "contributed": 3000.0
+   },
+   {
+    "d": "2024-03-04",
+    "value": 3648.1,
+    "contributed": 3075.0
+   },
+   {
+    "d": "2024-03-13",
+    "value": 3666.51,
+    "contributed": 3075.0
+   },
+   {
+    "d": "2024-03-22",
+    "value": 3732.49,
+    "contributed": 3075.0
+   },
+   {
+    "d": "2024-04-04",
+    "value": 3803.97,
+    "contributed": 3150.0
+   },
+   {
+    "d": "2024-04-15",
+    "value": 3793.43,
+    "contributed": 3150.0
+   },
+   {
+    "d": "2024-04-24",
+    "value": 3746.64,
+    "contributed": 3150.0
+   },
+   {
+    "d": "2024-05-06",
+    "value": 3874.88,
+    "contributed": 3225.0
+   },
+   {
+    "d": "2024-05-15",
+    "value": 3944.63,
+    "contributed": 3225.0
+   },
+   {
+    "d": "2024-05-24",
+    "value": 3942.65,
+    "contributed": 3225.0
+   },
+   {
+    "d": "2024-06-04",
+    "value": 3966.26,
+    "contributed": 3300.0
+   },
+   {
+    "d": "2024-06-13",
+    "value": 4078.32,
+    "contributed": 3300.0
+   },
+   {
+    "d": "2024-06-24",
+    "value": 4132.22,
+    "contributed": 3300.0
+   },
+   {
+    "d": "2024-07-03",
+    "value": 4214.0,
+    "contributed": 3375.0
+   },
+   {
+    "d": "2024-07-12",
+    "value": 4271.31,
+    "contributed": 3375.0
+   },
+   {
+    "d": "2024-07-23",
+    "value": 4227.95,
+    "contributed": 3375.0
+   },
+   {
+    "d": "2024-08-01",
+    "value": 4254.42,
+    "contributed": 3450.0
+   },
+   {
+    "d": "2024-08-12",
+    "value": 4120.7,
+    "contributed": 3450.0
+   },
+   {
+    "d": "2024-08-21",
+    "value": 4246.6,
+    "contributed": 3450.0
+   },
+   {
+    "d": "2024-08-30",
+    "value": 4283.69,
+    "contributed": 3450.0
+   },
+   {
+    "d": "2024-09-10",
+    "value": 4266.78,
+    "contributed": 3525.0
+   },
+   {
+    "d": "2024-09-19",
+    "value": 4400.26,
+    "contributed": 3525.0
+   },
+   {
+    "d": "2024-09-30",
+    "value": 4451.01,
+    "contributed": 3525.0
+   },
+   {
+    "d": "2024-10-09",
+    "value": 4608.02,
+    "contributed": 3600.0
+   },
+   {
+    "d": "2024-10-18",
+    "value": 4683.85,
+    "contributed": 3600.0
+   },
+   {
+    "d": "2024-10-29",
+    "value": 4669.11,
+    "contributed": 3600.0
+   },
+   {
+    "d": "2024-11-07",
+    "value": 4821.71,
+    "contributed": 3675.0
+   },
+   {
+    "d": "2024-11-18",
+    "value": 4835.5,
+    "contributed": 3675.0
+   },
+   {
+    "d": "2024-11-27",
+    "value": 4896.27,
+    "contributed": 3675.0
+   },
+   {
+    "d": "2024-12-06",
+    "value": 5064.69,
+    "contributed": 3750.0
+   },
+   {
+    "d": "2024-12-17",
+    "value": 5050.63,
+    "contributed": 3750.0
+   },
+   {
+    "d": "2024-12-30",
+    "value": 4981.67,
+    "contributed": 3750.0
+   },
+   {
+    "d": "2025-01-09",
+    "value": 5097.27,
+    "contributed": 3825.0
+   },
+   {
+    "d": "2025-01-20",
+    "value": 5156.01,
+    "contributed": 3825.0
+   },
+   {
+    "d": "2025-01-29",
+    "value": 5183.59,
+    "contributed": 3825.0
+   },
+   {
+    "d": "2025-02-07",
+    "value": 5326.03,
+    "contributed": 3900.0
+   },
+   {
+    "d": "2025-02-18",
+    "value": 5367.05,
+    "contributed": 3900.0
+   },
+   {
+    "d": "2025-02-27",
+    "value": 5287.72,
+    "contributed": 3900.0
+   },
+   {
+    "d": "2025-03-10",
+    "value": 4966.37,
+    "contributed": 3975.0
+   },
+   {
+    "d": "2025-03-19",
+    "value": 5002.8,
+    "contributed": 3975.0
+   },
+   {
+    "d": "2025-03-28",
+    "value": 4943.1,
+    "contributed": 3975.0
+   },
+   {
+    "d": "2025-04-08",
+    "value": 4579.11,
+    "contributed": 4050.0
+   },
+   {
+    "d": "2025-04-17",
+    "value": 4581.98,
+    "contributed": 4050.0
+   },
+   {
+    "d": "2025-04-30",
+    "value": 4790.52,
+    "contributed": 4050.0
+   },
+   {
+    "d": "2025-05-12",
+    "value": 5179.59,
+    "contributed": 4125.0
+   },
+   {
+    "d": "2025-05-21",
+    "value": 5192.04,
+    "contributed": 4125.0
+   },
+   {
+    "d": "2025-05-30",
+    "value": 5157.64,
+    "contributed": 4125.0
+   },
+   {
+    "d": "2025-06-10",
+    "value": 5312.3,
+    "contributed": 4200.0
+   },
+   {
+    "d": "2025-06-19",
+    "value": 5197.06,
+    "contributed": 4200.0
+   },
+   {
+    "d": "2025-06-30",
+    "value": 5289.0,
+    "contributed": 4200.0
+   },
+   {
+    "d": "2025-07-09",
+    "value": 5416.45,
+    "contributed": 4275.0
+   },
+   {
+    "d": "2025-07-18",
+    "value": 5486.75,
+    "contributed": 4275.0
+   },
+   {
+    "d": "2025-07-29",
+    "value": 5585.86,
+    "contributed": 4275.0
+   },
+   {
+    "d": "2025-08-07",
+    "value": 5609.48,
+    "contributed": 4350.0
+   },
+   {
+    "d": "2025-08-18",
+    "value": 5687.53,
+    "contributed": 4350.0
+   },
+   {
+    "d": "2025-08-27",
+    "value": 5726.16,
+    "contributed": 4350.0
+   },
+   {
+    "d": "2025-09-05",
+    "value": 5752.47,
+    "contributed": 4425.0
+   },
+   {
+    "d": "2025-09-16",
+    "value": 5837.61,
+    "contributed": 4425.0
+   },
+   {
+    "d": "2025-09-25",
+    "value": 5908.66,
+    "contributed": 4425.0
+   },
+   {
+    "d": "2025-10-06",
+    "value": 6120.72,
+    "contributed": 4500.0
+   },
+   {
+    "d": "2025-10-15",
+    "value": 6098.07,
+    "contributed": 4500.0
+   },
+   {
+    "d": "2025-10-24",
+    "value": 6175.24,
+    "contributed": 4500.0
+   },
+   {
+    "d": "2025-11-04",
+    "value": 6322.01,
+    "contributed": 4575.0
+   },
+   {
+    "d": "2025-11-13",
+    "value": 6261.05,
+    "contributed": 4575.0
+   },
+   {
+    "d": "2025-11-24",
+    "value": 6190.05,
+    "contributed": 4575.0
+   },
+   {
+    "d": "2025-12-03",
+    "value": 6342.87,
+    "contributed": 4650.0
+   },
+   {
+    "d": "2025-12-12",
+    "value": 6303.04,
+    "contributed": 4650.0
+   },
+   {
+    "d": "2025-12-23",
+    "value": 6368.99,
+    "contributed": 4650.0
+   },
+   {
+    "d": "2026-01-06",
+    "value": 6578.17,
+    "contributed": 4725.0
+   },
+   {
+    "d": "2026-01-15",
+    "value": 6689.98,
+    "contributed": 4725.0
+   },
+   {
+    "d": "2026-01-26",
+    "value": 6550.0,
+    "contributed": 4725.0
+   },
+   {
+    "d": "2026-02-04",
+    "value": 6642.04,
+    "contributed": 4800.0
+   },
+   {
+    "d": "2026-02-13",
+    "value": 6652.05,
+    "contributed": 4800.0
+   },
+   {
+    "d": "2026-02-24",
+    "value": 6748.56,
+    "contributed": 4800.0
+   },
+   {
+    "d": "2026-03-05",
+    "value": 6748.95,
+    "contributed": 4875.0
+   },
+   {
+    "d": "2026-03-16",
+    "value": 6707.33,
+    "contributed": 4875.0
+   },
+   {
+    "d": "2026-03-25",
+    "value": 6584.84,
+    "contributed": 4875.0
+   },
+   {
+    "d": "2026-04-07",
+    "value": 6617.96,
+    "contributed": 4950.0
+   },
+   {
+    "d": "2026-04-16",
+    "value": 6986.86,
+    "contributed": 4950.0
+   },
+   {
+    "d": "2026-04-27",
+    "value": 7077.16,
+    "contributed": 4950.0
+   },
+   {
+    "d": "2026-05-07",
+    "value": 7371.53,
+    "contributed": 5025.0
+   },
+   {
+    "d": "2026-05-18",
+    "value": 7381.94,
+    "contributed": 5025.0
+   },
+   {
+    "d": "2026-05-27",
+    "value": 7572.23,
+    "contributed": 5025.0
+   },
+   {
+    "d": "2026-06-05",
+    "value": 7641.3,
+    "contributed": 5100.0
+   },
+   {
+    "d": "2026-06-16",
+    "value": 7735.87,
+    "contributed": 5100.0
+   },
+   {
+    "d": "2026-06-25",
+    "value": 7739.26,
+    "contributed": 5100.0
+   },
+   {
+    "d": "2026-07-06",
+    "value": 7923.5,
+    "contributed": 5175.0
+   },
+   {
+    "d": "2026-07-15",
+    "value": 7878.12,
+    "contributed": 5175.0
+   },
+   {
+    "d": "2026-07-24",
+    "value": 7798.96,
+    "contributed": 5175.0
+   },
+   {
+    "d": "2026-08-04",
+    "value": 8031.7,
+    "contributed": 5250.0
+   },
+   {
+    "d": "2026-08-13",
+    "value": 8131.09,
+    "contributed": 5250.0
+   },
+   {
+    "d": "2026-08-24",
+    "value": 7933.72,
+    "contributed": 5250.0
+   },
+   {
+    "d": "2026-09-02",
+    "value": 8069.2,
+    "contributed": 5325.0
+   },
+   {
+    "d": "2026-09-11",
+    "value": 8078.72,
+    "contributed": 5325.0
+   },
+   {
+    "d": "2026-09-22",
+    "value": 8257.08,
+    "contributed": 5325.0
+   },
+   {
+    "d": "2026-10-01",
+    "value": 8277.61,
+    "contributed": 5400.0
+   },
+   {
+    "d": "2026-10-12",
+    "value": 8474.09,
+    "contributed": 5400.0
+   },
+   {
+    "d": "2026-10-21",
+    "value": 8355.06,
+    "contributed": 5400.0
+   },
+   {
+    "d": "2026-10-30",
+    "value": 8231.07,
+    "contributed": 5400.0
+   },
+   {
+    "d": "2026-11-10",
+    "value": 8241.04,
+    "contributed": 5475.0
+   },
+   {
+    "d": "2026-11-16",
+    "value": 8306.47,
     "contributed": 5475.0
    }
   ],
@@ -6330,7 +7521,7 @@
    },
    {
     "d": "2026-11-16",
-    "value": 8703.12,
+    "value": 8718.63,
     "contributed": 5475.0
    }
   ],
@@ -7437,7 +8628,7 @@
    },
    {
     "d": "2026-11-16",
-    "value": 8394.86,
+    "value": 8405.45,
     "contributed": 5475.0
    }
   ],
@@ -8544,7 +9735,7 @@
    },
    {
     "d": "2026-11-16",
-    "value": 7097.63,
+    "value": 7110.27,
     "contributed": 5475.0
    }
   ],
@@ -9651,7 +10842,7 @@
    },
    {
     "d": "2026-11-16",
-    "value": 6903.43,
+    "value": 6911.44,
     "contributed": 5475.0
    }
   ],
@@ -10738,7 +11929,7 @@
    },
    {
     "d": "2026-11-16",
-    "value": 6044.14,
+    "value": 6017.97,
     "contributed": 5475.0
    }
   ],
@@ -11845,7 +13036,7 @@
    },
    {
     "d": "2026-11-16",
-    "value": 6048.69,
+    "value": 6049.24,
     "contributed": 5475.0
    }
   ],
@@ -12952,7 +14143,7 @@
    },
    {
     "d": "2026-11-16",
-    "value": 6678.17,
+    "value": 6675.13,
     "contributed": 5475.0
    }
   ],
@@ -14039,7 +15230,7 @@
    },
    {
     "d": "2026-11-16",
-    "value": 9127.94,
+    "value": 9020.03,
     "contributed": 5475.0
    }
   ],

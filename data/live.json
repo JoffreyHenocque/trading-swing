@@ -1,0 +1,40 @@
+{
+ "generated_utc": "2026-11-16T20:11:23Z",
+ "start": "2026-11-17",
+ "monthly_eur": 75,
+ "note": "Réglages gelés au 16/11/2026 : ne pas les changer, sinon le test en direct ne vaut plus rien.",
+ "accounts": [
+  {
+   "id": "rsi2_us_en10_to2",
+   "family": "rsi2_us",
+   "label": "Retour à la moyenne (RSI 2), actions US",
+   "setting": "RSI sous 10, nb actions 2",
+   "start": "2026-11-17",
+   "status": "démarre à la prochaine séance"
+  },
+  {
+   "id": "dual_momentum_lo6",
+   "family": "dual_momentum",
+   "label": "Dual momentum sur 6 ETF",
+   "setting": "période (mois) 6",
+   "start": "2026-11-17",
+   "status": "démarre à la prochaine séance"
+  },
+  {
+   "id": "dca_world",
+   "family": "dca_world",
+   "label": "Versement mensuel ETF Monde (référence)",
+   "setting": "",
+   "start": "2026-11-17",
+   "status": "démarre à la prochaine séance"
+  },
+  {
+   "id": "dca_world_em",
+   "family": "dca_world_em",
+   "label": "Versement mensuel 85 % Monde + 15 % émergents",
+   "setting": "",
+   "start": "2026-11-17",
+   "status": "démarre à la prochaine séance"
+  }
+ ]
+}

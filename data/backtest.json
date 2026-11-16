@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-11-16T16:30:10Z",
+ "generated_utc": "2026-11-16T20:08:17Z",
  "from": "2023-11-17",
  "to": "2026-11-16",
  "years": 3.0,
@@ -141,12 +141,12 @@
   "trades": 173,
   "wins": 62,
   "win_rate": 35.8,
-  "avg_r": -0.741,
+  "avg_r": -0.742,
   "profit_factor": 0.33,
-  "total_pnl": -654.31,
+  "total_pnl": -654.65,
   "costs": 607.3,
-  "equity": 345.65,
-  "return_pct": -65.44,
+  "equity": 345.31,
+  "return_pct": -65.47,
   "max_drawdown_pct": -67.37
  },
  "by_year": {
@@ -167,12 +167,12 @@
   },
   "2026": {
    "trades": 55,
-   "pnl": -154.03,
+   "pnl": -154.37,
    "win_rate": 38.2
   }
  },
  "benchmark": {
-  "^FCHI": 16.23
+  "^FCHI": 16.05
  },
  "equity": [
   {
@@ -4755,14 +4755,14 @@
   },
   {
    "d": "2026-11-16",
-   "equity": 345.65,
-   "cash": 345.65,
+   "equity": 345.31,
+   "cash": 345.31,
    "contributed": 1000
   },
   {
    "d": "2026-11-16",
-   "equity": 345.65,
-   "cash": 345.65,
+   "equity": 345.31,
+   "cash": 345.31,
    "contributed": 1000
   }
  ],
@@ -8350,13 +8350,13 @@
    "entry_tax": 0.35,
    "held": 16,
    "signal_date": "2026-10-22",
-   "exit": 30.3548,
+   "exit": 30.2549,
    "exit_date": "2026-11-16",
    "reason": "end of test",
    "exit_fee": 1.5,
-   "pnl": 0.31,
-   "r": 0.105,
-   "pnl_pct": 0.35
+   "pnl": 0.01,
+   "r": 0.005,
+   "pnl_pct": 0.02
   },
   {
    "symbol": "EN.PA",
@@ -8392,13 +8392,13 @@
    "entry_tax": 0.28,
    "held": 0,
    "signal_date": "2026-11-13",
-   "exit": 70.6646,
+   "exit": 70.6247,
    "exit_date": "2026-11-16",
    "reason": "end of test",
    "exit_fee": 1.5,
-   "pnl": -3.02,
-   "r": -1.01,
-   "pnl_pct": -4.18
+   "pnl": -3.06,
+   "r": -1.023,
+   "pnl_pct": -4.23
   }
  ],
  "symbols": 41,

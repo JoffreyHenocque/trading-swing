@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-11-16T16:33:14Z",
+ "generated_utc": "2026-11-16T20:11:23Z",
  "signals": [
   {
    "id": "dual_momentum_lo6",
@@ -28,10 +28,32 @@
    "setting": "RSI sous 10, nb actions 2",
    "as_of": "2026-11-16",
    "holds_now": [],
-   "target": [],
-   "buy": [],
+   "target": [
+    "AMZN"
+   ],
+   "buy": [
+    "AMZN"
+   ],
    "sell": [],
    "next_check": "daily"
+  },
+  {
+   "id": "dca_world_em",
+   "family": "dca_world_em",
+   "label": "Versement mensuel 85 % Monde + 15 % émergents",
+   "setting": "",
+   "as_of": "2026-11-16",
+   "holds_now": [
+    "CW8.PA",
+    "PAEEM.PA"
+   ],
+   "target": [
+    "CW8.PA",
+    "PAEEM.PA"
+   ],
+   "buy": [],
+   "sell": [],
+   "next_check": "monthly"
   },
   {
    "id": "dca_sp500",

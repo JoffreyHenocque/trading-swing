@@ -1,7 +1,1181 @@
 {
- "generated_utc": "2026-11-16T16:33:14Z",
+ "generated_utc": "2026-11-16T20:11:24Z",
  "hours": 36,
  "headlines": [
+  {
+   "ticker": "NVDA",
+   "title": "Stock Market Today: Dow Dives As Nvidia Makes Huang Decision; These AI Plays Plunge (Live Coverage)",
+   "link": "https://finance.yahoo.com/m/befe3344-5a22-304e-a07d-6ff7ad87bf49/stock-market-today%3A-dow-dives.html?.tsrc=rss",
+   "time_utc": "2026-11-16T20:06:29Z",
+   "tone": -1,
+   "tags": [],
+   "id": "86181c4e896f"
+  },
+  {
+   "ticker": "MSFT",
+   "title": "OpenAI Hit With Lawsuit by California AG Over Alleged Inadequate Safeguards, Monitoring of AI Models",
+   "link": "https://finance.yahoo.com/technology/ai/articles/openai-hit-lawsuit-california-ag-200308857.html?.tsrc=rss",
+   "time_utc": "2026-11-16T20:03:08Z",
+   "tone": -1,
+   "tags": [
+    "juridique"
+   ],
+   "id": "c029084363ab"
+  },
+  {
+   "ticker": "MSFT",
+   "title": "Customers of at least 4 major US banks report outages days after Microsoft issues",
+   "link": "https://www.independent.co.uk/tech/us-bank-outages-chase-wells-fargo-zelle-b3085937.html?.tsrc=rss",
+   "time_utc": "2026-11-16T20:00:50Z",
+   "tone": 0,
+   "tags": [],
+   "id": "61cdc8d634f7"
+  },
+  {
+   "ticker": "NVDA",
+   "title": "Should Nvidia bring Jensen Huang back, as Silicon Valley's elite are demanding?",
+   "link": "https://finance.yahoo.com/technology/article/should-nvidia-bring-jensen-huang-back-as-silicon-valleys-elite-are-demanding-200000408.html?.tsrc=rss",
+   "time_utc": "2026-11-16T20:00:00Z",
+   "tone": 0,
+   "tags": [],
+   "id": "8ad20414f677"
+  },
+  {
+   "ticker": "NVDA",
+   "title": "Sandisk’s Stock Split Is Coming on Nov. 19. Should You Buy Before It Happens?",
+   "link": "https://www.fool.com/investing/2026/11/16/sandisk-stock-split-coming-nov-19-should-you-buy-before-it-happens/?.tsrc=rss",
+   "time_utc": "2026-11-16T19:58:01Z",
+   "tone": 1,
+   "tags": [],
+   "id": "78c49c24c830"
+  },
+  {
+   "ticker": "MSFT",
+   "title": "Microsoft Stocks Move Lower as $1 Billion Anthropic Bet Precedes Ignite",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/microsoft-stocks-move-lower-1-194955766.html?.tsrc=rss",
+   "time_utc": "2026-11-16T19:49:55Z",
+   "tone": -1,
+   "tags": [],
+   "id": "03bc43a3407d"
+  },
+  {
+   "ticker": "NVDA",
+   "title": "Nvidia Stock Falls Ahead of Earnings -- Jensen Huang Could Return as CEO",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/nvidia-stock-falls-ahead-earnings-194928550.html?.tsrc=rss",
+   "time_utc": "2026-11-16T19:49:28Z",
+   "tone": -1,
+   "tags": [
+    "résultats"
+   ],
+   "id": "9aee01c24658"
+  },
+  {
+   "ticker": "JNJ",
+   "title": "J&J Pushes Into Retinal Disease With $2.2 Billion Ollin Deal",
+   "link": "https://finance.yahoo.com/healthcare/articles/j-j-pushes-retinal-disease-194908742.html?.tsrc=rss",
+   "time_utc": "2026-11-16T19:49:08Z",
+   "tone": 0,
+   "tags": [
+    "opération"
+   ],
+   "id": "2eeaf8916c9e"
+  },
+  {
+   "ticker": "LLY",
+   "title": "Should You Trim Or Add To Your Viking Therapeutics Position?",
+   "link": "https://www.trefis.com/stock/vktx/articles/625158/should-you-trim-or-add-to-your-viking-therapeutics-position/2026-11-16?.tsrc=rss",
+   "time_utc": "2026-11-16T19:46:03Z",
+   "tone": 0,
+   "tags": [],
+   "id": "96c5b04b6e66"
+  },
+  {
+   "ticker": "MSFT",
+   "title": "Microsoft 365 outage: what it means for the stock and market positioning",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/microsoft-365-outage-means-stock-194425498.html?.tsrc=rss",
+   "time_utc": "2026-11-16T19:44:25Z",
+   "tone": 0,
+   "tags": [
+    "prévisions"
+   ],
+   "id": "7160da637122"
+  },
+  {
+   "ticker": "NVDA",
+   "title": "Where Will SCHD Be in 2036? Here's What History Suggests.",
+   "link": "https://www.fool.com/investing/2026/11/16/where-will-schd-be-2036-what-history-suggests/?.tsrc=rss",
+   "time_utc": "2026-11-16T19:43:00Z",
+   "tone": 1,
+   "tags": [],
+   "id": "ab3b53ac2ac5"
+  },
+  {
+   "ticker": "MSFT",
+   "title": "Microsoft Outage Triggers Canada-Wide Class Action Lawsuit",
+   "link": "https://finance.yahoo.com/small-business/articles/microsoft-outage-triggers-canada-wide-194200337.html?.tsrc=rss",
+   "time_utc": "2026-11-16T19:42:00Z",
+   "tone": -1,
+   "tags": [
+    "prévisions",
+    "juridique"
+   ],
+   "id": "8725747ff1bb"
+  },
+  {
+   "ticker": "WMT",
+   "title": "Walmart CEO Is Launching AI Agent Profiles as United Airlines Blocks Third-Party Agents",
+   "link": "https://www.tikr.com/blog/walmart-ceo-is-launching-ai-agent-profiles-as-united-airlines-blocks-third-party-agents?ref=yahoofinance&tlnk=yf-261116-m3cwrp2f&.tsrc=rss",
+   "time_utc": "2026-11-16T19:40:59Z",
+   "tone": 0,
+   "tags": [],
+   "id": "752b0551ac6a"
+  },
+  {
+   "ticker": "NVDA",
+   "title": "Is Merck's Stock Still a Good Buy at $150?",
+   "link": "https://www.fool.com/investing/2026/11/16/is-merck-s-stock-still-a-good-buy-at-150/?.tsrc=rss",
+   "time_utc": "2026-11-16T19:40:02Z",
+   "tone": 1,
+   "tags": [],
+   "id": "806d77dab768"
+  },
+  {
+   "ticker": "NVDA",
+   "title": "Intel “Trades at 34x PE for Just 11%” Growth, Says Dan Niles. Now Shareholders Are Suing",
+   "link": "https://www.tikr.com/blog/intel-trades-at-34x-pe-for-just-11-growth-says-dan-niles-now-shareholders-are-suing?ref=yahoofinance&tlnk=yf-261116-8m293332&.tsrc=rss",
+   "time_utc": "2026-11-16T19:39:34Z",
+   "tone": 0,
+   "tags": [],
+   "id": "4d3ae29fe1c7"
+  },
+  {
+   "ticker": "AMZN",
+   "title": "Dan Ives Has One IPO in Mind as a Test for AI Stocks",
+   "link": "https://finance.yahoo.com/technology/ai/articles/dan-ives-one-ipo-mind-193721606.html?.tsrc=rss",
+   "time_utc": "2026-11-16T19:37:21Z",
+   "tone": 0,
+   "tags": [],
+   "id": "74fb210f196d"
+  },
+  {
+   "ticker": "NVDA",
+   "title": "Why Does Palantir Stock Keep Going Down?",
+   "link": "https://www.fool.com/investing/2026/11/16/why-does-palantir-stock-keep-going-down/?.tsrc=rss",
+   "time_utc": "2026-11-16T19:36:16Z",
+   "tone": 1,
+   "tags": [
+    "analyste"
+   ],
+   "id": "019a9f1bdc55"
+  },
+  {
+   "ticker": "LLY",
+   "title": "Eli Lilly to Acquire Calytrix Bio in Up to $1.5 Billion Deal",
+   "link": "https://finance.yahoo.com/healthcare/articles/eli-lilly-acquire-calytrix-bio-193531842.html?.tsrc=rss",
+   "time_utc": "2026-11-16T19:35:31Z",
+   "tone": 1,
+   "tags": [
+    "opération"
+   ],
+   "id": "79d2ca5fcee8"
+  },
+  {
+   "ticker": "NVDA",
+   "title": "Williams-Sonoma Stock Back In Buy Range In A Sketchy Market",
+   "link": "https://finance.yahoo.com/m/77f13830-9613-3cf5-acc5-574cee88a81a/williams-sonoma-stock-back-in.html?.tsrc=rss",
+   "time_utc": "2026-11-16T19:35:06Z",
+   "tone": 1,
+   "tags": [],
+   "id": "2ddef20c60b2"
+  },
+  {
+   "ticker": "NVDA",
+   "title": "ServiceNow vs. Palantir Technologies: Comparing Steady Sales Scale Against Rapid Revenue Acceleration",
+   "link": "https://www.fool.com/coverage/charts/2026/11/16/servicenow-vs-palantir-technologies-comparing-steady-sales-scale-against-rapid-revenue-acceleration/?.tsrc=rss",
+   "time_utc": "2026-11-16T19:32:04Z",
+   "tone": 0,
+   "tags": [
+    "résultats"
+   ],
+   "id": "1574feabfe35"
+  },
+  {
+   "ticker": "MSFT",
+   "title": "Customer reports of bank app outages surge",
+   "link": "https://finance.yahoo.com/markets/article/customer-reports-of-bank-app-outages-surge-193015352.html?.tsrc=rss",
+   "time_utc": "2026-11-16T19:30:15Z",
+   "tone": 1,
+   "tags": [
+    "prévisions"
+   ],
+   "id": "c163cbad8bb9"
+  },
+  {
+   "ticker": "NVDA",
+   "title": "What Mattered Most In Cerebras's Latest Quarter?",
+   "link": "https://www.trefis.com/stock/cbrs/articles/625166/what-mattered-most-in-cerebrass-latest-quarter/2026-11-16?.tsrc=rss",
+   "time_utc": "2026-11-16T19:29:54Z",
+   "tone": 0,
+   "tags": [
+    "résultats"
+   ],
+   "id": "e0ed218f1cee"
+  },
+  {
+   "ticker": "MSFT",
+   "title": "Trump to Name Nvidia, Amazon and Microsoft AI “National Champions” as Bessent Demands a Shakeup",
+   "link": "https://www.tikr.com/blog/trump-to-name-nvidia-amazon-and-microsoft-ai-national-champions-as-bessent-demands-a-shakeup?ref=yahoofinance&tlnk=yf-261116-r77v6cf3&.tsrc=rss",
+   "time_utc": "2026-11-16T19:29:13Z",
+   "tone": 0,
+   "tags": [],
+   "id": "d4ba3e93517d"
+  },
+  {
+   "ticker": "NVDA",
+   "title": "Nvidia Stocks Decline 2.31% as Huang Comeback Talk Shadows $108 Billion Quarter",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/nvidia-stocks-decline-2-31-192734785.html?.tsrc=rss",
+   "time_utc": "2026-11-16T19:27:34Z",
+   "tone": -1,
+   "tags": [
+    "résultats"
+   ],
+   "id": "ec124d7f5c80"
+  },
+  {
+   "ticker": "NVDA",
+   "title": "Why Intel's turnaround will take years",
+   "link": "https://finance.yahoo.com/video/why-intels-turnaround-will-take-years-192703292.html?.tsrc=rss",
+   "time_utc": "2026-11-16T19:27:03Z",
+   "tone": 0,
+   "tags": [],
+   "id": "63a949c66529"
+  },
+  {
+   "ticker": "ORCL",
+   "title": "CoreWeave, Oracle and Nebius Plunge as Nvidia Fallout Rattles AI Stocks",
+   "link": "https://finance.yahoo.com/technology/ai/articles/coreweave-oracle-nebius-plunge-nvidia-192652785.html?.tsrc=rss",
+   "time_utc": "2026-11-16T19:26:52Z",
+   "tone": -1,
+   "tags": [
+    "résultats"
+   ],
+   "id": "ace47bde1945"
+  },
+  {
+   "ticker": "^GSPC",
+   "title": "Jensen Huang Passed Billions in Nvidia Stock to His Heirs Months Before His Downfall",
+   "link": "https://finance.yahoo.com/m/f93688e0-5c36-372b-855e-b722a7cce11d/jensen-huang-passed-billions.html?.tsrc=rss",
+   "time_utc": "2026-11-16T19:26:00Z",
+   "tone": 0,
+   "tags": [],
+   "id": "466462043147"
+  },
+  {
+   "ticker": "GOOGL",
+   "title": "Alphabet Stocks Decline 3.1% as $10 Billion Anthropic Buy Lifts Stake Before IPO",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/alphabet-stocks-decline-3-1-192549918.html?.tsrc=rss",
+   "time_utc": "2026-11-16T19:25:49Z",
+   "tone": 0,
+   "tags": [],
+   "id": "0131c0632e2d"
+  },
+  {
+   "ticker": "AMZN",
+   "title": "Amazon Stocks Fall 2.56% as AWS Sells Data Center Control in $5 Billion Deal",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/amazon-stocks-fall-2-56-192513974.html?.tsrc=rss",
+   "time_utc": "2026-11-16T19:25:13Z",
+   "tone": -1,
+   "tags": [
+    "opération"
+   ],
+   "id": "e818553daa85"
+  },
+  {
+   "ticker": "LLY",
+   "title": "Where Will Eli Lilly Be in 10 Years? 1 Clue: Its Next Potential Blockbuster Just Beat Ozempic Head-to-Head",
+   "link": "https://www.fool.com/investing/2026/11/16/where-will-eli-lilly-be-in-10-years-1-clue-its-next-potential-blockbuster-just-beat-ozempic-head-to-head/?.tsrc=rss",
+   "time_utc": "2026-11-16T19:23:02Z",
+   "tone": 1,
+   "tags": [],
+   "id": "8e356e1998f5"
+  },
+  {
+   "ticker": "AAPL",
+   "title": "Soros’s Fund Sold a Quarter of Its Berkshire Shares. Today Berkshire Reveals Its Own Trades",
+   "link": "https://247wallst.com/investing/2026/11/16/soross-fund-sold-a-quarter-of-its-berkshire-shares-today-berkshire-reveals-its-own-trades/?.tsrc=rss",
+   "time_utc": "2026-11-16T19:23:00Z",
+   "tone": -1,
+   "tags": [
+    "résultats"
+   ],
+   "id": "7648ef098b94"
+  },
+  {
+   "ticker": "^GSPC",
+   "title": "Update: US Equity Indexes Sink as Big Tech Dives After Commerce Department Plans Curbs to Advanced AI Infrastructure Access",
+   "link": "https://finance.yahoo.com/technology/ai/articles/us-equity-indexes-sink-big-192245914.html?.tsrc=rss",
+   "time_utc": "2026-11-16T19:22:45Z",
+   "tone": -1,
+   "tags": [],
+   "id": "203b381ef56c"
+  },
+  {
+   "ticker": "JPM",
+   "title": "3 Financial Stocks to Buy and Hold That Turned $1,000 Into More Than $5,000 Over the Past Decade, Counting Dividends",
+   "link": "https://www.fool.com/investing/2026/11/16/3-financial-stocks-to-buy-and-hold-that-turned-100/?.tsrc=rss",
+   "time_utc": "2026-11-16T19:22:00Z",
+   "tone": 1,
+   "tags": [],
+   "id": "1d623c4c4658"
+  },
+  {
+   "ticker": "XOM",
+   "title": "Nvidia board needs 'some heavyweights,' ex-Medtronic CEO Bill George says",
+   "link": "https://finance.yahoo.com/technology/article/nvidia-board-needs-some-heavyweights-ex-medtronic-ceo-bill-george-says-191935557.html?.tsrc=rss",
+   "time_utc": "2026-11-16T19:19:35Z",
+   "tone": 0,
+   "tags": [],
+   "id": "9fda875f4153"
+  },
+  {
+   "ticker": "AAPL",
+   "title": "The S&P 500's shot at 4 straight double-digit years is in Nvidia's hands",
+   "link": "https://finance.yahoo.com/markets/article/the-sp-500s-shot-at-4-straight-double-digit-years-is-in-nvidias-hands-191852498.html?.tsrc=rss",
+   "time_utc": "2026-11-16T19:18:52Z",
+   "tone": 0,
+   "tags": [
+    "résultats"
+   ],
+   "id": "764681a5a361"
+  },
+  {
+   "ticker": "JPM",
+   "title": "Thousands of Chase, Bank of America and Wells Fargo Customers Say They Can’t Move Their Money. Here’s What the Banks Have Said",
+   "link": "https://247wallst.com/investing/2026/11/16/thousands-of-chase-bank-of-america-and-wells-fargo-customers-say-they-cant-move-their-money-heres-what-the-banks-have-said/?.tsrc=rss",
+   "time_utc": "2026-11-16T19:17:30Z",
+   "tone": 0,
+   "tags": [],
+   "id": "7211d2b829bb"
+  },
+  {
+   "ticker": "^GSPC",
+   "title": "Update: Equities Tumble Intraday as Nvidia Slides, Fed's Warsh Discusses AI Impact",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/equities-tumble-intraday-nvidia-slides-191503897.html?.tsrc=rss",
+   "time_utc": "2026-11-16T19:15:03Z",
+   "tone": 0,
+   "tags": [
+    "macro"
+   ],
+   "id": "d38f13d79c9f"
+  },
+  {
+   "ticker": "AMZN",
+   "title": "Is There A Risk Hiding In Walmart Stock's Latest Quarter?",
+   "link": "https://www.trefis.com/stock/wmt/articles/625188/is-there-a-risk-hiding-in-walmart-stocks-latest-quarter/2026-11-16?.tsrc=rss",
+   "time_utc": "2026-11-16T19:11:32Z",
+   "tone": 0,
+   "tags": [
+    "résultats"
+   ],
+   "id": "1a83f6da35b5"
+  },
+  {
+   "ticker": "COST",
+   "title": "Tyson, Starbucks Lead The S&P 500, Nasdaq 100 As Investors Play Defense",
+   "link": "https://finance.yahoo.com/m/39ef7153-50f4-318d-98b9-fae6150d7fe4/tyson%2C-starbucks-lead-the-s%26p.html?.tsrc=rss",
+   "time_utc": "2026-11-16T19:11:23Z",
+   "tone": 0,
+   "tags": [],
+   "id": "20904358eb08"
+  },
+  {
+   "ticker": "ORCL",
+   "title": "Is Oracle (ORCL) Undervalued Following Its Expanded Federal Health Data Exchange Deal?",
+   "link": "https://finance.yahoo.com/healthcare/articles/oracle-orcl-undervalued-following-expanded-191057444.html?.tsrc=rss",
+   "time_utc": "2026-11-16T19:10:57Z",
+   "tone": 1,
+   "tags": [
+    "opération"
+   ],
+   "id": "8049511ccb0e"
+  },
+  {
+   "ticker": "MSFT",
+   "title": "AI Spending Accelerates: 3 Hyperscaler Stocks for Strong 2027 Returns",
+   "link": "https://finance.yahoo.com/technology/ai/articles/ai-spending-accelerates-3-hyperscaler-190000982.html?.tsrc=rss",
+   "time_utc": "2026-11-16T19:00:00Z",
+   "tone": 1,
+   "tags": [],
+   "id": "1830fed04895"
+  },
+  {
+   "ticker": "ADBE",
+   "title": "How Much Should One Lagging Number Worry Autodesk Stock Holders?",
+   "link": "https://www.trefis.com/stock/adsk/articles/625194/how-much-should-one-lagging-number-worry-autodesk-stock-holders/2026-11-16?.tsrc=rss",
+   "time_utc": "2026-11-16T18:59:24Z",
+   "tone": 0,
+   "tags": [],
+   "id": "72171b397f6e"
+  },
+  {
+   "ticker": "AMZN",
+   "title": "Amazon Stock Has the Best-Looking Chart in the Mag 7. How to Play It.",
+   "link": "https://finance.yahoo.com/m/b5f18b8c-0275-3539-89bd-c3353e13cb13/amazon-stock-has-the.html?.tsrc=rss",
+   "time_utc": "2026-11-16T18:57:00Z",
+   "tone": 0,
+   "tags": [
+    "résultats"
+   ],
+   "id": "faaff70a4099"
+  },
+  {
+   "ticker": "^GSPC",
+   "title": "Nvidia Stock Falls Again. It Doesn’t Need a Jensen Huang Comeback to Thrive.",
+   "link": "https://finance.yahoo.com/m/d98ddb00-b643-338a-82bf-fd09b3c911d3/nvidia-stock-falls-again.-it.html?.tsrc=rss",
+   "time_utc": "2026-11-16T18:51:00Z",
+   "tone": -1,
+   "tags": [],
+   "id": "de96f2410c20"
+  },
+  {
+   "ticker": "^GSPC",
+   "title": "McDonald's Is Underperforming the S&P 500 and Nasdaq-100. Could January Mark a Turning Point?",
+   "link": "https://www.fool.com/investing/2026/11/16/mcdonalds-is-underperforming-the-s-and-p-500-and-nasdaq-100-could-january-mark-a-turning-point/?.tsrc=rss",
+   "time_utc": "2026-11-16T18:50:01Z",
+   "tone": 0,
+   "tags": [],
+   "id": "66e81647d516"
+  },
+  {
+   "ticker": "WMT",
+   "title": "Target vs. Walmart Stock:  Which is the Better Buy Ahead of Q3 Earnings?",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/target-vs-walmart-stock-better-185000131.html?.tsrc=rss",
+   "time_utc": "2026-11-16T18:50:00Z",
+   "tone": 1,
+   "tags": [
+    "résultats"
+   ],
+   "id": "636984fcb1ec"
+  },
+  {
+   "ticker": "AVGO",
+   "title": "ACC Granted Leave to Intervene Before EU General Court in Broadcom Legal Privilege Case",
+   "link": "https://finance.yahoo.com/small-business/articles/acc-granted-leave-intervene-eu-184800926.html?.tsrc=rss",
+   "time_utc": "2026-11-16T18:48:00Z",
+   "tone": 0,
+   "tags": [],
+   "id": "3566250ed67c"
+  },
+  {
+   "ticker": "MSFT",
+   "title": "Altimeter Capital to invest $5 billion in Anthropic IPO - report",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/altimeter-capital-invest-5-billion-184641881.html?.tsrc=rss",
+   "time_utc": "2026-11-16T18:46:41Z",
+   "tone": 0,
+   "tags": [],
+   "id": "912d7aeb245b"
+  },
+  {
+   "ticker": "HD",
+   "title": "Home Depot, Lowe's Q3 Results Likely to Dampen Recovery Expectations, Oppenheimer Says",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/home-depot-lowe-apos-q3-184538832.html?.tsrc=rss",
+   "time_utc": "2026-11-16T18:45:38Z",
+   "tone": 0,
+   "tags": [
+    "résultats"
+   ],
+   "id": "edfb67c888f0"
+  },
+  {
+   "ticker": "BAC",
+   "title": "Nvidia Poised for Third-Quarter Beat Amid CEO Transition, BofA Says",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/nvidia-poised-third-quarter-beat-184256944.html?.tsrc=rss",
+   "time_utc": "2026-11-16T18:42:56Z",
+   "tone": 1,
+   "tags": [
+    "résultats"
+   ],
+   "id": "d97571742a51"
+  },
+  {
+   "ticker": "BRK-B",
+   "title": "What Does Warren Buffett’s 90/10 Rule Say to a 74-Year-Old With $1 Million of Coca-Cola at a Record?",
+   "link": "https://247wallst.com/investing/2026/11/16/what-does-warren-buffetts-90-10-rule-say-to-a-74-year-old-with-1-million-of-coca-cola-at-a-record/?.tsrc=rss",
+   "time_utc": "2026-11-16T18:40:15Z",
+   "tone": 1,
+   "tags": [],
+   "id": "16f5fe16b18e"
+  },
+  {
+   "ticker": "XOM",
+   "title": "Sector Update: Energy Stocks Decline Monday Afternoon",
+   "link": "https://finance.yahoo.com/energy/articles/sector-energy-stocks-decline-monday-184007140.html?.tsrc=rss",
+   "time_utc": "2026-11-16T18:40:07Z",
+   "tone": -1,
+   "tags": [],
+   "id": "f746ba4bab29"
+  },
+  {
+   "ticker": "^GSPC",
+   "title": "Why Marvell Stock Is Down Today",
+   "link": "https://www.fool.com/investing/2026/11/16/why-marvell-stock-is-down-today/?.tsrc=rss",
+   "time_utc": "2026-11-16T18:40:02Z",
+   "tone": 0,
+   "tags": [
+    "résultats",
+    "opération"
+   ],
+   "id": "81f5a7accba7"
+  },
+  {
+   "ticker": "MSFT",
+   "title": "'Even bad hackers have become OK': PAN CEO Nikesh Arora on AI tools",
+   "link": "https://finance.yahoo.com/video/even-bad-hackers-become-ok-184000523.html?.tsrc=rss",
+   "time_utc": "2026-11-16T18:40:00Z",
+   "tone": 0,
+   "tags": [],
+   "id": "46f7c440173e"
+  },
+  {
+   "ticker": "MRK",
+   "title": "How Much Does a 56-Year-Old Need Invested to Replace a $145,000 Salary With Dividends?",
+   "link": "https://247wallst.com/personal-finance/2026/11/16/how-much-does-a-56-year-old-need-invested-to-replace-a-145000-salary-with-dividends/?.tsrc=rss",
+   "time_utc": "2026-11-16T18:39:59Z",
+   "tone": 0,
+   "tags": [],
+   "id": "5d2f90842cda"
+  },
+  {
+   "ticker": "BRK-B",
+   "title": "Berkshire Hathaway's Railroad Earned 19% More Last Quarter. Its Insurance Underwriting Earned 43% Less.",
+   "link": "https://www.fool.com/investing/2026/11/16/berkshire-hathaways-railroad-earned-19-more-last-quarter-its-insurance-underwriting-earned-43-less/?.tsrc=rss",
+   "time_utc": "2026-11-16T18:35:02Z",
+   "tone": 0,
+   "tags": [
+    "résultats"
+   ],
+   "id": "75d38226f201"
+  },
+  {
+   "ticker": "^GSPC",
+   "title": "Why Intel Stock Is Falling Monday",
+   "link": "https://www.fool.com/investing/2026/11/16/why-intel-stock-is-falling-monday/?.tsrc=rss",
+   "time_utc": "2026-11-16T18:35:02Z",
+   "tone": -1,
+   "tags": [
+    "résultats",
+    "juridique"
+   ],
+   "id": "25f8b8e0efd8"
+  },
+  {
+   "ticker": "^GSPC",
+   "title": "Nvidia Slips Further, Dragging the Rest of the Market With It",
+   "link": "https://finance.yahoo.com/m/7c0b10bc-0453-3a2b-b232-ad406008d662/nvidia-slips-further%2C.html?.tsrc=rss",
+   "time_utc": "2026-11-16T18:35:02Z",
+   "tone": 0,
+   "tags": [],
+   "id": "7d017b8f2409"
+  },
+  {
+   "ticker": "WMT",
+   "title": "Walmart and Other Retailers to Benefit as Lower-Income Consumers Are Feeling the Holiday Spirit—So Far",
+   "link": "https://finance.yahoo.com/m/a79dcadc-ec96-33fd-960b-093c33643b48/walmart-and-other-retailers.html?.tsrc=rss",
+   "time_utc": "2026-11-16T18:25:00Z",
+   "tone": 0,
+   "tags": [],
+   "id": "6cef6bd74414"
+  },
+  {
+   "ticker": "GOOGL",
+   "title": "Why Alphabet (GOOGL) May Be the Most Complete NVIDIA Alternative",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/why-alphabet-googl-may-most-182432727.html?.tsrc=rss",
+   "time_utc": "2026-11-16T18:24:32Z",
+   "tone": 1,
+   "tags": [],
+   "id": "d8c64e92dfb7"
+  },
+  {
+   "ticker": "CRM",
+   "title": "Stock Of The Day Navan Breaks Out, Defies Software Industry Slump",
+   "link": "https://finance.yahoo.com/m/c5661665-97d5-3a4b-b395-90aab4a4c44c/stock-of-the-day-navan-breaks.html?.tsrc=rss",
+   "time_utc": "2026-11-16T18:24:14Z",
+   "tone": -1,
+   "tags": [],
+   "id": "e368ac0c6d58"
+  },
+  {
+   "ticker": "AMZN",
+   "title": "Amazon’s Big Week: First a New James Bond, Then Anthropic’s IPO",
+   "link": "https://www.benzinga.com/markets/prediction-markets/26/11/63310662/amazon-anthropic-ipo-pattinson?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral&.tsrc=rss",
+   "time_utc": "2026-11-16T18:22:57Z",
+   "tone": 1,
+   "tags": [],
+   "id": "3e8009cc0bdb"
+  },
+  {
+   "ticker": "^GSPC",
+   "title": "Stocks Slide as Investors Rotate Into Defensive Plays",
+   "link": "https://finance.yahoo.com/m/88fda013-b27a-358e-81b6-f49bc60ab988/stocks-slide-as-investors.html?.tsrc=rss",
+   "time_utc": "2026-11-16T18:22:45Z",
+   "tone": 0,
+   "tags": [],
+   "id": "9b197ac77dca"
+  },
+  {
+   "ticker": "MSFT",
+   "title": "Bill Gates Issues Grim Warning That ‘Many Jobs Will Disappear Forever’ Due to ‘Turbulent AI Era’",
+   "link": "https://firstformoney.com/bill-gates-issues-grim-warning-that-many-jobs-will-disappear-forever-due-to-turbulent-ai-era/?.tsrc=rss",
+   "time_utc": "2026-11-16T18:22:15Z",
+   "tone": -1,
+   "tags": [
+    "macro"
+   ],
+   "id": "3580807d566f"
+  },
+  {
+   "ticker": "PEP",
+   "title": "2 Stocks With Dividend Yields of 4% or More to Buy in November",
+   "link": "https://www.fool.com/investing/2026/11/16/2-stocks-with-dividend-yields-of-4-or-more-to-buy-in-november/?.tsrc=rss",
+   "time_utc": "2026-11-16T18:20:02Z",
+   "tone": 1,
+   "tags": [],
+   "id": "911f4a5dc3c7"
+  },
+  {
+   "ticker": "BAC",
+   "title": "Bending Spoons faces AI disruption risks despite scope for stronger organic growth, says Bank of America",
+   "link": "https://www.proactiveinvestors.com/companies/news/1101864/bending-spoons-faces-ai-disruption-risks-despite-scope-for-stronger-organic-growth-says-bank-of-america-1101864.html?.tsrc=rss",
+   "time_utc": "2026-11-16T18:20:00Z",
+   "tone": 1,
+   "tags": [
+    "résultats",
+    "analyste"
+   ],
+   "id": "070af903d6eb"
+  },
+  {
+   "ticker": "GOOGL",
+   "title": "AMD Stocks Fall 4.25% as $2.5 Billion Anthropic Stake Meets AI Profit-Taking",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/amd-stocks-fall-4-25-181859958.html?.tsrc=rss",
+   "time_utc": "2026-11-16T18:18:59Z",
+   "tone": -1,
+   "tags": [],
+   "id": "cdd1c74bbf94"
+  },
+  {
+   "ticker": "AVGO",
+   "title": "Broadcom Stocks Slide 4.76% as Downgrade Keeps AI Financing Fears in Focus",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/broadcom-stocks-slide-4-76-181829964.html?.tsrc=rss",
+   "time_utc": "2026-11-16T18:18:29Z",
+   "tone": -1,
+   "tags": [
+    "analyste"
+   ],
+   "id": "8ba41a1f66a8"
+  },
+  {
+   "ticker": "ABBV",
+   "title": "AbbVie (ABBV) Expands Its Pipeline With New AI Drug Discovery Partnerships",
+   "link": "https://finance.yahoo.com/healthcare/articles/abbvie-abbv-expands-pipeline-ai-181657639.html?.tsrc=rss",
+   "time_utc": "2026-11-16T18:16:57Z",
+   "tone": 1,
+   "tags": [],
+   "id": "949baf83957a"
+  },
+  {
+   "ticker": "MSFT",
+   "title": "How to make the most of Microsoft’s tried-and-true workflows",
+   "link": "https://financialpost.com/business-essentials/microsoft-office-2024-professional-plus/?.tsrc=rss",
+   "time_utc": "2026-11-16T18:09:31Z",
+   "tone": 0,
+   "tags": [],
+   "id": "f77fdbe9d153"
+  },
+  {
+   "ticker": "AVGO",
+   "title": "Jensen Huang Reportedly Mulls Nvidia Comeback, But Not The Board",
+   "link": "https://finance.yahoo.com/m/694d3941-721c-31d4-aff5-d306f1116454/jensen-huang-reportedly-mulls.html?.tsrc=rss",
+   "time_utc": "2026-11-16T18:08:02Z",
+   "tone": 0,
+   "tags": [],
+   "id": "70549187a231"
+  },
+  {
+   "ticker": "AMZN",
+   "title": "Elon Musk calls out Jeff Bezos over SpaceX rivals",
+   "link": "https://www.thestreet.com/technology/spacex-musk-bezos-launch-rivalry?.tsrc=rss",
+   "time_utc": "2026-11-16T18:07:00Z",
+   "tone": 0,
+   "tags": [],
+   "id": "cbe5824d4790"
+  },
+  {
+   "ticker": "ORCL",
+   "title": "Top 5 Stocks that Have Survived Major Founder Transitions",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/top-5-stocks-survived-major-180659194.html?.tsrc=rss",
+   "time_utc": "2026-11-16T18:06:59Z",
+   "tone": 0,
+   "tags": [
+    "analyste"
+   ],
+   "id": "1b58d051db52"
+  },
+  {
+   "ticker": "^GSPC",
+   "title": "Market positioning risks: why falling P/E ratios may signal a valuation trap",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/market-positioning-risks-why-falling-180615795.html?.tsrc=rss",
+   "time_utc": "2026-11-16T18:06:15Z",
+   "tone": 0,
+   "tags": [
+    "résultats"
+   ],
+   "id": "1814b5ed8bc4"
+  },
+  {
+   "ticker": "JNJ",
+   "title": "J&J outlays up to $3.3bn to buy ophthalmology specialist Ollin Biosciences",
+   "link": "https://www.pharmaceutical-technology.com/news/jj-outlays-up-to-3-3bn-to-buy-ophthalmology-specialist-ollin-biosciences/?.tsrc=rss",
+   "time_utc": "2026-11-16T18:03:50Z",
+   "tone": 1,
+   "tags": [
+    "opération"
+   ],
+   "id": "1472f1e9eadb"
+  },
+  {
+   "ticker": "AVGO",
+   "title": "5 Stocks to Buy as Investors Look Beyond NVIDIA",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/5-stocks-buy-investors-look-180230379.html?.tsrc=rss",
+   "time_utc": "2026-11-16T18:02:30Z",
+   "tone": 1,
+   "tags": [],
+   "id": "62eb32000d44"
+  },
+  {
+   "ticker": "V",
+   "title": "Visa Warns of AI-Driven ‘Advanced Intrusion’ Surge in Global Payment Threats",
+   "link": "https://wwd.com/sourcing-journal/industry-news/visa-warns-of-ai-driven-intrusion-surge-payment-threats-1239418679/?.tsrc=rss",
+   "time_utc": "2026-11-16T18:00:01Z",
+   "tone": -1,
+   "tags": [],
+   "id": "f08f7c63a541"
+  },
+  {
+   "ticker": "BRK-B",
+   "title": "Kindness 'compounds': Warren Buffett donates $5.5 billion to family foundations",
+   "link": "https://finance.yahoo.com/markets/article/kindness-compounds-warren-buffett-donates-55-billion-to-family-foundations-175818772.html?.tsrc=rss",
+   "time_utc": "2026-11-16T17:58:18Z",
+   "tone": 0,
+   "tags": [],
+   "id": "5058b11f56cf"
+  },
+  {
+   "ticker": "LLY",
+   "title": "Lilly Bets Up to $1.5 Billion on Calytrix's Preclinical Antibody",
+   "link": "https://finance.yahoo.com/healthcare/articles/lilly-bets-1-5-billion-175538670.html?.tsrc=rss",
+   "time_utc": "2026-11-16T17:55:38Z",
+   "tone": 0,
+   "tags": [
+    "opération"
+   ],
+   "id": "881955af4ed0"
+  },
+  {
+   "ticker": "BAC",
+   "title": "4 Reasons to Roll Over Your 401(k) Into an IRA (And 4 Reasons Not To)",
+   "link": "https://www.kiplinger.com/article/retirement/t032-c000-s002-pros-and-cons-of-rolling-your-401-k-into-an-ira.html?.tsrc=rss",
+   "time_utc": "2026-11-16T17:55:30Z",
+   "tone": 0,
+   "tags": [],
+   "id": "77d4ee622964"
+  },
+  {
+   "ticker": "WMT",
+   "title": "Edible Garden AG Incorporated Q3 2026 Earnings Call Summary",
+   "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-edible-garden-ag-incorporated-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
+   "time_utc": "2026-11-16T17:54:13Z",
+   "tone": 0,
+   "tags": [
+    "résultats"
+   ],
+   "id": "695f76068996"
+  },
+  {
+   "ticker": "MSFT",
+   "title": "Nebius Stocks Sink 8% as Nvidia's Financing Retreat Hits Neocloud Builders",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/nebius-stocks-sink-8-nvidias-175002087.html?.tsrc=rss",
+   "time_utc": "2026-11-16T17:50:02Z",
+   "tone": -1,
+   "tags": [],
+   "id": "6f588ae91345"
+  },
+  {
+   "ticker": "V",
+   "title": "PayPal Stock Trades at a Discount: Bargain Buy or Value Trap?",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/paypal-stock-trades-discount-bargain-175000263.html?.tsrc=rss",
+   "time_utc": "2026-11-16T17:50:00Z",
+   "tone": 1,
+   "tags": [],
+   "id": "49bcecab3d82"
+  },
+  {
+   "ticker": "JNJ",
+   "title": "Johnson & Johnson Stocks Edge Higher on $2.2 Billion Ollin Eye Deal",
+   "link": "https://finance.yahoo.com/healthcare/articles/johnson-johnson-stocks-edge-higher-174813761.html?.tsrc=rss",
+   "time_utc": "2026-11-16T17:48:13Z",
+   "tone": 1,
+   "tags": [
+    "opération"
+   ],
+   "id": "dcaef6038fbf"
+  },
+  {
+   "ticker": "BRK-B",
+   "title": "Warren Buffett Donates $5.47 Billion in Berkshire Shares to Four Family Foundations",
+   "link": "https://www.ibtimes.com/warren-buffett-donates-berkshire-shares-family-foundations-3809813?.tsrc=rss",
+   "time_utc": "2026-11-16T17:47:14Z",
+   "tone": 0,
+   "tags": [],
+   "id": "6ff644fc4503"
+  },
+  {
+   "ticker": "AVGO",
+   "title": "AMD Will Capture More Market Share Than Broadcom to End November as Nvidia’s Leadership Vacuum Persists",
+   "link": "https://247wallst.com/investing/2026/11/16/amd-will-capture-more-market-share-than-broadcom-to-end-november-as-nvidias-leadership-vacuum-persists/?.tsrc=rss",
+   "time_utc": "2026-11-16T17:45:52Z",
+   "tone": 1,
+   "tags": [
+    "résultats"
+   ],
+   "id": "088750d13b83"
+  },
+  {
+   "ticker": "AMZN",
+   "title": "Musk Plans Next Starship After Flight 15 Catch. ULA Loses Amazon Payload.",
+   "link": "https://finance.yahoo.com/m/2d356bcc-b5bf-3399-abcb-35876bae2f1a/musk-plans-next-starship.html?.tsrc=rss",
+   "time_utc": "2026-11-16T17:45:11Z",
+   "tone": 0,
+   "tags": [],
+   "id": "a61032d79a31"
+  },
+  {
+   "ticker": "AVGO",
+   "title": "At $162, Nvidia’s Going to Get Institutional Support From Those Who Missed Out Earlier, So I’m Buying",
+   "link": "https://247wallst.com/investing/2026/11/16/at-162-nvidias-going-to-get-institutional-support-from-those-who-missed-out-earlier-so-im-buying/?.tsrc=rss",
+   "time_utc": "2026-11-16T17:45:07Z",
+   "tone": 0,
+   "tags": [
+    "résultats"
+   ],
+   "id": "c5a3ba9f68d0"
+  },
+  {
+   "ticker": "MSFT",
+   "title": "Wall Street Analyst Picks a Winner Between CoreWeave and Nebius After Earnings",
+   "link": "https://finance.yahoo.com/technology/ai/articles/wall-street-analyst-picks-winner-174329785.html?.tsrc=rss",
+   "time_utc": "2026-11-16T17:43:29Z",
+   "tone": 0,
+   "tags": [
+    "résultats",
+    "analyste"
+   ],
+   "id": "dddff5c6808e"
+  },
+  {
+   "ticker": "BAC",
+   "title": "Starbucks sees service and food innovation driving sales growth, says Bank of America",
+   "link": "https://www.proactiveinvestors.com/companies/news/1101860/starbucks-sees-service-and-food-innovation-driving-sales-growth-says-bank-of-america-1101860.html?.tsrc=rss",
+   "time_utc": "2026-11-16T17:43:00Z",
+   "tone": 1,
+   "tags": [],
+   "id": "d5ac82da035c"
+  },
+  {
+   "ticker": "LLY",
+   "title": "Eli Lilly Makes $1.5 Billion Move Beyond Weight-Loss Drugs",
+   "link": "https://finance.yahoo.com/healthcare/articles/eli-lilly-makes-1-5-174122787.html?.tsrc=rss",
+   "time_utc": "2026-11-16T17:41:22Z",
+   "tone": 0,
+   "tags": [],
+   "id": "c6050e8dc5ee"
+  },
+  {
+   "ticker": "BAC",
+   "title": "BofA CEO Says IPO Pipeline ‘Full’ – Here’s What He Said About Smaller Listings Amid Anthropic Buzz",
+   "link": "https://stocktwits.com/news-articles/markets/equity/bof-a-ceo-says-ipo-pipeline-full-here-s-what-he-said-about-smaller-listings-amid-anthropic-buzz/cNb7H6WR9gO?.tsrc=rss",
+   "time_utc": "2026-11-16T17:37:42Z",
+   "tone": 0,
+   "tags": [
+    "résultats"
+   ],
+   "id": "cff4f83dc893"
+  },
+  {
+   "ticker": "META",
+   "title": "Meta’s Prepayment Is Buying Oklo’s Nuclear Fuel for Up to Five Reactors",
+   "link": "https://www.tikr.com/blog/metas-prepayment-is-buying-oklos-nuclear-fuel-for-up-to-five-reactors?ref=yahoofinance&tlnk=yf-261116-2vpq4v59&.tsrc=rss",
+   "time_utc": "2026-11-16T17:24:04Z",
+   "tone": 0,
+   "tags": [],
+   "id": "c741fc102d88"
+  },
+  {
+   "ticker": "JPM",
+   "title": "JPMorgan and DBS customers can now move tokenized dollars after hours",
+   "link": "https://finance.yahoo.com/video/jpmorgan-and-dbs-customers-can-now-move-tokenized-dollars-after-hours-172015116.html?.tsrc=rss",
+   "time_utc": "2026-11-16T17:20:15Z",
+   "tone": 0,
+   "tags": [],
+   "id": "7f2104794862"
+  },
+  {
+   "ticker": "BAC",
+   "title": "Preferred Stocks Are Yielding Up to 8% After a Selloff. Why It’s a Buying Opportunity.",
+   "link": "https://finance.yahoo.com/m/f69673b6-e4ef-3a2b-a864-4652314ffb73/preferred-stocks-are-yielding.html?.tsrc=rss",
+   "time_utc": "2026-11-16T17:16:00Z",
+   "tone": 1,
+   "tags": [],
+   "id": "2762b2ab054a"
+  },
+  {
+   "ticker": "JPM",
+   "title": "AI Infrastructure Demand Might Change The Case For Investing In JPMorgan Chase Stock (JPM)",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/ai-infrastructure-demand-might-change-171333426.html?.tsrc=rss",
+   "time_utc": "2026-11-16T17:13:33Z",
+   "tone": 0,
+   "tags": [],
+   "id": "a1513ce8f2de"
+  },
+  {
+   "ticker": "CSCO",
+   "title": "C Spire Wins Cisco’s 2026 Service Provider Partner of the Year Award for the USA Central Area",
+   "link": "https://finance.yahoo.com/technology/articles/c-spire-wins-cisco-2026-171000705.html?.tsrc=rss",
+   "time_utc": "2026-11-16T17:10:00Z",
+   "tone": 0,
+   "tags": [],
+   "id": "d96f6d2717a8"
+  },
+  {
+   "ticker": "BRK-B",
+   "title": "Berkshire’s Third-Quarter Stock Moves Due Today. It Could Have Sold Bank of America.",
+   "link": "https://finance.yahoo.com/m/c4d2f97f-399c-3e3b-ae13-bf5dc02d7844/berkshire%E2%80%99s-third-quarter.html?.tsrc=rss",
+   "time_utc": "2026-11-16T17:07:00Z",
+   "tone": 0,
+   "tags": [
+    "résultats"
+   ],
+   "id": "f746403d41a9"
+  },
+  {
+   "ticker": "MSFT",
+   "title": "Microsoft Reveals Hidden Bug Behind Massive Global Outage",
+   "link": "https://finance.yahoo.com/technology/articles/microsoft-reveals-hidden-bug-behind-170537643.html?.tsrc=rss",
+   "time_utc": "2026-11-16T17:05:37Z",
+   "tone": 0,
+   "tags": [],
+   "id": "064196c7caf8"
+  },
+  {
+   "ticker": "AAPL",
+   "title": "Eli Lilly is trouncing Nvidia — and the weight-loss drug trade is beating AI again",
+   "link": "https://finance.yahoo.com/markets/article/eli-lilly-is-trouncing-nvidia--and-the-weight-loss-drug-trade-is-beating-ai-again-170530198.html?.tsrc=rss",
+   "time_utc": "2026-11-16T17:05:30Z",
+   "tone": 1,
+   "tags": [],
+   "id": "ab770450b157"
+  },
+  {
+   "ticker": "MSFT",
+   "title": "Alithya Group Inc (ALYAF) (Q2 2027) Earnings Call Highlights: Margin Expansion and Bookings ...",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/alithya-group-inc-alyaf-q2-170316140.html?.tsrc=rss",
+   "time_utc": "2026-11-16T17:03:16Z",
+   "tone": 0,
+   "tags": [
+    "résultats"
+   ],
+   "id": "5896cbb0382e"
+  },
+  {
+   "ticker": "META",
+   "title": "Trump Media Sinks 12% Ahead of Convertible-Note Deadline and TAE Merger Vote; Rumble Tumbles 11%, Meta Declines 2%",
+   "link": "https://247wallst.com/investing/2026/11/16/trump-media-sinks-12-ahead-of-convertible-note-deadline-and-tae-merger-vote-rumble-tumbles-11-meta-declines-2/?.tsrc=rss",
+   "time_utc": "2026-11-16T17:02:54Z",
+   "tone": 0,
+   "tags": [
+    "opération"
+   ],
+   "id": "85ecdd8d5759"
+  },
+  {
+   "ticker": "JPM",
+   "title": "Can strong earnings drive stocks to fresh highs into 2027? JPM weighs in",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/strong-earnings-drive-stocks-fresh-170210061.html?.tsrc=rss",
+   "time_utc": "2026-11-16T17:02:10Z",
+   "tone": 1,
+   "tags": [
+    "résultats"
+   ],
+   "id": "4c03fac7a41b"
+  },
+  {
+   "ticker": "JPM",
+   "title": "JPMorgan hires up to win smaller M&A business",
+   "link": "https://www.bankingdive.com/news/jpmorgan-small-cap-investment-banking-flynn-advisory/874774/?.tsrc=rss",
+   "time_utc": "2026-11-16T17:02:04Z",
+   "tone": 1,
+   "tags": [],
+   "id": "b404c27c2fc9"
+  },
+  {
+   "ticker": "BNP.PA",
+   "title": "BNP Paribas SA : Rachat d'actions - déclaration des transactions sur actions propres du 9 novembre au 13 novembre 2026",
+   "link": "https://fr.finance.yahoo.com/actualites/bnp-paribas-rachat-dactions-d%C3%A9claration-170200610.html?.tsrc=rss",
+   "time_utc": "2026-11-16T17:02:00Z",
+   "tone": 1,
+   "tags": [
+    "opération"
+   ],
+   "id": "991db53b5bbb"
+  },
+  {
+   "ticker": "GOOGL",
+   "title": "Nvidia’s Bull Case: AI Labs Must “Quadruple Their R&D Compute” Yearly per Dwarkesh Patel",
+   "link": "https://www.tikr.com/blog/nvidias-bull-case-ai-labs-must-quadruple-their-rd-compute-yearly-per-dwarkesh-patel?ref=yahoofinance&tlnk=yf-261116-4wgc5574&.tsrc=rss",
+   "time_utc": "2026-11-16T17:00:35Z",
+   "tone": 0,
+   "tags": [],
+   "id": "67752505d603"
+  },
+  {
+   "ticker": "JNJ",
+   "title": "J&J bets $2.2B on Ollin’s vision loss drug",
+   "link": "https://www.biopharmadive.com/news/Johnson-johnson-ollin-acquire-ophthalmology-vegf-ang2-drugs/874728/?.tsrc=rss",
+   "time_utc": "2026-11-16T16:57:00Z",
+   "tone": -1,
+   "tags": [
+    "opération"
+   ],
+   "id": "afde8e795def"
+  },
+  {
+   "ticker": "JNJ",
+   "title": "Johnson & Johnson Agrees to Buy Ollin Biosciences in Up to $3.33 Billion Deal",
+   "link": "https://finance.yahoo.com/healthcare/articles/johnson-johnson-agrees-buy-ollin-165031669.html?.tsrc=rss",
+   "time_utc": "2026-11-16T16:50:31Z",
+   "tone": 1,
+   "tags": [
+    "opération"
+   ],
+   "id": "22401eb02a1c"
+  },
+  {
+   "ticker": "AAPL",
+   "title": "Apple Is “Literally the Trade of the Year” Says Josh Brown, for a Very Simple Reason",
+   "link": "https://www.tikr.com/blog/apple-is-literally-the-trade-of-the-year-says-josh-brown-for-a-very-simple-reason?ref=yahoofinance&tlnk=yf-261116-3qvmffq8&.tsrc=rss",
+   "time_utc": "2026-11-16T16:49:15Z",
+   "tone": -1,
+   "tags": [],
+   "id": "706606352d93"
+  },
+  {
+   "ticker": "MRK",
+   "title": "Moderna Is Up Over 600% This Year. Here’s What Jim Cramer Learned in His Exclusive",
+   "link": "https://247wallst.com/investing/2026/11/16/moderna-is-up-over-600-this-year-heres-what-jim-cramer-learned-in-his-exclusive/?.tsrc=rss",
+   "time_utc": "2026-11-16T16:47:58Z",
+   "tone": 0,
+   "tags": [],
+   "id": "ee60e7ec4968"
+  },
+  {
+   "ticker": "WMT",
+   "title": "S&P 500 Earnings Growth Edges Higher as Reporting Season Winds Down, Oppenheimer Says",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/p-500-earnings-growth-edges-164643077.html?.tsrc=rss",
+   "time_utc": "2026-11-16T16:46:43Z",
+   "tone": 1,
+   "tags": [
+    "résultats"
+   ],
+   "id": "1d88ecc1af3c"
+  },
+  {
+   "ticker": "DG.PA",
+   "title": "VINCI : Déclaration des transactions sur actions propres du 9 novembre au 13 novembre 2026",
+   "link": "https://fr.finance.yahoo.com/actualites/vinci-d%C3%A9claration-transactions-actions-propres-164500417.html?.tsrc=rss",
+   "time_utc": "2026-11-16T16:45:00Z",
+   "tone": 0,
+   "tags": [],
+   "id": "f60a8f41df34"
+  },
+  {
+   "ticker": "ORCL",
+   "title": "Update: Market Chatter: Palantir Technologies Faces UK Competition for NHS Data Contract",
+   "link": "https://finance.yahoo.com/healthcare/articles/market-chatter-palantir-technologies-faces-164157628.html?.tsrc=rss",
+   "time_utc": "2026-11-16T16:41:57Z",
+   "tone": 1,
+   "tags": [],
+   "id": "9c51a8b0fde4"
+  },
+  {
+   "ticker": "CSCO",
+   "title": "Cisco CEO Chuck Robbins on the importance of succession planning: 'You don't know what's going to happen'",
+   "link": "https://finance.yahoo.com/markets/article/cisco-ceo-chuck-robbins-on-the-importance-of-succession-planning-you-dont-know-whats-going-to-happen-164019098.html?.tsrc=rss",
+   "time_utc": "2026-11-16T16:40:19Z",
+   "tone": 0,
+   "tags": [],
+   "id": "3121b06287dd"
+  },
+  {
+   "ticker": "JPM",
+   "title": "JPMorgan cards chief to depart",
+   "link": "https://www.bankingdive.com/news/jpmorgan-chase-cards-chief-allison-beer-to-depart-rohrbaugh/874768/?.tsrc=rss",
+   "time_utc": "2026-11-16T16:36:00Z",
+   "tone": 0,
+   "tags": [],
+   "id": "44c283747229"
+  },
+  {
+   "ticker": "V",
+   "title": "OpenAI wallet taps card networks",
+   "link": "https://www.paymentsdive.com/news/openai-wallet-taps-card-networks/874769/?.tsrc=rss",
+   "time_utc": "2026-11-16T16:35:31Z",
+   "tone": 0,
+   "tags": [],
+   "id": "54177af838f5"
+  },
+  {
+   "ticker": "MSFT",
+   "title": "Wall Street and Main Street Agree: It’s Time to Tame the AI Trade",
+   "link": "https://finance.yahoo.com/m/34cfab3d-f86e-33dd-9d8d-ca8af1b0a88f/wall-street-and-main-street.html?.tsrc=rss",
+   "time_utc": "2026-11-16T16:33:00Z",
+   "tone": 1,
+   "tags": [],
+   "id": "08c82f49eebe"
+  },
+  {
+   "ticker": "V",
+   "title": "Can Mastercard's Mambu Deal Expand Its APAC Payments Reach?",
+   "link": "https://finance.yahoo.com/markets/currencies/articles/mastercards-mambu-deal-expand-apac-163200156.html?.tsrc=rss",
+   "time_utc": "2026-11-16T16:32:00Z",
+   "tone": 1,
+   "tags": [
+    "opération"
+   ],
+   "id": "eda349ee6e83"
+  },
+  {
+   "ticker": "AMZN",
+   "title": "Crypto Stocks Sink on Bitcoin's Slide; Aramark Falls on Earnings | Stock Movers",
+   "link": "https://finance.yahoo.com/video/crypto-stocks-sink-bitcoins-slide-163116959.html?.tsrc=rss",
+   "time_utc": "2026-11-16T16:31:16Z",
+   "tone": 0,
+   "tags": [
+    "résultats",
+    "opération",
+    "prévisions"
+   ],
+   "id": "1248866cc5fe"
+  },
   {
    "ticker": "ABBV",
    "title": "4D Molecular Therapeutics May Benefit From Upcoming Wet AMD Gene Therapy Data, RBC Says",
@@ -10,1162 +1184,6 @@
    "tone": 0,
    "tags": [],
    "id": "f9db02559b15"
-  },
-  {
-   "ticker": "NVDA",
-   "title": "Arm CEO Rene Haas Is at 23% Odds to Run Nvidia. That’s a Problem for Arm",
-   "link": "https://www.tikr.com/blog/arm-ceo-rene-haas-is-at-23-odds-to-run-nvidia-thats-a-problem-for-arm?ref=yahoofinance&tlnk=yf-261116-qxgc668j&.tsrc=rss",
-   "time_utc": "2026-11-16T16:21:49Z",
-   "tone": 0,
-   "tags": [],
-   "id": "66e6e73aaeaf"
-  },
-  {
-   "ticker": "NVDA",
-   "title": "Could Nvidia's Stock Fall to $100?",
-   "link": "https://www.fool.com/investing/2026/11/16/could-nvidia-s-stock-fall-to-100/?.tsrc=rss",
-   "time_utc": "2026-11-16T16:20:02Z",
-   "tone": -1,
-   "tags": [],
-   "id": "4df5fa832a7a"
-  },
-  {
-   "ticker": "NVDA",
-   "title": "Netflix Stock Now Trades at a 70% Discount to Its Peak Valuation, and One Number Is to Blame",
-   "link": "https://www.fool.com/investing/2026/11/16/netflix-stock-trades-70-discount-peak-valuation-one-number-blame/?.tsrc=rss",
-   "time_utc": "2026-11-16T16:20:02Z",
-   "tone": 0,
-   "tags": [],
-   "id": "8c86a6c5d6e6"
-  },
-  {
-   "ticker": "JNJ",
-   "title": "Treasury Yields Just Hit 4.88%, Changing the Math for Dividend Investors",
-   "link": "https://247wallst.com/investing/2026/11/16/treasury-yields-just-hit-4-88-changing-the-math-for-dividend-investors/?.tsrc=rss",
-   "time_utc": "2026-11-16T16:17:22Z",
-   "tone": 0,
-   "tags": [
-    "macro"
-   ],
-   "id": "96bbea7f9dae"
-  },
-  {
-   "ticker": "AMZN",
-   "title": "AST SpaceMobile Sinks 8% as ULA’s Vulcan Rocket Failure Rattles Space Stocks",
-   "link": "https://www.tikr.com/blog/ast-spacemobile-sinks-8-as-ulas-vulcan-rocket-failure-rattles-space-stocks?ref=yahoofinance&tlnk=yf-261116-qqj5x5r6&.tsrc=rss",
-   "time_utc": "2026-11-16T16:15:45Z",
-   "tone": -1,
-   "tags": [],
-   "id": "1390d4daa325"
-  },
-  {
-   "ticker": "AMZN",
-   "title": "What Blackstone Digital Infrastructure Trust (BXDC) Said on Its Q3 Earnings Call",
-   "link": "https://www.marketbeat.com/instant-alerts/transcript-what-blackstone-digital-infrastructure-trust-bxdc-said-on-its-q3-earnings-call-2026-11-16/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
-   "time_utc": "2026-11-16T16:15:23Z",
-   "tone": 0,
-   "tags": [
-    "résultats",
-    "opération"
-   ],
-   "id": "8727510d6d02"
-  },
-  {
-   "ticker": "NVDA",
-   "title": "Jensen Huang Reportedly Considers Returning To Nvidia: FT",
-   "link": "https://finance.yahoo.com/m/694d3941-721c-31d4-aff5-d306f1116454/jensen-huang-reportedly.html?.tsrc=rss",
-   "time_utc": "2026-11-16T16:13:44Z",
-   "tone": 0,
-   "tags": [],
-   "id": "fbe0ae8a8568"
-  },
-  {
-   "ticker": "JPM",
-   "title": "Bank Stocks Back In Focus As Wells Fargo And JPMorgan Face Tougher Rules",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/bank-stocks-back-focus-wells-161050774.html?.tsrc=rss",
-   "time_utc": "2026-11-16T16:10:50Z",
-   "tone": 0,
-   "tags": [
-    "opération"
-   ],
-   "id": "fa4508137173"
-  },
-  {
-   "ticker": "NVDA",
-   "title": "U.S. chip stocks slide as traders unwind Nvidia rival bets before earnings",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/u-chip-stocks-slide-traders-160656991.html?.tsrc=rss",
-   "time_utc": "2026-11-16T16:06:56Z",
-   "tone": 1,
-   "tags": [
-    "résultats"
-   ],
-   "id": "808dab61b646"
-  },
-  {
-   "ticker": "NVDA",
-   "title": "Campaign to bring back Jensen Huang as Nvidia CEO gains steam with Trump support",
-   "link": "https://www.axios.com/2026/11/16/jensen-huang-ceo-nvidia-donald-trump#utm_source=yahoo_finance&utm_medium=partner&utm_campaign=subs-partner-yahoo-finance-AI?.tsrc=rss",
-   "time_utc": "2026-11-16T16:06:25Z",
-   "tone": 1,
-   "tags": [],
-   "id": "7325c57e82e5"
-  },
-  {
-   "ticker": "NVDA",
-   "title": "Nvidia and Anthropic Will Really Test the Stock Market. Only One Thing Is Certain.",
-   "link": "https://finance.yahoo.com/m/0f3607ce-6aef-3837-bb1f-110209c2e287/nvidia-and-anthropic-will.html?.tsrc=rss",
-   "time_utc": "2026-11-16T16:05:00Z",
-   "tone": 0,
-   "tags": [
-    "résultats",
-    "macro"
-   ],
-   "id": "77aacc61bbdc"
-  },
-  {
-   "ticker": "NVDA",
-   "title": "What Does 'Nvidia' Actually Mean?",
-   "link": "https://www.bgr.com/2016402/what-nvidia-means-explained/?.tsrc=rss",
-   "time_utc": "2026-11-16T16:05:00Z",
-   "tone": 0,
-   "tags": [],
-   "id": "8b460661fb73"
-  },
-  {
-   "ticker": "AMZN",
-   "title": "Something Is Changing at Amazon, and Investors Should Pay Attention",
-   "link": "https://247wallst.com/investing/2026/11/16/something-is-changing-at-amazon-and-investors-should-pay-attention/?.tsrc=rss",
-   "time_utc": "2026-11-16T16:03:42Z",
-   "tone": 0,
-   "tags": [],
-   "id": "b534801db449"
-  },
-  {
-   "ticker": "NVDA",
-   "title": "PepsiCo Has Raised Its Dividend 54 Straight Years. Here's What $10,000 Invested Pays Annually.",
-   "link": "https://www.fool.com/investing/2026/11/16/pepsico-has-raised-its-dividend-54-straight-years-heres-what-10000-invested-pays-annually/?.tsrc=rss",
-   "time_utc": "2026-11-16T16:03:02Z",
-   "tone": 1,
-   "tags": [],
-   "id": "8975a8f3ff44"
-  },
-  {
-   "ticker": "NVDA",
-   "title": "U.S. Moves to Close Chip Loophole After Nvidia Scandal. Watch These Stocks.",
-   "link": "https://finance.yahoo.com/m/78de99c1-d626-3622-b043-cfcbb39a1dc4/u.s.-moves-to-close-chip.html?.tsrc=rss",
-   "time_utc": "2026-11-16T16:01:00Z",
-   "tone": 0,
-   "tags": [],
-   "id": "640e0046438e"
-  },
-  {
-   "ticker": "NVDA",
-   "title": "NVIDIA Announces Collaboration With IBM and Fermi National Accelerator Laboratory to Launch Quantum-Classical Codesign Platform, Plus Error-Correction Breakthrough to Advance Practical Quantum Computing",
-   "link": "https://finance.yahoo.com/technology/ai/articles/nvidia-announces-collaboration-ibm-fermi-160000819.html?.tsrc=rss",
-   "time_utc": "2026-11-16T16:00:00Z",
-   "tone": 0,
-   "tags": [],
-   "id": "9bd9ddf5992c"
-  },
-  {
-   "ticker": "NVDA",
-   "title": "Week ahead: Nvidia earnings and Anthropic IPO to set the tone on Wall Street",
-   "link": "https://www.proactiveinvestors.com/companies/news/1101855/week-ahead-nvidia-earnings-and-anthropic-ipo-to-set-the-tone-on-wall-street-1101855.html?.tsrc=rss",
-   "time_utc": "2026-11-16T16:00:00Z",
-   "tone": 0,
-   "tags": [
-    "résultats"
-   ],
-   "id": "a21180e1d35c"
-  },
-  {
-   "ticker": "NVDA",
-   "title": "IBM, Fermilab, and NVIDIA Announce Plans for New Co-Design Platform to Accelerate the Development of Next-Generation, Modular Quantum Computers",
-   "link": "https://finance.yahoo.com/technology/ai/articles/ibm-fermilab-nvidia-announce-plans-160000961.html?.tsrc=rss",
-   "time_utc": "2026-11-16T16:00:00Z",
-   "tone": 0,
-   "tags": [],
-   "id": "390fd236c417"
-  },
-  {
-   "ticker": "NVDA",
-   "title": "Altera Demonstrates an FPGA-based Quantum System Controller Reference Design in Collaboration with OQC and NVIDIA",
-   "link": "https://finance.yahoo.com/technology/ai/articles/altera-demonstrates-fpga-based-quantum-160000989.html?.tsrc=rss",
-   "time_utc": "2026-11-16T16:00:00Z",
-   "tone": 0,
-   "tags": [],
-   "id": "a217e68208b1"
-  },
-  {
-   "ticker": "NVDA",
-   "title": "IQM Supports NVIDIA’s Work to Make Quantum Computers Schedulable in Slurm",
-   "link": "https://finance.yahoo.com/technology/ai/articles/iqm-supports-nvidia-quantum-computers-160000527.html?.tsrc=rss",
-   "time_utc": "2026-11-16T16:00:00Z",
-   "tone": 0,
-   "tags": [],
-   "id": "30dd26a64561"
-  },
-  {
-   "ticker": "NVDA",
-   "title": "NVIDIA Expands Vera CPU Platform to Accelerate Scientific Discovery",
-   "link": "https://finance.yahoo.com/technology/ai/articles/nvidia-expands-vera-cpu-platform-160000768.html?.tsrc=rss",
-   "time_utc": "2026-11-16T16:00:00Z",
-   "tone": 1,
-   "tags": [],
-   "id": "1585abe9a1d0"
-  },
-  {
-   "ticker": "META",
-   "title": "Mapbox Powers Hands-free Cycling Navigation on Meta Ray-Bans",
-   "link": "https://finance.yahoo.com/technology/ai/articles/mapbox-powers-hands-free-cycling-160000827.html?.tsrc=rss",
-   "time_utc": "2026-11-16T16:00:00Z",
-   "tone": 1,
-   "tags": [],
-   "id": "c797f10cc834"
-  },
-  {
-   "ticker": "CRM",
-   "title": "Model N Appoints Koti Reddy Nandyala as Chief Technology Officer to Accelerate Platform Innovation",
-   "link": "https://finance.yahoo.com/technology/articles/model-n-appoints-koti-reddy-160000581.html?.tsrc=rss",
-   "time_utc": "2026-11-16T16:00:00Z",
-   "tone": 0,
-   "tags": [],
-   "id": "0169992a4021"
-  },
-  {
-   "ticker": "JPM",
-   "title": "“The Biggest Competition For Capital I Have Seen in 50 years in Finance,” Larry Fink Sounds The Alarm As Public Worldwide Debt Hits $110 Trillion, While $13 Trillion Of Corporate Debt Must Be Refinanced In The Next 5 Years",
-   "link": "https://247wallst.com/investing/2026/11/16/the-biggest-competition-for-capital-i-have-seen-in-50-years-in-finance-larry-fink-sounds-the-alarm-as-public-worldwide-debt-hits-110-trillion-while-13-trillion-of-corporate-debt-must-be-refina/?.tsrc=rss",
-   "time_utc": "2026-11-16T15:57:07Z",
-   "tone": 1,
-   "tags": [
-    "macro"
-   ],
-   "id": "34a406498b28"
-  },
-  {
-   "ticker": "^GSPC",
-   "title": "Today's Weakness Sets Up 'Springboard' for Future Gains",
-   "link": "https://finance.yahoo.com/m/02cc9c40-060e-32fb-be28-4bf5330721be/today%27s-weakness-sets-up.html?.tsrc=rss",
-   "time_utc": "2026-11-16T15:51:38Z",
-   "tone": 1,
-   "tags": [],
-   "id": "a45abb7abe25"
-  },
-  {
-   "ticker": "JPM",
-   "title": "DBS, JPMorgan Enable 24/7 Tokenized Dollar Transfers Between US and Singapore",
-   "link": "https://www.cryptoprowl.com/releases/dbs-jpmorgan-enable-247-tokenized-dollar-transfers-between-us-and-singapore-7932?.tsrc=rss",
-   "time_utc": "2026-11-16T15:50:00Z",
-   "tone": 0,
-   "tags": [],
-   "id": "6300ffdeea5c"
-  },
-  {
-   "ticker": "PEP",
-   "title": "Coca-Cola Has Crushed PepsiCo in 2026, but Retirement Investors Face a Different Dividend Decision",
-   "link": "https://247wallst.com/investing/2026/11/16/coca-cola-has-crushed-pepsico-in-2026-but-retirement-investors-face-a-different-dividend-decision/?.tsrc=rss",
-   "time_utc": "2026-11-16T15:47:33Z",
-   "tone": -1,
-   "tags": [],
-   "id": "cdd2da4337a1"
-  },
-  {
-   "ticker": "GOOGL",
-   "title": "Broadcom’s Quiet 8% November Move Could Ramp Up Very Quickly in This Volatile Climate and I’m Buying",
-   "link": "https://247wallst.com/investing/2026/11/16/broadcoms-quiet-8-november-move-could-ramp-up-very-quickly-in-this-volatile-climate-and-im-buying/?.tsrc=rss",
-   "time_utc": "2026-11-16T15:45:24Z",
-   "tone": 0,
-   "tags": [],
-   "id": "d4b514ad7d5a"
-  },
-  {
-   "ticker": "GOOGL",
-   "title": "Google and Meta Tell Two Different Stories as Search Rebounds",
-   "link": "https://finance.yahoo.com/technology/articles/google-meta-tell-two-different-154422387.html?.tsrc=rss",
-   "time_utc": "2026-11-16T15:44:22Z",
-   "tone": 0,
-   "tags": [],
-   "id": "1eba1fa47673"
-  },
-  {
-   "ticker": "ORCL",
-   "title": "Anthropic gears up for the largest IPO in history, but do the economics work?",
-   "link": "https://finance.yahoo.com/video/anthropic-gears-up-for-the-largest-ipo-in-history-but-do-the-economics-work-154323636.html?.tsrc=rss",
-   "time_utc": "2026-11-16T15:43:23Z",
-   "tone": 0,
-   "tags": [],
-   "id": "f4e6d5c583dd"
-  },
-  {
-   "ticker": "CSCO",
-   "title": "We 'need' AI data centers to be built in the US: Cisco CEO",
-   "link": "https://finance.yahoo.com/video/we-need-ai-data-centers-to-be-built-in-the-us-cisco-ceo-154249036.html?.tsrc=rss",
-   "time_utc": "2026-11-16T15:42:49Z",
-   "tone": 0,
-   "tags": [
-    "résultats"
-   ],
-   "id": "7d20d2601af7"
-  },
-  {
-   "ticker": "MSFT",
-   "title": "Microsoft Pinpoints What Knocked Outlook Offline Worldwide",
-   "link": "https://finance.yahoo.com/technology/articles/microsoft-pinpoints-knocked-outlook-offline-154057711.html?.tsrc=rss",
-   "time_utc": "2026-11-16T15:40:57Z",
-   "tone": 0,
-   "tags": [
-    "prévisions"
-   ],
-   "id": "2c45e98e7a47"
-  },
-  {
-   "ticker": "MSFT",
-   "title": "Thread AI Joins the Microsoft for Startups Pegasus Program to Deliver its AI Workflow Orchestration Platform on Microsoft Marketplace",
-   "link": "https://finance.yahoo.com/technology/ai/articles/thread-ai-joins-microsoft-startups-154000458.html?.tsrc=rss",
-   "time_utc": "2026-11-16T15:40:00Z",
-   "tone": 0,
-   "tags": [],
-   "id": "597a39d836cb"
-  },
-  {
-   "ticker": "WMT",
-   "title": "Fayetteville Sits in the Ozarks Near Walmart’s Hometown. What It Takes to Retire There at 65 on $750,000",
-   "link": "https://247wallst.com/personal-finance/2026/11/16/fayetteville-sits-in-the-ozarks-near-walmarts-hometown-what-it-takes-to-retire-there-at-65-on-750000/?.tsrc=rss",
-   "time_utc": "2026-11-16T15:39:16Z",
-   "tone": 0,
-   "tags": [],
-   "id": "12d84b6210d7"
-  },
-  {
-   "ticker": "ORCL",
-   "title": "E-Clinical Trial Technologies - Global Strategic Business Report 2026: Capitalize on 16.6% CAGR to US$32.8 Billion by 2032 as Oracle, Medidata, BioClinica and PAREXEL Disrupt Digital Trials",
-   "link": "https://finance.yahoo.com/healthcare/articles/e-clinical-trial-technologies-global-153900898.html?.tsrc=rss",
-   "time_utc": "2026-11-16T15:39:00Z",
-   "tone": 0,
-   "tags": [],
-   "id": "2bf90b279774"
-  },
-  {
-   "ticker": "ORCL",
-   "title": "Clinical Trial Management Systems (CTMS) - Global Strategic Business Report 2026: Capitalize on 17.5% CAGR to $7 Billion by 2032; Benchmark Oracle, Veeva Systems, Medidata Solutions and ArisGlobal",
-   "link": "https://finance.yahoo.com/healthcare/articles/clinical-trial-management-systems-ctms-153800169.html?.tsrc=rss",
-   "time_utc": "2026-11-16T15:38:00Z",
-   "tone": 0,
-   "tags": [],
-   "id": "6909dc248655"
-  },
-  {
-   "ticker": "CRM",
-   "title": "Salesforce Spent $32 Billion on Buybacks in 5 Years. Somehow, Its Share Count Still Rose",
-   "link": "https://www.tikr.com/blog/salesforce-spent-32-billion-on-buybacks-in-5-years-somehow-its-share-count-still-rose?ref=yahoofinance&tlnk=yf-261116-h8w8c93c&.tsrc=rss",
-   "time_utc": "2026-11-16T15:35:48Z",
-   "tone": 1,
-   "tags": [],
-   "id": "17d740aab17d"
-  },
-  {
-   "ticker": "HD",
-   "title": "Home Depot Is Beating Lowe’s. The November 17 Report Has to Show It in Margins",
-   "link": "https://www.tikr.com/blog/home-depot-is-beating-lowes-the-november-17-report-has-to-show-it-in-margins?ref=yahoofinance&tlnk=yf-261116-jjf5cgcx&.tsrc=rss",
-   "time_utc": "2026-11-16T15:33:22Z",
-   "tone": -1,
-   "tags": [
-    "résultats"
-   ],
-   "id": "15c6797160a7"
-  },
-  {
-   "ticker": "^GSPC",
-   "title": "SanDisk Stock Could Have Another Big Year. Here’s My 2027 Price Prediction",
-   "link": "https://247wallst.com/investing/2026/11/16/sandisk-stock-could-have-another-big-year-heres-my-2027-price-prediction/?.tsrc=rss",
-   "time_utc": "2026-11-16T15:33:18Z",
-   "tone": -1,
-   "tags": [],
-   "id": "4257b89c7d87"
-  },
-  {
-   "ticker": "AAPL",
-   "title": "Is an Equal-Weight S&P 500 Fund Safer Right Now Than the One You Own?",
-   "link": "https://www.fool.com/investing/2026/11/16/is-an-equal-weight-s-and-p-500-fund-safer-right-now-than-the-one-you-own/?.tsrc=rss",
-   "time_utc": "2026-11-16T15:31:02Z",
-   "tone": 0,
-   "tags": [],
-   "id": "98c958c7b889"
-  },
-  {
-   "ticker": "MSFT",
-   "title": "Global Joint All-Domain Command and Control (JADC2) Systems Market Report 2026 | Lockheed Martin, RTX, AWS and Microsoft Drive AI, Cloud and Edge Growth to $57.69 Billion by 2030",
-   "link": "https://finance.yahoo.com/technology/ai/articles/global-joint-domain-command-control-153100193.html?.tsrc=rss",
-   "time_utc": "2026-11-16T15:31:00Z",
-   "tone": 1,
-   "tags": [
-    "opération"
-   ],
-   "id": "71053bd7b451"
-  },
-  {
-   "ticker": "AMZN",
-   "title": "Blackstone Digital Infrastructure stock surges on $5B AWS deal",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/blackstone-digital-infrastructure-stock-surges-153032256.html?.tsrc=rss",
-   "time_utc": "2026-11-16T15:30:32Z",
-   "tone": 1,
-   "tags": [
-    "opération"
-   ],
-   "id": "7f7a2c4a90b6"
-  },
-  {
-   "ticker": "MSFT",
-   "title": "Global GovTech Dual-Use Defense Platform Market Report 2026: Size and Forecast to 2030 | Capitalize on AI, cloud, and 15% CAGR with Microsoft, Palantir, Anduril, and BAE Systems",
-   "link": "https://finance.yahoo.com/technology/ai/articles/global-govtech-dual-defense-platform-152900626.html?.tsrc=rss",
-   "time_utc": "2026-11-16T15:29:00Z",
-   "tone": 1,
-   "tags": [
-    "prévisions"
-   ],
-   "id": "3d5b4e3d236e"
-  },
-  {
-   "ticker": "^GSPC",
-   "title": "The S&P 500 Is on Pace to Do Something That’s Only Happened 3 Times in History",
-   "link": "https://www.fool.com/investing/2026/11/16/the-s-and-p-500-is-on-pace-to-do-something-thats-only-happened-3-times-in-history/?.tsrc=rss",
-   "time_utc": "2026-11-16T15:27:02Z",
-   "tone": 1,
-   "tags": [],
-   "id": "f56b2e795be1"
-  },
-  {
-   "ticker": "WMT",
-   "title": "From Nvidia’s C-Suite Turmoil to Walmart vs. Target: What to Watch in This Week’s Earnings",
-   "link": "https://www.wallstreethorizon.com/blog/From-Nvidias-C-Suite-Turmoil-to-Walmart-vs.-Target-What-to-Watch-in-This-Weeks-Earnings?.tsrc=rss",
-   "time_utc": "2026-11-16T15:26:27Z",
-   "tone": 0,
-   "tags": [
-    "résultats",
-    "macro"
-   ],
-   "id": "a00ebf6b3603"
-  },
-  {
-   "ticker": "GOOGL",
-   "title": "Stock Market Today: Dow, Nvidia Skid Amid Huang News; Chip Stocks, Oil Plays Fall (Live Coverage)",
-   "link": "https://finance.yahoo.com/m/befe3344-5a22-304e-a07d-6ff7ad87bf49/stock-market-today%3A-dow%2C.html?.tsrc=rss",
-   "time_utc": "2026-11-16T15:24:11Z",
-   "tone": -1,
-   "tags": [],
-   "id": "bd738f66aa1b"
-  },
-  {
-   "ticker": "AAPL",
-   "title": "Trump Says Jensen Huang Did Not Put National Security at Risk",
-   "link": "https://finance.yahoo.com/video/trump-says-jensen-huang-did-152012378.html?.tsrc=rss",
-   "time_utc": "2026-11-16T15:20:12Z",
-   "tone": 0,
-   "tags": [],
-   "id": "059f07179b24"
-  },
-  {
-   "ticker": "^GSPC",
-   "title": "Prediction: A Stock Market Crash Is Coming Eventually. Here's What Investors Should Do Based on What Happened in the Last 3 Crashes.",
-   "link": "https://www.fool.com/investing/2026/11/16/prediction-a-stock-market-crash-is-coming-eventually-here-s-what-investors-should-do-based-on-what-happened-in-the-last-3-crashes/?.tsrc=rss",
-   "time_utc": "2026-11-16T15:20:02Z",
-   "tone": 0,
-   "tags": [],
-   "id": "0ce1abe97a08"
-  },
-  {
-   "ticker": "XOM",
-   "title": "ExxonMobil starts production at Uaru, raising Guyana’s installed capacity to 1.1 million barrels per day",
-   "link": "https://finance.yahoo.com/energy/articles/exxonmobil-starts-production-uaru-raising-151900873.html?.tsrc=rss",
-   "time_utc": "2026-11-16T15:19:00Z",
-   "tone": 0,
-   "tags": [],
-   "id": "a18befcc7e16"
-  },
-  {
-   "ticker": "^GSPC",
-   "title": "Want to Buy a Car Without a Steering Wheel? Tesla Can Help.",
-   "link": "https://finance.yahoo.com/m/9a77eef7-aa66-323e-9720-d7151b4ad03a/want-to-buy-a-car-without-a.html?.tsrc=rss",
-   "time_utc": "2026-11-16T15:18:00Z",
-   "tone": 1,
-   "tags": [],
-   "id": "56c35a9fa281"
-  },
-  {
-   "ticker": "^GSPC",
-   "title": "SpaceX’s Latest Rocket Triumph Isn’t Enough to Lift the Stock",
-   "link": "https://finance.yahoo.com/m/bc9db056-cd9a-35d3-ba49-f0e0f1e7148f/spacex%E2%80%99s-latest-rocket.html?.tsrc=rss",
-   "time_utc": "2026-11-16T15:13:00Z",
-   "tone": 0,
-   "tags": [],
-   "id": "aae24a425c13"
-  },
-  {
-   "ticker": "CSCO",
-   "title": "A high-stakes week for tech: Anthropic IPO and Nvidia earnings",
-   "link": "https://finance.yahoo.com/video/a-high-stakes-week-for-tech-anthropic-ipo-and-nvidia-earnings-151159744.html?.tsrc=rss",
-   "time_utc": "2026-11-16T15:11:59Z",
-   "tone": 1,
-   "tags": [
-    "résultats"
-   ],
-   "id": "c9a33e73fb0d"
-  },
-  {
-   "ticker": "LLY",
-   "title": "CVS Sees a Possible Break-Even Point for GLP-1s",
-   "link": "https://finance.yahoo.com/healthcare/articles/cvs-sees-possible-break-even-151108349.html?.tsrc=rss",
-   "time_utc": "2026-11-16T15:11:08Z",
-   "tone": 1,
-   "tags": [],
-   "id": "43a4f2c3ad2c"
-  },
-  {
-   "ticker": "BRK-B",
-   "title": "Warren Buffett says kindness 'compounds' as he gifts about $5.5 billion to his family's foundations",
-   "link": "https://finance.yahoo.com/small-business/articles/warren-buffett-says-kindness-compounds-151100411.html?.tsrc=rss",
-   "time_utc": "2026-11-16T15:11:00Z",
-   "tone": 0,
-   "tags": [],
-   "id": "cdcdfc149e01"
-  },
-  {
-   "ticker": "MSFT",
-   "title": "PLTR Raises 2026 Guidance as Q3 AI Demand Drives 96% Revenue Growth",
-   "link": "https://finance.yahoo.com/technology/ai/articles/pltr-raises-2026-guidance-q3-151000503.html?.tsrc=rss",
-   "time_utc": "2026-11-16T15:10:00Z",
-   "tone": 1,
-   "tags": [
-    "résultats",
-    "prévisions"
-   ],
-   "id": "610defd6d152"
-  },
-  {
-   "ticker": "COST",
-   "title": "Costco Hits 52-Week High on Strong Sales and Special Dividend",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/costco-hits-52-week-high-151000309.html?.tsrc=rss",
-   "time_utc": "2026-11-16T15:10:00Z",
-   "tone": 1,
-   "tags": [],
-   "id": "b6a2493cddbe"
-  },
-  {
-   "ticker": "^GSPC",
-   "title": "Top-Ranked ETFs That Are Worth Adding to Your Investment Radar",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/top-ranked-etfs-worth-adding-150900061.html?.tsrc=rss",
-   "time_utc": "2026-11-16T15:09:00Z",
-   "tone": 0,
-   "tags": [],
-   "id": "ea76e25f61fb"
-  },
-  {
-   "ticker": "MSFT",
-   "title": "2026 Embodied AI Robot Large Models and Vision-Language-Action (VLA) Research Report | World Models and OEM Investment Accelerate Commercialization and Mass Production",
-   "link": "https://finance.yahoo.com/technology/ai/articles/2026-embodied-ai-robot-large-150800509.html?.tsrc=rss",
-   "time_utc": "2026-11-16T15:08:00Z",
-   "tone": 1,
-   "tags": [],
-   "id": "205e4e85cdb2"
-  },
-  {
-   "ticker": "AMZN",
-   "title": "Can MercadoLibre's GMV Growth Fuel Long-Term Earnings Gains?",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/mercadolibres-gmv-growth-fuel-long-150700540.html?.tsrc=rss",
-   "time_utc": "2026-11-16T15:07:00Z",
-   "tone": 1,
-   "tags": [
-    "résultats"
-   ],
-   "id": "fe6bb0d0305e"
-  },
-  {
-   "ticker": "BRK-B",
-   "title": "Buffett Donates $5.5 Billion in Berkshire Stock to Family Foundations as Gifts Increase",
-   "link": "https://finance.yahoo.com/m/b5898609-b6e8-3936-bb1f-1be9ffb8a302/buffett-donates-%245.5-billion.html?.tsrc=rss",
-   "time_utc": "2026-11-16T15:07:00Z",
-   "tone": 1,
-   "tags": [],
-   "id": "12ef3b26c521"
-  },
-  {
-   "ticker": "LLY",
-   "title": "CVS white paper aims to pressure drugmakers to lower GLP-1 prices",
-   "link": "https://www.healthcaredive.com/news/glp-1s-save-money-priced-350-month-cvs-lilly-novo/874705/?.tsrc=rss",
-   "time_utc": "2026-11-16T15:05:49Z",
-   "tone": -1,
-   "tags": [],
-   "id": "b9c8aed0a46e"
-  },
-  {
-   "ticker": "^GSPC",
-   "title": "Pre-Markets in the Red to Start a Fresh Week",
-   "link": "https://finance.yahoo.com/markets/articles/pre-markets-red-start-fresh-150300438.html?.tsrc=rss",
-   "time_utc": "2026-11-16T15:03:00Z",
-   "tone": 0,
-   "tags": [],
-   "id": "e162336d1796"
-  },
-  {
-   "ticker": "^GSPC",
-   "title": "Super Micro Falls 5% as Reported DOJ Smuggling Probe Weighs for a Third Session; Dell and Hewlett Packard Enterprise Drop 4%",
-   "link": "https://247wallst.com/investing/2026/11/16/super-micro-falls-5-as-reported-doj-smuggling-probe-weighs-for-a-third-session-dell-and-hewlett-packard-enterprise-drop-4/?.tsrc=rss",
-   "time_utc": "2026-11-16T15:02:27Z",
-   "tone": -1,
-   "tags": [
-    "résultats",
-    "juridique"
-   ],
-   "id": "8b06542d2e1e"
-  },
-  {
-   "ticker": "AMZN",
-   "title": "TeacherLists Data Show 2026 Back-to-School Shopping Started Earlier and Lasted Longer",
-   "link": "https://finance.yahoo.com/small-business/articles/teacherlists-data-show-2026-back-150100702.html?.tsrc=rss",
-   "time_utc": "2026-11-16T15:01:00Z",
-   "tone": 0,
-   "tags": [],
-   "id": "bf2d9628af58"
-  },
-  {
-   "ticker": "AMZN",
-   "title": "Why Starship's breakthrough could give SpaceX a massive edge",
-   "link": "https://finance.yahoo.com/video/why-starships-breakthrough-could-give-spacex-a-massive-edge-150054680.html?.tsrc=rss",
-   "time_utc": "2026-11-16T15:00:54Z",
-   "tone": 0,
-   "tags": [],
-   "id": "0e161f9af91a"
-  },
-  {
-   "ticker": "AVGO",
-   "title": "Chip stocks fall on US semiconductor restrictions: AlphaCheck",
-   "link": "https://finance.yahoo.com/markets/article/copy-tech-rises-coreweave-results-reignite-ai-trade-alphacheck-150019770.html?.tsrc=rss",
-   "time_utc": "2026-11-16T15:00:19Z",
-   "tone": -1,
-   "tags": [],
-   "id": "4d03f0a0db66"
-  },
-  {
-   "ticker": "JPM",
-   "title": "JP Morgan says GLP-1 costs may need to halve to unlock growth",
-   "link": "https://www.proactiveinvestors.com/companies/news/1101846/jp-morgan-says-glp-1-costs-may-need-to-halve-to-unlock-growth-1101846.html?.tsrc=rss",
-   "time_utc": "2026-11-16T15:00:00Z",
-   "tone": 1,
-   "tags": [],
-   "id": "62fb0dcb09b0"
-  },
-  {
-   "ticker": "LLY",
-   "title": "Anti-Obesity Drugs Market Companies Analysis 2027: Eli Lilly and Novo Nordisk Lead as Pfizer, Roche and Amgen Invest Billions to Challenge Them in a Market Headed for USD 64.96 Billion by 2035",
-   "link": "https://finance.yahoo.com/healthcare/articles/anti-obesity-drugs-market-companies-150000656.html?.tsrc=rss",
-   "time_utc": "2026-11-16T15:00:00Z",
-   "tone": 1,
-   "tags": [
-    "résultats"
-   ],
-   "id": "dd8e501c827f"
-  },
-  {
-   "ticker": "CRM",
-   "title": "Trifecta Technologies Expands Product Data Capabilities with Salsify and Salesforce B2B Commerce Integration",
-   "link": "https://finance.yahoo.com/technology/articles/trifecta-technologies-expands-product-data-150000450.html?.tsrc=rss",
-   "time_utc": "2026-11-16T15:00:00Z",
-   "tone": 0,
-   "tags": [],
-   "id": "7fbf788e716e"
-  },
-  {
-   "ticker": "^GSPC",
-   "title": "AIZ Stock Trading at a Discount to Industry at 2.64X: Time to Buy?",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/aiz-stock-trading-discount-industry-150000994.html?.tsrc=rss",
-   "time_utc": "2026-11-16T15:00:00Z",
-   "tone": 1,
-   "tags": [
-    "résultats",
-    "prévisions"
-   ],
-   "id": "7ec7e87789f8"
-  },
-  {
-   "ticker": "^GSPC",
-   "title": "Stock Market Today: Nasdaq-100 Sinks 1% as Nvidia Faces Its First Earnings Without Jensen Huang",
-   "link": "https://247wallst.com/investing/2026/11/16/stock-market-today-nasdaq-100-sinks-1-as-nvidia-faces-its-first-earnings-without-jensen-huang/?.tsrc=rss",
-   "time_utc": "2026-11-16T14:58:10Z",
-   "tone": -1,
-   "tags": [
-    "résultats",
-    "macro"
-   ],
-   "id": "8b707881e7df"
-  },
-  {
-   "ticker": "META",
-   "title": "Global AR Waveguide Market Size, Share, Technology and Forecast, 2027-2037 | AI Glasses Growth and Foundry Expansion Create Opportunities Amid Supply Constraints",
-   "link": "https://finance.yahoo.com/technology/articles/global-ar-waveguide-market-size-145800773.html?.tsrc=rss",
-   "time_utc": "2026-11-16T14:58:00Z",
-   "tone": 1,
-   "tags": [
-    "prévisions"
-   ],
-   "id": "358d4bb9f1ad"
-  },
-  {
-   "ticker": "MRK",
-   "title": "Summit Crumbles After FDA Rejects Merck-Rivaling Lung Cancer Drug",
-   "link": "https://finance.yahoo.com/m/9f289725-3635-312e-a00c-e218b7fa7ee6/summit-crumbles-after-fda.html?.tsrc=rss",
-   "time_utc": "2026-11-16T14:57:55Z",
-   "tone": 0,
-   "tags": [],
-   "id": "aca139116634"
-  },
-  {
-   "ticker": "^GSPC",
-   "title": "Here's Why Investors Should Hold TRU Stock in Their Portfolios Now",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/heres-why-investors-hold-tru-145700764.html?.tsrc=rss",
-   "time_utc": "2026-11-16T14:57:00Z",
-   "tone": 1,
-   "tags": [],
-   "id": "b93397c80148"
-  },
-  {
-   "ticker": "AMZN",
-   "title": "Amazon puts Arnold Schwarzenegger in Santa suit to extend holiday push",
-   "link": "https://www.marketingdive.com/news/amazon-puts-arnold-schwarzenegger-in-santa-suit-to-extend-holiday-push/874675/?.tsrc=rss",
-   "time_utc": "2026-11-16T14:56:00Z",
-   "tone": 0,
-   "tags": [],
-   "id": "91353d256120"
-  },
-  {
-   "ticker": "LLY",
-   "title": "Lilly to acquire Calytrix Bio in deal worth up to $1.5 billion",
-   "link": "https://www.proactiveinvestors.com/companies/news/1101848/lilly-to-acquire-calytrix-bio-in-deal-worth-up-to-1-5-billion-1101848.html?.tsrc=rss",
-   "time_utc": "2026-11-16T14:55:00Z",
-   "tone": 0,
-   "tags": [
-    "opération"
-   ],
-   "id": "6b5e85b298cc"
-  },
-  {
-   "ticker": "HD",
-   "title": "Home Depot stock setup analysis into tomorrow’s earnings",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/home-depot-stock-setup-analysis-145459102.html?.tsrc=rss",
-   "time_utc": "2026-11-16T14:54:59Z",
-   "tone": 0,
-   "tags": [
-    "résultats"
-   ],
-   "id": "749092ec1944"
-  },
-  {
-   "ticker": "BRK-B",
-   "title": "Warren Buffett Sold More Than Half His Bank of America Stock. Monday Could Reveal Another Big Move",
-   "link": "https://247wallst.com/investing/2026/11/16/warren-buffett-sold-more-than-half-his-bank-of-america-stock-monday-could-reveal-another-big-move/?.tsrc=rss",
-   "time_utc": "2026-11-16T14:54:14Z",
-   "tone": 0,
-   "tags": [
-    "juridique"
-   ],
-   "id": "19553b1e947d"
-  },
-  {
-   "ticker": "CRM",
-   "title": "Main Capital Partners Invests in TaskRay, Joining Cloud Coach and JustOn to Transform Customer Delivery on Salesforce",
-   "link": "https://finance.yahoo.com/technology/ai/articles/main-capital-partners-invests-taskray-145400959.html?.tsrc=rss",
-   "time_utc": "2026-11-16T14:54:00Z",
-   "tone": 0,
-   "tags": [],
-   "id": "53a52df1b579"
-  },
-  {
-   "ticker": "AMZN",
-   "title": "Blackstone's Data Center REIT Makes First Investment With $5B AWS Deal",
-   "link": "https://www.bisnow.com/news/national/data-center/blackstone-s-data-center-reit-makes-first-investment-with-5b-deal-with-aws?.tsrc=rss",
-   "time_utc": "2026-11-16T14:52:43Z",
-   "tone": 0,
-   "tags": [
-    "opération"
-   ],
-   "id": "217d5e6691e4"
-  },
-  {
-   "ticker": "GOOGL",
-   "title": "Scott Galloway Says He's Gone Broke Twice, Built Wealth 3 Times. Now He's Warning Americans To Stop Being Earners, Start Owning Assets",
-   "link": "https://finance.yahoo.com/small-business/articles/scott-galloway-says-hes-gone-144508519.html?.tsrc=rss",
-   "time_utc": "2026-11-16T14:45:08Z",
-   "tone": -1,
-   "tags": [],
-   "id": "21bbf52c91cb"
-  },
-  {
-   "ticker": "BAC",
-   "title": "Bank of America CEO Moynihan on IPO Pipeline, AI, Consumer Strength",
-   "link": "https://finance.yahoo.com/video/bank-america-ceo-moynihan-ipo-144506709.html?.tsrc=rss",
-   "time_utc": "2026-11-16T14:45:06Z",
-   "tone": 0,
-   "tags": [
-    "résultats"
-   ],
-   "id": "e5065154492f"
-  },
-  {
-   "ticker": "META",
-   "title": "A $4.1 Billion Fund Dumps These 2 Stocks",
-   "link": "https://www.tikr.com/blog/a-4-1-billion-fund-dumps-these-2-stocks?ref=yahoofinance&tlnk=yf-261116-72v4857m&.tsrc=rss",
-   "time_utc": "2026-11-16T14:43:48Z",
-   "tone": 0,
-   "tags": [
-    "résultats"
-   ],
-   "id": "bd5d3a133e8a"
-  },
-  {
-   "ticker": "HD",
-   "title": "Disney Is the Cheaper Stock, but Home Depot Pays the Bigger Dividend. Which Is Better for Retirees?",
-   "link": "https://247wallst.com/investing/2026/11/16/disney-is-the-cheaper-stock-but-home-depot-pays-the-bigger-dividend-which-is-better-for-retirees/?.tsrc=rss",
-   "time_utc": "2026-11-16T14:42:45Z",
-   "tone": 0,
-   "tags": [
-    "résultats"
-   ],
-   "id": "2ad8eee6b684"
-  },
-  {
-   "ticker": "AVGO",
-   "title": "Can Credo Stock Double From Here?",
-   "link": "https://www.trefis.com/stock/crdo/articles/625294/can-credo-stock-double-from-here/2026-11-16?.tsrc=rss",
-   "time_utc": "2026-11-16T14:41:14Z",
-   "tone": 0,
-   "tags": [],
-   "id": "6dbb7b977471"
-  },
-  {
-   "ticker": "COST",
-   "title": "A $2.3 Billion Fund Just Bought These 3 Stocks",
-   "link": "https://www.tikr.com/blog/a-2-3-billion-fund-just-bought-these-3-stocks?ref=yahoofinance&tlnk=yf-261116-h6mpxc4w&.tsrc=rss",
-   "time_utc": "2026-11-16T14:38:36Z",
-   "tone": 0,
-   "tags": [
-    "résultats"
-   ],
-   "id": "a365026b1786"
-  },
-  {
-   "ticker": "ABBV",
-   "title": "A $2.1 Billion Fund Just Bought These 3 Stocks",
-   "link": "https://www.tikr.com/blog/a-2-1-billion-fund-just-bought-these-3-stocks?ref=yahoofinance&tlnk=yf-261116-65v6hqhh&.tsrc=rss",
-   "time_utc": "2026-11-16T14:38:00Z",
-   "tone": 0,
-   "tags": [],
-   "id": "8cae5c9cce3e"
-  },
-  {
-   "ticker": "JNJ",
-   "title": "J&J Stock Rallies More Than 10% in a Month: Time to Buy, Sell or Hold?",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/j-j-stock-rallies-more-143500272.html?.tsrc=rss",
-   "time_utc": "2026-11-16T14:35:00Z",
-   "tone": 1,
-   "tags": [
-    "résultats"
-   ],
-   "id": "e321ab613c8b"
-  },
-  {
-   "ticker": "PEP",
-   "title": "PepsiCo announces progress toward deforestation-free sourcing goal",
-   "link": "https://finance.yahoo.com/energy/articles/pepsico-announces-progress-toward-deforestation-143500697.html?.tsrc=rss",
-   "time_utc": "2026-11-16T14:35:00Z",
-   "tone": 0,
-   "tags": [],
-   "id": "94d0255104ae"
-  },
-  {
-   "ticker": "ORCL",
-   "title": "Market Chatter: Palantir Technologies Faces UK Competition for NHS Data Contract",
-   "link": "https://finance.yahoo.com/healthcare/articles/market-chatter-palantir-technologies-faces-143401727.html?.tsrc=rss",
-   "time_utc": "2026-11-16T14:34:01Z",
-   "tone": 1,
-   "tags": [],
-   "id": "4035aa5aa6bc"
-  },
-  {
-   "ticker": "META",
-   "title": "Arm Stock Could Be Worth Much More if These 3 Catalysts Materialize",
-   "link": "https://247wallst.com/investing/2026/11/16/arm-stock-could-be-worth-much-more-if-these-3-catalysts-materialize/?.tsrc=rss",
-   "time_utc": "2026-11-16T14:33:39Z",
-   "tone": 1,
-   "tags": [
-    "résultats"
-   ],
-   "id": "8dc5e75c396d"
-  },
-  {
-   "ticker": "META",
-   "title": "OpenAI Debuts ChatGPT Payment Method",
-   "link": "https://www.cryptoprowl.com/releases/openai-debuts-chatgpt-payment-method-7913?.tsrc=rss",
-   "time_utc": "2026-11-16T14:33:00Z",
-   "tone": 0,
-   "tags": [],
-   "id": "e56e208ebd02"
-  },
-  {
-   "ticker": "^GSPC",
-   "title": "This Week Marks the Stock Market's Real Test",
-   "link": "https://finance.yahoo.com/m/001dd8be-95b9-32ee-abea-daaf09cdda67/this-week-marks-the-stock.html?.tsrc=rss",
-   "time_utc": "2026-11-16T14:32:29Z",
-   "tone": 0,
-   "tags": [],
-   "id": "0390245b91a2"
-  },
-  {
-   "ticker": "AMZN",
-   "title": "Amazon faces first North American union contract at Canadian warehouse",
-   "link": "https://www.retail-insight-network.com/news/amazon-faces-first-north-american-union-contract/?.tsrc=rss",
-   "time_utc": "2026-11-16T14:30:04Z",
-   "tone": 1,
-   "tags": [],
-   "id": "539ab2b21f63"
-  },
-  {
-   "ticker": "ORCL",
-   "title": "Larry Ellison Has Lost $145 Billion in Net Worth Over the Past Year as Oracle Stock Fell 59% From Its Peak. Here's Why Oracle's Heavy Concentration in OpenAI Has Wall Street Nervous.",
-   "link": "https://www.fool.com/investing/2026/11/16/larry-ellison-has-lost-145-billion-in-net-worth-ov/?.tsrc=rss",
-   "time_utc": "2026-11-16T14:29:00Z",
-   "tone": 0,
-   "tags": [],
-   "id": "deced4cedcf1"
-  },
-  {
-   "ticker": "AVGO",
-   "title": "AMD, Broadcom stocks sink on tighter US chip rules, CoreWeave and Nebius shares drop",
-   "link": "https://finance.yahoo.com/markets/stocks/article/amd-broadcom-stocks-sink-on-tighter-us-chips-rules-coreweave-drops-143342994.html?.tsrc=rss",
-   "time_utc": "2026-11-16T14:24:53Z",
-   "tone": -1,
-   "tags": [],
-   "id": "f4fc3df32945"
-  },
-  {
-   "ticker": "XOM",
-   "title": "Petrobras Stock After Q3 Earnings - Buy, Sell or Hold for Now?",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/petrobras-stock-q3-earnings-buy-142300376.html?.tsrc=rss",
-   "time_utc": "2026-11-16T14:23:00Z",
-   "tone": 1,
-   "tags": [
-    "résultats"
-   ],
-   "id": "3c0207ba88fb"
-  },
-  {
-   "ticker": "AAPL",
-   "title": "Is Apple Losing Its Memory?",
-   "link": "https://www.fool.com/investing/2026/11/16/is-apple-losing-its-memory/?.tsrc=rss",
-   "time_utc": "2026-11-16T14:20:02Z",
-   "tone": 0,
-   "tags": [
-    "résultats"
-   ],
-   "id": "74003d327ce2"
-  },
-  {
-   "ticker": "ORCL",
-   "title": "The Trump-Xi Talks Just Got More Complicated",
-   "link": "https://finance.yahoo.com/m/3c412a6f-b69a-3818-95da-200c4dd797df/the-trump-xi-talks-just-got.html?.tsrc=rss",
-   "time_utc": "2026-11-16T14:19:00Z",
-   "tone": 0,
-   "tags": [],
-   "id": "f2fc175e889e"
-  },
-  {
-   "ticker": "JNJ",
-   "title": "Sector Update: Healthcare Stocks Advance Premarket Monday",
-   "link": "https://finance.yahoo.com/healthcare/articles/sector-healthcare-stocks-advance-premarket-141651684.html?.tsrc=rss",
-   "time_utc": "2026-11-16T14:16:51Z",
-   "tone": 0,
-   "tags": [],
-   "id": "e46c263e36ef"
-  },
-  {
-   "ticker": "XOM",
-   "title": "4 High Yield Stocks That Have Never Missed a Dividend Payment",
-   "link": "https://247wallst.com/investing/2026/11/16/4-high-yield-stocks-that-have-never-missed-a-dividend-payment/?.tsrc=rss",
-   "time_utc": "2026-11-16T14:16:25Z",
-   "tone": 0,
-   "tags": [],
-   "id": "2f07a75fe965"
-  },
-  {
-   "ticker": "CRM",
-   "title": "AI-native CRM Dreamteam raises $53M to challenge incumbents with AI coworkers who actually get work done",
-   "link": "https://finance.yahoo.com/technology/ai/articles/ai-native-crm-dreamteam-raises-141500585.html?.tsrc=rss",
-   "time_utc": "2026-11-16T14:15:00Z",
-   "tone": 1,
-   "tags": [],
-   "id": "bb7f3d31f30a"
-  },
-  {
-   "ticker": "^GSPC",
-   "title": "Here’s What Could Stop the Dollar’s Relentless Climb",
-   "link": "https://finance.yahoo.com/m/aa859ddc-37b0-3bf1-aa8a-26be9cc3b0b4/here%E2%80%99s-what-could-stop-the.html?.tsrc=rss",
-   "time_utc": "2026-11-16T14:15:00Z",
-   "tone": 0,
-   "tags": [],
-   "id": "6cc5f592b89a"
-  },
-  {
-   "ticker": "^GSPC",
-   "title": "Exchange-Traded Funds, Equity Futures Lower Pre-Bell Monday Amid Weakness in AI-Linked Stocks",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-equity-futures-141346501.html?.tsrc=rss",
-   "time_utc": "2026-11-16T14:13:46Z",
-   "tone": -1,
-   "tags": [],
-   "id": "4b0b17614cfc"
-  },
-  {
-   "ticker": "^GSPC",
-   "title": "Here's Why You Should Retain PHG Stock in Your Portfolio for Now",
-   "link": "https://finance.yahoo.com/healthcare/articles/heres-why-retain-phg-stock-141300786.html?.tsrc=rss",
-   "time_utc": "2026-11-16T14:13:00Z",
-   "tone": 1,
-   "tags": [
-    "résultats"
-   ],
-   "id": "bf6d13449830"
-  },
-  {
-   "ticker": "ORCL",
-   "title": "3 AI Stocks With Earnings Growth Over 45%",
-   "link": "https://finance.yahoo.com/technology/ai/articles/3-ai-stocks-earnings-growth-141229474.html?.tsrc=rss",
-   "time_utc": "2026-11-16T14:12:29Z",
-   "tone": 1,
-   "tags": [
-    "résultats"
-   ],
-   "id": "600ddb82bd0e"
-  },
-  {
-   "ticker": "^GSPC",
-   "title": "Hedge Funds Are Dumping Leverage at a Pace Last Seen in March 2020. A 63-Year-Old Who Moved His 401(k) to Cash Then Would Have Missed a 51.5% Rally. Here’s the Math",
-   "link": "https://247wallst.com/personal-finance/2026/11/16/hedge-funds-are-dumping-leverage-at-a-pace-last-seen-in-march-2020-a-63-year-old-who-moved-his-401k-to-cash-then-would-have-missed-a-51-5-rally-heres-the-math/?.tsrc=rss",
-   "time_utc": "2026-11-16T14:12:10Z",
-   "tone": 1,
-   "tags": [],
-   "id": "e384dc95d776"
-  },
-  {
-   "ticker": "BAC",
-   "title": "EVelution Energy Engages Bank of America to Assist in Structuring Proposed U.S. EXIM Financing",
-   "link": "https://finance.yahoo.com/energy/articles/evelution-energy-engages-bank-america-141200458.html?.tsrc=rss",
-   "time_utc": "2026-11-16T14:12:00Z",
-   "tone": 0,
-   "tags": [],
-   "id": "a1c1cde84fd2"
-  },
-  {
-   "ticker": "ORCL",
-   "title": "New Jersey-based Shore Medical Center and Shore Physicians Group Select Oracle Health's New AI-Powered EHR to Create a More Connected Experience for Patients and Care Teams",
-   "link": "https://finance.yahoo.com/healthcare/articles/jersey-based-shore-medical-center-141200352.html?.tsrc=rss",
-   "time_utc": "2026-11-16T14:12:00Z",
-   "tone": 1,
-   "tags": [],
-   "id": "63283b6e91c1"
-  },
-  {
-   "ticker": "AAPL",
-   "title": "Apple (AAPL) Picks Core Foldable Glass Supplier For iPhone Duo",
-   "link": "https://finance.yahoo.com/technology/articles/apple-aapl-picks-core-foldable-141052861.html?.tsrc=rss",
-   "time_utc": "2026-11-16T14:10:52Z",
-   "tone": 0,
-   "tags": [],
-   "id": "bba5446859da"
-  },
-  {
-   "ticker": "AVGO",
-   "title": "NVIDIA Falls 4% Ahead of Earnings as Elon Musk Joins Calls to Reinstate Jensen Huang; AMD Drops 6%, Taiwan Semiconductor Slides 5%",
-   "link": "https://247wallst.com/investing/2026/11/16/nvidia-falls-4-ahead-of-earnings-as-elon-musk-joins-calls-to-reinstate-jensen-huang-amd-drops-6-taiwan-semiconductor-slides-5/?.tsrc=rss",
-   "time_utc": "2026-11-16T14:10:51Z",
-   "tone": -1,
-   "tags": [
-    "résultats"
-   ],
-   "id": "2242ec8c208b"
-  },
-  {
-   "ticker": "MSFT",
-   "title": "One Magnificent Seven Stock Looks Ready for Its Next Big Move",
-   "link": "https://247wallst.com/investing/2026/11/16/one-magnificent-seven-stock-looks-ready-for-its-next-big-move/?.tsrc=rss",
-   "time_utc": "2026-11-16T14:08:41Z",
-   "tone": 0,
-   "tags": [],
-   "id": "ee46a569542a"
-  },
-  {
-   "ticker": "MSFT",
-   "title": "IBM vs. Jabil: Which Stock is Better Positioned for AI Growth Now?",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/ibm-vs-jabil-stock-better-140800976.html?.tsrc=rss",
-   "time_utc": "2026-11-16T14:08:00Z",
-   "tone": 1,
-   "tags": [],
-   "id": "6eb3fb5b067a"
-  },
-  {
-   "ticker": "MSFT",
-   "title": "Will Oracle's Debt-Funded Data Center Buildout Weigh on the Stock Now?",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/oracles-debt-funded-data-center-140700219.html?.tsrc=rss",
-   "time_utc": "2026-11-16T14:07:00Z",
-   "tone": 0,
-   "tags": [],
-   "id": "a7626c48117c"
-  },
-  {
-   "ticker": "BAC",
-   "title": "Bank of America Moves to Settle Fake-Accounts Lawsuit: What's Next?",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/bank-america-moves-settle-fake-140500783.html?.tsrc=rss",
-   "time_utc": "2026-11-16T14:05:00Z",
-   "tone": -1,
-   "tags": [
-    "juridique"
-   ],
-   "id": "0d9128586238"
-  },
-  {
-   "ticker": "AMZN",
-   "title": "Amazon's AWS Strikes $5B Data Center Deal With Blackstone Digital — A Look At Some Key Highlights",
-   "link": "https://stocktwits.com/news-articles/markets/equity/amazon-s-aws-strikes-5-b-data-center-deal-with-blackstone-digital-a-look-at-some-key-highlights/cNb7pf4R9gb?.tsrc=rss",
-   "time_utc": "2026-11-16T14:04:35Z",
-   "tone": 0,
-   "tags": [
-    "opération"
-   ],
-   "id": "1f7100044a06"
-  },
-  {
-   "ticker": "GOOGL",
-   "title": "Healthcare struggles to scale AI past pilot stage: Google report",
-   "link": "https://www.healthcaredive.com/news/healthcare-struggles-to-scale-ai-past-pilot-stage-google-report/874609/?.tsrc=rss",
-   "time_utc": "2026-11-16T14:03:00Z",
-   "tone": 0,
-   "tags": [],
-   "id": "11be91dc074b"
-  },
-  {
-   "ticker": "AAPL",
-   "title": "unspun Appoints Chuck Shehadi as Chief Executive Officer",
-   "link": "https://finance.yahoo.com/technology/articles/unspun-appoints-chuck-shehadi-chief-140000509.html?.tsrc=rss",
-   "time_utc": "2026-11-16T14:00:00Z",
-   "tone": 0,
-   "tags": [],
-   "id": "53f5fe83ba54"
-  },
-  {
-   "ticker": "XOM",
-   "title": "ExxonMobil: Cash tender offers to purchase certain outstanding notes",
-   "link": "https://finance.yahoo.com/energy/articles/exxonmobil-cash-tender-offers-purchase-140000142.html?.tsrc=rss",
-   "time_utc": "2026-11-16T14:00:00Z",
-   "tone": 0,
-   "tags": [],
-   "id": "e4ba1d2b76aa"
   }
  ],
  "tickers": [
@@ -1176,10 +1194,10 @@
    "tone_avg": null,
    "positive": 0,
    "negative": 0,
-   "move_1d_pct": 1.51,
-   "move_5d_pct": 2.9,
+   "move_1d_pct": 2.01,
+   "move_5d_pct": 3.41,
    "trend_up": true,
-   "volume_ratio": 0.43,
+   "volume_ratio": 1.14,
    "lab_strategies": [],
    "flag": null,
    "top_headline": null
@@ -1191,10 +1209,10 @@
    "tone_avg": null,
    "positive": 0,
    "negative": 0,
-   "move_1d_pct": 0.0,
-   "move_5d_pct": 2.04,
+   "move_1d_pct": -0.04,
+   "move_5d_pct": 2.0,
    "trend_up": true,
-   "volume_ratio": 0.41,
+   "volume_ratio": 0.83,
    "lab_strategies": [],
    "flag": null,
    "top_headline": null
@@ -1206,10 +1224,10 @@
    "tone_avg": null,
    "positive": 0,
    "negative": 0,
-   "move_1d_pct": -0.53,
-   "move_5d_pct": -0.22,
+   "move_1d_pct": -1.21,
+   "move_5d_pct": -0.9,
    "trend_up": true,
-   "volume_ratio": 0.35,
+   "volume_ratio": 0.92,
    "lab_strategies": [],
    "flag": null,
    "top_headline": null
@@ -1221,10 +1239,10 @@
    "tone_avg": null,
    "positive": 0,
    "negative": 0,
-   "move_1d_pct": -1.44,
-   "move_5d_pct": -1.13,
+   "move_1d_pct": -1.72,
+   "move_5d_pct": -1.41,
    "trend_up": false,
-   "volume_ratio": 0.3,
+   "volume_ratio": 0.55,
    "lab_strategies": [],
    "flag": null,
    "top_headline": null
@@ -1236,10 +1254,10 @@
    "tone_avg": null,
    "positive": 0,
    "negative": 0,
-   "move_1d_pct": -0.64,
-   "move_5d_pct": 3.17,
+   "move_1d_pct": -0.7,
+   "move_5d_pct": 3.11,
    "trend_up": true,
-   "volume_ratio": 0.25,
+   "volume_ratio": 0.66,
    "lab_strategies": [],
    "flag": null,
    "top_headline": null
@@ -1247,17 +1265,17 @@
   {
    "ticker": "BNP.PA",
    "name": "BNP Paribas",
-   "headlines": 0,
-   "tone_avg": null,
-   "positive": 0,
+   "headlines": 1,
+   "tone_avg": 1.0,
+   "positive": 1,
    "negative": 0,
-   "move_1d_pct": -0.07,
-   "move_5d_pct": 1.62,
+   "move_1d_pct": -0.14,
+   "move_5d_pct": 1.55,
    "trend_up": true,
-   "volume_ratio": 0.33,
+   "volume_ratio": 0.7,
    "lab_strategies": [],
    "flag": null,
-   "top_headline": null
+   "top_headline": "BNP Paribas SA : Rachat d'actions - déclaration des transactions sur actions propres du 9 novembre au 13 novembre 2026"
   },
   {
    "ticker": "EN.PA",
@@ -1269,7 +1287,7 @@
    "move_1d_pct": 0.81,
    "move_5d_pct": 4.18,
    "trend_up": true,
-   "volume_ratio": 0.27,
+   "volume_ratio": 1.03,
    "lab_strategies": [],
    "flag": null,
    "top_headline": null
@@ -1281,10 +1299,10 @@
    "tone_avg": null,
    "positive": 0,
    "negative": 0,
-   "move_1d_pct": -0.43,
-   "move_5d_pct": 1.37,
+   "move_1d_pct": -0.72,
+   "move_5d_pct": 1.07,
    "trend_up": true,
-   "volume_ratio": 0.45,
+   "volume_ratio": 1.04,
    "lab_strategies": [],
    "flag": null,
    "top_headline": null
@@ -1296,10 +1314,10 @@
    "tone_avg": null,
    "positive": 0,
    "negative": 0,
-   "move_1d_pct": -1.61,
-   "move_5d_pct": 1.66,
+   "move_1d_pct": -1.49,
+   "move_5d_pct": 1.78,
    "trend_up": true,
-   "volume_ratio": 0.21,
+   "volume_ratio": 0.7,
    "lab_strategies": [],
    "flag": null,
    "top_headline": null
@@ -1311,10 +1329,10 @@
    "tone_avg": null,
    "positive": 0,
    "negative": 0,
-   "move_1d_pct": 0.18,
-   "move_5d_pct": 4.82,
+   "move_1d_pct": 0.11,
+   "move_5d_pct": 4.75,
    "trend_up": false,
-   "volume_ratio": 0.24,
+   "volume_ratio": 0.5,
    "lab_strategies": [],
    "flag": null,
    "top_headline": null
@@ -1326,10 +1344,10 @@
    "tone_avg": null,
    "positive": 0,
    "negative": 0,
-   "move_1d_pct": 0.35,
-   "move_5d_pct": 0.63,
+   "move_1d_pct": 0.09,
+   "move_5d_pct": 0.38,
    "trend_up": false,
-   "volume_ratio": 0.18,
+   "volume_ratio": 0.43,
    "lab_strategies": [],
    "flag": null,
    "top_headline": null
@@ -1341,10 +1359,10 @@
    "tone_avg": null,
    "positive": 0,
    "negative": 0,
-   "move_1d_pct": 1.32,
-   "move_5d_pct": 4.52,
+   "move_1d_pct": 1.23,
+   "move_5d_pct": 4.43,
    "trend_up": true,
-   "volume_ratio": 0.51,
+   "volume_ratio": 1.19,
    "lab_strategies": [],
    "flag": null,
    "top_headline": null
@@ -1356,10 +1374,10 @@
    "tone_avg": null,
    "positive": 0,
    "negative": 0,
-   "move_1d_pct": -0.77,
-   "move_5d_pct": 0.12,
+   "move_1d_pct": -1.23,
+   "move_5d_pct": -0.35,
    "trend_up": true,
-   "volume_ratio": 0.14,
+   "volume_ratio": 0.74,
    "lab_strategies": [],
    "flag": null,
    "top_headline": null
@@ -1371,10 +1389,10 @@
    "tone_avg": null,
    "positive": 0,
    "negative": 0,
-   "move_1d_pct": 0.37,
-   "move_5d_pct": 2.57,
+   "move_1d_pct": 0.46,
+   "move_5d_pct": 2.66,
    "trend_up": true,
-   "volume_ratio": 0.13,
+   "volume_ratio": 0.49,
    "lab_strategies": [],
    "flag": null,
    "top_headline": null
@@ -1386,10 +1404,10 @@
    "tone_avg": null,
    "positive": 0,
    "negative": 0,
-   "move_1d_pct": -0.63,
-   "move_5d_pct": 1.58,
+   "move_1d_pct": -0.83,
+   "move_5d_pct": 1.37,
    "trend_up": true,
-   "volume_ratio": 0.26,
+   "volume_ratio": 0.68,
    "lab_strategies": [],
    "flag": null,
    "top_headline": null
@@ -1401,10 +1419,10 @@
    "tone_avg": null,
    "positive": 0,
    "negative": 0,
-   "move_1d_pct": 1.56,
-   "move_5d_pct": -2.83,
+   "move_1d_pct": 1.18,
+   "move_5d_pct": -3.2,
    "trend_up": true,
-   "volume_ratio": 0.21,
+   "volume_ratio": 0.61,
    "lab_strategies": [],
    "flag": null,
    "top_headline": null
@@ -1416,10 +1434,10 @@
    "tone_avg": null,
    "positive": 0,
    "negative": 0,
-   "move_1d_pct": -0.25,
-   "move_5d_pct": 0.6,
+   "move_1d_pct": -0.27,
+   "move_5d_pct": 0.57,
    "trend_up": true,
-   "volume_ratio": 0.19,
+   "volume_ratio": 0.42,
    "lab_strategies": [
     "Momentum actions CAC 40"
    ],
@@ -1433,10 +1451,10 @@
    "tone_avg": null,
    "positive": 0,
    "negative": 0,
-   "move_1d_pct": -0.47,
-   "move_5d_pct": 3.32,
+   "move_1d_pct": -0.41,
+   "move_5d_pct": 3.38,
    "trend_up": true,
-   "volume_ratio": 0.19,
+   "volume_ratio": 0.58,
    "lab_strategies": [
     "Plus haut annuel, CAC 40"
    ],
@@ -1450,10 +1468,10 @@
    "tone_avg": null,
    "positive": 0,
    "negative": 0,
-   "move_1d_pct": 0.75,
-   "move_5d_pct": -0.15,
+   "move_1d_pct": 0.6,
+   "move_5d_pct": -0.3,
    "trend_up": true,
-   "volume_ratio": 0.53,
+   "volume_ratio": 0.94,
    "lab_strategies": [],
    "flag": null,
    "top_headline": null
@@ -1465,10 +1483,10 @@
    "tone_avg": null,
    "positive": 0,
    "negative": 0,
-   "move_1d_pct": -0.37,
-   "move_5d_pct": -2.71,
+   "move_1d_pct": 0.13,
+   "move_5d_pct": -2.22,
    "trend_up": false,
-   "volume_ratio": 0.26,
+   "volume_ratio": 0.62,
    "lab_strategies": [],
    "flag": null,
    "top_headline": null
@@ -1480,10 +1498,10 @@
    "tone_avg": null,
    "positive": 0,
    "negative": 0,
-   "move_1d_pct": -0.19,
-   "move_5d_pct": 0.79,
+   "move_1d_pct": -0.23,
+   "move_5d_pct": 0.75,
    "trend_up": true,
-   "volume_ratio": 0.2,
+   "volume_ratio": 0.6,
    "lab_strategies": [],
    "flag": null,
    "top_headline": null
@@ -1495,10 +1513,10 @@
    "tone_avg": null,
    "positive": 0,
    "negative": 0,
-   "move_1d_pct": -0.81,
-   "move_5d_pct": 1.01,
+   "move_1d_pct": -0.88,
+   "move_5d_pct": 0.93,
    "trend_up": false,
-   "volume_ratio": 0.2,
+   "volume_ratio": 0.58,
    "lab_strategies": [],
    "flag": null,
    "top_headline": null
@@ -1510,10 +1528,10 @@
    "tone_avg": null,
    "positive": 0,
    "negative": 0,
-   "move_1d_pct": 0.16,
-   "move_5d_pct": 0.41,
+   "move_1d_pct": 0.14,
+   "move_5d_pct": 0.39,
    "trend_up": true,
-   "volume_ratio": 0.27,
+   "volume_ratio": 0.59,
    "lab_strategies": [],
    "flag": null,
    "top_headline": null
@@ -1525,10 +1543,10 @@
    "tone_avg": null,
    "positive": 0,
    "negative": 0,
-   "move_1d_pct": -1.25,
-   "move_5d_pct": -0.8,
+   "move_1d_pct": -1.42,
+   "move_5d_pct": -0.98,
    "trend_up": true,
-   "volume_ratio": 0.17,
+   "volume_ratio": 0.62,
    "lab_strategies": [],
    "flag": null,
    "top_headline": null
@@ -1540,10 +1558,10 @@
    "tone_avg": null,
    "positive": 0,
    "negative": 0,
-   "move_1d_pct": 0.1,
-   "move_5d_pct": 3.1,
+   "move_1d_pct": 0.0,
+   "move_5d_pct": 3.0,
    "trend_up": true,
-   "volume_ratio": 0.3,
+   "volume_ratio": 0.8,
    "lab_strategies": [],
    "flag": null,
    "top_headline": null
@@ -1555,10 +1573,10 @@
    "tone_avg": null,
    "positive": 0,
    "negative": 0,
-   "move_1d_pct": 0.47,
-   "move_5d_pct": 2.61,
+   "move_1d_pct": 0.71,
+   "move_5d_pct": 2.86,
    "trend_up": true,
-   "volume_ratio": 0.42,
+   "volume_ratio": 1.04,
    "lab_strategies": [],
    "flag": null,
    "top_headline": null
@@ -1570,10 +1588,10 @@
    "tone_avg": null,
    "positive": 0,
    "negative": 0,
-   "move_1d_pct": -0.95,
-   "move_5d_pct": 1.4,
+   "move_1d_pct": -1.14,
+   "move_5d_pct": 1.21,
    "trend_up": true,
-   "volume_ratio": 0.29,
+   "volume_ratio": 0.77,
    "lab_strategies": [],
    "flag": null,
    "top_headline": null
@@ -1585,10 +1603,10 @@
    "tone_avg": null,
    "positive": 0,
    "negative": 0,
-   "move_1d_pct": -1.51,
-   "move_5d_pct": -2.88,
+   "move_1d_pct": -1.83,
+   "move_5d_pct": -3.19,
    "trend_up": true,
-   "volume_ratio": 0.26,
+   "volume_ratio": 0.75,
    "lab_strategies": [],
    "flag": null,
    "top_headline": null
@@ -1600,10 +1618,10 @@
    "tone_avg": null,
    "positive": 0,
    "negative": 0,
-   "move_1d_pct": 1.17,
-   "move_5d_pct": 1.44,
+   "move_1d_pct": 1.08,
+   "move_5d_pct": 1.34,
    "trend_up": false,
-   "volume_ratio": 0.25,
+   "volume_ratio": 0.72,
    "lab_strategies": [],
    "flag": null,
    "top_headline": null
@@ -1615,10 +1633,10 @@
    "tone_avg": null,
    "positive": 0,
    "negative": 0,
-   "move_1d_pct": -0.08,
-   "move_5d_pct": 0.4,
+   "move_1d_pct": -0.37,
+   "move_5d_pct": 0.11,
    "trend_up": true,
-   "volume_ratio": 0.38,
+   "volume_ratio": 0.71,
    "lab_strategies": [],
    "flag": null,
    "top_headline": null
@@ -1630,10 +1648,10 @@
    "tone_avg": null,
    "positive": 0,
    "negative": 0,
-   "move_1d_pct": 1.02,
-   "move_5d_pct": 3.18,
+   "move_1d_pct": 0.82,
+   "move_5d_pct": 2.99,
    "trend_up": true,
-   "volume_ratio": 0.24,
+   "volume_ratio": 0.54,
    "lab_strategies": [],
    "flag": null,
    "top_headline": null
@@ -1645,10 +1663,10 @@
    "tone_avg": null,
    "positive": 0,
    "negative": 0,
-   "move_1d_pct": -0.76,
-   "move_5d_pct": 3.07,
+   "move_1d_pct": -0.78,
+   "move_5d_pct": 3.05,
    "trend_up": false,
-   "volume_ratio": 0.27,
+   "volume_ratio": 0.67,
    "lab_strategies": [],
    "flag": null,
    "top_headline": null
@@ -1660,10 +1678,10 @@
    "tone_avg": null,
    "positive": 0,
    "negative": 0,
-   "move_1d_pct": -0.58,
-   "move_5d_pct": 1.28,
+   "move_1d_pct": -0.66,
+   "move_5d_pct": 1.2,
    "trend_up": false,
-   "volume_ratio": 0.17,
+   "volume_ratio": 0.46,
    "lab_strategies": [],
    "flag": null,
    "top_headline": null
@@ -1675,10 +1693,10 @@
    "tone_avg": null,
    "positive": 0,
    "negative": 0,
-   "move_1d_pct": -4.23,
-   "move_5d_pct": -15.29,
+   "move_1d_pct": -3.66,
+   "move_5d_pct": -14.78,
    "trend_up": false,
-   "volume_ratio": 0.71,
+   "volume_ratio": 0.96,
    "lab_strategies": [],
    "flag": null,
    "top_headline": null
@@ -1690,10 +1708,10 @@
    "tone_avg": null,
    "positive": 0,
    "negative": 0,
-   "move_1d_pct": -2.12,
-   "move_5d_pct": 3.6,
+   "move_1d_pct": -2.09,
+   "move_5d_pct": 3.63,
    "trend_up": false,
-   "volume_ratio": 0.52,
+   "volume_ratio": 0.87,
    "lab_strategies": [],
    "flag": null,
    "top_headline": null
@@ -1705,10 +1723,10 @@
    "tone_avg": null,
    "positive": 0,
    "negative": 0,
-   "move_1d_pct": 1.1,
-   "move_5d_pct": 0.39,
+   "move_1d_pct": 1.06,
+   "move_5d_pct": 0.35,
    "trend_up": true,
-   "volume_ratio": 0.23,
+   "volume_ratio": 0.86,
    "lab_strategies": [],
    "flag": null,
    "top_headline": null
@@ -1720,10 +1738,10 @@
    "tone_avg": null,
    "positive": 0,
    "negative": 0,
-   "move_1d_pct": 0.02,
-   "move_5d_pct": 4.37,
+   "move_1d_pct": -0.26,
+   "move_5d_pct": 4.08,
    "trend_up": true,
-   "volume_ratio": 0.38,
+   "volume_ratio": 0.74,
    "lab_strategies": [
     "Plus haut annuel, CAC 40"
    ],
@@ -1737,10 +1755,10 @@
    "tone_avg": null,
    "positive": 0,
    "negative": 0,
-   "move_1d_pct": 1.05,
-   "move_5d_pct": -0.25,
+   "move_1d_pct": 0.79,
+   "move_5d_pct": -0.51,
    "trend_up": true,
-   "volume_ratio": 0.14,
+   "volume_ratio": 0.72,
    "lab_strategies": [],
    "flag": null,
    "top_headline": null
@@ -1755,7 +1773,7 @@
    "move_1d_pct": -0.31,
    "move_5d_pct": 0.93,
    "trend_up": true,
-   "volume_ratio": 0.21,
+   "volume_ratio": 0.56,
    "lab_strategies": [],
    "flag": null,
    "top_headline": null
@@ -1763,62 +1781,62 @@
   {
    "ticker": "DG.PA",
    "name": "Vinci",
-   "headlines": 0,
-   "tone_avg": null,
+   "headlines": 1,
+   "tone_avg": 0.0,
    "positive": 0,
    "negative": 0,
-   "move_1d_pct": -0.04,
-   "move_5d_pct": 1.54,
+   "move_1d_pct": -0.22,
+   "move_5d_pct": 1.36,
    "trend_up": true,
-   "volume_ratio": 0.3,
+   "volume_ratio": 0.71,
    "lab_strategies": [],
    "flag": null,
-   "top_headline": null
+   "top_headline": "VINCI : Déclaration des transactions sur actions propres du 9 novembre au 13 novembre 2026"
   },
   {
    "ticker": "AAPL",
    "name": "AAPL",
    "headlines": 18,
-   "tone_avg": 0.17,
-   "positive": 4,
-   "negative": 1,
-   "move_1d_pct": -0.51,
-   "move_5d_pct": 1.07,
+   "tone_avg": 0.0,
+   "positive": 3,
+   "negative": 3,
+   "move_1d_pct": -1.22,
+   "move_5d_pct": 0.35,
    "trend_up": true,
-   "volume_ratio": 0.26,
+   "volume_ratio": 0.48,
    "lab_strategies": [],
    "flag": null,
-   "top_headline": "Is an Equal-Weight S&P 500 Fund Safer Right Now Than the One You Own?"
+   "top_headline": "Soros’s Fund Sold a Quarter of Its Berkshire Shares. Today Berkshire Reveals Its Own Trades"
   },
   {
    "ticker": "MSFT",
    "name": "MSFT",
-   "headlines": 16,
-   "tone_avg": 0.38,
-   "positive": 8,
-   "negative": 2,
-   "move_1d_pct": 0.32,
-   "move_5d_pct": -3.6,
-   "trend_up": true,
-   "volume_ratio": 0.32,
+   "headlines": 19,
+   "tone_avg": -0.11,
+   "positive": 3,
+   "negative": 5,
+   "move_1d_pct": -1.11,
+   "move_5d_pct": -4.97,
+   "trend_up": false,
+   "volume_ratio": 0.61,
    "lab_strategies": [],
    "flag": null,
-   "top_headline": "Microsoft Pinpoints What Knocked Outlook Offline Worldwide"
+   "top_headline": "OpenAI Hit With Lawsuit by California AG Over Alleged Inadequate Safeguards, Monitoring of AI Models"
   },
   {
    "ticker": "NVDA",
    "name": "NVDA",
-   "headlines": 16,
-   "tone_avg": 0.19,
-   "positive": 4,
-   "negative": 1,
-   "move_1d_pct": -1.87,
-   "move_5d_pct": -10.56,
+   "headlines": 13,
+   "tone_avg": 0.15,
+   "positive": 5,
+   "negative": 3,
+   "move_1d_pct": -4.41,
+   "move_5d_pct": -12.88,
    "trend_up": false,
-   "volume_ratio": 0.69,
+   "volume_ratio": 1.22,
    "lab_strategies": [],
    "flag": null,
-   "top_headline": "Arm CEO Rene Haas Is at 23% Odds to Run Nvidia. That’s a Problem for Arm"
+   "top_headline": "Stock Market Today: Dow Dives As Nvidia Makes Huang Decision; These AI Plays Plunge (Live Coverage)"
   },
   {
    "ticker": "AMZN",
@@ -1827,88 +1845,90 @@
    "tone_avg": 0.07,
    "positive": 3,
    "negative": 2,
-   "move_1d_pct": -1.93,
-   "move_5d_pct": -2.02,
+   "move_1d_pct": -3.21,
+   "move_5d_pct": -3.31,
    "trend_up": true,
-   "volume_ratio": 0.34,
-   "lab_strategies": [],
+   "volume_ratio": 0.65,
+   "lab_strategies": [
+    "Retour à la moyenne (RSI 2), actions US"
+   ],
    "flag": null,
-   "top_headline": "AST SpaceMobile Sinks 8% as ULA’s Vulcan Rocket Failure Rattles Space Stocks"
+   "top_headline": "Dan Ives Has One IPO in Mind as a Test for AI Stocks"
   },
   {
    "ticker": "GOOGL",
    "name": "GOOGL",
-   "headlines": 11,
-   "tone_avg": 0.27,
-   "positive": 5,
+   "headlines": 12,
+   "tone_avg": 0.0,
+   "positive": 2,
    "negative": 2,
-   "move_1d_pct": -2.35,
-   "move_5d_pct": 0.24,
+   "move_1d_pct": -3.74,
+   "move_5d_pct": -1.19,
    "trend_up": false,
-   "volume_ratio": 0.26,
+   "volume_ratio": 0.46,
    "lab_strategies": [],
    "flag": null,
-   "top_headline": "Broadcom’s Quiet 8% November Move Could Ramp Up Very Quickly in This Volatile Climate and I’m Buying"
+   "top_headline": "Alphabet Stocks Decline 3.1% as $10 Billion Anthropic Buy Lifts Stake Before IPO"
   },
   {
    "ticker": "META",
    "name": "META",
-   "headlines": 10,
-   "tone_avg": 0.4,
-   "positive": 4,
+   "headlines": 14,
+   "tone_avg": 0.64,
+   "positive": 9,
    "negative": 0,
-   "move_1d_pct": -1.7,
-   "move_5d_pct": -1.65,
+   "move_1d_pct": -2.39,
+   "move_5d_pct": -2.34,
    "trend_up": false,
-   "volume_ratio": 0.17,
+   "volume_ratio": 0.29,
    "lab_strategies": [],
-   "flag": null,
-   "top_headline": "Mapbox Powers Hands-free Cycling Navigation on Meta Ray-Bans"
+   "flag": "divergence : ton positif mais le cours baisse",
+   "top_headline": "Meta’s Prepayment Is Buying Oklo’s Nuclear Fuel for Up to Five Reactors"
   },
   {
    "ticker": "BRK-B",
    "name": "BRK-B",
-   "headlines": 15,
-   "tone_avg": 0.4,
-   "positive": 6,
+   "headlines": 11,
+   "tone_avg": 0.18,
+   "positive": 2,
    "negative": 0,
-   "move_1d_pct": 0.3,
-   "move_5d_pct": 3.38,
+   "move_1d_pct": -0.27,
+   "move_5d_pct": 2.8,
    "trend_up": true,
-   "volume_ratio": 0.28,
+   "volume_ratio": 0.45,
    "lab_strategies": [],
    "flag": null,
-   "top_headline": "Warren Buffett says kindness 'compounds' as he gifts about $5.5 billion to his family's foundations"
+   "top_headline": "What Does Warren Buffett’s 90/10 Rule Say to a 74-Year-Old With $1 Million of Coca-Cola at a Record?"
   },
   {
    "ticker": "JPM",
    "name": "JPM",
-   "headlines": 9,
-   "tone_avg": 0.33,
-   "positive": 4,
-   "negative": 1,
-   "move_1d_pct": -0.87,
-   "move_5d_pct": 0.32,
-   "trend_up": true,
-   "volume_ratio": 0.18,
+   "headlines": 16,
+   "tone_avg": 0.44,
+   "positive": 7,
+   "negative": 0,
+   "move_1d_pct": -2.36,
+   "move_5d_pct": -1.19,
+   "trend_up": false,
+   "volume_ratio": 0.52,
    "lab_strategies": [],
-   "flag": null,
-   "top_headline": "Bank Stocks Back In Focus As Wells Fargo And JPMorgan Face Tougher Rules"
+   "flag": "divergence : ton positif mais le cours baisse",
+   "top_headline": "3 Financial Stocks to Buy and Hold That Turned $1,000 Into More Than $5,000 Over the Past Decade, Counting Dividends"
   },
   {
    "ticker": "V",
    "name": "V",
-   "headlines": 10,
-   "tone_avg": 0.4,
-   "positive": 5,
-   "negative": 1,
-   "move_1d_pct": 0.88,
-   "move_5d_pct": 1.74,
+   "headlines": 16,
+   "tone_avg": 0.31,
+   "positive": 8,
+   "negative": 3,
+   "move_1d_pct": 0.07,
+   "move_5d_pct": 0.93,
    "trend_up": true,
-   "volume_ratio": 0.23,
+   "volume_ratio": 0.47,
    "lab_strategies": [],
    "flag": null,
-   "top_headline": "Beat the Market the Zacks Way: Vera Bradley, Herc, Visa in Focus"
+   "top_headline": "Visa Warns of AI-Driven ‘Advanced Intrusion’ Surge in Global Payment Threats"
   },
   {
    "ticker": "UNH",
@@ -1917,10 +1937,10 @@
    "tone_avg": 0.0,
    "positive": 0,
    "negative": 0,
-   "move_1d_pct": 0.83,
-   "move_5d_pct": 3.33,
+   "move_1d_pct": 0.61,
+   "move_5d_pct": 3.1,
    "trend_up": true,
-   "volume_ratio": 0.28,
+   "volume_ratio": 0.52,
    "lab_strategies": [],
    "flag": null,
    "top_headline": "State Street Health Care SPDR (XLV) Sells Eli Lilly and J&J on Nov. 12"
@@ -1928,44 +1948,44 @@
   {
    "ticker": "XOM",
    "name": "XOM",
-   "headlines": 8,
-   "tone_avg": 0.12,
-   "positive": 1,
-   "negative": 0,
-   "move_1d_pct": -1.62,
-   "move_5d_pct": 1.88,
+   "headlines": 12,
+   "tone_avg": 0.08,
+   "positive": 2,
+   "negative": 1,
+   "move_1d_pct": -2.23,
+   "move_5d_pct": 1.25,
    "trend_up": false,
-   "volume_ratio": 0.23,
+   "volume_ratio": 0.43,
    "lab_strategies": [],
    "flag": null,
-   "top_headline": "ExxonMobil starts production at Uaru, raising Guyana’s installed capacity to 1.1 million barrels per day"
+   "top_headline": "Nvidia board needs 'some heavyweights,' ex-Medtronic CEO Bill George says"
   },
   {
    "ticker": "JNJ",
    "name": "JNJ",
    "headlines": 16,
-   "tone_avg": 0.25,
-   "positive": 4,
-   "negative": 0,
-   "move_1d_pct": -0.18,
-   "move_5d_pct": 1.11,
+   "tone_avg": 0.31,
+   "positive": 6,
+   "negative": 1,
+   "move_1d_pct": -1.0,
+   "move_5d_pct": 0.27,
    "trend_up": true,
-   "volume_ratio": 0.26,
+   "volume_ratio": 0.5,
    "lab_strategies": [],
    "flag": null,
-   "top_headline": "Treasury Yields Just Hit 4.88%, Changing the Math for Dividend Investors"
+   "top_headline": "J&J Pushes Into Retinal Disease With $2.2 Billion Ollin Deal"
   },
   {
    "ticker": "PG",
    "name": "PG",
-   "headlines": 4,
-   "tone_avg": 0.5,
-   "positive": 2,
+   "headlines": 5,
+   "tone_avg": 0.6,
+   "positive": 3,
    "negative": 0,
-   "move_1d_pct": 1.53,
-   "move_5d_pct": 2.42,
+   "move_1d_pct": 1.7,
+   "move_5d_pct": 2.6,
    "trend_up": true,
-   "volume_ratio": 0.37,
+   "volume_ratio": 0.67,
    "lab_strategies": [
     "Momentum grandes actions US"
    ],
@@ -1975,92 +1995,92 @@
   {
    "ticker": "MA",
    "name": "MA",
-   "headlines": 1,
+   "headlines": 2,
    "tone_avg": 0.0,
    "positive": 0,
    "negative": 0,
-   "move_1d_pct": 0.61,
-   "move_5d_pct": 1.44,
+   "move_1d_pct": 0.05,
+   "move_5d_pct": 0.88,
    "trend_up": true,
-   "volume_ratio": 0.2,
+   "volume_ratio": 0.4,
    "lab_strategies": [],
    "flag": null,
-   "top_headline": "Mambu and Mastercard expand cross-border payment capabilities for banks across APAC"
+   "top_headline": "Mastercard pilots AI travel purchases"
   },
   {
    "ticker": "HD",
    "name": "HD",
-   "headlines": 12,
-   "tone_avg": -0.33,
-   "positive": 1,
+   "headlines": 16,
+   "tone_avg": -0.19,
+   "positive": 2,
    "negative": 5,
-   "move_1d_pct": -0.25,
-   "move_5d_pct": -1.58,
+   "move_1d_pct": -0.66,
+   "move_5d_pct": -1.99,
    "trend_up": true,
-   "volume_ratio": 0.35,
+   "volume_ratio": 0.75,
    "lab_strategies": [],
    "flag": null,
-   "top_headline": "Home Depot Is Beating Lowe’s. The November 17 Report Has to Show It in Margins"
+   "top_headline": "Home Depot, Lowe's Q3 Results Likely to Dampen Recovery Expectations, Oppenheimer Says"
   },
   {
    "ticker": "COST",
    "name": "COST",
-   "headlines": 8,
-   "tone_avg": 0.5,
+   "headlines": 10,
+   "tone_avg": 0.3,
    "positive": 4,
-   "negative": 0,
-   "move_1d_pct": 0.49,
-   "move_5d_pct": 4.26,
+   "negative": 1,
+   "move_1d_pct": 0.33,
+   "move_5d_pct": 4.1,
    "trend_up": true,
-   "volume_ratio": 0.31,
+   "volume_ratio": 0.57,
    "lab_strategies": [],
    "flag": null,
-   "top_headline": "Costco Hits 52-Week High on Strong Sales and Special Dividend"
+   "top_headline": "Tyson, Starbucks Lead The S&P 500, Nasdaq 100 As Investors Play Defense"
   },
   {
    "ticker": "ABBV",
    "name": "ABBV",
-   "headlines": 5,
-   "tone_avg": 0.2,
-   "positive": 1,
+   "headlines": 9,
+   "tone_avg": 0.22,
+   "positive": 2,
    "negative": 0,
-   "move_1d_pct": 1.0,
-   "move_5d_pct": 1.59,
+   "move_1d_pct": -0.2,
+   "move_5d_pct": 0.39,
    "trend_up": true,
-   "volume_ratio": 0.24,
+   "volume_ratio": 0.43,
    "lab_strategies": [],
    "flag": null,
-   "top_headline": "4D Molecular Therapeutics May Benefit From Upcoming Wet AMD Gene Therapy Data, RBC Says"
+   "top_headline": "AbbVie (ABBV) Expands Its Pipeline With New AI Drug Discovery Partnerships"
   },
   {
    "ticker": "MRK",
    "name": "MRK",
-   "headlines": 3,
-   "tone_avg": 0.67,
-   "positive": 2,
+   "headlines": 4,
+   "tone_avg": 0.25,
+   "positive": 1,
    "negative": 0,
-   "move_1d_pct": -0.47,
-   "move_5d_pct": -1.14,
-   "trend_up": true,
-   "volume_ratio": 0.17,
+   "move_1d_pct": -1.43,
+   "move_5d_pct": -2.1,
+   "trend_up": false,
+   "volume_ratio": 0.43,
    "lab_strategies": [],
    "flag": null,
-   "top_headline": "Summit Crumbles After FDA Rejects Merck-Rivaling Lung Cancer Drug"
+   "top_headline": "How Much Does a 56-Year-Old Need Invested to Replace a $145,000 Salary With Dividends?"
   },
   {
    "ticker": "PEP",
    "name": "PEP",
-   "headlines": 5,
-   "tone_avg": 0.2,
-   "positive": 2,
-   "negative": 1,
-   "move_1d_pct": 0.7,
-   "move_5d_pct": 3.23,
+   "headlines": 8,
+   "tone_avg": 0.25,
+   "positive": 4,
+   "negative": 2,
+   "move_1d_pct": 0.75,
+   "move_5d_pct": 3.28,
    "trend_up": true,
-   "volume_ratio": 0.28,
+   "volume_ratio": 0.55,
    "lab_strategies": [],
    "flag": null,
-   "top_headline": "Coca-Cola Has Crushed PepsiCo in 2026, but Retirement Investors Face a Different Dividend Decision"
+   "top_headline": "2 Stocks With Dividend Yields of 4% or More to Buy in November"
   },
   {
    "ticker": "KO",
@@ -2069,10 +2089,10 @@
    "tone_avg": 1.0,
    "positive": 2,
    "negative": 0,
-   "move_1d_pct": 0.32,
-   "move_5d_pct": 3.69,
+   "move_1d_pct": -0.02,
+   "move_5d_pct": 3.34,
    "trend_up": true,
-   "volume_ratio": 0.38,
+   "volume_ratio": 0.63,
    "lab_strategies": [
     "Plus haut annuel, actions US"
    ],
@@ -2083,75 +2103,75 @@
    "ticker": "AVGO",
    "name": "AVGO",
    "headlines": 12,
-   "tone_avg": -0.33,
-   "positive": 1,
+   "tone_avg": -0.17,
+   "positive": 3,
    "negative": 5,
-   "move_1d_pct": -2.9,
-   "move_5d_pct": 5.47,
+   "move_1d_pct": -4.08,
+   "move_5d_pct": 4.19,
    "trend_up": false,
-   "volume_ratio": 0.34,
+   "volume_ratio": 0.57,
    "lab_strategies": [],
-   "flag": "mauvaise nouvelle confirmée par le cours",
-   "top_headline": "Chip stocks fall on US semiconductor restrictions: AlphaCheck"
+   "flag": null,
+   "top_headline": "ACC Granted Leave to Intervene Before EU General Court in Broadcom Legal Privilege Case"
   },
   {
    "ticker": "LLY",
    "name": "LLY",
-   "headlines": 12,
-   "tone_avg": 0.25,
+   "headlines": 14,
+   "tone_avg": 0.21,
    "positive": 4,
    "negative": 1,
-   "move_1d_pct": 0.76,
-   "move_5d_pct": 3.01,
+   "move_1d_pct": -0.55,
+   "move_5d_pct": 1.67,
    "trend_up": true,
-   "volume_ratio": 0.36,
+   "volume_ratio": 0.58,
    "lab_strategies": [
     "Momentum grandes actions US"
    ],
    "flag": null,
-   "top_headline": "CVS Sees a Possible Break-Even Point for GLP-1s"
+   "top_headline": "Should You Trim Or Add To Your Viking Therapeutics Position?"
   },
   {
    "ticker": "WMT",
    "name": "WMT",
-   "headlines": 9,
-   "tone_avg": 0.0,
-   "positive": 1,
+   "headlines": 11,
+   "tone_avg": 0.09,
+   "positive": 2,
    "negative": 1,
-   "move_1d_pct": 0.16,
-   "move_5d_pct": 2.09,
+   "move_1d_pct": -0.01,
+   "move_5d_pct": 1.92,
    "trend_up": true,
-   "volume_ratio": 0.28,
+   "volume_ratio": 0.46,
    "lab_strategies": [],
    "flag": null,
-   "top_headline": "Fayetteville Sits in the Ozarks Near Walmart’s Hometown. What It Takes to Retire There at 65 on $750,000"
+   "top_headline": "Walmart CEO Is Launching AI Agent Profiles as United Airlines Blocks Third-Party Agents"
   },
   {
    "ticker": "BAC",
    "name": "BAC",
-   "headlines": 6,
-   "tone_avg": 0.17,
-   "positive": 2,
-   "negative": 1,
-   "move_1d_pct": -1.2,
-   "move_5d_pct": -0.28,
+   "headlines": 13,
+   "tone_avg": 0.31,
+   "positive": 6,
+   "negative": 2,
+   "move_1d_pct": -2.08,
+   "move_5d_pct": -1.17,
    "trend_up": false,
-   "volume_ratio": 0.22,
+   "volume_ratio": 0.49,
    "lab_strategies": [],
-   "flag": null,
-   "top_headline": "Bank of America CEO Moynihan on IPO Pipeline, AI, Consumer Strength"
+   "flag": "divergence : ton positif mais le cours baisse",
+   "top_headline": "Nvidia Poised for Third-Quarter Beat Amid CEO Transition, BofA Says"
   },
   {
    "ticker": "CVX",
    "name": "CVX",
-   "headlines": 2,
-   "tone_avg": 0.5,
+   "headlines": 3,
+   "tone_avg": 0.33,
    "positive": 1,
    "negative": 0,
-   "move_1d_pct": -1.06,
-   "move_5d_pct": 3.21,
+   "move_1d_pct": -1.24,
+   "move_5d_pct": 3.02,
    "trend_up": true,
-   "volume_ratio": 0.19,
+   "volume_ratio": 0.39,
    "lab_strategies": [
     "Plus haut annuel, actions US"
    ],
@@ -2161,77 +2181,77 @@
   {
    "ticker": "ORCL",
    "name": "ORCL",
-   "headlines": 17,
-   "tone_avg": 0.29,
-   "positive": 5,
-   "negative": 0,
-   "move_1d_pct": -3.35,
-   "move_5d_pct": 1.14,
+   "headlines": 18,
+   "tone_avg": 0.22,
+   "positive": 6,
+   "negative": 2,
+   "move_1d_pct": -5.31,
+   "move_5d_pct": -0.91,
    "trend_up": false,
-   "volume_ratio": 0.18,
+   "volume_ratio": 0.32,
    "lab_strategies": [],
    "flag": "divergence : ton positif mais le cours baisse",
-   "top_headline": "Anthropic gears up for the largest IPO in history, but do the economics work?"
+   "top_headline": "CoreWeave, Oracle and Nebius Plunge as Nvidia Fallout Rattles AI Stocks"
   },
   {
    "ticker": "CSCO",
    "name": "CSCO",
-   "headlines": 9,
-   "tone_avg": 0.33,
-   "positive": 3,
+   "headlines": 11,
+   "tone_avg": 0.36,
+   "positive": 4,
    "negative": 0,
-   "move_1d_pct": -1.28,
-   "move_5d_pct": -4.29,
+   "move_1d_pct": -1.44,
+   "move_5d_pct": -4.45,
    "trend_up": false,
-   "volume_ratio": 0.27,
+   "volume_ratio": 0.5,
    "lab_strategies": [],
    "flag": null,
-   "top_headline": "We 'need' AI data centers to be built in the US: Cisco CEO"
+   "top_headline": "C Spire Wins Cisco’s 2026 Service Provider Partner of the Year Award for the USA Central Area"
   },
   {
    "ticker": "ADBE",
    "name": "ADBE",
-   "headlines": 2,
+   "headlines": 3,
    "tone_avg": 0.0,
    "positive": 1,
    "negative": 1,
-   "move_1d_pct": 3.27,
-   "move_5d_pct": 5.78,
+   "move_1d_pct": 1.54,
+   "move_5d_pct": 4.01,
    "trend_up": true,
-   "volume_ratio": 0.32,
+   "volume_ratio": 0.59,
    "lab_strategies": [],
    "flag": null,
-   "top_headline": "Holiday Shipping Tests Where AI Should Hand Off to Human Support"
+   "top_headline": "How Much Should One Lagging Number Worry Autodesk Stock Holders?"
   },
   {
    "ticker": "CRM",
    "name": "CRM",
-   "headlines": 8,
-   "tone_avg": 0.38,
+   "headlines": 10,
+   "tone_avg": 0.2,
    "positive": 3,
-   "negative": 0,
-   "move_1d_pct": 0.02,
-   "move_5d_pct": 1.37,
+   "negative": 1,
+   "move_1d_pct": -1.17,
+   "move_5d_pct": 0.16,
    "trend_up": false,
-   "volume_ratio": 0.21,
+   "volume_ratio": 0.4,
    "lab_strategies": [],
    "flag": null,
-   "top_headline": "Model N Appoints Koti Reddy Nandyala as Chief Technology Officer to Accelerate Platform Innovation"
+   "top_headline": "Stock Of The Day Navan Breaks Out, Defies Software Industry Slump"
   },
   {
    "ticker": "NFLX",
    "name": "NFLX",
-   "headlines": 4,
-   "tone_avg": 0.25,
+   "headlines": 6,
+   "tone_avg": 0.0,
    "positive": 1,
-   "negative": 0,
-   "move_1d_pct": -1.0,
-   "move_5d_pct": -3.78,
+   "negative": 1,
+   "move_1d_pct": -2.23,
+   "move_5d_pct": -4.98,
    "trend_up": false,
-   "volume_ratio": 0.23,
+   "volume_ratio": 0.5,
    "lab_strategies": [],
    "flag": null,
-   "top_headline": "US High Relative Profitability (DUHP) Buys $69.9 Million More Broadcom on Nov. 12"
+   "top_headline": "Netflix Stock Now Trades at a 70% Discount to Its Peak Valuation, and One Number Is to Blame"
   },
   {
    "ticker": "CW8.PA",
@@ -2240,11 +2260,12 @@
    "tone_avg": null,
    "positive": 0,
    "negative": 0,
-   "move_1d_pct": -0.44,
-   "move_5d_pct": 1.05,
+   "move_1d_pct": -0.34,
+   "move_5d_pct": 1.15,
    "trend_up": true,
-   "volume_ratio": 0.46,
+   "volume_ratio": 0.6,
    "lab_strategies": [
+    "Versement mensuel 85 % Monde + 15 % émergents",
     "Versement mensuel ETF Monde (référence)",
     "ETF Monde + filtre de tendance"
    ],
@@ -2258,10 +2279,10 @@
    "tone_avg": null,
    "positive": 0,
    "negative": 0,
-   "move_1d_pct": -0.44,
-   "move_5d_pct": 1.25,
-   "trend_up": false,
-   "volume_ratio": 0.31,
+   "move_1d_pct": -0.34,
+   "move_5d_pct": 1.35,
+   "trend_up": true,
+   "volume_ratio": 0.38,
    "lab_strategies": [
     "Dual momentum sur 6 ETF",
     "Versement mensuel ETF S&P 500",
@@ -2277,10 +2298,10 @@
    "tone_avg": null,
    "positive": 0,
    "negative": 0,
-   "move_1d_pct": -0.91,
-   "move_5d_pct": 0.79,
+   "move_1d_pct": -0.71,
+   "move_5d_pct": 0.99,
    "trend_up": false,
-   "volume_ratio": 0.6,
+   "volume_ratio": 0.62,
    "lab_strategies": [],
    "flag": null,
    "top_headline": null
@@ -2292,11 +2313,13 @@
    "tone_avg": null,
    "positive": 0,
    "negative": 0,
-   "move_1d_pct": -1.47,
-   "move_5d_pct": -0.55,
+   "move_1d_pct": -1.48,
+   "move_5d_pct": -0.56,
    "trend_up": false,
-   "volume_ratio": 1.15,
-   "lab_strategies": [],
+   "volume_ratio": 1.17,
+   "lab_strategies": [
+    "Versement mensuel 85 % Monde + 15 % émergents"
+   ],
    "flag": null,
    "top_headline": null
   },
@@ -2307,10 +2330,10 @@
    "tone_avg": null,
    "positive": 0,
    "negative": 0,
-   "move_1d_pct": -0.17,
-   "move_5d_pct": 1.05,
+   "move_1d_pct": -0.3,
+   "move_5d_pct": 0.91,
    "trend_up": true,
-   "volume_ratio": 0.57,
+   "volume_ratio": 0.69,
    "lab_strategies": [
     "Dual momentum sur 6 ETF"
    ],
@@ -2324,10 +2347,10 @@
    "tone_avg": 0.0,
    "positive": 0,
    "negative": 0,
-   "move_1d_pct": -0.09,
-   "move_5d_pct": 1.53,
+   "move_1d_pct": -0.22,
+   "move_5d_pct": 1.4,
    "trend_up": true,
-   "volume_ratio": 0.11,
+   "volume_ratio": 0.17,
    "lab_strategies": [],
    "flag": null,
    "top_headline": "RAMSAY SANTE : nouvelle gouvernance"
@@ -2339,8 +2362,8 @@
    "tone_avg": 0.5,
    "positive": 1,
    "negative": 0,
-   "move_1d_pct": -0.06,
-   "move_5d_pct": 1.58,
+   "move_1d_pct": -0.2,
+   "move_5d_pct": 1.44,
    "trend_up": true,
    "volume_ratio": 0.78,
    "lab_strategies": [],
@@ -2350,73 +2373,118 @@
   {
    "ticker": "^GSPC",
    "name": "S&P 500",
-   "headlines": 17,
-   "tone_avg": 0.18,
-   "positive": 7,
-   "negative": 4,
-   "move_1d_pct": -1.01,
-   "move_5d_pct": -0.86,
+   "headlines": 10,
+   "tone_avg": -0.3,
+   "positive": 0,
+   "negative": 3,
+   "move_1d_pct": -1.97,
+   "move_5d_pct": -1.82,
    "trend_up": false,
-   "volume_ratio": 0.16,
+   "volume_ratio": 0.32,
    "lab_strategies": [],
-   "flag": null,
-   "top_headline": "Today's Weakness Sets Up 'Springboard' for Future Gains"
+   "flag": "mauvaise nouvelle confirmée par le cours",
+   "top_headline": "Jensen Huang Passed Billions in Nvidia Stock to His Heirs Months Before His Downfall"
   }
  ],
  "flagged": [
   {
    "ticker": "ORCL",
    "name": "ORCL",
-   "headlines": 17,
-   "tone_avg": 0.29,
-   "positive": 5,
-   "negative": 0,
-   "move_1d_pct": -3.35,
-   "move_5d_pct": 1.14,
+   "headlines": 18,
+   "tone_avg": 0.22,
+   "positive": 6,
+   "negative": 2,
+   "move_1d_pct": -5.31,
+   "move_5d_pct": -0.91,
    "trend_up": false,
-   "volume_ratio": 0.18,
+   "volume_ratio": 0.32,
    "lab_strategies": [],
    "flag": "divergence : ton positif mais le cours baisse",
-   "top_headline": "Anthropic gears up for the largest IPO in history, but do the economics work?"
+   "top_headline": "CoreWeave, Oracle and Nebius Plunge as Nvidia Fallout Rattles AI Stocks"
   },
   {
-   "ticker": "AVGO",
-   "name": "AVGO",
-   "headlines": 12,
-   "tone_avg": -0.33,
-   "positive": 1,
-   "negative": 5,
-   "move_1d_pct": -2.9,
-   "move_5d_pct": 5.47,
+   "ticker": "META",
+   "name": "META",
+   "headlines": 14,
+   "tone_avg": 0.64,
+   "positive": 9,
+   "negative": 0,
+   "move_1d_pct": -2.39,
+   "move_5d_pct": -2.34,
    "trend_up": false,
-   "volume_ratio": 0.34,
+   "volume_ratio": 0.29,
+   "lab_strategies": [],
+   "flag": "divergence : ton positif mais le cours baisse",
+   "top_headline": "Meta’s Prepayment Is Buying Oklo’s Nuclear Fuel for Up to Five Reactors"
+  },
+  {
+   "ticker": "JPM",
+   "name": "JPM",
+   "headlines": 16,
+   "tone_avg": 0.44,
+   "positive": 7,
+   "negative": 0,
+   "move_1d_pct": -2.36,
+   "move_5d_pct": -1.19,
+   "trend_up": false,
+   "volume_ratio": 0.52,
+   "lab_strategies": [],
+   "flag": "divergence : ton positif mais le cours baisse",
+   "top_headline": "3 Financial Stocks to Buy and Hold That Turned $1,000 Into More Than $5,000 Over the Past Decade, Counting Dividends"
+  },
+  {
+   "ticker": "BAC",
+   "name": "BAC",
+   "headlines": 13,
+   "tone_avg": 0.31,
+   "positive": 6,
+   "negative": 2,
+   "move_1d_pct": -2.08,
+   "move_5d_pct": -1.17,
+   "trend_up": false,
+   "volume_ratio": 0.49,
+   "lab_strategies": [],
+   "flag": "divergence : ton positif mais le cours baisse",
+   "top_headline": "Nvidia Poised for Third-Quarter Beat Amid CEO Transition, BofA Says"
+  },
+  {
+   "ticker": "^GSPC",
+   "name": "S&P 500",
+   "headlines": 10,
+   "tone_avg": -0.3,
+   "positive": 0,
+   "negative": 3,
+   "move_1d_pct": -1.97,
+   "move_5d_pct": -1.82,
+   "trend_up": false,
+   "volume_ratio": 0.32,
    "lab_strategies": [],
    "flag": "mauvaise nouvelle confirmée par le cours",
-   "top_headline": "Chip stocks fall on US semiconductor restrictions: AlphaCheck"
+   "top_headline": "Jensen Huang Passed Billions in Nvidia Stock to His Heirs Months Before His Downfall"
   }
  ],
  "indices": {
   "^FCHI": {
-   "last": 8363.55,
+   "last": 8352.0,
    "date": "2026-11-16",
-   "move_1d_pct": -0.06,
-   "move_5d_pct": 1.58,
+   "move_1d_pct": -0.2,
+   "move_5d_pct": 1.44,
    "trend_up": true,
    "volume_ratio": 0.78
   },
   "^GSPC": {
-   "last": 7485.18,
+   "last": 7412.59,
    "date": "2026-11-16",
-   "move_1d_pct": -1.01,
-   "move_5d_pct": -0.86,
+   "move_1d_pct": -1.97,
+   "move_5d_pct": -1.82,
    "trend_up": false,
-   "volume_ratio": 0.16
+   "volume_ratio": 0.32
   }
  },
  "counts": {
-  "headlines": 285,
-  "tickers_with_news": 33,
-  "flagged": 2
+  "headlines": 334,
+  "tickers_with_news": 35,
+  "flagged": 5
  },
  "errors": [],
  "note": "Tone = word count, not understanding. Leads to read, not signals to buy."
