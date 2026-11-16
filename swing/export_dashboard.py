@@ -5,7 +5,8 @@
 
 Writes strategies.json, curves.json, account.json, positions.json, trades.json
 (labo v1 and the paper account), lab_winners.json, lab_curves.json,
-lab_signals.json, news_flagged.json and news_headlines.json (labo v2 and news).
+lab_signals.json, news_flagged.json and news_headlines.json (labo v2 and news),
+live.json and live_curves.json (paper accounts in real time).
 A missing source gives an empty list, so the page shows its empty state.
 """
 
@@ -98,6 +99,22 @@ def main(out):
                                     "time_utc": h["time_utc"],
                                     "tone": {1: "positif", -1: "négatif"}.get(h["tone"], "neutre"),
                                     "tags": ", ".join(h["tags"])} for h in news["headlines"][:40]]
+    lv = load("live.json")
+    files["live"] = []
+    files["live_curves"] = []
+    if lv:
+        for a in lv["accounts"]:
+            files["live"].append({
+                "id": a["id"], "label": a.get("label", a["id"]), "setting": a.get("setting") or "",
+                "status": a["status"], "start": lv["start"], "as_of": a.get("as_of"),
+                "contributed_eur": a.get("contributed"), "value_eur": a.get("value"), "gain_pct": a.get("gain_pct"),
+                "cash_eur": a.get("cash"), "orders": a.get("orders"),
+                "costs_eur": round((a.get("fees") or 0) + (a.get("taxes") or 0), 2) if "fees" in a else None,
+                "holdings": ", ".join("%s (%s)" % (k, v) for k, v in (a.get("holdings") or {}).items()) or "liquidités",
+                "last_trade": ("%s %s %s %s €" % (t["d"], t["side"], t["symbol"], t["amount_eur"])) if (t := (a.get("trades") or [None])[-1]) else ""})
+            for p in a.get("curve", []):
+                files["live_curves"].append({"date": p["d"], "id": a["id"],
+                                             "gain_pct": round(100 * (p["value"] / p["contributed"] - 1), 2) if p["contributed"] else 0})
     for name, rows in files.items():
         with open(os.path.join(out, name + ".json"), "w", encoding="utf-8") as fh:
             json.dump(rows, fh, ensure_ascii=False)

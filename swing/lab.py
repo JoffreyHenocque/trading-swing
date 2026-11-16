@@ -272,13 +272,13 @@ def decide(v, series, syms, d, k, cal, held):
 
 # ---------------------------------------------------------------- simulation
 
-def simulate(v, series, cfg, start, end, keep_curve=False):
+def simulate(v, series, cfg, start, end, keep_curve=False, min_days=60, keep_trades=False):
     syms = universe_syms(v["universe"], cfg, series)
     if not syms:
         raise ValueError("no data for universe %s" % v["universe"])
     cal_sym = "AAPL" if v["universe"] == "us" and "AAPL" in series else cfg["benchmark_etf"]
     cal = [x["d"] for x in series[cal_sym].b if start <= x["d"] <= end]
-    if len(cal) < 60:
+    if len(cal) < max(1, min_days):
         raise ValueError("not enough history")
     fx = series.get(FX)
     us = v["universe"] == "us"
@@ -286,6 +286,14 @@ def simulate(v, series, cfg, start, end, keep_curve=False):
     monthly = float(cfg["monthly"])
     cash, contributed, fees, taxes, orders = 0.0, 0.0, 0.0, 0.0, 0
     pos = {}                         # sym -> qty
+    trades = []
+    weights = v["params"].get("weights")
+
+    def wt(sym, among):
+        if not weights:
+            return 1.0 / len(among)
+        tot = sum(weights.get(x, 0) for x in among)
+        return weights.get(sym, 0) / tot if tot else 1.0 / len(among)
     pending = None
     flows = []                       # (date, -amount)
     curve = []
@@ -332,6 +340,9 @@ def simulate(v, series, cfg, start, end, keep_curve=False):
         taxes += t
         orders += 1
         pos[sym] = pos.get(sym, 0) + q
+        if keep_trades:
+            trades.append({"d": d, "side": "achat", "symbol": sym, "qty": round(q, 4), "price_eur": round(pe, 4),
+                           "amount_eur": round(val, 2), "fee_eur": round(f, 2), "tax_eur": round(t, 2)})
 
     def sell(sym, d):
         nonlocal cash, fees, orders
@@ -344,6 +355,10 @@ def simulate(v, series, cfg, start, end, keep_curve=False):
         cash += val - f
         fees += f
         orders += 1
+        if keep_trades:
+            trades.append({"d": d, "side": "vente", "symbol": sym, "qty": round(q, 4),
+                           "price_eur": round(val / q, 4) if q else None, "amount_eur": round(val, 2),
+                           "fee_eur": round(f, 2), "tax_eur": 0})
 
     for k, d in enumerate(cal):
         if k == 0 or cal[k - 1][:7] != d[:7]:
@@ -361,15 +376,15 @@ def simulate(v, series, cfg, start, end, keep_curve=False):
             targets = list(pending)
             if targets:
                 value = cash + sum(q * eur(s, price(s, d, "o") or 0, d) for s, q in pos.items())
-                slot = value / (v["params"].get("top") or len(targets))
                 for sym in [x for x in targets if x not in pos]:
+                    slot = value * wt(sym, targets) if weights else value / (v["params"].get("top") or len(targets))
                     buy(sym, min(slot, cash), d)
                 if v["kind"] in ("dca", "trend", "dual_momentum", "momentum"):
                     held = [x for x in targets if x in pos]
                     if held and cash >= min_order:
-                        share = cash / len(held)
+                        c0 = cash
                         for sym in held:
-                            buy(sym, share, d)
+                            buy(sym, c0 * wt(sym, held), d)
             pending = None
         if k == 0:   # start investing from the first day, as if a month had just ended
             t = decide(v, series, syms, d, 0, [d, "9999-12-31"], list(pos))
@@ -393,6 +408,8 @@ def simulate(v, series, cfg, start, end, keep_curve=False):
            "holdings": {s: round(q, 4) for s, q in pos.items()}, "cash": round(cash, 2)}
     if keep_curve:
         res["curve"] = curve
+    if keep_trades:
+        res["trades"] = trades
     return res
 
 
@@ -553,6 +570,7 @@ def cmd_signals(a, cfg):
     doc = {"generated_utc": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
            "signals": out, "data_errors": errors}
     S.save_json(os.path.join(DATA, "lab_signals.json"), doc)
+    run_live(cfg, series, by_id)
     for s in out:
         if s.get("error"):
             print("  %-34s error: %s" % (s["label"][:34], s["error"]))
@@ -562,14 +580,60 @@ def cmd_signals(a, cfg):
     return 0
 
 
+def run_live(cfg, series, by_id=None):
+    """Paper accounts that started on a fixed date with frozen settings.
+
+    Each day the whole period since the start is replayed with the same rules
+    as the backtest, so the result is exactly what the account would show.
+    """
+    live = cfg.get("live")
+    if not live:
+        return
+    by_id = by_id or {v["id"]: v for v in expand(cfg)}
+    start = live["start"]
+    accounts = []
+    for lid in live["ids"]:
+        v = by_id.get(lid)
+        if not v:
+            accounts.append({"id": lid, "status": "réglage introuvable"})
+            continue
+        cal_sym = "AAPL" if v["universe"] == "us" and "AAPL" in series else cfg["benchmark_etf"]
+        last = series[cal_sym].b[-1]["d"]
+        base = {"id": lid, "family": v["family"], "label": v["label"], "setting": v["setting"], "start": start}
+        if last < start:
+            accounts.append(dict(base, status="démarre à la prochaine séance"))
+            continue
+        try:
+            r = simulate(v, series, cfg, start, last, keep_curve=True, min_days=1, keep_trades=True)
+        except Exception as e:
+            accounts.append(dict(base, status="erreur", error=str(e)))
+            continue
+        accounts.append(dict(base, status="en cours", as_of=r["to"], contributed=r["contributed"], value=r["final"],
+                             gain_pct=r["gain_pct"], cash=r["cash"], holdings=r["holdings"], orders=r["orders"],
+                             fees=r["fees"], taxes=r["taxes"], max_drawdown_pct=r["max_drawdown_pct"],
+                             trades=r["trades"][-30:], curve=r["curve"]))
+    doc = {"generated_utc": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+           "start": start, "monthly_eur": cfg["monthly"], "note": live.get("note"), "accounts": accounts}
+    S.save_json(os.path.join(DATA, "live.json"), doc)
+    for a in accounts:
+        print("  live %-34s %s %s" % (a.get("label", a["id"])[:34], a["status"],
+                                        ("%.2f EUR for %.2f put in" % (a["value"], a["contributed"])) if "value" in a else ""))
+
+
+def cmd_live(a, cfg):
+    raw, errors = load_all(cfg, a.offline, "2y")
+    run_live(cfg, {k: Series(v) for k, v in raw.items()})
+    return 0
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description="Strategy lab v2, paper only.")
-    ap.add_argument("cmd", choices=["backtest", "signals"])
+    ap.add_argument("cmd", choices=["backtest", "signals", "live"])
     ap.add_argument("--offline")
     ap.add_argument("--config", default=LAB)
     a = ap.parse_args(argv)
     cfg = S.load_json(a.config)
-    return {"backtest": cmd_backtest, "signals": cmd_signals}[a.cmd](a, cfg)
+    return {"backtest": cmd_backtest, "signals": cmd_signals, "live": cmd_live}[a.cmd](a, cfg)
 
 
 if __name__ == "__main__":
