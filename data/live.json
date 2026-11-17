@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-11-17T00:32:22Z",
+ "generated_utc": "2026-11-17T23:41:27Z",
  "start": "2026-11-17",
  "monthly_eur": 75,
  "note": "Réglages gelés au 16/11/2026 : ne pas les changer, sinon le test en direct ne vaut plus rien.",
@@ -10,7 +10,25 @@
    "label": "Retour à la moyenne (RSI 2), actions US",
    "setting": "RSI sous 10, nb actions 2",
    "start": "2026-11-17",
-   "status": "démarre à la prochaine séance"
+   "status": "en cours",
+   "as_of": "2026-11-17",
+   "contributed": 75.0,
+   "value": 74.98,
+   "gain_pct": -0.03,
+   "cash": 74.98,
+   "holdings": {},
+   "orders": 0,
+   "fees": 0.02,
+   "taxes": 0.0,
+   "max_drawdown_pct": 0.0,
+   "trades": [],
+   "curve": [
+    {
+     "d": "2026-11-17",
+     "value": 74.98,
+     "contributed": 75.0
+    }
+   ]
   },
   {
    "id": "dual_momentum_lo6",
