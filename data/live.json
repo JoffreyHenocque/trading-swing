@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-11-17T23:41:27Z",
+ "generated_utc": "2026-11-18T23:10:55Z",
  "start": "2026-11-17",
  "monthly_eur": 75,
  "note": "Réglages gelés au 16/11/2026 : ne pas les changer, sinon le test en direct ne vaut plus rien.",
@@ -11,7 +11,7 @@
    "setting": "RSI sous 10, nb actions 2",
    "start": "2026-11-17",
    "status": "en cours",
-   "as_of": "2026-11-17",
+   "as_of": "2026-11-18",
    "contributed": 75.0,
    "value": 74.98,
    "gain_pct": -0.03,
@@ -27,6 +27,11 @@
      "d": "2026-11-17",
      "value": 74.98,
      "contributed": 75.0
+    },
+    {
+     "d": "2026-11-18",
+     "value": 74.98,
+     "contributed": 75.0
     }
    ]
   },
@@ -36,7 +41,25 @@
    "label": "Dual momentum sur 6 ETF",
    "setting": "période (mois) 6",
    "start": "2026-11-17",
-   "status": "démarre à la prochaine séance"
+   "status": "en cours",
+   "as_of": "2026-11-17",
+   "contributed": 75.0,
+   "value": 75.0,
+   "gain_pct": 0.0,
+   "cash": 75.0,
+   "holdings": {},
+   "orders": 0,
+   "fees": 0.0,
+   "taxes": 0.0,
+   "max_drawdown_pct": 0.0,
+   "trades": [],
+   "curve": [
+    {
+     "d": "2026-11-17",
+     "value": 75.0,
+     "contributed": 75.0
+    }
+   ]
   },
   {
    "id": "dca_world",
@@ -44,7 +67,25 @@
    "label": "Versement mensuel ETF Monde (référence)",
    "setting": "",
    "start": "2026-11-17",
-   "status": "démarre à la prochaine séance"
+   "status": "en cours",
+   "as_of": "2026-11-17",
+   "contributed": 75.0,
+   "value": 75.0,
+   "gain_pct": 0.0,
+   "cash": 75.0,
+   "holdings": {},
+   "orders": 0,
+   "fees": 0.0,
+   "taxes": 0.0,
+   "max_drawdown_pct": 0.0,
+   "trades": [],
+   "curve": [
+    {
+     "d": "2026-11-17",
+     "value": 75.0,
+     "contributed": 75.0
+    }
+   ]
   },
   {
    "id": "dca_world_em",
@@ -52,7 +93,25 @@
    "label": "Versement mensuel 85 % Monde + 15 % émergents",
    "setting": "",
    "start": "2026-11-17",
-   "status": "démarre à la prochaine séance"
+   "status": "en cours",
+   "as_of": "2026-11-17",
+   "contributed": 75.0,
+   "value": 75.0,
+   "gain_pct": 0.0,
+   "cash": 75.0,
+   "holdings": {},
+   "orders": 0,
+   "fees": 0.0,
+   "taxes": 0.0,
+   "max_drawdown_pct": 0.0,
+   "trades": [],
+   "curve": [
+    {
+     "d": "2026-11-17",
+     "value": 75.0,
+     "contributed": 75.0
+    }
+   ]
   }
  ]
 }
