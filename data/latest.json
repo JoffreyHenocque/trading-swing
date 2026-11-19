@@ -1,6 +1,6 @@
 {
- "as_of": "2026-11-17",
- "generated_utc": "2026-11-18T23:09:27Z",
+ "as_of": "2026-11-18",
+ "generated_utc": "2026-11-19T23:15:11Z",
  "config": {
   "universe": "universe.txt",
   "benchmark": "^FCHI",
@@ -143,9 +143,9 @@
   "profit_factor": null,
   "total_pnl": 0,
   "costs": 0,
-  "equity": 991.64,
-  "return_pct": -0.84,
-  "max_drawdown_pct": -1.01
+  "equity": 981.74,
+  "return_pct": -1.83,
+  "max_drawdown_pct": -1.93
  },
  "positions": [
   {
@@ -159,8 +159,8 @@
    "cost": 315.12,
    "entry_fee": 1.5,
    "entry_tax": 1.25,
-   "held": 5,
-   "last": 34.36,
+   "held": 6,
+   "last": 34.09,
    "signal_date": "2026-11-09"
   },
   {
@@ -174,8 +174,8 @@
    "cost": 226.61,
    "entry_fee": 1.5,
    "entry_tax": 0.9,
-   "held": 5,
-   "last": 24.74,
+   "held": 6,
+   "last": 24.65,
    "signal_date": "2026-11-09"
   },
   {
@@ -189,8 +189,8 @@
    "cost": 156.09,
    "entry_fee": 1.5,
    "entry_tax": 0.62,
-   "held": 5,
-   "last": 52.52,
+   "held": 6,
+   "last": 50.3,
    "signal_date": "2026-11-09"
   }
  ],
@@ -236,6 +236,12 @@
   {
    "d": "2026-11-17",
    "equity": 991.64,
+   "cash": 302.18,
+   "contributed": 1000
+  },
+  {
+   "d": "2026-11-18",
+   "equity": 981.74,
    "cash": 302.18,
    "contributed": 1000
   }
