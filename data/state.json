@@ -1,21 +1,6 @@
 {
- "cash": 302.18,
+ "cash": 747.7,
  "positions": [
-  {
-   "symbol": "VIE.PA",
-   "qty": 9,
-   "entry": 34.7073,
-   "entry_date": "2026-11-10",
-   "stop": 33.63,
-   "target": 36.87,
-   "risk_per_share": 1.08,
-   "cost": 315.12,
-   "entry_fee": 1.5,
-   "entry_tax": 1.25,
-   "held": 6,
-   "last": 34.09,
-   "signal_date": "2026-11-09"
-  },
   {
    "symbol": "ENGI.PA",
    "qty": 9,
@@ -27,10 +12,13 @@
    "cost": 226.61,
    "entry_fee": 1.5,
    "entry_tax": 0.9,
-   "held": 6,
-   "last": 24.65,
+   "held": 8,
+   "last": 24.26,
    "signal_date": "2026-11-09"
-  },
+  }
+ ],
+ "pending": [],
+ "trades": [
   {
    "symbol": "AC.PA",
    "qty": 3,
@@ -42,13 +30,38 @@
    "cost": 156.09,
    "entry_fee": 1.5,
    "entry_tax": 0.62,
-   "held": 6,
-   "last": 50.3,
-   "signal_date": "2026-11-09"
+   "held": 7,
+   "signal_date": "2026-11-09",
+   "exit": 48.6657,
+   "exit_date": "2026-11-19",
+   "reason": "stop",
+   "exit_fee": 1.5,
+   "pnl": -11.59,
+   "r": -1.466,
+   "pnl_pct": -7.43
+  },
+  {
+   "symbol": "VIE.PA",
+   "qty": 9,
+   "entry": 34.7073,
+   "entry_date": "2026-11-10",
+   "stop": 33.63,
+   "target": 36.87,
+   "risk_per_share": 1.08,
+   "cost": 315.12,
+   "entry_fee": 1.5,
+   "entry_tax": 1.25,
+   "held": 8,
+   "signal_date": "2026-11-09",
+   "exit": 33.6132,
+   "exit_date": "2026-11-20",
+   "reason": "stop",
+   "exit_fee": 1.5,
+   "pnl": -14.1,
+   "r": -1.451,
+   "pnl_pct": -4.47
   }
  ],
- "pending": [],
- "trades": [],
  "equity": [
   {
    "d": "2026-11-09",
@@ -96,8 +109,20 @@
    "equity": 981.74,
    "cash": 302.18,
    "contributed": 1000
+  },
+  {
+   "d": "2026-11-19",
+   "equity": 971.56,
+   "cash": 446.68,
+   "contributed": 1000
+  },
+  {
+   "d": "2026-11-20",
+   "equity": 966.04,
+   "cash": 747.7,
+   "contributed": 1000
   }
  ],
- "last_date": "2026-11-18",
+ "last_date": "2026-11-20",
  "contributed": 1000
 }

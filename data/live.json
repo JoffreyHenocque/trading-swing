@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-11-19T23:16:36Z",
+ "generated_utc": "2026-11-20T22:51:08Z",
  "start": "2026-11-17",
  "monthly_eur": 75,
  "note": "Réglages gelés au 16/11/2026 : ne pas les changer, sinon le test en direct ne vaut plus rien.",
@@ -11,7 +11,7 @@
    "setting": "RSI sous 10, nb actions 2",
    "start": "2026-11-17",
    "status": "en cours",
-   "as_of": "2026-11-19",
+   "as_of": "2026-11-20",
    "contributed": 75.0,
    "value": 74.98,
    "gain_pct": -0.03,
@@ -37,6 +37,11 @@
      "d": "2026-11-19",
      "value": 74.98,
      "contributed": 75.0
+    },
+    {
+     "d": "2026-11-20",
+     "value": 74.98,
+     "contributed": 75.0
     }
    ]
   },
@@ -47,7 +52,7 @@
    "setting": "période (mois) 6",
    "start": "2026-11-17",
    "status": "en cours",
-   "as_of": "2026-11-18",
+   "as_of": "2026-11-20",
    "contributed": 75.0,
    "value": 75.0,
    "gain_pct": 0.0,
@@ -68,6 +73,16 @@
      "d": "2026-11-18",
      "value": 75.0,
      "contributed": 75.0
+    },
+    {
+     "d": "2026-11-19",
+     "value": 75.0,
+     "contributed": 75.0
+    },
+    {
+     "d": "2026-11-20",
+     "value": 75.0,
+     "contributed": 75.0
     }
    ]
   },
@@ -78,10 +93,10 @@
    "setting": "",
    "start": "2026-11-17",
    "status": "en cours",
-   "as_of": "2026-11-18",
+   "as_of": "2026-11-20",
    "contributed": 75.0,
-   "value": 74.33,
-   "gain_pct": -0.89,
+   "value": 71.76,
+   "gain_pct": -4.32,
    "cash": 0.0,
    "holdings": {
     "CW8.PA": 0.1076
@@ -89,7 +104,7 @@
    "orders": 1,
    "fees": 0.0,
    "taxes": 0.0,
-   "max_drawdown_pct": -0.89,
+   "max_drawdown_pct": -4.32,
    "trades": [
     {
      "d": "2026-11-18",
@@ -112,6 +127,16 @@
      "d": "2026-11-18",
      "value": 74.33,
      "contributed": 75.0
+    },
+    {
+     "d": "2026-11-19",
+     "value": 74.07,
+     "contributed": 75.0
+    },
+    {
+     "d": "2026-11-20",
+     "value": 71.76,
+     "contributed": 75.0
     }
    ]
   },
@@ -122,10 +147,10 @@
    "setting": "",
    "start": "2026-11-17",
    "status": "en cours",
-   "as_of": "2026-11-18",
+   "as_of": "2026-11-20",
    "contributed": 75.0,
-   "value": 74.26,
-   "gain_pct": -0.99,
+   "value": 71.48,
+   "gain_pct": -4.7,
    "cash": 0.0,
    "holdings": {
     "CW8.PA": 0.0914,
@@ -134,7 +159,7 @@
    "orders": 2,
    "fees": 0.0,
    "taxes": 0.0,
-   "max_drawdown_pct": -0.99,
+   "max_drawdown_pct": -4.7,
    "trades": [
     {
      "d": "2026-11-18",
@@ -166,6 +191,16 @@
     {
      "d": "2026-11-18",
      "value": 74.26,
+     "contributed": 75.0
+    },
+    {
+     "d": "2026-11-19",
+     "value": 74.0,
+     "contributed": 75.0
+    },
+    {
+     "d": "2026-11-20",
+     "value": 71.48,
      "contributed": 75.0
     }
    ]
