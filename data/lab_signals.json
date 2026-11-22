@@ -1,6 +1,24 @@
 {
- "generated_utc": "2026-11-20T22:51:08Z",
+ "generated_utc": "2026-11-22T15:07:58Z",
  "signals": [
+  {
+   "id": "rsi2_us_en10_to2",
+   "family": "rsi2_us",
+   "label": "Retour à la moyenne (RSI 2), actions US",
+   "setting": "RSI sous 10, nb actions 2",
+   "as_of": "2026-11-20",
+   "holds_now": [
+    "HD",
+    "MRK"
+   ],
+   "target": [
+    "HD",
+    "MRK"
+   ],
+   "buy": [],
+   "sell": [],
+   "next_check": "daily"
+  },
   {
    "id": "dual_momentum_lo6",
    "family": "dual_momentum",
@@ -22,22 +40,20 @@
    "next_check": "monthly"
   },
   {
-   "id": "rsi2_us_en10_to2",
-   "family": "rsi2_us",
-   "label": "Retour à la moyenne (RSI 2), actions US",
-   "setting": "RSI sous 10, nb actions 2",
+   "id": "dca_sp500",
+   "family": "dca_sp500",
+   "label": "Versement mensuel ETF S&P 500",
+   "setting": "",
    "as_of": "2026-11-20",
    "holds_now": [
-    "HD",
-    "MRK"
+    "ESE.PA"
    ],
    "target": [
-    "HD",
-    "MRK"
+    "ESE.PA"
    ],
    "buy": [],
    "sell": [],
-   "next_check": "daily"
+   "next_check": "monthly"
   },
   {
    "id": "dca_world_em",
@@ -52,22 +68,6 @@
    "target": [
     "CW8.PA",
     "PAEEM.PA"
-   ],
-   "buy": [],
-   "sell": [],
-   "next_check": "monthly"
-  },
-  {
-   "id": "dca_sp500",
-   "family": "dca_sp500",
-   "label": "Versement mensuel ETF S&P 500",
-   "setting": "",
-   "as_of": "2026-11-20",
-   "holds_now": [
-    "ESE.PA"
-   ],
-   "target": [
-    "ESE.PA"
    ],
    "buy": [],
    "sell": [],
@@ -90,22 +90,6 @@
    "next_check": "monthly"
   },
   {
-   "id": "trend_sp500_sm200",
-   "family": "trend_sp500",
-   "label": "ETF S&P 500 + filtre de tendance",
-   "setting": "moyenne (jours) 200",
-   "as_of": "2026-11-20",
-   "holds_now": [
-    "ESE.PA"
-   ],
-   "target": [
-    "ESE.PA"
-   ],
-   "buy": [],
-   "sell": [],
-   "next_check": "monthly"
-  },
-  {
    "id": "trend_world_sm200",
    "family": "trend_world",
    "label": "ETF Monde + filtre de tendance",
@@ -119,6 +103,22 @@
    "sell": [
     "CW8.PA"
    ],
+   "next_check": "monthly"
+  },
+  {
+   "id": "trend_sp500_sm200",
+   "family": "trend_sp500",
+   "label": "ETF S&P 500 + filtre de tendance",
+   "setting": "moyenne (jours) 200",
+   "as_of": "2026-11-20",
+   "holds_now": [
+    "ESE.PA"
+   ],
+   "target": [
+    "ESE.PA"
+   ],
+   "buy": [],
+   "sell": [],
    "next_check": "monthly"
   },
   {

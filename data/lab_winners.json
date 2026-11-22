@@ -1,13 +1,13 @@
 {
- "generated_utc": "2026-11-16T20:09:55Z",
+ "generated_utc": "2026-11-22T15:06:32Z",
  "winners": [
-  "dual_momentum_lo6",
   "rsi2_us_en10_to2",
-  "dca_world_em",
+  "dual_momentum_lo6",
   "dca_sp500",
+  "dca_world_em",
   "dca_world",
-  "trend_sp500_sm200",
   "trend_world_sm200",
+  "trend_sp500_sm200",
   "high52_us_ex100_to2",
   "high52_cac_ex50_to2",
   "momentum_cac_lo6_to1",
