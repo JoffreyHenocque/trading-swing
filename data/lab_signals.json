@@ -1,22 +1,23 @@
 {
- "generated_utc": "2026-11-22T15:07:58Z",
+ "generated_utc": "2026-11-24T03:05:49Z",
  "signals": [
   {
    "id": "rsi2_us_en10_to2",
    "family": "rsi2_us",
    "label": "Retour à la moyenne (RSI 2), actions US",
    "setting": "RSI sous 10, nb actions 2",
-   "as_of": "2026-11-20",
+   "as_of": "2026-11-23",
    "holds_now": [
     "HD",
     "MRK"
    ],
    "target": [
-    "HD",
     "MRK"
    ],
    "buy": [],
-   "sell": [],
+   "sell": [
+    "HD"
+   ],
    "next_check": "daily"
   },
   {
@@ -126,7 +127,7 @@
    "family": "high52_us",
    "label": "Plus haut annuel, actions US",
    "setting": "sortie sous moyenne 100, nb actions 2",
-   "as_of": "2026-11-20",
+   "as_of": "2026-11-23",
    "holds_now": [
     "KO",
     "CVX"
@@ -178,7 +179,7 @@
    "family": "momentum_us",
    "label": "Momentum grandes actions US",
    "setting": "période (mois) 3, nb actions 1",
-   "as_of": "2026-11-20",
+   "as_of": "2026-11-23",
    "holds_now": [
     "LLY"
    ],

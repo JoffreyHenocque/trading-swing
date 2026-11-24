@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-11-22T15:07:58Z",
+ "generated_utc": "2026-11-24T03:05:49Z",
  "start": "2026-11-17",
  "monthly_eur": 75,
  "note": "Réglages gelés au 16/11/2026 : ne pas les changer, sinon le test en direct ne vaut plus rien.",
@@ -11,7 +11,7 @@
    "setting": "RSI sous 10, nb actions 2",
    "start": "2026-11-17",
    "status": "en cours",
-   "as_of": "2026-11-20",
+   "as_of": "2026-11-23",
    "contributed": 75.0,
    "value": 74.98,
    "gain_pct": -0.03,
@@ -40,6 +40,11 @@
     },
     {
      "d": "2026-11-20",
+     "value": 74.98,
+     "contributed": 75.0
+    },
+    {
+     "d": "2026-11-23",
      "value": 74.98,
      "contributed": 75.0
     }

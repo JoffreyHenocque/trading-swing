@@ -1,6 +1,6 @@
 {
- "as_of": "2026-11-20",
- "generated_utc": "2026-11-20T22:49:33Z",
+ "as_of": "2026-11-23",
+ "generated_utc": "2026-11-24T03:04:23Z",
  "config": {
   "universe": "universe.txt",
   "benchmark": "^FCHI",
@@ -269,11 +269,14 @@
    "equity": 966.04,
    "cash": 747.7,
    "contributed": 1000
+  },
+  {
+   "d": "2026-11-23",
+   "equity": 966.04,
+   "cash": 747.7,
+   "contributed": 1000
   }
  ],
- "log": [
-  "2026-11-19 close AC.PA 3 @ 48.67 (stop): -11.59 EUR, -1.47R",
-  "2026-11-20 close VIE.PA 9 @ 33.61 (stop): -14.10 EUR, -1.45R"
- ],
+ "log": [],
  "data_errors": []
 }
