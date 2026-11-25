@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-11-24T03:05:49Z",
+ "generated_utc": "2026-11-25T01:08:08Z",
  "signals": [
   {
    "id": "rsi2_us_en10_to2",
@@ -25,19 +25,15 @@
    "family": "dual_momentum",
    "label": "Dual momentum sur 6 ETF",
    "setting": "période (mois) 6",
-   "as_of": "2026-11-20",
+   "as_of": "2026-11-23",
    "holds_now": [
     "ESE.PA"
    ],
    "target": [
-    "MEUD.PA"
-   ],
-   "buy": [
-    "MEUD.PA"
-   ],
-   "sell": [
     "ESE.PA"
    ],
+   "buy": [],
+   "sell": [],
    "next_check": "monthly"
   },
   {
@@ -45,7 +41,7 @@
    "family": "dca_sp500",
    "label": "Versement mensuel ETF S&P 500",
    "setting": "",
-   "as_of": "2026-11-20",
+   "as_of": "2026-11-23",
    "holds_now": [
     "ESE.PA"
    ],
@@ -61,7 +57,7 @@
    "family": "dca_world_em",
    "label": "Versement mensuel 85 % Monde + 15 % émergents",
    "setting": "",
-   "as_of": "2026-11-20",
+   "as_of": "2026-11-23",
    "holds_now": [
     "CW8.PA",
     "PAEEM.PA"
@@ -79,7 +75,7 @@
    "family": "dca_world",
    "label": "Versement mensuel ETF Monde (référence)",
    "setting": "",
-   "as_of": "2026-11-20",
+   "as_of": "2026-11-23",
    "holds_now": [
     "CW8.PA"
    ],
@@ -95,15 +91,15 @@
    "family": "trend_world",
    "label": "ETF Monde + filtre de tendance",
    "setting": "moyenne (jours) 200",
-   "as_of": "2026-11-20",
+   "as_of": "2026-11-23",
    "holds_now": [
     "CW8.PA"
    ],
-   "target": [],
-   "buy": [],
-   "sell": [
+   "target": [
     "CW8.PA"
    ],
+   "buy": [],
+   "sell": [],
    "next_check": "monthly"
   },
   {
@@ -111,7 +107,7 @@
    "family": "trend_sp500",
    "label": "ETF S&P 500 + filtre de tendance",
    "setting": "moyenne (jours) 200",
-   "as_of": "2026-11-20",
+   "as_of": "2026-11-23",
    "holds_now": [
     "ESE.PA"
    ],
@@ -145,17 +141,11 @@
    "family": "high52_cac",
    "label": "Plus haut annuel, CAC 40",
    "setting": "sortie sous moyenne 50, nb actions 2",
-   "as_of": "2026-11-20",
-   "holds_now": [
-    "ENX.PA",
-    "TTE.PA"
-   ],
+   "as_of": "2026-11-23",
+   "holds_now": [],
    "target": [],
    "buy": [],
-   "sell": [
-    "ENX.PA",
-    "TTE.PA"
-   ],
+   "sell": [],
    "next_check": "weekly"
   },
   {
@@ -163,7 +153,7 @@
    "family": "momentum_cac",
    "label": "Momentum actions CAC 40",
    "setting": "période (mois) 6, nb actions 1",
-   "as_of": "2026-11-20",
+   "as_of": "2026-11-23",
    "holds_now": [
     "ERF.PA"
    ],
@@ -199,17 +189,21 @@
    "family": "rsi2_cac",
    "label": "Retour à la moyenne (RSI 2), CAC 40",
    "setting": "RSI sous 5, nb actions 2",
-   "as_of": "2026-11-20",
+   "as_of": "2026-11-23",
    "holds_now": [
     "ERF.PA",
     "AIR.PA"
    ],
    "target": [
-    "ERF.PA",
-    "AIR.PA"
+    "AIR.PA",
+    "DSY.PA"
    ],
-   "buy": [],
-   "sell": [],
+   "buy": [
+    "DSY.PA"
+   ],
+   "sell": [
+    "ERF.PA"
+   ],
    "next_check": "daily"
   }
  ],
