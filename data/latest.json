@@ -1,6 +1,6 @@
 {
- "as_of": "2026-11-23",
- "generated_utc": "2026-11-25T01:06:36Z",
+ "as_of": "2026-11-24",
+ "generated_utc": "2026-11-26T00:41:53Z",
  "config": {
   "universe": "universe.txt",
   "benchmark": "^FCHI",
@@ -143,8 +143,8 @@
   "profit_factor": 0.0,
   "total_pnl": -25.69,
   "costs": 7.87,
-  "equity": 966.04,
-  "return_pct": -3.4,
+  "equity": 969.28,
+  "return_pct": -3.07,
   "max_drawdown_pct": -3.5
  },
  "positions": [
@@ -159,13 +159,40 @@
    "cost": 226.61,
    "entry_fee": 1.5,
    "entry_tax": 0.9,
-   "held": 8,
-   "last": 24.26,
+   "held": 9,
+   "last": 24.62,
    "signal_date": "2026-11-09"
   }
  ],
- "pending": [],
- "signals": [],
+ "pending": [
+  {
+   "symbol": "SAN.PA",
+   "qty": 2,
+   "signal": {
+    "date": "2026-11-24",
+    "close": 93.58,
+    "prior_high": 88.32,
+    "sma": 77.354,
+    "atr": 2.3171,
+    "strength": 2.27,
+    "symbol": "SAN.PA"
+   },
+   "risk_per_share": 4.6342,
+   "created": "2026-11-24",
+   "age": 0
+  }
+ ],
+ "signals": [
+  {
+   "date": "2026-11-24",
+   "close": 93.58,
+   "prior_high": 88.32,
+   "sma": 77.354,
+   "atr": 2.3171,
+   "strength": 2.27,
+   "symbol": "SAN.PA"
+  }
+ ],
  "recent_trades": [
   {
    "symbol": "AC.PA",
@@ -273,6 +300,12 @@
   {
    "d": "2026-11-23",
    "equity": 966.04,
+   "cash": 747.7,
+   "contributed": 1000
+  },
+  {
+   "d": "2026-11-24",
+   "equity": 969.28,
    "cash": 747.7,
    "contributed": 1000
   }

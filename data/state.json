@@ -12,12 +12,29 @@
    "cost": 226.61,
    "entry_fee": 1.5,
    "entry_tax": 0.9,
-   "held": 8,
-   "last": 24.26,
+   "held": 9,
+   "last": 24.62,
    "signal_date": "2026-11-09"
   }
  ],
- "pending": [],
+ "pending": [
+  {
+   "symbol": "SAN.PA",
+   "qty": 2,
+   "signal": {
+    "date": "2026-11-24",
+    "close": 93.58,
+    "prior_high": 88.32,
+    "sma": 77.354,
+    "atr": 2.3171,
+    "strength": 2.27,
+    "symbol": "SAN.PA"
+   },
+   "risk_per_share": 4.6342,
+   "created": "2026-11-24",
+   "age": 0
+  }
+ ],
  "trades": [
   {
    "symbol": "AC.PA",
@@ -127,8 +144,14 @@
    "equity": 966.04,
    "cash": 747.7,
    "contributed": 1000
+  },
+  {
+   "d": "2026-11-24",
+   "equity": 969.28,
+   "cash": 747.7,
+   "contributed": 1000
   }
  ],
- "last_date": "2026-11-23",
+ "last_date": "2026-11-24",
  "contributed": 1000
 }
