@@ -1,6 +1,6 @@
 {
- "as_of": "2026-11-24",
- "generated_utc": "2026-11-26T00:41:53Z",
+ "as_of": "2026-11-25",
+ "generated_utc": "2026-11-27T00:49:44Z",
  "config": {
   "universe": "universe.txt",
   "benchmark": "^FCHI",
@@ -143,8 +143,8 @@
   "profit_factor": 0.0,
   "total_pnl": -25.69,
   "costs": 7.87,
-  "equity": 969.28,
-  "return_pct": -3.07,
+  "equity": 971.35,
+  "return_pct": -2.86,
   "max_drawdown_pct": -3.5
  },
  "positions": [
@@ -159,38 +159,53 @@
    "cost": 226.61,
    "entry_fee": 1.5,
    "entry_tax": 0.9,
-   "held": 9,
-   "last": 24.62,
+   "held": 10,
+   "last": 24.41,
    "signal_date": "2026-11-09"
+  },
+  {
+   "symbol": "SAN.PA",
+   "qty": 2,
+   "entry": 95.0475,
+   "entry_date": "2026-11-25",
+   "stop": 90.41,
+   "target": 104.32,
+   "risk_per_share": 4.6342,
+   "cost": 192.36,
+   "entry_fee": 1.5,
+   "entry_tax": 0.76,
+   "held": 0,
+   "last": 98.16,
+   "signal_date": "2026-11-24"
   }
  ],
  "pending": [
   {
-   "symbol": "SAN.PA",
-   "qty": 2,
+   "symbol": "BVI.PA",
+   "qty": 7,
    "signal": {
-    "date": "2026-11-24",
-    "close": 93.58,
-    "prior_high": 88.32,
-    "sma": 77.354,
-    "atr": 2.3171,
-    "strength": 2.27,
-    "symbol": "SAN.PA"
+    "date": "2026-11-25",
+    "close": 31.8,
+    "prior_high": 30.49,
+    "sma": 28.4604,
+    "atr": 0.6543,
+    "strength": 2.002,
+    "symbol": "BVI.PA"
    },
-   "risk_per_share": 4.6342,
-   "created": "2026-11-24",
+   "risk_per_share": 1.3086,
+   "created": "2026-11-25",
    "age": 0
   }
  ],
  "signals": [
   {
-   "date": "2026-11-24",
-   "close": 93.58,
-   "prior_high": 88.32,
-   "sma": 77.354,
-   "atr": 2.3171,
-   "strength": 2.27,
-   "symbol": "SAN.PA"
+   "date": "2026-11-25",
+   "close": 31.8,
+   "prior_high": 30.49,
+   "sma": 28.4604,
+   "atr": 0.6543,
+   "strength": 2.002,
+   "symbol": "BVI.PA"
   }
  ],
  "recent_trades": [
@@ -308,8 +323,16 @@
    "equity": 969.28,
    "cash": 747.7,
    "contributed": 1000
+  },
+  {
+   "d": "2026-11-25",
+   "equity": 971.35,
+   "cash": 555.34,
+   "contributed": 1000
   }
  ],
- "log": [],
+ "log": [
+  "2026-11-25 open SAN.PA 2 @ 95.05, stop 90.41, target 104.32 (fee 1.50, tax 0.76)"
+ ],
  "data_errors": []
 }
