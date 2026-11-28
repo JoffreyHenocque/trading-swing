@@ -1,6 +1,6 @@
 {
- "as_of": "2026-11-25",
- "generated_utc": "2026-11-27T00:49:44Z",
+ "as_of": "2026-11-26",
+ "generated_utc": "2026-11-28T00:15:36Z",
  "config": {
   "universe": "universe.txt",
   "benchmark": "^FCHI",
@@ -143,8 +143,8 @@
   "profit_factor": 0.0,
   "total_pnl": -25.69,
   "costs": 7.87,
-  "equity": 971.35,
-  "return_pct": -2.86,
+  "equity": 976.49,
+  "return_pct": -2.35,
   "max_drawdown_pct": -3.5
  },
  "positions": [
@@ -159,8 +159,8 @@
    "cost": 226.61,
    "entry_fee": 1.5,
    "entry_tax": 0.9,
-   "held": 10,
-   "last": 24.41,
+   "held": 11,
+   "last": 24.83,
    "signal_date": "2026-11-09"
   },
   {
@@ -174,40 +174,28 @@
    "cost": 192.36,
    "entry_fee": 1.5,
    "entry_tax": 0.76,
-   "held": 0,
-   "last": 98.16,
+   "held": 1,
+   "last": 98.83,
    "signal_date": "2026-11-24"
-  }
- ],
- "pending": [
+  },
   {
    "symbol": "BVI.PA",
    "qty": 7,
-   "signal": {
-    "date": "2026-11-25",
-    "close": 31.8,
-    "prior_high": 30.49,
-    "sma": 28.4604,
-    "atr": 0.6543,
-    "strength": 2.002,
-    "symbol": "BVI.PA"
-   },
+   "entry": 31.8159,
+   "entry_date": "2026-11-26",
+   "stop": 30.51,
+   "target": 34.43,
    "risk_per_share": 1.3086,
-   "created": "2026-11-25",
-   "age": 0
+   "cost": 225.1,
+   "entry_fee": 1.5,
+   "entry_tax": 0.89,
+   "held": 0,
+   "last": 32.16,
+   "signal_date": "2026-11-25"
   }
  ],
- "signals": [
-  {
-   "date": "2026-11-25",
-   "close": 31.8,
-   "prior_high": 30.49,
-   "sma": 28.4604,
-   "atr": 0.6543,
-   "strength": 2.002,
-   "symbol": "BVI.PA"
-  }
- ],
+ "pending": [],
+ "signals": [],
  "recent_trades": [
   {
    "symbol": "AC.PA",
@@ -329,10 +317,16 @@
    "equity": 971.35,
    "cash": 555.34,
    "contributed": 1000
+  },
+  {
+   "d": "2026-11-26",
+   "equity": 976.49,
+   "cash": 330.24,
+   "contributed": 1000
   }
  ],
  "log": [
-  "2026-11-25 open SAN.PA 2 @ 95.05, stop 90.41, target 104.32 (fee 1.50, tax 0.76)"
+  "2026-11-26 open BVI.PA 7 @ 31.82, stop 30.51, target 34.43 (fee 1.50, tax 0.89)"
  ],
  "data_errors": []
 }

@@ -1,5 +1,5 @@
 {
- "cash": 555.34,
+ "cash": 330.24,
  "positions": [
   {
    "symbol": "ENGI.PA",
@@ -12,8 +12,8 @@
    "cost": 226.61,
    "entry_fee": 1.5,
    "entry_tax": 0.9,
-   "held": 10,
-   "last": 24.41,
+   "held": 11,
+   "last": 24.83,
    "signal_date": "2026-11-09"
   },
   {
@@ -27,29 +27,27 @@
    "cost": 192.36,
    "entry_fee": 1.5,
    "entry_tax": 0.76,
-   "held": 0,
-   "last": 98.16,
+   "held": 1,
+   "last": 98.83,
    "signal_date": "2026-11-24"
-  }
- ],
- "pending": [
+  },
   {
    "symbol": "BVI.PA",
    "qty": 7,
-   "signal": {
-    "date": "2026-11-25",
-    "close": 31.8,
-    "prior_high": 30.49,
-    "sma": 28.4604,
-    "atr": 0.6543,
-    "strength": 2.002,
-    "symbol": "BVI.PA"
-   },
+   "entry": 31.8159,
+   "entry_date": "2026-11-26",
+   "stop": 30.51,
+   "target": 34.43,
    "risk_per_share": 1.3086,
-   "created": "2026-11-25",
-   "age": 0
+   "cost": 225.1,
+   "entry_fee": 1.5,
+   "entry_tax": 0.89,
+   "held": 0,
+   "last": 32.16,
+   "signal_date": "2026-11-25"
   }
  ],
+ "pending": [],
  "trades": [
   {
    "symbol": "AC.PA",
@@ -171,8 +169,14 @@
    "equity": 971.35,
    "cash": 555.34,
    "contributed": 1000
+  },
+  {
+   "d": "2026-11-26",
+   "equity": 976.49,
+   "cash": 330.24,
+   "contributed": 1000
   }
  ],
- "last_date": "2026-11-25",
+ "last_date": "2026-11-26",
  "contributed": 1000
 }

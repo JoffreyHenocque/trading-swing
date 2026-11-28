@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-11-27T00:51:18Z",
+ "generated_utc": "2026-11-28T00:17:10Z",
  "start": "2026-11-17",
  "monthly_eur": 75,
  "note": "Réglages gelés au 16/11/2026 : ne pas les changer, sinon le test en direct ne vaut plus rien.",
@@ -11,7 +11,7 @@
    "setting": "RSI sous 10, nb actions 2",
    "start": "2026-11-17",
    "status": "en cours",
-   "as_of": "2026-11-25",
+   "as_of": "2026-11-27",
    "contributed": 75.0,
    "value": 74.98,
    "gain_pct": -0.03,
@@ -57,6 +57,11 @@
      "d": "2026-11-25",
      "value": 74.98,
      "contributed": 75.0
+    },
+    {
+     "d": "2026-11-27",
+     "value": 74.98,
+     "contributed": 75.0
     }
    ]
   },
@@ -67,7 +72,7 @@
    "setting": "période (mois) 6",
    "start": "2026-11-17",
    "status": "en cours",
-   "as_of": "2026-11-25",
+   "as_of": "2026-11-26",
    "contributed": 75.0,
    "value": 75.0,
    "gain_pct": 0.0,
@@ -113,6 +118,11 @@
      "d": "2026-11-25",
      "value": 75.0,
      "contributed": 75.0
+    },
+    {
+     "d": "2026-11-26",
+     "value": 75.0,
+     "contributed": 75.0
     }
    ]
   },
@@ -123,10 +133,10 @@
    "setting": "",
    "start": "2026-11-17",
    "status": "en cours",
-   "as_of": "2026-11-25",
+   "as_of": "2026-11-26",
    "contributed": 75.0,
-   "value": 71.52,
-   "gain_pct": -4.64,
+   "value": 73.54,
+   "gain_pct": -1.94,
    "cash": 0.0,
    "holdings": {
     "CW8.PA": 0.1076
@@ -182,6 +192,11 @@
      "d": "2026-11-25",
      "value": 71.52,
      "contributed": 75.0
+    },
+    {
+     "d": "2026-11-26",
+     "value": 73.54,
+     "contributed": 75.0
     }
    ]
   },
@@ -192,10 +207,10 @@
    "setting": "",
    "start": "2026-11-17",
    "status": "en cours",
-   "as_of": "2026-11-25",
+   "as_of": "2026-11-26",
    "contributed": 75.0,
-   "value": 71.23,
-   "gain_pct": -5.02,
+   "value": 73.37,
+   "gain_pct": -2.17,
    "cash": 0.0,
    "holdings": {
     "CW8.PA": 0.0914,
@@ -261,6 +276,11 @@
     {
      "d": "2026-11-25",
      "value": 71.23,
+     "contributed": 75.0
+    },
+    {
+     "d": "2026-11-26",
+     "value": 73.37,
      "contributed": 75.0
     }
    ]

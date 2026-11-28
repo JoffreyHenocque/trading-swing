@@ -5,5 +5,6 @@
  "2026-11-10 open AC.PA 3 @ 51.33, stop 48.69, target 56.60 (fee 1.50, tax 0.62)",
  "2026-11-19 close AC.PA 3 @ 48.67 (stop): -11.59 EUR, -1.47R",
  "2026-11-20 close VIE.PA 9 @ 33.61 (stop): -14.10 EUR, -1.45R",
- "2026-11-25 open SAN.PA 2 @ 95.05, stop 90.41, target 104.32 (fee 1.50, tax 0.76)"
+ "2026-11-25 open SAN.PA 2 @ 95.05, stop 90.41, target 104.32 (fee 1.50, tax 0.76)",
+ "2026-11-26 open BVI.PA 7 @ 31.82, stop 30.51, target 34.43 (fee 1.50, tax 0.89)"
 ]

@@ -1,12 +1,12 @@
 {
- "generated_utc": "2026-11-27T00:51:18Z",
+ "generated_utc": "2026-11-28T00:17:10Z",
  "signals": [
   {
    "id": "rsi2_us_en10_to2",
    "family": "rsi2_us",
    "label": "Retour à la moyenne (RSI 2), actions US",
    "setting": "RSI sous 10, nb actions 2",
-   "as_of": "2026-11-25",
+   "as_of": "2026-11-27",
    "holds_now": [],
    "target": [],
    "buy": [],
@@ -18,7 +18,7 @@
    "family": "dual_momentum",
    "label": "Dual momentum sur 6 ETF",
    "setting": "période (mois) 6",
-   "as_of": "2026-11-25",
+   "as_of": "2026-11-26",
    "holds_now": [
     "ESE.PA"
    ],
@@ -38,7 +38,7 @@
    "family": "dca_sp500",
    "label": "Versement mensuel ETF S&P 500",
    "setting": "",
-   "as_of": "2026-11-25",
+   "as_of": "2026-11-26",
    "holds_now": [
     "ESE.PA"
    ],
@@ -54,7 +54,7 @@
    "family": "dca_world_em",
    "label": "Versement mensuel 85 % Monde + 15 % émergents",
    "setting": "",
-   "as_of": "2026-11-25",
+   "as_of": "2026-11-26",
    "holds_now": [
     "CW8.PA",
     "PAEEM.PA"
@@ -72,7 +72,7 @@
    "family": "dca_world",
    "label": "Versement mensuel ETF Monde (référence)",
    "setting": "",
-   "as_of": "2026-11-25",
+   "as_of": "2026-11-26",
    "holds_now": [
     "CW8.PA"
    ],
@@ -88,15 +88,15 @@
    "family": "trend_world",
    "label": "ETF Monde + filtre de tendance",
    "setting": "moyenne (jours) 200",
-   "as_of": "2026-11-25",
+   "as_of": "2026-11-26",
    "holds_now": [
     "CW8.PA"
    ],
-   "target": [],
-   "buy": [],
-   "sell": [
+   "target": [
     "CW8.PA"
    ],
+   "buy": [],
+   "sell": [],
    "next_check": "monthly"
   },
   {
@@ -104,15 +104,15 @@
    "family": "trend_sp500",
    "label": "ETF S&P 500 + filtre de tendance",
    "setting": "moyenne (jours) 200",
-   "as_of": "2026-11-25",
+   "as_of": "2026-11-26",
    "holds_now": [
     "ESE.PA"
    ],
-   "target": [],
-   "buy": [],
-   "sell": [
+   "target": [
     "ESE.PA"
    ],
+   "buy": [],
+   "sell": [],
    "next_check": "monthly"
   },
   {
@@ -120,7 +120,7 @@
    "family": "high52_us",
    "label": "Plus haut annuel, actions US",
    "setting": "sortie sous moyenne 100, nb actions 2",
-   "as_of": "2026-11-25",
+   "as_of": "2026-11-27",
    "holds_now": [
     "KO",
     "CVX"
@@ -138,15 +138,15 @@
    "family": "high52_cac",
    "label": "Plus haut annuel, CAC 40",
    "setting": "sortie sous moyenne 50, nb actions 2",
-   "as_of": "2026-11-25",
+   "as_of": "2026-11-26",
    "holds_now": [],
    "target": [
-    "SAN.PA",
-    "BVI.PA"
+    "BVI.PA",
+    "SAN.PA"
    ],
    "buy": [
-    "SAN.PA",
-    "BVI.PA"
+    "BVI.PA",
+    "SAN.PA"
    ],
    "sell": [],
    "next_check": "weekly"
@@ -156,7 +156,7 @@
    "family": "momentum_cac",
    "label": "Momentum actions CAC 40",
    "setting": "période (mois) 6, nb actions 1",
-   "as_of": "2026-11-25",
+   "as_of": "2026-11-26",
    "holds_now": [
     "ERF.PA"
    ],
@@ -172,7 +172,7 @@
    "family": "momentum_us",
    "label": "Momentum grandes actions US",
    "setting": "période (mois) 3, nb actions 1",
-   "as_of": "2026-11-25",
+   "as_of": "2026-11-27",
    "holds_now": [
     "LLY"
    ],
@@ -192,17 +192,17 @@
    "family": "rsi2_cac",
    "label": "Retour à la moyenne (RSI 2), CAC 40",
    "setting": "RSI sous 5, nb actions 2",
-   "as_of": "2026-11-25",
+   "as_of": "2026-11-26",
    "holds_now": [
     "AIR.PA",
     "DSY.PA"
    ],
-   "target": [
+   "target": [],
+   "buy": [],
+   "sell": [
     "AIR.PA",
     "DSY.PA"
    ],
-   "buy": [],
-   "sell": [],
    "next_check": "daily"
   }
  ],
